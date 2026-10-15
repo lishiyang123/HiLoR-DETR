@@ -1,0 +1,47 @@
+# Formal RT-DETR-R18 second-host training configuration.
+# Test is not used by this configuration or by any parameter-selection tool.
+__include__: ["../native_off/cdw1630_rtdetr_r18_native.yml"]
+
+# Guarded launchers replace this with runs/seed{0,1,2}. Even an accidental
+# direct launch remains inside the isolated adapter tree.
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/second_host/runs/UNBOUND_REFUSE_FORMAL_USE"
+
+criterion: HiLoRSetCriterion
+
+RTDETRTransformer:
+  ufd_enabled: True
+  ufd_reg_max: 32
+  ufd_reg_scale: 4.0
+  ufd_up: 0.5
+  hilor_return_decoder_features: False
+
+HiLoRSetCriterion:
+  weight_dict: {loss_vfl: 1, loss_bbox: 5, loss_giou: 2}
+  losses: [vfl, boxes]
+  alpha: 0.75
+  gamma: 2.0
+  matcher:
+    type: HungarianMatcher
+    weight_dict: {cost_class: 2, cost_bbox: 5, cost_giou: 2}
+    alpha: 0.25
+    gamma: 2.0
+
+  # Detached residual rematching + bounded final-VFL role handover.
+  lcct_enabled: True
+  lcct_warmup_epoch: 20
+  lcct_delta: 0.02
+  lcct_continuous_handover: True
+  lcct_transition_width: 0.02
+  lcct_ramp_epochs: 5
+
+  # Host-independent auxiliary geometric supervision.
+  ufd_enabled: True
+  ufd_cdf_path: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/second_host/references/OPTIMIZED_REPRO_SOURCE/artifacts/ufd/difficulty_cdf_train640.json"
+  ufd_total_epochs: 102
+  ufd_k: 9
+  ufd_base_size: 640.0
+  ufd_alpha_h: 0.5
+  ufd_alpha_u_max: 0.0
+  ufd_lambda_max: 0.75
+  ufd_lambda_ramp_fraction: 0.05
+  ufd_reg_max: 32

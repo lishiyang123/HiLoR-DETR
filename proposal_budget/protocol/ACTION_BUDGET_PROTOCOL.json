@@ -1,0 +1,49 @@
+{
+  "protocol_name": "CDW1630_BUDGETED_SORTING_PROPOSAL_EVALUATION_v1",
+  "protocol_version": "1.2",
+  "status": "AMENDED_AFTER_INPUT_AUDIT_AND_BEFORE_SUCCESSFUL_EVALUATION",
+  "dataset": "CDW1630 official Test",
+  "methods": ["B0", "Full"],
+  "detector_seeds": [0, 1, 2],
+  "candidate_source": "final per-image Top-300 detections from the formal release",
+  "candidate_order": "descending final score; exact score ties preserve original prediction-record order",
+  "score_threshold": null,
+  "action_budgets_per_image": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "main_setting": {"K": 5, "iou_threshold": 0.75, "selection_basis": "Train-set median GT count"},
+  "sensitivity_iou_threshold": 0.8,
+  "matching": {
+    "successful_action": "same-category, non-crowd, previously unmatched GT with IoU >= tau",
+    "multiple_eligible_gt": "maximum IoU, then smaller annotation id for an exact IoU tie",
+    "duplicate_action": "no eligible unmatched GT, but a same-category already matched GT has IoU >= tau",
+    "other_invalid_precedence": [
+      "category_error: a different-category non-crowd GT has IoU >= tau",
+      "localization_insufficient: some same-category non-crowd GT has 0 < IoU < tau",
+      "background: otherwise"
+    ],
+    "crowd_policy": "crowd GT is excluded from matching and from the target denominator",
+    "empty_gt_images": "retained; every executed prediction is an other-invalid background action"
+  },
+  "metrics": {
+    "target_recall": "successful_actions / noncrowd_gt_count",
+    "valid_action_rate": "successful_actions / executed_actions",
+    "duplicate_action_rate": "duplicate_actions / executed_actions",
+    "other_invalid_rate": "other_invalid_actions / executed_actions",
+    "wasted_action_rate": "(duplicate_actions + other_invalid_actions) / executed_actions"
+  },
+  "aggregation": "compute full-Test counts and metrics separately for each method and seed; report three-seed mean, sample standard deviation, and paired Full-minus-B0 seed differences",
+  "input_audit": {
+    "expected_test_images": 237,
+    "expected_candidates_per_image": 300,
+    "bbox_format": "COCO xywh in image pixel coordinates",
+    "reject_unknown_image_or_category": true,
+    "reject_nonfinite_score_or_bbox": true,
+    "degenerate_bbox_policy": "count and report finite boxes with non-positive width or height; retain their score-queue positions, assign IoU zero, and count an executed degenerate candidate as an other-invalid background action",
+    "out_of_bounds_bbox_policy": "count and report boxes extending beyond image bounds; preserve the exported coordinates unchanged for matching; do not clip or discard",
+    "reject_exact_duplicate_detection_records": true,
+    "bind_all_inputs_by_sha256": true
+  },
+  "compute": {"training": false, "inference": false, "gpu_required": false},
+  "test_role": "post-hoc reporting only; no model, checkpoint, threshold, parameter, or protocol selection",
+  "claim_boundary": "This is an offline detection-driven sorting-proposal proxy. It does not measure physical grasp success, realized recovery rate, robot-cycle time, or a closed-loop robotic sorting system.",
+  "release_write": false
+}

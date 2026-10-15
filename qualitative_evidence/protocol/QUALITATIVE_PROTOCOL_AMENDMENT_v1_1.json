@@ -1,0 +1,86 @@
+{
+  "format_version": 2,
+  "protocol_revision": "1.1",
+  "status": "FROZEN_AFTER_V1_DIAGNOSTIC_BEFORE_V1_1_FORMAL_REANALYSIS",
+  "base_protocol": "QUALITATIVE_PROTOCOL_LOCK.json",
+  "base_protocol_sha256": "48841dadee8dc67ce0bfced25e4fe2b5051b9f0a5d342314285fbf032b5e9e2e",
+  "amendment_reason": "The v1 diagnostic showed that a common absolute score threshold is not a comparable case-ranking statistic when the proposed QCCR/UMR stages alter score distributions. The v1 outputs remain retained as superseded diagnostics and are excluded from the paper figure.",
+  "dataset": "CDW1630 official Test",
+  "detector_seed": 0,
+  "methods": [
+    "B0",
+    "Ours"
+  ],
+  "display": {
+    "score_threshold": 0.3,
+    "maximum_detections_per_image": 50,
+    "show_confidence": true,
+    "selection_independent_of_display_threshold": true,
+    "class_color_policy": "fixed color-blind-safe color per COCO category"
+  },
+  "paired_image_analysis": {
+    "score_threshold": null,
+    "maximum_detections_per_image": 100,
+    "matching": "class-aware greedy matching in descending prediction-score order",
+    "metric": "per-image 101-point interpolated AP pooled over annotated classes",
+    "iou_thresholds": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "mean_metric": "arithmetic mean of per-image AP at IoU 0.50:0.05:0.95",
+    "empty_ground_truth_policy": "not eligible for gain/failure selection"
+  },
+  "representative_selection": {
+    "prediction_blind": true,
+    "count": 6,
+    "rule": "six annotation-only medoids nearest fixed density-rank x overlap-rank targets",
+    "density_rank_targets": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "overlap_rank_targets": [
+      0.25,
+      0.75
+    ],
+    "distance": "squared Euclidean distance in empirical percentile-rank space",
+    "without_replacement": true,
+    "tie_break": "ascending integer image_id"
+  },
+  "balanced_gain_selection": {
+    "target_count": 3,
+    "minimum_count": 1,
+    "eligibility": {
+      "delta_image_mAP_50_95": "> 0",
+      "delta_image_AP75": "> 0",
+      "delta_image_AP50": ">= 0"
+    },
+    "ranking": "descending delta_image_AP75, then delta_image_mAP_50_95, then delta_image_AP50, then ascending image_id",
+    "exclude_representative_images": true,
+    "honest_shortfall": "use fewer than target_count when fewer eligible cases exist; never backfill with a trade-off case"
+  },
+  "failure_selection": {
+    "count": 2,
+    "rule": "lowest delta_image_mAP_50_95, then delta_image_AP75, then delta_image_AP50, then ascending image_id",
+    "exclude_representative_and_balanced_gain_images": true
+  },
+  "reporting_policy": {
+    "test_accessed": true,
+    "test_used_for_parameter_or_model_selection": false,
+    "detector_retraining": false,
+    "qccr_refitting": false,
+    "umr_refitting": false,
+    "prediction_rerun": false,
+    "purpose": "post-hoc qualitative reporting and disclosed error analysis only",
+    "all_candidate_ranks_retained": true,
+    "v1_fixed_threshold_outputs": "retained as superseded diagnostics; excluded from formal paper figures"
+  }
+}

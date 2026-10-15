@@ -1,0 +1,25 @@
+{
+  "evaluator": "faster-coco-eval",
+  "evaluator_version": "1.7.2",
+  "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "seeds": {
+    "0": {
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed0/best_val.pth",
+      "checkpoint_sha256": "f6581e9d6cd6b77178a70ad4fa225f9e0bc0e92bdfb2362570ec3c7f9cd33a84",
+      "predictions": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed0/predictions.json",
+      "predictions_sha256": "fa49ce0d3070116d2ef4c5907e139714b058ab93abb4e4c474cc4ec7cadc1605"
+    },
+    "1": {
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed1/best_val.pth",
+      "checkpoint_sha256": "3b4015d0d1ce8e44fb50a77e97ade5a488554f581f567837415e911f8c56e2b0",
+      "predictions": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed1/predictions.json",
+      "predictions_sha256": "6f048ca6189a601a371c5f464df4d91ec6cd775d18883f121db224e073a7bb8d"
+    },
+    "2": {
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed2/best_val.pth",
+      "checkpoint_sha256": "330829acabb2abd45863a243e9e2304141f6c99190dffd64e884cc4b4bab6ab0",
+      "predictions": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed2/predictions.json",
+      "predictions_sha256": "2510d0a15ffef3907671a0f85d5d486822db599b0f020c5b11f3b2fc9c07fb84"
+    }
+  }
+}

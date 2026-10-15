@@ -1,0 +1,22 @@
+{
+  "density": {
+    "high_rule": "N_i > threshold",
+    "low_rule": "N_i <= threshold",
+    "strategy": "median",
+    "threshold": 5
+  },
+  "format_version": 1,
+  "overlap": {
+    "high_rule": "O_i > threshold",
+    "low_rule": "O_i <= threshold",
+    "positive_score_images": 856,
+    "strategy": "positive_median",
+    "threshold": 0.1253488033216294,
+    "train_median": 0.1253488033216294,
+    "train_q75": 0.2754135316844189,
+    "zero_score_images": 288
+  },
+  "source_split": "Train",
+  "test_metrics_consulted": false,
+  "train_image_count": 1144
+}

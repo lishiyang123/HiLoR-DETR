@@ -1,0 +1,15 @@
+{
+  "data_authority": "main_host/datasets/CDW1630",
+  "model": "YOLOv12-M",
+  "no_training_executed_by_layout_tool": true,
+  "not_a_training_config": true,
+  "path": "01_YOLO_SERIES/YOLOv12_M_TRAINED",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_repository": "https://github.com/sunsmarterjie/yolov12",
+  "status": "PLANNED",
+  "training_settings": "PENDING_AUDIT_AND_LOCK"
+}

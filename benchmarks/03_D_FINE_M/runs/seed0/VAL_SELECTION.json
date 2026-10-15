@@ -1,0 +1,18 @@
+{
+  "best_epoch_one_based": 49,
+  "best_epoch_zero_based": 48,
+  "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/03_D_FINE_M/runs/seed0/best_stg1.pth",
+  "checkpoint_epoch_audit": "stage1_zero_based_equal",
+  "checkpoint_sha256": "26ae7c6017ad413f10b0500b368c2c8c2ba78a3bf07d88be819807b80c91edeb",
+  "formal_config_sha256": "5259d990a3998040829dbe9d6bed998d6c1f4ce4215d1478b2851b3d31bca24e",
+  "log_sha256": "89bdf0a373d93d3b9d1f7b89d0599cf8c7f8efd397ea7c0d8ab16f435c84ea51",
+  "official_checkpoint_counter": 48,
+  "official_weight_sha256": "b44a7586bf490858c7b8bce9e44bd025cb88724df9a07a8deb3ae1c12e608195",
+  "recovery_amendment": "SOTA_DFINE_M_TRAINING_RECOVERY_v1",
+  "seed": 0,
+  "source_commit": "956d1709314c2c6a4df6f34de232054578a7449f",
+  "test_access": false,
+  "val_ap": 0.7694770996532916,
+  "val_ap50": 0.9747478036101663,
+  "val_ap75": 0.8769698581680913
+}

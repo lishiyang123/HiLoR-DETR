@@ -1,0 +1,162 @@
+{
+  "schema": "cdw1630-official-yolov8-yolo11-effective-batch8-test-v1.1",
+  "status": "FROZEN_BEFORE_TEST_INFERENCE",
+  "package": "benchmarks",
+  "state_root": "SOTA_YOLOV8_YOLO11_BATCH8_TEST_STATE_v1_2",
+  "superseded_failed_state_root": "SOTA_YOLOV8_YOLO11_BATCH8_TEST_STATE_v1",
+  "models": [
+    {
+      "key": "YOLOv8_L_OFFICIAL",
+      "name": "YOLOv8-L",
+      "directory": "01_YOLO_SERIES/YOLOv8_L_OFFICIAL",
+      "weight": "01_YOLO_SERIES/OFFICIAL_ASSETS_INBOX/YOLOv8l.pt",
+      "weight_md5": "29dfa5d726d4b51cb693d3b026c69d98"
+    },
+    {
+      "key": "YOLOv11_L_OFFICIAL",
+      "name": "YOLO11-L",
+      "directory": "01_YOLO_SERIES/YOLOv11_L_OFFICIAL",
+      "weight": "01_YOLO_SERIES/OFFICIAL_ASSETS_INBOX/YOLOv11l.pt",
+      "weight_md5": "32ce83b42455218a0a100921efc49c01"
+    }
+  ],
+  "dataset": {
+    "images_path": "main_host/datasets/CDW1630/test2017",
+    "annotation_path": "main_host/datasets/CDW1630/annotations/instances_test2017.json",
+    "images": 237,
+    "annotations": 1071,
+    "category_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "category_names": [
+      "Brick",
+      "Concrete",
+      "Plastic Bottle",
+      "Reinforcement",
+      "timber"
+    ]
+  },
+  "class_mapping": {
+    "policy": "identity_by_class_index_with_frozen_display_name_aliases",
+    "aliases": [
+      {
+        "id": 0,
+        "canonical": "Brick",
+        "allowed_checkpoint_names": [
+          "Brick"
+        ]
+      },
+      {
+        "id": 1,
+        "canonical": "Concrete",
+        "allowed_checkpoint_names": [
+          "Concrete"
+        ]
+      },
+      {
+        "id": 2,
+        "canonical": "Plastic Bottle",
+        "allowed_checkpoint_names": [
+          "Plastic Bottle",
+          "PlasticBottle"
+        ]
+      },
+      {
+        "id": 3,
+        "canonical": "Reinforcement",
+        "allowed_checkpoint_names": [
+          "Reinforcement"
+        ]
+      },
+      {
+        "id": 4,
+        "canonical": "timber",
+        "allowed_checkpoint_names": [
+          "timber",
+          "Timber"
+        ]
+      }
+    ],
+    "source": "pre-existing frozen official-YOLO evaluation amendment v1.1",
+    "changes_class_ids": false,
+    "changes_predictions_or_metrics": false
+  },
+  "inference": {
+    "device": 0,
+    "imgsz": 640,
+    "batch": 8,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "augment": false,
+    "agnostic_nms": false,
+    "rect": false,
+    "seed": 0,
+    "source_type": "directory_path_string",
+    "allowed_loader_classes": [
+      "LoadImagesAndVideos",
+      "LoadImages"
+    ]
+  },
+  "evaluation": {
+    "implementation": "faster_coco_eval.COCOeval_faster",
+    "version": "1.7.2",
+    "iou_type": "bbox",
+    "maxDets": [
+      1,
+      10,
+      100
+    ],
+    "metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "APs",
+      "APm",
+      "APl",
+      "AR1",
+      "AR10",
+      "AR100",
+      "ARs",
+      "ARm",
+      "ARl",
+      "AP80",
+      "AP85",
+      "AP90",
+      "AP95"
+    ],
+    "replay_tolerance": "exact",
+    "historical_parity_guard_metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "AR100"
+    ],
+    "historical_parity_guard_max_abs_metric_delta": 0.005
+  },
+  "runtime": {
+    "inference_python": "/root/autodl-tmp/envs/yolo_sota_eval/bin/python",
+    "evaluation_python": "/root/autodl-tmp/envs/deim_cvpr2025/bin/python",
+    "expected_ultralytics": "8.3.221",
+    "expected_torch": "2.5.1+cu124"
+  },
+  "accuracy_builder": "SOTA_EIGHT_MODEL_ACCURACY_STATISTICS_v1_1",
+  "final_verifier": "SOTA_FINAL_RELEASE_CLEANUP_v1",
+  "canonical_protocol_destination": "00_PROTOCOL/OFFICIAL_YOLO_BATCH8_TEST_v1",
+  "result_files": [
+    "predictions.coco.json",
+    "images_seen.json",
+    "runtime.json",
+    "metrics.json",
+    "SUMMARY.md",
+    "RESULT_MANIFEST.sha256"
+  ],
+  "test_model_or_parameter_selection": false,
+  "fitting_on_test": false,
+  "training_executed": false
+}

@@ -1,0 +1,168 @@
+{
+  "dataset": "CDW1630",
+  "detector_retrained": false,
+  "external_assets": {
+    "source_manifest": {
+      "path": "../../../main_host/source/FINAL_CODE/SOURCE_MANIFEST.json",
+      "sha256": "a0fcca24b2c1cf698871d51d1d5fbf0313d1380d36c4853a8087a63721238e57",
+      "size": 15146
+    },
+    "seed0_b0_checkpoint": {
+      "path": "../../../main_host/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+      "sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054",
+      "size": 313662676
+    },
+    "seed0_b0_eval": {
+      "path": "../../../main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+      "sha256": "67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42",
+      "size": 1227668
+    },
+    "seed1_b0_checkpoint": {
+      "path": "../../../main_host/checkpoints/CDW1630/B0/seed1/best_stg2.pth",
+      "sha256": "422ec0956963b07f59d2cdd29488bdedcf24fc23f02697bfb817adcb2d5a550d",
+      "size": 313662612
+    },
+    "seed1_b0_eval": {
+      "path": "../../../main_host/results/CDW1630/B0/seed1/official_test/eval.pth",
+      "sha256": "c605384b7c8d9615121f38de4cc81b12bccb63d005e3e3a57ace0dfcb288698f",
+      "size": 1230484
+    },
+    "seed2_b0_checkpoint": {
+      "path": "../../../main_host/checkpoints/CDW1630/B0/seed2/best_stg2.pth",
+      "sha256": "a056c7e0686c4d893b971eef397281501dd772e2607436864ba0669142c922f0",
+      "size": 313662612
+    },
+    "seed2_b0_eval": {
+      "path": "../../../main_host/results/CDW1630/B0/seed2/official_test/eval.pth",
+      "sha256": "fb52d5cebbfba4c30abff96b0adbd067083ffc07c5f4cd60bfcb0242e03e9ccf",
+      "size": 1225940
+    }
+  },
+  "local_assets": {
+    "seed0_eval": {
+      "path": "results/seed0/eval.pth",
+      "sha256": "42955834cf03c9edccd1c655c1d38bcf003816556d139ab1997b9d8b56480449",
+      "size": 1249172
+    },
+    "seed0_exact_metrics": {
+      "path": "results/seed0/EXACT_METRICS.json",
+      "sha256": "bb3cb9a6df83e505cb9d62bb4edafda203282bcac97814b4d2b9ae42a8af88a4",
+      "size": 1595
+    },
+    "seed0_qccr": {
+      "path": "calibration/seed0/qccr_params.json",
+      "sha256": "84b40aaab9d4ffc887192e27b6b0088e37c00196d6821fcf74c470d4d6d358d6",
+      "size": 1791
+    },
+    "seed0_qccr_only_eval": {
+      "path": "results/seed0/qccr_only_eval.pth",
+      "sha256": "0940355b4bedd5a02790c6dd98466230ce149f93e8e6b72d53cbd3b6f1ec4e27",
+      "size": 1237588
+    },
+    "seed0_qccr_only_exact": {
+      "path": "results/seed0/QCCR_ONLY_EXACT_METRICS.json",
+      "sha256": "60116d986a8264cffe534aac44d1b5b43d22c8737b07d15f7287076a97909935",
+      "size": 997
+    },
+    "seed0_umr_metadata": {
+      "path": "calibration/seed0/UMR_METADATA.json",
+      "sha256": "a3c4a16f5cf7d867e34006060399c0dd3b2461fa5b55b49f6386094dfd6badc8",
+      "size": 542
+    },
+    "seed0_umr_weight": {
+      "path": "calibration/seed0/umr_mlp_head_seed0_pw4.pt",
+      "sha256": "295cdb7075f3d54c0acdc51fffd070f43fd8fe4f3947b8ae3b65e342f246793f",
+      "size": 64186
+    },
+    "seed1_eval": {
+      "path": "results/seed1/eval.pth",
+      "sha256": "ed66aae40bde73999a084a89f1bb6b5468b44963321188135d186ead432c5628",
+      "size": 1248980
+    },
+    "seed1_exact_metrics": {
+      "path": "results/seed1/EXACT_METRICS.json",
+      "sha256": "1cabb48b3ba5bb865fc8aca0bb1a5cb83b3e2745a973c8fde314ff6aed622650",
+      "size": 1625
+    },
+    "seed1_qccr": {
+      "path": "calibration/seed1/qccr_params.json",
+      "sha256": "59b80f8c89de86fc1e1b7ad068fac9acdb0cee5349bea25499f7116558325b22",
+      "size": 1828
+    },
+    "seed1_qccr_only_eval": {
+      "path": "results/seed1/qccr_only_eval.pth",
+      "sha256": "33292ed6d979e55ba04b9cc680850f2c5670a7014b609125c19e5d18de327f7c",
+      "size": 1245716
+    },
+    "seed1_qccr_only_exact": {
+      "path": "results/seed1/QCCR_ONLY_EXACT_METRICS.json",
+      "sha256": "da6567aa47b7b5b830865f964f1029a4f62297538e2431ba0cbf390cda5d4abc",
+      "size": 1014
+    },
+    "seed1_umr_metadata": {
+      "path": "calibration/seed1/UMR_METADATA.json",
+      "sha256": "42e2f384f2c66705630de8a834a8b19924e3fb4b50c5e3075694d342714c7489",
+      "size": 542
+    },
+    "seed1_umr_weight": {
+      "path": "calibration/seed1/umr_mlp_head_seed0_pw4.pt",
+      "sha256": "992fd0cf2d0c1a089b7d7d6d3312e9a9e1738ccb255903c44362153037c1ff3c",
+      "size": 64186
+    },
+    "seed2_eval": {
+      "path": "results/seed2/eval.pth",
+      "sha256": "089d5d3c6b02605b13814c56aafb45777a0f88db4aca8ef6f6692f878e7f4e3d",
+      "size": 1246164
+    },
+    "seed2_exact_metrics": {
+      "path": "results/seed2/EXACT_METRICS.json",
+      "sha256": "2f820555e83212375cacc13476abf0275c567e1f826de6f9c5ded664b019c2a3",
+      "size": 1596
+    },
+    "seed2_qccr": {
+      "path": "calibration/seed2/qccr_params.json",
+      "sha256": "0589a1badb827beeaadc2be64ba3b6b276fb3fdb623cdbd0c8bf6add9ef8b675",
+      "size": 1832
+    },
+    "seed2_qccr_only_eval": {
+      "path": "results/seed2/qccr_only_eval.pth",
+      "sha256": "2b3bddcd96067b59387525a5b4bc26903f78cd6043285e061994fa388666fb23",
+      "size": 1237524
+    },
+    "seed2_qccr_only_exact": {
+      "path": "results/seed2/QCCR_ONLY_EXACT_METRICS.json",
+      "sha256": "c5e9f5751905588a3acb0b387932090784a795606e9592ba63614dfe2def8a8e",
+      "size": 998
+    },
+    "seed2_umr_metadata": {
+      "path": "calibration/seed2/UMR_METADATA.json",
+      "sha256": "e08b4ff5c8569fedd7cfe24e315bade5963b15369f25e481ab0f59ff92f2768f",
+      "size": 542
+    },
+    "seed2_umr_weight": {
+      "path": "calibration/seed2/umr_mlp_head_seed0_pw4.pt",
+      "sha256": "cd345b6639f4adc933c75312f5e302b568c5078ac17c6c2786bf7a52d09a9e59",
+      "size": 64186
+    }
+  },
+  "qccr_lambda_reg": 0.001,
+  "rows": [
+    "B0",
+    "B0_QCCR",
+    "B0_QCCR_UMR"
+  ],
+  "schema": "cdw1630-b0-postprocess-three-row-assets-v2",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "test_used_for_selection": false,
+  "umr_tuple": {
+    "beta": 2.0,
+    "head_seed": 0,
+    "positive_weight": 4,
+    "tau": 0.0,
+    "topk": 300
+  }
+}

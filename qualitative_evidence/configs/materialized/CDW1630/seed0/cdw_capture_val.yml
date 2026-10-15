@@ -1,0 +1,7 @@
+__include__: [./cdw_train.yml]
+val_dataloader:
+  dataset:
+    img_folder: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/val2017"
+    ann_file: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_val2017.json"
+  total_batch_size: 8
+  num_workers: 4

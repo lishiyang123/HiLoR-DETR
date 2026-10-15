@@ -1,0 +1,15 @@
+{
+  "change": "remove legacy pw-grid supplementary claim; fix pw=4 and evaluate only corrected tau-by-beta grid",
+  "inventory_sha256": "fce4fe61c2c8f550d2051d5384c8256f1f4b5656282fc9e1e34d4098f3ed9a41",
+  "timing": "before all sensitivity measurements; claimed_results=0",
+  "trigger": "formal asset inventory established that the old 60-row UMR grid predates the corrected competitor semantics",
+  "unchanged": [
+    "detector seed0-only policy",
+    "LCCT delta grid",
+    "QCCR lambda grid and OOF rules",
+    "UMR tau grid",
+    "UMR beta grid",
+    "topk=300",
+    "Test prohibition"
+  ]
+}

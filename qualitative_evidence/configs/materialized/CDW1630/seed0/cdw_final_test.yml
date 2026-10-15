@@ -1,0 +1,8 @@
+__include__: [./cdw_qccr_test.yml]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/qualitative_evidence/runtime_outputs/config_declared_only/QCCR_UMR_MLP/test"
+PostProcessor:
+  umr_enabled: True
+  umr_topk: 300
+  umr_tau: 0.0
+  umr_beta: 2.0
+  umr_checkpoint: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/models/umr_mlp_seed0_pw4_best.pt"

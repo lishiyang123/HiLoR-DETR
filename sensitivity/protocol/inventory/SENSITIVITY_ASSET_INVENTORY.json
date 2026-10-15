@@ -1,0 +1,1074 @@
+{
+  "decision": {
+    "legacy_umr_grid": "EXCLUDE",
+    "qccr": "IMPORT_EXISTING",
+    "training": "REUSE_CENTER_AND_TRAIN_TWO_OUTER_LEVELS",
+    "umr": "RUN_GRID_EVALUATION_ONLY"
+  },
+  "evaluation_executed": false,
+  "final_source": {
+    "files": 123,
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1",
+    "sha256": "8ab1c7e6e46d4b68bcef655bd176c807629dc1c9ea984fb4e01cfc35388362bf"
+  },
+  "fitting_executed": false,
+  "gpu_used": false,
+  "inventory_version": "1.0",
+  "protocol": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/sensitivity/protocol/PROTOCOL_LOCK.json",
+    "sha256": "e7ba4a90729f284e56ce1986e9f47e6519f2666ea1f8d8c4b9c0033423faad24"
+  },
+  "qccr": {
+    "all_complete_fit_candidates": [
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed0_run_20260913_215353_386011/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "77e51541ac9d275cf6f9baa813fcb1f325e8e269f857d5ff3f315c9c11d80e04"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed1_run_20260913_215824_390093/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "dce109c1768cbbe07063c2c082d7cc7dc06a43121471c3a097ab2117f2394d54"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed2_run_20260913_215922_393973/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "9e5b71f083eda40d3438cec9ffd48df2e9e6747ee4035d3df2033d26f2d0dad3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed1/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "27391668f60f4d1d5c60b5f967a5ae799d0029d95eabe519b47e42a4f5a26172"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed2/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "64c7a37a77ce8c216a23cd10a8fddc750ab12594543ae395790fd92975dae81c"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed1/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "27391668f60f4d1d5c60b5f967a5ae799d0029d95eabe519b47e42a4f5a26172"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed2/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "64c7a37a77ce8c216a23cd10a8fddc750ab12594543ae395790fd92975dae81c"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_A1_QCCR_UMR_REFIT_v1/runs/run_20260911_140757_126340/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "b1bc3c4e98d198c70137bda40d5fb80fcdc6e2c2b0f32a63f391b38955188b12"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED1_FINAL_v1/runs/run_20260912_160731_124021/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "27391668f60f4d1d5c60b5f967a5ae799d0029d95eabe519b47e42a4f5a26172"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED2_FINAL_v1/runs/run_20260912_191214_280119/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "64c7a37a77ce8c216a23cd10a8fddc750ab12594543ae395790fd92975dae81c"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_NO_GGLH_SEED12_FIXED_SEED0_v1/runs/run_seed1_20260911_223600_489188/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "74f77785300f28091ac41a6e93df81e9bdbe633be5f05bec6a03b40fce6de6b6"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_NO_GGLH_SEED12_FIXED_SEED0_v1/runs/run_seed2_20260911_234432_524392/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "026a0681f340041fe81fd06226cc40d2adf2be6c7ce14e3f0c50e21e49e999f3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_SEED0_CURRENT_QCCR_UMR_REFIT_v1/runs/run_20260911_014647_639148/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "0b4376fa061c94168997b174516abd58caabeb5b20bdfd30d18f5b8d7471d451"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_SEED1_QCCR_UMR_REFIT_v1/run_20260910_205500/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "7ad8544c503f82d1a2cba58bac0dd5973f6f927d4c60b841c909bf2ea80335fe"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_SEED2_QCCR_UMR_REFIT_v1/run_20260910_211003/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "fc2112a0a653e379bc4c12aba8f8e67a3df80b1890699ffa4a6dfd6279540159"
+      }
+    ],
+    "all_complete_summary_candidates": [
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed0_run_20260913_215353_386011/qccr/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "5053ac1d79a0716a56b026868af77c0d99a407426ac8687cf48a70aa1c228d6b",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed0_run_20260913_215353_386011/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.0001,
+        "sha256": "4c09bf0d7e496aef29017081c1d097e2793a81a87463c2543b313be8eaf79e7a",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed1_run_20260913_215824_390093/qccr/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f51b34b3e8a6bdbc12d65953b744bf521247c5a06ef0a8edcf6210b2deebbf94",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed1_run_20260913_215824_390093/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.0001,
+        "sha256": "5a18b35666782509c249fd4665f0dfcf34014a953274909389ebbbd124530c95",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed2_run_20260913_215922_393973/qccr/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "2fe415c12c5566f8752cf78df3e113a898ce6dd6bc42d3f0d9ea0de751c2db4b",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed2_run_20260913_215922_393973/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "7158417c496233a13c0a9ebf85e838c45fa40220d4a31d40a3c76435b767528c",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/DU_FDR/diagnostics/NO_PGLR_FAST_REFIT_v1_runs/run_20260907_180932_94194/results/qccr_oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "029eec0ea2cc30a2a87e3e651ca2ca12419d4c6bea355a44c45391624147e047",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/DU_FDR/diagnostics/QCCR_v1_build/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "9a8e476540e27c09ac8d959367a33edcd2d5551a8e59eb89c8f259f5f370fc1a",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed1/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "13270fe03bc2634baf61520491dced37e79501b7ececbffbbb7779a757ae98a3",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed2/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "0ebc8d4cb02af9b7bdce0d37a9834d2feb6d6c2718fa3f1b029dbf80f02d16b0",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/FINAL_RELEASE_QUARANTINE_20260914/CDW_OLD_BTC/source/BTC_REPRO_SOURCE_v1/artifacts/selection/OOF_VAL_SUMMARY.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.0001,
+        "sha256": "a05331ededbd614101add8eecca3a18382f83d630572916f70e51be8ce4205bc",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed1/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "13270fe03bc2634baf61520491dced37e79501b7ececbffbbb7779a757ae98a3",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed2/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "0ebc8d4cb02af9b7bdce0d37a9834d2feb6d6c2718fa3f1b029dbf80f02d16b0",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_A1_QCCR_UMR_REFIT_v1/runs/run_20260911_140757_126340/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "ba11d2becb81b44015554b5eeeaa75f89fd80c4e5dad603004e4ef8a05ab6cfe",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/qccr/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "54b9ddfa48693e8baec74b4941c92578510e0ccdd7bd0f6ebff8f845d616105c",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED1_FINAL_v1/runs/run_20260912_160731_124021/qccr/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "13270fe03bc2634baf61520491dced37e79501b7ececbffbbb7779a757ae98a3",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED1_FINAL_v1/runs/run_20260912_160731_124021/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "97d117da96847903a4d64592373a2496f7c6258d9d28e9fac6ca5ef5868da6d1",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED2_FINAL_v1/runs/run_20260912_191214_280119/qccr/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "0ebc8d4cb02af9b7bdce0d37a9834d2feb6d6c2718fa3f1b029dbf80f02d16b0",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED2_FINAL_v1/runs/run_20260912_191214_280119/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "c1709ae932a26d8d348c785e397227b4234bb5f1f8e8339422e336bd728da6d2",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_NO_GGLH_SEED12_FIXED_SEED0_v1/runs/run_seed1_20260911_223600_489188/qccr/oof_summary_fixed_seed0.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "75a2ebba190c11a4f3d2d0f90122b8493d22eff65ded91ccd1e248c0731c8e77",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_NO_GGLH_SEED12_FIXED_SEED0_v1/runs/run_seed1_20260911_223600_489188/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.01,
+        "sha256": "6eb5f9f4299c747c51df13f0280086714ff41ccd2af376f289f8e9f0984d0d66",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_NO_GGLH_SEED12_FIXED_SEED0_v1/runs/run_seed2_20260911_234432_524392/qccr/oof_summary_fixed_seed0.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "1b5014fc136e1d5825060a45063cf3bf231b6e99e434778c24ebd235112c3d14",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_NO_GGLH_SEED12_FIXED_SEED0_v1/runs/run_seed2_20260911_234432_524392/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.01,
+        "sha256": "c100176b5164ffb32543190a37cc424d223217cb48c736a20a57130de3cff34e",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_QCCR_POLICY_V2_CONTINUE_v1/runs/run_20260911_020414_640396/seed0/oof_summary_policy_v2.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.01,
+        "sha256": "993f3c7162c24bc40259b29ba298910c3c3a2faf74d0aa72c4aaf343e377fa20",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_QCCR_POLICY_V2_CONTINUE_v1/runs/run_20260911_020414_640396/seed1/oof_summary_policy_v2.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "592e68ed16cb0eb7580fc734b5ff8699751a0ab3941fd5ea9dce16ba3036b152",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_QCCR_POLICY_V2_CONTINUE_v1/runs/run_20260911_020414_640396/seed2/oof_summary_policy_v2.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "66c02e072639c1fda67eaa05dc00ee3d7dd58ff0ce2ecf2f78b336d92755cb59",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_SEED0_CURRENT_QCCR_UMR_REFIT_v1/runs/run_20260911_014647_639148/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "cf9633d380d5eb3578dceb0d42a0c179baa08d4a10ce83bd519a3c3cb251c057",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_SEED1_QCCR_UMR_REFIT_v1/run_20260910_205500/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "13333f5e7e0d4e2bc07adffecf99898aeb8bd85ba7ff6f9db1b441befd7cf025",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": false,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_SEED2_QCCR_UMR_REFIT_v1/run_20260910_211003/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.01,
+        "sha256": "f2fd9511fdc669a5d381c4a6b2c939e9d74f974698ba53111ee3c8126e820868",
+        "test_accessed": false
+      }
+    ],
+    "detector_training_required": false,
+    "exact_fit_records": [
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "fold_count": 5,
+        "lambda_1e3_parameters_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/qccr/qccr_fits.json",
+        "seed": 0,
+        "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+      }
+    ],
+    "exact_oof_summaries": [
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ablations/evidence/training/seed0/Ours/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/qccr/oof_summary_fixed.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": 0.001,
+        "sha256": "f69d925ece591d8978e7ec75d2c6170298e51d1c831ee89b97c46261a58b57f7",
+        "test_accessed": false
+      },
+      {
+        "candidate_keys": [
+          "1e-01",
+          "1e-02",
+          "1e-03",
+          "1e-04"
+        ],
+        "decision": "OOF_VAL_NO_GO",
+        "lambda_1e3_metrics_match_final": true,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/qccr/oof_val/oof_summary.json",
+        "protocol": "image-level-five-fold-OOF-Val",
+        "selected_lambda_reg": null,
+        "sha256": "54b9ddfa48693e8baec74b4941c92578510e0ccdd7bd0f6ebff8f845d616105c",
+        "test_accessed": false
+      }
+    ],
+    "expected_grid_keys": [
+      "1e-01",
+      "1e-02",
+      "1e-03",
+      "1e-04"
+    ],
+    "final_artifact": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/qccr/qccr_params.json",
+      "sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8"
+    },
+    "status": "COMPLETE_REUSABLE",
+    "test_accessed_by_inventory": false
+  },
+  "status": "PASS",
+  "test_accessed": false,
+  "training_executed": false,
+  "training_side": {
+    "checkpoint_manifest_entries": [
+      {
+        "path": "checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+        "sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+        "size": 314208414
+      }
+    ],
+    "detector_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+    "new_training_still_required": {
+      "lcct_delta_0.01": true,
+      "lcct_delta_0.04": true
+    },
+    "status": "CENTER_REUSE_CANDIDATE_COMPLETE",
+    "test_accessed_by_inventory": false,
+    "training_log_manifest_entries": [
+      {
+        "path": "training_records/CDW1630/Ours/seed0/log.txt",
+        "sha256": "e536df2f1efb84df93194d26f3f2e6225261c2eae5f960dec7d75b1a1524b9e2",
+        "size": 345936
+      }
+    ]
+  },
+  "umr": {
+    "corrected_head_assets": [
+      {
+        "asset": {
+          "bytes": 64186,
+          "expected_sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_UMR_OVERLAP_COMPETITOR_REFIT_v1/runs/run_20260913_144226_38402/refit/models/umr_seed0_pw4_best.pt",
+          "sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82",
+          "status": "PASS"
+        },
+        "seed": 0
+      },
+      {
+        "asset": {
+          "bytes": 64186,
+          "expected_sha256": "dc9d2a1ee3e618f65005aedbddf5ceb3d9995133d024da3a0680c26d25f30467",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_UMR_OVERLAP_COMPETITOR_REFIT_v1/runs/run_20260913_144226_38402/refit/models/umr_seed1_pw4_best.pt",
+          "sha256": "dc9d2a1ee3e618f65005aedbddf5ceb3d9995133d024da3a0680c26d25f30467",
+          "status": "PASS"
+        },
+        "seed": 1
+      },
+      {
+        "asset": {
+          "bytes": 64186,
+          "expected_sha256": "65622dd4d32967fa4095e462630b09c72ef0e37a3a0847a037458a5eaeba03ff",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_UMR_OVERLAP_COMPETITOR_REFIT_v1/runs/run_20260913_144226_38402/refit/models/umr_seed2_pw4_best.pt",
+          "sha256": "65622dd4d32967fa4095e462630b09c72ef0e37a3a0847a037458a5eaeba03ff",
+          "status": "PASS"
+        },
+        "seed": 2
+      }
+    ],
+    "corrected_head_seeds_complete": true,
+    "corrected_selection_grid": {
+      "beta": [
+        2.0
+      ],
+      "pw": [
+        4
+      ],
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "tau": [
+        0.0
+      ]
+    },
+    "corrected_selection_is_frozen_tuple_only": true,
+    "detector_training_required": false,
+    "final_metadata": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/models/umr_mlp_seed0_pw4_best.metadata.json",
+      "sha256": "a2913b15e778642187620241f23ce6d2ffd749a6a5718b2a7017329310ca5f4f"
+    },
+    "legacy_full_grid": {
+      "classification": "LEGACY_PRE_CORRECTION_SEMANTICS__DO_NOT_USE_AS_FINAL_SENSITIVITY",
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/provenance/MLP_VAL_GRID_MEAN.csv",
+      "rows": 60,
+      "sha256": "bf062a4d15f33c5309f42c603afee428267d25e473dc5d85374f3dd67bd62622",
+      "unique_combinations": 60
+    },
+    "required_next_operation": "evaluate frozen tau-by-beta grid on Val with the three corrected pw4 heads",
+    "semantic_audit": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/provenance/UMR_DISJOINT_COMPETITOR_AUDIT.json",
+      "sha256": "97bc0abe94354c218fb3b45548fd3d25201865a9fa664333e20d1869d54972c0"
+    },
+    "status": "CORRECTED_ASSETS_COMPLETE__GRID_EVALUATION_ONLY",
+    "test_accessed_by_inventory": false,
+    "umr_head_refit_required": false,
+    "val_capture": {
+      "bytes": 82784302,
+      "expected_sha256": "62594e1900e255fb1ed295b9356471935a0c562de5c5c10918edd1e68f5ade6b",
+      "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/capture/cdw_bounded_lcct_seed0_val_capture.pt",
+      "sha256": "62594e1900e255fb1ed295b9356471935a0c562de5c5c10918edd1e68f5ade6b",
+      "status": "PASS"
+    }
+  }
+}

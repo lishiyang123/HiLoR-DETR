@@ -1,0 +1,31 @@
+{
+  "claimed_results": 3,
+  "inference_side": {
+    "QCCR_LAMBDA": {
+      "status": "COMPLETE__IMPORTED_SHA_VERIFIED_OOF_VAL"
+    },
+    "UMR_TAU_BETA": {
+      "status": "COMPLETE__CORRECTED_SEMANTICS__VAL_ONLY"
+    }
+  },
+  "overall_status": "COMPLETE__TRAINING_AND_INFERENCE_SENSITIVITY",
+  "package": "sensitivity",
+  "protocol_version": "1.2",
+  "schema_version": 1,
+  "test_access_policy": "FORBIDDEN_FOR_ALL_SENSITIVITY_MEASUREMENT",
+  "test_accessed": false,
+  "test_used_for_parameter_selection": false,
+  "training_side": {
+    "center": 0.02,
+    "grid": [
+      0.005,
+      0.01,
+      0.02,
+      0.04,
+      0.08
+    ],
+    "result": "01_TRAINING_SIDE/results/CURRENT/LCCT_DELTA_FIVE_POINT_VAL.json",
+    "scope": "LCCT delta five-point seed0 Val sensitivity",
+    "status": "COMPLETE"
+  }
+}

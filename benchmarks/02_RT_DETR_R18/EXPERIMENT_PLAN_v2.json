@@ -1,0 +1,18 @@
+{
+  "state": "COMPLETE",
+  "host": "RT-DETR-R18",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 102,
+  "training_batch": 4,
+  "eval_batch": 8,
+  "precision": "FP32",
+  "ema": true,
+  "initialization": "official COCO",
+  "checkpoint_selection": "maximum Val AP; earliest exact tie",
+  "evaluator": "faster-coco-eval",
+  "evaluator_version": "1.7.2"
+}

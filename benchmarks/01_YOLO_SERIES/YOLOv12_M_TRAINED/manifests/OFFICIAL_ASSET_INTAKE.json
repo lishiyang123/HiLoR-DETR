@@ -1,0 +1,18 @@
+{
+  "checkpoint_loaded": false,
+  "dataset_copied": false,
+  "gpu_used": false,
+  "model": "YOLO12-M (turbo)",
+  "plan_sha256": "57e4453d5602298fe53a46e19bf4f1257b71116b29cde3d96b273315152452bb",
+  "schema": "cdw1630-sota-official-asset-record-v1",
+  "source_clean_tracked": true,
+  "source_commit": "28a618bb06f38eef5402ae8f7326e86063db93de",
+  "source_repository": "https://github.com/sunsmarterjie/yolov12",
+  "source_tag": "turbo",
+  "test_accessed": false,
+  "weight_bytes": 39868115,
+  "weight_filename": "yolov12m.pt",
+  "weight_sha256": "1b5eb229105a69db0ead76b82fd6edb85673716ed898f1c5b16f77ceba23d5a1",
+  "weight_training_scope": "COCO only; turbo variant",
+  "weight_url_claimed_by_downloader": "https://github.com/sunsmarterjie/yolov12/releases/download/turbo/yolov12m.pt"
+}

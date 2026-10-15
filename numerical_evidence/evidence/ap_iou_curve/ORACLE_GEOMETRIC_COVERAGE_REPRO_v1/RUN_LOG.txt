@@ -1,0 +1,97 @@
+Existing preflight bindings verified
+Starting DEIM seed 0
+building val_dataloader with batch_size=8...
+     ### Transform @Resize ###    
+     ### Transform @ConvertPILImage ###    
+DEIM seed 0: batch 1/30, images 8
+DEIM seed 0: batch 11/30, images 88
+DEIM seed 0: batch 21/30, images 168
+DEIM seed 0: batch 30/30, images 237
+Capture PASS: DEIM seed 0
+Starting GCCS seed 0
+building val_dataloader with batch_size=8...
+     ### Transform @Resize ###    
+     ### Transform @ConvertPILImage ###    
+GCCS seed 0: batch 1/30, images 8
+GCCS seed 0: batch 11/30, images 88
+GCCS seed 0: batch 21/30, images 168
+GCCS seed 0: batch 30/30, images 237
+Capture PASS: GCCS seed 0
+Starting DEIM seed 1
+building val_dataloader with batch_size=8...
+     ### Transform @Resize ###    
+     ### Transform @ConvertPILImage ###    
+DEIM seed 1: batch 1/30, images 8
+DEIM seed 1: batch 11/30, images 88
+DEIM seed 1: batch 21/30, images 168
+DEIM seed 1: batch 30/30, images 237
+Capture PASS: DEIM seed 1
+Starting GCCS seed 1
+building val_dataloader with batch_size=8...
+     ### Transform @Resize ###    
+     ### Transform @ConvertPILImage ###    
+GCCS seed 1: batch 1/30, images 8
+GCCS seed 1: batch 11/30, images 88
+GCCS seed 1: batch 21/30, images 168
+GCCS seed 1: batch 30/30, images 237
+Capture PASS: GCCS seed 1
+Starting DEIM seed 2
+building val_dataloader with batch_size=8...
+     ### Transform @Resize ###    
+     ### Transform @ConvertPILImage ###    
+DEIM seed 2: batch 1/30, images 8
+DEIM seed 2: batch 11/30, images 88
+DEIM seed 2: batch 21/30, images 168
+DEIM seed 2: batch 30/30, images 237
+Capture PASS: DEIM seed 2
+Starting GCCS seed 2
+building val_dataloader with batch_size=8...
+     ### Transform @Resize ###    
+     ### Transform @ConvertPILImage ###    
+GCCS seed 2: batch 1/30, images 8
+GCCS seed 2: batch 11/30, images 88
+GCCS seed 2: batch 21/30, images 168
+GCCS seed 2: batch 30/30, images 237
+Capture PASS: GCCS seed 2
+Traceback (most recent call last):
+  File "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/PAPER_FIGURES_REPRO_PACKAGE_v1/figures/F04_AP_IOU_TRADEOFF/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/run_analysis.py", line 353, in <module>
+    main()
+  File "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/PAPER_FIGURES_REPRO_PACKAGE_v1/figures/F04_AP_IOU_TRADEOFF/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/run_analysis.py", line 349, in main
+    aggregate(bindings)
+  File "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/PAPER_FIGURES_REPRO_PACKAGE_v1/figures/F04_AP_IOU_TRADEOFF/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/run_analysis.py", line 277, in aggregate
+    u, q = best_iou(pool[image["id"]], xyxy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/PAPER_FIGURES_REPRO_PACKAGE_v1/figures/F04_AP_IOU_TRADEOFF/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/oracle_geometry.py", line 13, in best_iou
+    raise ValueError(f"{name}: nonfinite or reversed box")
+ValueError: pred: nonfinite or reversed box
+[
+  {
+    "metric": "mean_best_iou",
+    "DEIM_mean": 0.9057795497289979,
+    "DEIM_sample_sd": 0.0012569242432404883,
+    "GCCS_mean": 0.9121999291279413,
+    "GCCS_sample_sd": 0.0004411012305274362,
+    "paired_delta_mean": 0.006420379398943354,
+    "paired_delta_sample_sd": 0.0008623780428399953
+  },
+  {
+    "metric": "median_best_iou",
+    "DEIM_mean": 0.9224508133382221,
+    "DEIM_sample_sd": 0.0015813397417535607,
+    "GCCS_mean": 0.9296816093224146,
+    "GCCS_sample_sd": 0.0007995474299953369,
+    "paired_delta_mean": 0.007230795984192666,
+    "paired_delta_sample_sd": 0.0012145594622830008
+  },
+  {
+    "metric": "oracle_coverage_iou_ge_075",
+    "DEIM_mean": 0.976657329598506,
+    "DEIM_sample_sd": 0.0028011204481792618,
+    "GCCS_mean": 0.9769685652038592,
+    "GCCS_sample_sd": 0.002156303526385149,
+    "paired_delta_mean": 0.0003112356053532513,
+    "paired_delta_sample_sd": 0.004791411241313601
+  }
+]
+COMPLETE: six captures, 3213 paired GT records, three CCVR invariance checks
+OFFLINE REPLAY PASS: all 3213 paired GT rows and all six per-seed metrics reproduced exactly

@@ -1,0 +1,15 @@
+{
+  "data_authority": "main_host/datasets/CDW1630",
+  "model": "YOLOv10-M",
+  "no_training_executed_by_layout_tool": true,
+  "not_a_training_config": true,
+  "path": "01_YOLO_SERIES/YOLOv10_M_TRAINED",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_repository": "https://github.com/THU-MIG/yolov10",
+  "status": "PLANNED",
+  "training_settings": "PENDING_AUDIT_AND_LOCK"
+}

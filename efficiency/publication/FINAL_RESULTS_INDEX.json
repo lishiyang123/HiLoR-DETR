@@ -1,0 +1,43 @@
+{
+  "schema": "cdw1630.final-efficiency-results.v1",
+  "state": "COMPLETE",
+  "tables": {
+    "COMPLEXITY_TABLE.csv": {
+      "source": "publication/COMPLEXITY_TABLE.csv",
+      "sha256": "a525c9e7daa201c0c9555c66c6e54dfb2f70454ef8b0681722bd940450a431ac",
+      "bytes": 373
+    },
+    "LATENCY_TABLE.csv": {
+      "source": "outputs/latency_20261010_010156_831415/LATENCY_TABLE.csv",
+      "sha256": "cc7a70280d627f3676a3076bfe6af142cde193f1b87935c0f9a77e162b1d7606",
+      "bytes": 241
+    },
+    "TRAINING_COST_TABLE.csv": {
+      "source": "outputs/training_20261010_092519_274225/TRAINING_COST_TABLE.csv",
+      "sha256": "ba1ebdbc77972aa96d21b4281442d740ec708b4bf1c203e5a2c30312f75b179b",
+      "bytes": 149
+    }
+  },
+  "complexity_measurements": {
+    "deim": {
+      "path": "outputs/complexity/deim/MEASUREMENT.json",
+      "sha256": "c66473340949bda5fe0455b8f433222a3c37f1858b46c365a895e533adc53a39"
+    },
+    "gccs": {
+      "path": "outputs/complexity/gccs/MEASUREMENT.json",
+      "sha256": "aeb983acbc91039be511215410b0e36e4a40bad0a6481f0e7a5a3c6e386f2f2c"
+    },
+    "hilor": {
+      "path": "outputs/complexity/hilor/MEASUREMENT.json",
+      "sha256": "c6338deaa8cd9116a05129bd7e50947f5a1e677f4cf10b03e8e7cd68dc454891"
+    },
+    "r18": {
+      "path": "outputs/complexity/r18/MEASUREMENT.json",
+      "sha256": "86a41716581e04ad13e019072c59d50c50092bb1201a9a3d0b4818d94b35a19d"
+    },
+    "r18_hilor": {
+      "path": "outputs/complexity/r18_hilor/MEASUREMENT.json",
+      "sha256": "a59a6a14ae5d476225c03a9bab408f5c1fb9277a62f3e554ad5282fba2c66429"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "inference_side_experiments": [
+    "QCCR_LAMBDA",
+    "UMR_TAU_BETA"
+  ],
+  "qccr_lambda_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "scope_version": "1.0",
+  "selection_detector_seeds": [
+    0
+  ],
+  "selection_split": "Val only",
+  "status": "STRUCTURE_AND_NUMERICAL_PROTOCOL_LOCKED",
+  "test_access": "prohibited for all sensitivity work",
+  "topk_policy": "fixed source candidate budget; no sweep",
+  "training_grid": [
+    0.01,
+    0.02,
+    0.04
+  ],
+  "training_parameter": "lcct_delta",
+  "training_side_experiments": 1,
+  "umr_beta_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "umr_fixed": {
+    "positive_weight": 4,
+    "topk": 300
+  },
+  "umr_tau_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.4
+  ]
+}

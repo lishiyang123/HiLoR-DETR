@@ -1,0 +1,24 @@
+{
+  "dataset": "CDW1630",
+  "detector_checkpoint": "../best_stg2.pth",
+  "detector_checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+  "detector_seed": 0,
+  "format_version": 1,
+  "method": "UFD-LCCT bounded continuous handover + QCCR + corrected MLP UMR",
+  "qccr": "qccr_params.json",
+  "qccr_lambda_reg": 0.001,
+  "qccr_sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8",
+  "source_manifest_sha256": "e49227ae48ba2f0f4f804acd36aee50e5d38eb5753f75b1efe86adac7184bb5c",
+  "test_used_for_parameter_selection": false,
+  "umr_checkpoint": "umr_mlp_head_seed0_pw4.pt",
+  "umr_checkpoint_sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82",
+  "umr_fixed": {
+    "beta": 2.0,
+    "head_seed": 0,
+    "positive_weight": 4,
+    "tau": 0.0,
+    "topk": 300
+  },
+  "umr_metadata": "umr_mlp_head_seed0_pw4.metadata.json",
+  "umr_metadata_sha256": "a2913b15e778642187620241f23ce6d2ffd749a6a5718b2a7017329310ca5f4f"
+}

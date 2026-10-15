@@ -1,0 +1,20 @@
+__include__: ["/root/autodl-tmp/BTC_DEIM_project/CDW_GCCS_INTERNAL_ABLATION_TRAINING_STATE_v1/configs/cdw_common_train.yml"]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/CDW_GCCS_INTERNAL_ABLATION_TRAINING_STATE_v1/formal/ufd_only/output"
+
+DFINETransformer:
+  ufd_enabled: True
+
+DEIMCriterion:
+  ufd_enabled: True
+  ufd_cdf_path: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/CLEAN_REPRO_SOURCE/artifacts/ufd/difficulty_cdf_train640.json"
+  ufd_total_epochs: 102
+  ufd_k: 9
+  ufd_base_size: 640.0
+  ufd_alpha_h: 0.5
+  ufd_alpha_u_max: 0.5
+  ufd_lambda_max: 0.75
+  ufd_lambda_ramp_fraction: 0.05
+  ufd_uncertainty_delay_fraction: 0.05
+  ufd_uncertainty_ramp_fraction: 0.05
+  lcct_enabled: False
+

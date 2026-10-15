@@ -1,0 +1,15 @@
+{
+  "python": "3.11.9 (main, Apr 19 2024, 16:48:06) [GCC 11.2.0]",
+  "python_executable": "/root/autodl-tmp/envs/deim_cvpr2025/bin/python",
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.31",
+  "pytorch": "2.5.1+cu124",
+  "cuda_runtime": "12.4",
+  "cudnn": 90100,
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "compute_capability": [
+    8,
+    9
+  ]
+}

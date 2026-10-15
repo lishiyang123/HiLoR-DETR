@@ -1,0 +1,18 @@
+{
+  "checkpoint_loaded": false,
+  "dataset_copied": false,
+  "gpu_used": false,
+  "model": "YOLOv10-M",
+  "plan_sha256": "57e4453d5602298fe53a46e19bf4f1257b71116b29cde3d96b273315152452bb",
+  "schema": "cdw1630-sota-official-asset-record-v1",
+  "source_clean_tracked": true,
+  "source_commit": "799ff3be47d21173bcf29b351820d4b8e955e0fe",
+  "source_repository": "https://github.com/THU-MIG/yolov10",
+  "source_tag": "v1.1",
+  "test_accessed": false,
+  "weight_bytes": 66924323,
+  "weight_filename": "yolov10m.pt",
+  "weight_sha256": "ff2c559f11d13701abc4e0345f82851d146ecfe7035efaafcc08475cfd8b5f2d",
+  "weight_training_scope": "COCO only",
+  "weight_url_claimed_by_downloader": "https://github.com/THU-MIG/yolov10/releases/download/v1.1/yolov10m.pt"
+}

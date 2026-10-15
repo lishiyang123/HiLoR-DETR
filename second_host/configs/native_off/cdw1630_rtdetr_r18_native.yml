@@ -1,0 +1,47 @@
+# CDW1630 RT-DETR-R18: authoritative Train/Val only.
+__include__: ["../../source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_6x_coco.yml"]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/second_host/runs/native_off_preflight"
+num_classes: 5
+remap_mscoco_category: False
+sync_bn: False
+find_unused_parameters: False
+epoches: 102
+use_amp: False
+use_ema: True
+checkpoint_step: 999
+PResNet:
+  pretrained: False
+optimizer:
+  type: AdamW
+  params:
+    - params: '^(?=.*backbone)(?=.*norm).*$'
+      lr: 0.00001
+      weight_decay: 0.
+    - params: '^(?=.*backbone)(?!.*norm).*$'
+      lr: 0.00001
+    - params: '^(?=.*(?:encoder|decoder))(?=.*(?:norm|bias)).*$'
+      weight_decay: 0.
+  lr: 0.0001
+  betas: [0.9, 0.999]
+  weight_decay: 0.0001
+lr_scheduler:
+  type: MultiStepLR
+  milestones: [1000]
+  gamma: 0.1
+train_dataloader:
+  dataset:
+    img_folder: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/train2017"
+    ann_file: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_train2017.json"
+  # Historical Native runs contain 286 iterations for 1,144 images, proving
+  # the old host consumed the official per-device batch_size=4. Keep that
+  # effective per-device protocol explicit instead of relying on an unsupported key.
+  batch_size: 4
+  num_workers: 4
+  shuffle: True
+val_dataloader:
+  dataset:
+    img_folder: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/val2017"
+    ann_file: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_val2017.json"
+  batch_size: 8
+  num_workers: 4
+  shuffle: False

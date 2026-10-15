@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "Test": {
+      "bytes": 174707,
+      "expected_images": 237,
+      "image_directory_project_relative_path": "main_host/datasets/CDW1630/test2017",
+      "local_path": "inputs/annotations/instances_test2017.json",
+      "sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+      "source_project_relative_path": "main_host/datasets/CDW1630/annotations/instances_test2017.json"
+    },
+    "Train": {
+      "bytes": 905956,
+      "expected_images": 1144,
+      "image_directory_project_relative_path": "main_host/datasets/CDW1630/train2017",
+      "local_path": "inputs/annotations/instances_train2017.json",
+      "sha256": "7fdd6dee1d2d88c25ff7248e2abe8c8277dfa2083ec9557d52b5ca9da78065c4",
+      "source_project_relative_path": "main_host/datasets/CDW1630/annotations/instances_train2017.json"
+    },
+    "Val": {
+      "bytes": 164776,
+      "expected_images": 249,
+      "image_directory_project_relative_path": "main_host/datasets/CDW1630/val2017",
+      "local_path": "inputs/annotations/instances_val2017.json",
+      "sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5",
+      "source_project_relative_path": "main_host/datasets/CDW1630/annotations/instances_val2017.json"
+    }
+  },
+  "created_utc": "2026-09-15T15:22:32.155149+00:00",
+  "format_version": 1,
+  "image_pixels_accessed": false,
+  "main_package_manifest": {
+    "project_relative_path": "main_host/manifests/FILE_MANIFEST.sha256.json",
+    "sha256": "b392d5eb02a99094f9455f9b2612be358042b691fcd9071d4255dada0d099723"
+  },
+  "test_used_for_model_or_parameter_selection": false
+}

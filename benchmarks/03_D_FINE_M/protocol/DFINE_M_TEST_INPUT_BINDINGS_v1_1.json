@@ -1,0 +1,43 @@
+{
+  "environment": {
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "python": "3.11.9",
+    "torch": "2.5.1+cu124"
+  },
+  "evaluation_lock_sha256": "07d4e3696a30511ed2b07971044d2c3fbf6e3fe49c213e38f5856642b94f0cf5",
+  "pycocotools": "2.0.10",
+  "source_commit": "956d1709314c2c6a4df6f34de232054578a7449f",
+  "test": {
+    "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+    "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+    "image_count": 237,
+    "images_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/test2017",
+    "instance_count": 1071
+  },
+  "test_config_sha256": "6ea9846f7dd6661ce4859300d3410cf5f41a62a7986bfb3b4a91c8c15499036a",
+  "train_config_sha256": "5259d990a3998040829dbe9d6bed998d6c1f4ce4215d1478b2851b3d31bca24e",
+  "v1_failure": {
+    "console": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/03_D_FINE_M/smoke/test_reeval/console.log",
+    "console_sha256": "c248b4ed4d291385466fa4840bf33ffb5b0e330ba1c7bc9ba798c491ac7ed6ea",
+    "failure": "overstrict wrapper canvas-bound assertion",
+    "test_access": false
+  },
+  "val_selection": {
+    "0": {
+      "best_epoch_one_based": 49,
+      "checkpoint_sha256": "26ae7c6017ad413f10b0500b368c2c8c2ba78a3bf07d88be819807b80c91edeb",
+      "val_ap": 0.7694770996532916
+    },
+    "1": {
+      "best_epoch_one_based": 96,
+      "checkpoint_sha256": "36f7893e38050ee48f690b598c598c1ce5a46018362d19fc75c9bf565c1b3cca",
+      "val_ap": 0.7710038434867782
+    },
+    "2": {
+      "best_epoch_one_based": 45,
+      "checkpoint_sha256": "4a419eea0cc57ee83a267002ad18f165c4fc7e6968ea545ed1be3343e0d75c06",
+      "val_ap": 0.7670014058670052
+    }
+  }
+}

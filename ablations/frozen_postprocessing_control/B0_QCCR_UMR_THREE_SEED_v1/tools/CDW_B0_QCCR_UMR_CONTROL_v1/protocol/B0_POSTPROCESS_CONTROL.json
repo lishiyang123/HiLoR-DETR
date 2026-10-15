@@ -1,0 +1,34 @@
+{
+  "schema": "cdw1630-b0-qccr-umr-three-seed-control-v1",
+  "dataset": "CDW1630",
+  "detector": "B0",
+  "detector_seeds": [0, 1, 2],
+  "detector_training": false,
+  "comparison_rows": ["B0", "B0_QCCR_UMR"],
+  "qccr_lambda_reg": 0.001,
+  "qccr_fold_count": 5,
+  "qccr_fold_seed": 0,
+  "umr_positive_weight": 4,
+  "umr_head_seed": 0,
+  "umr_tau": 0.0,
+  "umr_beta": 2.0,
+  "umr_topk": 300,
+  "selection": {
+    "detector_checkpoint": "existing B0 checkpoint selected on Val",
+    "qccr_coefficients": "checkpoint-specific Val fit at predeclared lambda=1e-3",
+    "umr_weights": "checkpoint-specific Train fit at fixed head seed 0 and positive weight 4",
+    "inference_hyperparameters": "fixed before this control experiment",
+    "test_used_for_parameter_selection": false
+  },
+  "data_roles": {
+    "Train": "fit checkpoint-specific UMR head",
+    "Val": "fit checkpoint-specific QCCR coefficients and provide diagnostics",
+    "Test": "final reporting only after all three seeds are frozen"
+  },
+  "report_metrics": [
+    "AP", "AP50", "AP75", "APs", "APm", "APl",
+    "AR1", "AR10", "AR100", "ARs", "ARm", "ARl",
+    "AP80", "AP85", "AP90", "AP95"
+  ],
+  "interpretation": "Tests whether the frozen QCCR-UMR path improves B0 without GCCS training. It is a two-gate control, not a replacement for the cumulative or internal training-side ablations."
+}

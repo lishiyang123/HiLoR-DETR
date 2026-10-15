@@ -1,0 +1,42 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-upstream-lock-v1",
+  "created_at": "2026-10-07",
+  "repository": "https://github.com/lyuwenyu/RT-DETR",
+  "commit": "29320b6fd828f8e0987a71426cf2d961b09dfed7",
+  "model": "RT-DETR-R18",
+  "official_config": "rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_6x_coco.yml",
+  "server_baseline_snapshot": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/02_RT_DETR_R18/source/RT-DETR_official",
+  "server_reference_copy": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/second_host/references/RT-DETR_official",
+  "server_working_copy": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/second_host/source/RT-DETR_HiLoR",
+  "content_aggregate_sha256": "ae0b0189a458a2e9d5054c4e86e0baff38faa84e6357a2c2b70ba643db03cd8b",
+  "content_aggregate_method": "SHA-256 of the sorted per-file sha256sum stream, paths relative to tree root",
+  "reference_copy_read_only": true,
+  "coco_initialization": {
+    "filename": "rtdetr_r18vd_dec3_6x_coco_from_paddle.pth",
+    "sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0"
+  },
+  "formal_config": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/02_RT_DETR_R18/configs/cdw1630_rtdetr_r18_formal.yml",
+    "sha256": "43e643a0c2619888167a660f54edfb77503ca198c5098bdf0590b8927ef68e1d"
+  },
+  "native_best_checkpoints": {
+    "seed0": "754bceefb47ce3f8a9d3ea56346686ebf023c558694d32c506a56e65897ac65e",
+    "seed1": "daacf4e86302701620457cc663a9a18c09d7ee6c729d6f1350a3c7a55d46e75b",
+    "seed2": "b4f87595ba87701d6b82086ac46c432a5f59ab8548834dfe2d077d3ffe1353b3"
+  },
+  "training_protocol": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 102,
+    "train_batch_size_per_device": 4,
+    "train_world_size": 1,
+    "effective_train_batch_size": 4,
+    "val_batch_size_per_device": 8,
+    "batch_evidence": "seed0 console.log reports 286 iterations for 1144 Train images; the historical total_batch_size key was ignored by this RT-DETR revision",
+    "precision": "FP32",
+    "ema": true
+  }
+}

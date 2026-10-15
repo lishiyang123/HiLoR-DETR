@@ -1,0 +1,35 @@
+{
+  "corrected_umr_heads": [
+    {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_UMR_OVERLAP_COMPETITOR_REFIT_v1/runs/run_20260913_144226_38402/refit/models/umr_seed0_pw4_best.pt",
+      "seed": 0,
+      "sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82"
+    },
+    {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_UMR_OVERLAP_COMPETITOR_REFIT_v1/runs/run_20260913_144226_38402/refit/models/umr_seed1_pw4_best.pt",
+      "seed": 1,
+      "sha256": "dc9d2a1ee3e618f65005aedbddf5ceb3d9995133d024da3a0680c26d25f30467"
+    },
+    {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_UMR_OVERLAP_COMPETITOR_REFIT_v1/runs/run_20260913_144226_38402/refit/models/umr_seed2_pw4_best.pt",
+      "seed": 2,
+      "sha256": "65622dd4d32967fa4095e462630b09c72ef0e37a3a0847a037458a5eaeba03ff"
+    }
+  ],
+  "final_source": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1",
+    "tree_sha256": "8ab1c7e6e46d4b68bcef655bd176c807629dc1c9ea984fb4e01cfc35388362bf"
+  },
+  "qccr_artifact": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/qccr/qccr_params.json",
+    "sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8"
+  },
+  "val_annotation": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/data/CDW1630_official/coco_deim/annotations/instances_val2017.json",
+    "sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5"
+  },
+  "val_capture": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/capture/cdw_bounded_lcct_seed0_val_capture.pt",
+    "sha256": "62594e1900e255fb1ed295b9356471935a0c562de5c5c10918edd1e68f5ade6b"
+  }
+}

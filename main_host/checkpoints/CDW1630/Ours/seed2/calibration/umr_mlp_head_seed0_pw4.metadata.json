@@ -1,0 +1,23 @@
+{
+  "architecture": "MLP",
+  "architecture_selection": "Train-fitted heads compared on Val",
+  "competitor_definition": "maximum-IoU same-class candidate among those with strictly higher first-pass mapped scores; score-gap and cosine features are zero when no positive-overlap competitor exists",
+  "feature_semantics": {
+    "competitor_cosine": "zero unless an overlapping higher-score same-class candidate exists",
+    "score_gap": "zero unless an overlapping higher-score same-class candidate exists"
+  },
+  "format_version": 2,
+  "fusion": {
+    "beta": 2.0,
+    "tau": 0.0,
+    "topk": 300
+  },
+  "positive_weight": 4,
+  "qccr_sha256": "e81842881d31bb56c91abaa6d4ee68aba28b4ba096d417a0d0a42bef788b182f",
+  "seed": 0,
+  "selection_evidence_sha256": "90ec543bfe8c78ea216c2753a834f2510e006f88cd3cf4c4fc4cdf9ae3559b25",
+  "source_checkpoint_sha256": "77a52249ce706decaf46da68fb347801bd2fc4f4624001c75fe37a3d78f1a146",
+  "source_split": "CDW1630 Train",
+  "test_used_for_selection": false,
+  "weight_sha256": "7d3f78d6731c5c154626839dc9502805486b09b635340e6345ba0d1cc32d98ff"
+}

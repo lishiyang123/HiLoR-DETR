@@ -1,0 +1,20 @@
+__include__:
+- ../../cdw1630_rtdetr_r18_gccs.yml
+postprocessor: HiLoRRTDETRPostProcessor
+RTDETRTransformer:
+  hilor_return_decoder_features: true
+HiLoRRTDETRPostProcessor:
+  num_classes: 5
+  use_focal_loss: true
+  num_top_queries: 300
+  remap_mscoco_category: false
+  qccr_enabled: true
+  umr_enabled: true
+  num_queries: 300
+  artifact_manifest:
+    path: artifacts/inference/seed2/qccr_umr_binding.json
+    path_base: adapter_root
+    sha256: f02edc63c9b48ebbc70cf5c06062f81d4d735328a65cc4c372c3fe30f6d8b46c
+  expected_detector_checkpoint_sha256: f2e08903419c8838f70c6c6bfc5ffaa35295cda894a2a4925451e685f25a8974
+  allow_unbound_artifacts: false
+resume: /root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/second_host/runs/seed2/best_val.pth

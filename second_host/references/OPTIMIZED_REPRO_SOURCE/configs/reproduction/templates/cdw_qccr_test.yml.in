@@ -1,0 +1,9 @@
+__include__: [./cdw_native_test.yml]
+output_dir: @QCCR_TEST_OUTPUT@
+PostProcessor:
+  qccr_enabled: True
+  qccr_beta0: @QCCR_BETA0@
+  qccr_beta_positive: @QCCR_BETA_POSITIVE@
+  qccr_beta_negative: @QCCR_BETA_NEGATIVE@
+  qccr_duplicate_penalty: @QCCR_DUPLICATE_PENALTY@
+  umr_enabled: False

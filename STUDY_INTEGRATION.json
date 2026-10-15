@@ -1,0 +1,40 @@
+{
+  "schema": "cdw1630.study-integration.v1",
+  "date": "2026-10-13",
+  "installed_assets": [
+    "second_host",
+    "efficiency",
+    "ranking_comparison",
+    "proposal_budget"
+  ],
+  "external_originals_preserved": true,
+  "model_source_changed": false,
+  "formal_checkpoints_changed": false,
+  "formal_results_changed": false,
+  "training_or_detector_inference_executed": false,
+  "path_only_changes": [
+    "efficiency root resolver",
+    "second-host release wrapper",
+    "offline study release wrapper"
+  ],
+  "oracle_geometry_registered": true,
+  "coverage_limits": [
+    "closest-baseline comparison is seed 0 only",
+    "closest-baseline formal comparative GPU deployment latency not completed",
+    "offline budget study is not physical robot validation"
+  ],
+  "cpu_validation": {
+    "nearest_neighbor_unit_tests": "18/18 PASS",
+    "efficiency_unit_tests": "15/15 PASS",
+    "second_host_fit_toolchain_tests": "15/15 PASS",
+    "offline_budget_unit_tests": "11/11 PASS",
+    "second_host_relocated_config_input_preflights": "9/9 PASS (3 modes x 3 seeds; no forward)",
+    "second_host_original_protocol_lock": "PASS",
+    "study_annotation_capture_prediction_bindings": "10 files PASS",
+    "offline_budget_replay": "exact per-seed and three-seed summary match; 120 per-seed rows",
+    "original_copy_bindings": "1317 preserved files PASS",
+    "gpu_training_or_forward_retested": false
+  },
+  "oracle_geometry_current_path": "numerical_evidence/evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1",
+  "generated_figure_package_replaced_by_numerical_evidence": true
+}

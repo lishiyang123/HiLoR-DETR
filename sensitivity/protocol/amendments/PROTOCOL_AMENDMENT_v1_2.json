@@ -1,0 +1,30 @@
+{
+  "amendment": "LCCT_DELTA_TRAINING_GRID_v1_2",
+  "status": "FROZEN_BEFORE_FIVE_POINT_MEASUREMENT",
+  "reason": "Expand the original symmetric three-point LCCT delta diagnostic to a log-spaced five-point robustness curve with clearer boundary behavior.",
+  "history_preserved": {
+    "v1_0_training_grid": [0.01, 0.02, 0.04],
+    "v1_1_scope": "UMR semantic correction only; the v1.0 LCCT grid was unchanged"
+  },
+  "dataset": "CDW1630",
+  "parameter": "lcct_delta",
+  "grid": [0.005, 0.01, 0.02, 0.04, 0.08],
+  "frozen_center": 0.02,
+  "detector_seed": 0,
+  "epoch_budget": 102,
+  "new_training_values": [0.01, 0.04, 0.005, 0.08],
+  "queue_order_rationale": "Complete the original v1.0 neighbors first, then the newly added outer points; the exact center is reused after SHA verification.",
+  "artifact_retention": {
+    "training_configuration": "unchanged from the final source",
+    "retained_per_new_run": ["last.pth", "best_stg1.pth", "best_stg2.pth if produced", "the Val-selected checkpoint", "log.txt", "Val evaluation records", "run and selection receipts"],
+    "removed_after_success": "checkpointNNNN.pth periodic snapshots only",
+    "removal_timing": "only after the 102-epoch log and Val-selected checkpoint have passed verification",
+    "numerical_effect": "none; checkpoint frequency and training execution are unchanged"
+  },
+  "selection_split": "Val",
+  "primary_metric": "native Val AP@[0.50:0.95]",
+  "secondary_metrics": ["Val AP50", "Val AP75", "Val AR100"],
+  "test_access": "PROHIBITED",
+  "final_parameter_change_allowed": false,
+  "test_used_for_parameter_selection": false
+}

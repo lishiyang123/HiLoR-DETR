@@ -1,0 +1,74 @@
+{
+  "checkpoint_runs": [
+    {
+      "best_epoch_one_based": 98,
+      "best_epoch_zero_based": 97,
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/runs/seed0/weights/best_val_ap.pt",
+      "checkpoint_sha256": "b0a515c1f4ee5f3a0ab6672c7cc2debcb56d5541a1c34b46852ba7fa3fb20528",
+      "seed": 0,
+      "val_ap": 0.74201
+    },
+    {
+      "best_epoch_one_based": 101,
+      "best_epoch_zero_based": 100,
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/runs/seed1/weights/best_val_ap.pt",
+      "checkpoint_sha256": "cdbb914289ac136bc0c5c6cb2efee26bbd9cc58c88fd7bfc6a8ec35417caf284",
+      "seed": 1,
+      "val_ap": 0.74862
+    },
+    {
+      "best_epoch_one_based": 99,
+      "best_epoch_zero_based": 98,
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/runs/seed2/weights/best_val_ap.pt",
+      "checkpoint_sha256": "f88255a785ad2e52e3e252dd840c17c978bf1598e4575c32a909efc975f43c41",
+      "seed": 2,
+      "val_ap": 0.74774
+    }
+  ],
+  "evaluation": {
+    "implementation": "faster_coco_eval.COCOeval_faster",
+    "iou_type": "bbox",
+    "maxDets": [
+      1,
+      10,
+      100
+    ],
+    "metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "APs",
+      "APm",
+      "APl",
+      "AR1",
+      "AR10",
+      "AR100",
+      "ARs",
+      "ARm",
+      "ARl"
+    ],
+    "package": "faster-coco-eval",
+    "replay_tolerance": "exact",
+    "version": "1.7.2"
+  },
+  "evaluation_lock_sha256": "cfaae7797854dab14962bdc2337455555872c2edbf8c2050194aed47ef54f347",
+  "fitting_on_test": false,
+  "inference": {
+    "agnostic_nms": false,
+    "augment": false,
+    "batch": 16,
+    "conf": 0.001,
+    "device": 0,
+    "half": false,
+    "imgsz": 640,
+    "iou": 0.7,
+    "max_det": 300,
+    "rect": false,
+    "seed": 0
+  },
+  "model": "YOLOv10-M",
+  "schema": "cdw1630-yolo-frozen-test-protocol-v1",
+  "status": "FROZEN",
+  "test_binding_sha256": "83118f2ffa1f4baaf407555dc5086198782e1434f6d48989c7678c7e2157d458",
+  "test_model_or_parameter_selection": false
+}

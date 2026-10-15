@@ -1,0 +1,665 @@
+{
+  "cdw_deim_seed0_test": {
+    "dataset": "cdw",
+    "method": "deim",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_deim_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+    "checkpoint_sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054",
+    "reference_eval": "main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+    "reference_eval_sha256": "67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42",
+    "inference_assets": []
+  },
+  "cdw_deim_seed1_test": {
+    "dataset": "cdw",
+    "method": "deim",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_deim_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed1/best_stg2.pth",
+    "checkpoint_sha256": "422ec0956963b07f59d2cdd29488bdedcf24fc23f02697bfb817adcb2d5a550d",
+    "reference_eval": "main_host/results/CDW1630/B0/seed1/official_test/eval.pth",
+    "reference_eval_sha256": "c605384b7c8d9615121f38de4cc81b12bccb63d005e3e3a57ace0dfcb288698f",
+    "inference_assets": []
+  },
+  "cdw_deim_seed2_test": {
+    "dataset": "cdw",
+    "method": "deim",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_deim_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed2/best_stg2.pth",
+    "checkpoint_sha256": "a056c7e0686c4d893b971eef397281501dd772e2607436864ba0669142c922f0",
+    "reference_eval": "main_host/results/CDW1630/B0/seed2/official_test/eval.pth",
+    "reference_eval_sha256": "fb52d5cebbfba4c30abff96b0adbd067083ffc07c5f4cd60bfcb0242e03e9ccf",
+    "inference_assets": []
+  },
+  "cdw_full_seed0_test": {
+    "dataset": "cdw",
+    "method": "full",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_full_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+    "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed0/final/eval.pth",
+    "reference_eval_sha256": "49276c79f4d4323ae596a69013bb3484586130b5969c701356e3b53e2218a3a6",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/qccr_params.json",
+        "sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82"
+      }
+    ]
+  },
+  "cdw_gccs_seed0_test": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_gccs_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+    "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
+    "reference_eval_sha256": "a1121aa43ce3443a5edcee31e8eeb9259e56b33a3d4ce828df9d17212128795e",
+    "inference_assets": []
+  },
+  "cdw_qccr_seed0_test": {
+    "dataset": "cdw",
+    "method": "qccr",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_qccr_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+    "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed0/qccr_test/eval.pth",
+    "reference_eval_sha256": "b4d7f2be875aa827fc506d8b5efb29dda6e627d8c8d351dc1824fa921a22d53a",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/qccr_params.json",
+        "sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8"
+      }
+    ]
+  },
+  "cdw_full_seed1_test": {
+    "dataset": "cdw",
+    "method": "full",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_full_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg2.pth",
+    "checkpoint_sha256": "8d0a7bb59576e045536a57777e7f1f45fbfc9ffe121c35d7ae45e6a0e2ad16af",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed1/final/eval.pth",
+    "reference_eval_sha256": "9fff69def845221ef975981616fdaf428ddd9672163d8c3502b300f896c682a8",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/qccr_params.json",
+        "sha256": "a7a1a6f64b0042e8bca86a1eadf27b3b4243b2b24602828848130d7c75632c04"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "b78f7e7b9f6d0ea10e04187f9c9c729863b6a3a85ddbfbb6cdbc51a9ae66cc31"
+      }
+    ]
+  },
+  "cdw_gccs_seed1_test": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_gccs_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg2.pth",
+    "checkpoint_sha256": "8d0a7bb59576e045536a57777e7f1f45fbfc9ffe121c35d7ae45e6a0e2ad16af",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed1/native_test/eval.pth",
+    "reference_eval_sha256": "a78061be08e9ac775df8ddad51970ed5bf1f957ae4e204c86c8157a2c122d0ca",
+    "inference_assets": []
+  },
+  "cdw_qccr_seed1_test": {
+    "dataset": "cdw",
+    "method": "qccr",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_qccr_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg2.pth",
+    "checkpoint_sha256": "8d0a7bb59576e045536a57777e7f1f45fbfc9ffe121c35d7ae45e6a0e2ad16af",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed1/qccr_test/eval.pth",
+    "reference_eval_sha256": "8d0cedaf814592eb657219761661a8a36bc8997dfccc28942e128f1c0844b955",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/qccr_params.json",
+        "sha256": "a7a1a6f64b0042e8bca86a1eadf27b3b4243b2b24602828848130d7c75632c04"
+      }
+    ]
+  },
+  "cdw_full_seed2_test": {
+    "dataset": "cdw",
+    "method": "full",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_full_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "77a52249ce706decaf46da68fb347801bd2fc4f4624001c75fe37a3d78f1a146",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed2/final/eval.pth",
+    "reference_eval_sha256": "af92c2033c1a8e3e80183e33890bdd86fe5189ec8baa1737c8b65a2c836c62d2",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/qccr_params.json",
+        "sha256": "e81842881d31bb56c91abaa6d4ee68aba28b4ba096d417a0d0a42bef788b182f"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "7d3f78d6731c5c154626839dc9502805486b09b635340e6345ba0d1cc32d98ff"
+      }
+    ]
+  },
+  "cdw_gccs_seed2_test": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_gccs_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "77a52249ce706decaf46da68fb347801bd2fc4f4624001c75fe37a3d78f1a146",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed2/native_test/eval.pth",
+    "reference_eval_sha256": "53d528decea14518eef67cf4fab9f4c5397fc2d6e7c1b9582ad32be79a9059ab",
+    "inference_assets": []
+  },
+  "cdw_qccr_seed2_test": {
+    "dataset": "cdw",
+    "method": "qccr",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_qccr_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "77a52249ce706decaf46da68fb347801bd2fc4f4624001c75fe37a3d78f1a146",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed2/qccr_test/eval.pth",
+    "reference_eval_sha256": "9753edce178aa2e864e599c07ec187ccb58f97a3a8e533edcc6dffe064ef89c5",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/qccr_params.json",
+        "sha256": "e81842881d31bb56c91abaa6d4ee68aba28b4ba096d417a0d0a42bef788b182f"
+      }
+    ]
+  },
+  "cdw_deim_train": {
+    "dataset": "cdw",
+    "method": "deim",
+    "split": "train",
+    "config": "profiles/cdw_deim_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_gccs_train": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/cdw_gccs_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "btc_deim_seed0_test1": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 0,
+    "split": "test1",
+    "config": "profiles/btc_deim_seed0_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed0/best_stg1.pth",
+    "checkpoint_sha256": "a00ee7658ea57a23e28996bf2d56f33832dd920fca02c92afbcd5ac48042f797",
+    "reference_eval": "generalization/btc/results/B0/seed0/test1/eval.pth",
+    "reference_eval_sha256": "7fcda42dec14c005d91f7e49829bbfcc5ee80e79d3521753a9e7c6d1a987c4a0",
+    "inference_assets": []
+  },
+  "btc_deim_seed0_test2": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 0,
+    "split": "test2",
+    "config": "profiles/btc_deim_seed0_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed0/best_stg1.pth",
+    "checkpoint_sha256": "a00ee7658ea57a23e28996bf2d56f33832dd920fca02c92afbcd5ac48042f797",
+    "reference_eval": "generalization/btc/results/B0/seed0/test2/eval.pth",
+    "reference_eval_sha256": "0a7a3d35b21c20dfab2f0d1b3f09715171f7b355256d68e4d5eff34cef487266",
+    "inference_assets": []
+  },
+  "btc_deim_seed1_test1": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 1,
+    "split": "test1",
+    "config": "profiles/btc_deim_seed1_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed1/best_stg1.pth",
+    "checkpoint_sha256": "531ad024a209a29a0a3f59f04f5eda3247b2c094dd0dcac3b6927a05686cb33f",
+    "reference_eval": "generalization/btc/results/B0/seed1/test1/eval.pth",
+    "reference_eval_sha256": "8cb19eb7662583fef9d3f5e3fdf943ba53b868f1051740b8ddcb68ba128189a4",
+    "inference_assets": []
+  },
+  "btc_deim_seed1_test2": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 1,
+    "split": "test2",
+    "config": "profiles/btc_deim_seed1_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed1/best_stg1.pth",
+    "checkpoint_sha256": "531ad024a209a29a0a3f59f04f5eda3247b2c094dd0dcac3b6927a05686cb33f",
+    "reference_eval": "generalization/btc/results/B0/seed1/test2/eval.pth",
+    "reference_eval_sha256": "55851a24a4839ea6063ae8e1fa7600102feff4d280500739a5b0914032befce0",
+    "inference_assets": []
+  },
+  "btc_deim_seed2_test1": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 2,
+    "split": "test1",
+    "config": "profiles/btc_deim_seed2_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed2/best_stg1.pth",
+    "checkpoint_sha256": "2c58c639b8c3144d285e2230efd839f57a75053e36a3bec87352e1082bbae432",
+    "reference_eval": "generalization/btc/results/B0/seed2/test1/eval.pth",
+    "reference_eval_sha256": "42027e075f1d5b55e5e250656a3d49170acb9f96150ca33f536554ddb77a0390",
+    "inference_assets": []
+  },
+  "btc_deim_seed2_test2": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 2,
+    "split": "test2",
+    "config": "profiles/btc_deim_seed2_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed2/best_stg1.pth",
+    "checkpoint_sha256": "2c58c639b8c3144d285e2230efd839f57a75053e36a3bec87352e1082bbae432",
+    "reference_eval": "generalization/btc/results/B0/seed2/test2/eval.pth",
+    "reference_eval_sha256": "539087576d7578240ea98bd4e79f2a8d757c614580d95f626fcb4f280a22d18a",
+    "inference_assets": []
+  },
+  "btc_full_seed0_test1": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 0,
+    "split": "test1",
+    "config": "profiles/btc_full_seed0_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/test1/eval.pth",
+    "reference_eval_sha256": "9a5d7e57695e99ceb2556bec1ffb364a01f93f11e95e646cc35c0595755eaf5a",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/qccr_params.json",
+        "sha256": "0d9df9d37b0013aa08580f247b8fe45c078499e4c5b9b5929f037f3fbfae7cc5"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/umr_head_seed0.pt",
+        "sha256": "5fcfd822a60e5d21dfd2b5d8fe11d1fcd183df9be83d967fa111580b16f7b9c0"
+      }
+    ]
+  },
+  "btc_gccs_seed0_test1": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 0,
+    "split": "test1",
+    "config": "profiles/btc_gccs_seed0_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/native/test1/eval.pth",
+    "reference_eval_sha256": "261f55d1af9b05636ba5eece6fc127f068e477dc7b8c88698878fd2f075c8a4b",
+    "inference_assets": []
+  },
+  "btc_full_seed0_test2": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 0,
+    "split": "test2",
+    "config": "profiles/btc_full_seed0_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/test2/eval.pth",
+    "reference_eval_sha256": "ae4f48f5bf62bd2702ce8b87ba936b23c494a7c641b19b4648557e32fa2da0e2",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/qccr_params.json",
+        "sha256": "0d9df9d37b0013aa08580f247b8fe45c078499e4c5b9b5929f037f3fbfae7cc5"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/umr_head_seed0.pt",
+        "sha256": "5fcfd822a60e5d21dfd2b5d8fe11d1fcd183df9be83d967fa111580b16f7b9c0"
+      }
+    ]
+  },
+  "btc_gccs_seed0_test2": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 0,
+    "split": "test2",
+    "config": "profiles/btc_gccs_seed0_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/native/test2/eval.pth",
+    "reference_eval_sha256": "aed4445c8ee35a3aea6359cff421b876bbb47eefc66ba518aadc2524bbbd226a",
+    "inference_assets": []
+  },
+  "btc_full_seed1_test1": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 1,
+    "split": "test1",
+    "config": "profiles/btc_full_seed1_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/test1/eval.pth",
+    "reference_eval_sha256": "4cdb05cb91589f318aa82e3c89dc9322505ccd5c074afd424a4642bb55006ce7",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/qccr_params.json",
+        "sha256": "6a8ea6e56af9e5061d9058439cccba0bba4eae7d2169f18cb2dee10bc93e7fed"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/umr_head_seed0.pt",
+        "sha256": "3b75da4f5981749742d735cfd24ef93ea1af1461cd8d50d084933cbd8fcb4ac3"
+      }
+    ]
+  },
+  "btc_gccs_seed1_test1": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 1,
+    "split": "test1",
+    "config": "profiles/btc_gccs_seed1_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/native/test1/eval.pth",
+    "reference_eval_sha256": "2fbf485f021ddf078280e258bb2535bae698beb4338f4ca0b6453f2c3833eda0",
+    "inference_assets": []
+  },
+  "btc_full_seed1_test2": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 1,
+    "split": "test2",
+    "config": "profiles/btc_full_seed1_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/test2/eval.pth",
+    "reference_eval_sha256": "0a817d89498ffbc829a1b938b893b97712831ad9549408fc2452778cab2b154b",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/qccr_params.json",
+        "sha256": "6a8ea6e56af9e5061d9058439cccba0bba4eae7d2169f18cb2dee10bc93e7fed"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/umr_head_seed0.pt",
+        "sha256": "3b75da4f5981749742d735cfd24ef93ea1af1461cd8d50d084933cbd8fcb4ac3"
+      }
+    ]
+  },
+  "btc_gccs_seed1_test2": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 1,
+    "split": "test2",
+    "config": "profiles/btc_gccs_seed1_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/native/test2/eval.pth",
+    "reference_eval_sha256": "57a80f6a84172f57b0d026e83d1fea22a02ab7cdd385abd47a365bff0cd13cd6",
+    "inference_assets": []
+  },
+  "btc_full_seed2_test1": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 2,
+    "split": "test1",
+    "config": "profiles/btc_full_seed2_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/test1/eval.pth",
+    "reference_eval_sha256": "cbd55fd19717e9fa774a99385da865c558280fb1149356e8f0668acc80af78a7",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/qccr_params.json",
+        "sha256": "7bbb62c2ededcdfd27ca93c1d171eeb35e314704a585f1228f8e8000d9e63c75"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/umr_head_seed0.pt",
+        "sha256": "1d1fd6e8b9f7220875a71b6fd599093c045562475215454e62f3d24c45235656"
+      }
+    ]
+  },
+  "btc_gccs_seed2_test1": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 2,
+    "split": "test1",
+    "config": "profiles/btc_gccs_seed2_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/native/test1/eval.pth",
+    "reference_eval_sha256": "0b966c3dbec24a2bd154339c8919f97d29437e614b9f5af825eec0dabdf72716",
+    "inference_assets": []
+  },
+  "btc_full_seed2_test2": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 2,
+    "split": "test2",
+    "config": "profiles/btc_full_seed2_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/test2/eval.pth",
+    "reference_eval_sha256": "46f6e421ff4141c05e56a56bf8621bec7417352f66333ea0fbd3cb61730668bb",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/qccr_params.json",
+        "sha256": "7bbb62c2ededcdfd27ca93c1d171eeb35e314704a585f1228f8e8000d9e63c75"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/umr_head_seed0.pt",
+        "sha256": "1d1fd6e8b9f7220875a71b6fd599093c045562475215454e62f3d24c45235656"
+      }
+    ]
+  },
+  "btc_gccs_seed2_test2": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 2,
+    "split": "test2",
+    "config": "profiles/btc_gccs_seed2_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/native/test2/eval.pth",
+    "reference_eval_sha256": "207b068dcdffc4209c8e6eb0ac418fc29319f84a80add19f8fe024a337ae31bf",
+    "inference_assets": []
+  },
+  "btc_deim_train": {
+    "dataset": "btc",
+    "method": "deim",
+    "split": "train",
+    "config": "profiles/btc_deim_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "btc_gccs_train": {
+    "dataset": "btc",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/btc_gccs_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_lcct_only_seed0_test": {
+    "dataset": "cdw",
+    "method": "lcct_only",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_lcct_only_seed0_test.yml",
+    "checkpoint": "ablations/internal_training_side/GCCS_INTERNAL_ABLATION_SEED0_v1/checkpoints/lcct_only/selected_checkpoint.pth",
+    "checkpoint_sha256": "d9ed2ab48619c2417cebef6e38dd4a60487623cf39fcb5ddc9ecf684993191cd",
+    "reference_eval": "ablations/internal_training_side/GCCS_INTERNAL_ABLATION_SEED0_v1/results/lcct_only/eval.pth",
+    "reference_eval_sha256": "3e486487dc2aaa95ee8a38fb1fd449fbb7df4eeab417be058c55429f27ea60d2",
+    "inference_assets": []
+  },
+  "cdw_ufd_only_seed0_test": {
+    "dataset": "cdw",
+    "method": "ufd_only",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_ufd_only_seed0_test.yml",
+    "checkpoint": "ablations/internal_training_side/GCCS_INTERNAL_ABLATION_SEED0_v1/checkpoints/ufd_only/selected_checkpoint.pth",
+    "checkpoint_sha256": "f5fc0d9b9855b922affcc03d96bd246777cc12d58fe9bd67de277f03abb7dc01",
+    "reference_eval": "ablations/internal_training_side/GCCS_INTERNAL_ABLATION_SEED0_v1/results/ufd_only/eval.pth",
+    "reference_eval_sha256": "842be07fc709ddd366906f23b6abb38f0fe58b8ca0cb3e390531d854d485de0a",
+    "inference_assets": []
+  },
+  "cdw_ufd_without_difficulty_seed0_test": {
+    "dataset": "cdw",
+    "method": "ufd_without_difficulty",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_ufd_without_difficulty_seed0_test.yml",
+    "checkpoint": "ablations/internal_training_side/GCCS_INTERNAL_ABLATION_SEED0_v1/checkpoints/ufd_without_difficulty/selected_checkpoint.pth",
+    "checkpoint_sha256": "f65178ce32fcb96a240df036b7a48aab9f08c1a550bc2d6211e8a678519e3c2e",
+    "reference_eval": "ablations/internal_training_side/GCCS_INTERNAL_ABLATION_SEED0_v1/results/ufd_without_difficulty/eval.pth",
+    "reference_eval_sha256": "6771bde034b5268b779dd5e2307644d7cc59e65a9cab6b7d768aa81a467edd3b",
+    "inference_assets": []
+  },
+  "cdw_deim_ccvr_seed0_test": {
+    "dataset": "cdw",
+    "method": "deim_ccvr",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_deim_ccvr_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+    "checkpoint_sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054",
+    "reference_eval": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/results/seed0/eval.pth",
+    "reference_eval_sha256": "42955834cf03c9edccd1c655c1d38bcf003816556d139ab1997b9d8b56480449",
+    "inference_assets": [
+      {
+        "path": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/calibration/seed0/qccr_params.json",
+        "sha256": "84b40aaab9d4ffc887192e27b6b0088e37c00196d6821fcf74c470d4d6d358d6"
+      },
+      {
+        "path": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/calibration/seed0/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "295cdb7075f3d54c0acdc51fffd070f43fd8fe4f3947b8ae3b65e342f246793f"
+      }
+    ]
+  },
+  "cdw_deim_ccvr_seed1_test": {
+    "dataset": "cdw",
+    "method": "deim_ccvr",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_deim_ccvr_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed1/best_stg2.pth",
+    "checkpoint_sha256": "422ec0956963b07f59d2cdd29488bdedcf24fc23f02697bfb817adcb2d5a550d",
+    "reference_eval": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/results/seed1/eval.pth",
+    "reference_eval_sha256": "ed66aae40bde73999a084a89f1bb6b5468b44963321188135d186ead432c5628",
+    "inference_assets": [
+      {
+        "path": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/calibration/seed1/qccr_params.json",
+        "sha256": "59b80f8c89de86fc1e1b7ad068fac9acdb0cee5349bea25499f7116558325b22"
+      },
+      {
+        "path": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/calibration/seed1/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "992fd0cf2d0c1a089b7d7d6d3312e9a9e1738ccb255903c44362153037c1ff3c"
+      }
+    ]
+  },
+  "cdw_deim_ccvr_seed2_test": {
+    "dataset": "cdw",
+    "method": "deim_ccvr",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_deim_ccvr_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed2/best_stg2.pth",
+    "checkpoint_sha256": "a056c7e0686c4d893b971eef397281501dd772e2607436864ba0669142c922f0",
+    "reference_eval": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/results/seed2/eval.pth",
+    "reference_eval_sha256": "089d5d3c6b02605b13814c56aafb45777a0f88db4aca8ef6f6692f878e7f4e3d",
+    "inference_assets": [
+      {
+        "path": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/calibration/seed2/qccr_params.json",
+        "sha256": "0589a1badb827beeaadc2be64ba3b6b276fb3fdb623cdbd0c8bf6add9ef8b675"
+      },
+      {
+        "path": "ablations/frozen_postprocessing_control/B0_QCCR_UMR_THREE_SEED_v1/calibration/seed2/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "cd345b6639f4adc933c75312f5e302b568c5078ac17c6c2786bf7a52d09a9e59"
+      }
+    ]
+  },
+  "cdw_lcct_only_train": {
+    "dataset": "cdw",
+    "method": "lcct_only",
+    "split": "train",
+    "config": "profiles/cdw_lcct_only_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_ufd_only_train": {
+    "dataset": "cdw",
+    "method": "ufd_only",
+    "split": "train",
+    "config": "profiles/cdw_ufd_only_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_ufd_without_difficulty_train": {
+    "dataset": "cdw",
+    "method": "ufd_without_difficulty",
+    "split": "train",
+    "config": "profiles/cdw_ufd_without_difficulty_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_delta0005_train": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/cdw_delta0005_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_delta001_train": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/cdw_delta001_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_delta002_train": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/cdw_delta002_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_delta004_train": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/cdw_delta004_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_delta008_train": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/cdw_delta008_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  }
+}

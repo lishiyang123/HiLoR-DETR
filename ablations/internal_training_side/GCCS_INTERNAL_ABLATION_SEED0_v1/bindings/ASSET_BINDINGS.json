@@ -1,0 +1,154 @@
+{
+  "dataset": "CDW1630",
+  "external_assets": {
+    "b0_checkpoint": {
+      "path": "../../../main_host/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+      "sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054"
+    },
+    "b0_eval": {
+      "path": "../../../main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+      "sha256": "67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42"
+    },
+    "b0_log": {
+      "path": "../../../main_host/training_records/CDW1630/B0/seed0/log.txt",
+      "sha256": "23a1f4b0240c2984632eeee3c111db3adef00df5fe0881911b40563a2ada3838"
+    },
+    "gccs_checkpoint": {
+      "path": "../../../main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+      "sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885"
+    },
+    "gccs_eval": {
+      "path": "../../../main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
+      "sha256": "a1121aa43ce3443a5edcee31e8eeb9259e56b33a3d4ce828df9d17212128795e"
+    },
+    "gccs_log": {
+      "path": "../../../main_host/training_records/CDW1630/Ours/seed0/log.txt",
+      "sha256": "e536df2f1efb84df93194d26f3f2e6225261c2eae5f960dec7d75b1a1524b9e2"
+    },
+    "pretrained": {
+      "path": "../../../main_host/pretrained/deim_hgnetv2_m_coco.pth",
+      "sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc"
+    },
+    "source_manifest": {
+      "path": "../../../main_host/source/FINAL_CODE/SOURCE_MANIFEST.json",
+      "sha256": "f3efa05b07483b636fb61714ede86424609841b7537d0a9d1ac0e88d9ea2e417"
+    },
+    "test_annotation": {
+      "path": "../../../main_host/datasets/CDW1630/annotations/instances_test2017.json",
+      "sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05"
+    },
+    "train_annotation": {
+      "path": "../../../main_host/datasets/CDW1630/annotations/instances_train2017.json",
+      "sha256": "7fdd6dee1d2d88c25ff7248e2abe8c8277dfa2083ec9557d52b5ca9da78065c4"
+    },
+    "val_annotation": {
+      "path": "../../../main_host/datasets/CDW1630/annotations/instances_val2017.json",
+      "sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5"
+    }
+  },
+  "new_rows": {
+    "lcct_only": {
+      "checkpoint": {
+        "path": "checkpoints/lcct_only/selected_checkpoint.pth",
+        "sha256": "d9ed2ab48619c2417cebef6e38dd4a60487623cf39fcb5ddc9ecf684993191cd"
+      },
+      "eval": {
+        "path": "results/lcct_only/eval.pth",
+        "sha256": "3e486487dc2aaa95ee8a38fb1fd449fbb7df4eeab417be058c55429f27ea60d2"
+      },
+      "evaluation_record": {
+        "path": "results/lcct_only/EXACT_METRICS.json",
+        "sha256": "02055486b23ad11e888edd6d4cf736483245907e77662573360973df8c40b715"
+      },
+      "selection": {
+        "path": "evidence/val_selection/lcct_only/SELECTION.json",
+        "sha256": "fe3ccca219309a34ccebea5738b1a8e45611053c23c05c944da64071d6933d78"
+      },
+      "test_config": {
+        "path": "configs/materialized/lcct_only_test.yml",
+        "sha256": "571aea6cef6830024b1fd9698393287c7bec564ef6b8438f4f0b34bf461b241a"
+      },
+      "training_config": {
+        "path": "configs/materialized/lcct_only.yml",
+        "sha256": "de1cafd0a834d57111dad042c1f9b133df3a24c40602a0a33053755507906ad3"
+      },
+      "training_log": {
+        "path": "evidence/val_selection/lcct_only/log.txt",
+        "sha256": "1786901c492fa93cd991a56f7e9bfde694140c362ce071494039fa1259969873"
+      }
+    },
+    "ufd_only": {
+      "checkpoint": {
+        "path": "checkpoints/ufd_only/selected_checkpoint.pth",
+        "sha256": "f5fc0d9b9855b922affcc03d96bd246777cc12d58fe9bd67de277f03abb7dc01"
+      },
+      "eval": {
+        "path": "results/ufd_only/eval.pth",
+        "sha256": "842be07fc709ddd366906f23b6abb38f0fe58b8ca0cb3e390531d854d485de0a"
+      },
+      "evaluation_record": {
+        "path": "results/ufd_only/EXACT_METRICS.json",
+        "sha256": "72d36f164cdca20220c2f2c5544982af0c3e086fd03596ee6452967e51076e9e"
+      },
+      "selection": {
+        "path": "evidence/val_selection/ufd_only/SELECTION.json",
+        "sha256": "cca05550b2fa93fcbcbd4cd0839006688d3a9bd2bf2df763cc53d3aab48df76c"
+      },
+      "test_config": {
+        "path": "configs/materialized/ufd_only_test.yml",
+        "sha256": "164fa9dcb395fd88820982acada60f2ae8eda03573d67f2f6f67b516d35e87bb"
+      },
+      "training_config": {
+        "path": "configs/materialized/ufd_only.yml",
+        "sha256": "a39cd78e72ac628eb2cab38dd9b1206c90f9f5443ca0ee6d28a00728c9166236"
+      },
+      "training_log": {
+        "path": "evidence/val_selection/ufd_only/log.txt",
+        "sha256": "404261165ac0aa11b7a721500a0f0399c32df47808afc26ae3ab3b40c107da2f"
+      }
+    },
+    "ufd_without_difficulty": {
+      "checkpoint": {
+        "path": "checkpoints/ufd_without_difficulty/selected_checkpoint.pth",
+        "sha256": "f65178ce32fcb96a240df036b7a48aab9f08c1a550bc2d6211e8a678519e3c2e"
+      },
+      "eval": {
+        "path": "results/ufd_without_difficulty/eval.pth",
+        "sha256": "6771bde034b5268b779dd5e2307644d7cc59e65a9cab6b7d768aa81a467edd3b"
+      },
+      "evaluation_record": {
+        "path": "results/ufd_without_difficulty/EXACT_METRICS.json",
+        "sha256": "d9193cd8464620c6a93aa68e2cb5d5e733971261eb415613bffcd2993d6cba29"
+      },
+      "selection": {
+        "path": "evidence/val_selection/ufd_without_difficulty/SELECTION.json",
+        "sha256": "4b3139649ad8001b45537ca6c918922560ef2de6df946fc4eed14b4c4c99c569"
+      },
+      "test_config": {
+        "path": "configs/materialized/ufd_without_difficulty_test.yml",
+        "sha256": "45aadbf01e9b25a3506257c0b933b3e7b6feaa6606263a6456a9bc950daac11b"
+      },
+      "training_config": {
+        "path": "configs/materialized/ufd_without_difficulty.yml",
+        "sha256": "354ec81562df6162f64b31b9884401c36805bd7ba76f75262b20c69a50d81f51"
+      },
+      "training_log": {
+        "path": "evidence/val_selection/ufd_without_difficulty/log.txt",
+        "sha256": "0894dbbd8def5b118c1436c5f61bc9966e69bc99d413cf4fb17b796fd119010c"
+      }
+    }
+  },
+  "qccr_enabled": false,
+  "rows": [
+    "b0",
+    "ufd_without_difficulty",
+    "ufd_only",
+    "lcct_only",
+    "gccs"
+  ],
+  "schema": "cdw1630-gccs-internal-ablation-assets-v1",
+  "seed": 0,
+  "selection": "Val AP only; global maximum with earliest exact tie",
+  "test_role": "reporting only",
+  "umr_enabled": false
+}

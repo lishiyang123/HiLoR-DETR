@@ -1,0 +1,15 @@
+__include__: ["/root/autodl-tmp/BTC_DEIM_project/CDW_GCCS_INTERNAL_ABLATION_TRAINING_STATE_v1/configs/cdw_common_train.yml"]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/CDW_GCCS_INTERNAL_ABLATION_TRAINING_STATE_v1/formal/lcct_only/output"
+
+DFINETransformer:
+  ufd_enabled: False
+
+DEIMCriterion:
+  ufd_enabled: False
+  lcct_enabled: True
+  lcct_warmup_epoch: 20
+  lcct_delta: 0.02
+  lcct_continuous_handover: True
+  lcct_transition_width: 0.02
+  lcct_ramp_epochs: 5
+

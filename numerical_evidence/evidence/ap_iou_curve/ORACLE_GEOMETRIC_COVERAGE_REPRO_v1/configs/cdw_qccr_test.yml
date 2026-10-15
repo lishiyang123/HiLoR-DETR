@@ -1,0 +1,9 @@
+__include__: [./cdw_native_test.yml]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/PAPER_FIGURES_REPRO_PACKAGE_v1/figures/F04_AP_IOU_TRADEOFF/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/unused_formal_outputs/QCCR/test"
+PostProcessor:
+  qccr_enabled: True
+  qccr_beta0: 1.8673428661283082
+  qccr_beta_positive: 1.6131491345029758
+  qccr_beta_negative: 2.7299368154145243
+  qccr_duplicate_penalty: 0.6221647268153838
+  umr_enabled: False

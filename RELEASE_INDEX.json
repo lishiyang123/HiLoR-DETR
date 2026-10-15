@@ -1,0 +1,92 @@
+{
+  "schema": "hilordetr.release-index.v1",
+  "status": "RELEASE_READY",
+  "layout": "flat",
+  "asset_count": 14,
+  "assets": [
+    {
+      "order": 1,
+      "name": "main_host",
+      "relative_path": "main_host",
+      "scope": "core"
+    },
+    {
+      "order": 2,
+      "name": "ablations",
+      "relative_path": "ablations",
+      "scope": "core"
+    },
+    {
+      "order": 3,
+      "name": "btc",
+      "relative_path": "generalization/btc",
+      "scope": "generalization"
+    },
+    {
+      "order": 4,
+      "name": "benchmarks",
+      "relative_path": "benchmarks",
+      "scope": "extension"
+    },
+    {
+      "order": 5,
+      "name": "sensitivity",
+      "relative_path": "sensitivity",
+      "scope": "extension"
+    },
+    {
+      "order": 6,
+      "name": "numerical_evidence",
+      "relative_path": "numerical_evidence",
+      "scope": "extension"
+    },
+    {
+      "order": 7,
+      "name": "qualitative_evidence",
+      "relative_path": "qualitative_evidence",
+      "scope": "extension"
+    },
+    {
+      "order": 8,
+      "name": "gate_sensitivity",
+      "relative_path": "gate_sensitivity",
+      "scope": "extension"
+    },
+    {
+      "order": 9,
+      "name": "bootstrap",
+      "relative_path": "bootstrap",
+      "scope": "extension"
+    },
+    {
+      "order": 10,
+      "name": "dataset_analysis",
+      "relative_path": "dataset_analysis",
+      "scope": "extension"
+    },
+    {
+      "order": 11,
+      "name": "second_host",
+      "relative_path": "second_host",
+      "scope": "second_host"
+    },
+    {
+      "order": 12,
+      "name": "efficiency",
+      "relative_path": "efficiency",
+      "scope": "efficiency"
+    },
+    {
+      "order": 13,
+      "name": "ranking_comparison",
+      "relative_path": "ranking_comparison",
+      "scope": "ranking_comparison"
+    },
+    {
+      "order": 14,
+      "name": "proposal_budget",
+      "relative_path": "proposal_budget",
+      "scope": "offline_analysis"
+    }
+  ]
+}

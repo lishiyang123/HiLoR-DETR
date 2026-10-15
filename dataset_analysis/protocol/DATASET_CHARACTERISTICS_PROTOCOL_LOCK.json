@@ -1,0 +1,36 @@
+{
+  "analysis_profile": "CONSERVATIVE_CORE_ONLY",
+  "dataset_path_in_main_package": "datasets/CDW1630",
+  "expected_category_count": 5,
+  "expected_image_counts": {
+    "Test": 237,
+    "Train": 1144,
+    "Val": 249
+  },
+  "explicitly_excluded": [
+    "box-overlap or IoMin analysis",
+    "class co-occurrence analysis",
+    "pixel-derived scene analysis",
+    "model predictions, checkpoints, training, or inference",
+    "hypothesis testing or causal claims"
+  ],
+  "gpu_required": false,
+  "included_statistics": [
+    "split image and valid-instance counts",
+    "class instance and image-presence distributions",
+    "COCO small/medium/large bbox-area distributions",
+    "annotated-object count per image"
+  ],
+  "pixel_policy": "image paths are existence-checked; image pixels are never opened",
+  "protocol_name": "CDW1630_DATASET_CHARACTERISTICS_CONSERVATIVE_v1",
+  "protocol_version": "1.0",
+  "size_definition": "small < 32^2, medium >= 32^2 and < 96^2, large >= 96^2 bbox pixels",
+  "splits": [
+    "Train",
+    "Val",
+    "Test"
+  ],
+  "status": "FROZEN_BEFORE_ANALYSIS",
+  "test_policy": "frozen Test annotations are used for neutral dataset description only",
+  "test_used_for_model_or_parameter_selection": false
+}

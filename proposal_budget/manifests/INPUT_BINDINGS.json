@@ -1,0 +1,107 @@
+{
+  "created_utc": "2026-09-27T10:06:55.796664+00:00",
+  "format_version": 1,
+  "main_manifest": {
+    "bytes": 520655,
+    "path": "main_host/manifests/FILE_MANIFEST.sha256.json",
+    "sha256": "1bce04b5a49d2c645ade271faa770b34cc45f3f449cf42408bb386006cc173e1"
+  },
+  "prediction_package_manifest": {
+    "bytes": 4256,
+    "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/manifest.json",
+    "sha256": "726741542c2e00ce05199556ed870a03e2af97b7b7ff17091eeb33b39be3dddd"
+  },
+  "predictions": {
+    "B0_seed0": {
+      "method": "B0",
+      "prediction": {
+        "bytes": 16239645,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/B0/seed0/predictions.json",
+        "sha256": "6a5e75cf902c95ba77bcc9cff17b2457ec1dea4bdfb13df9be04d5b64c27047e"
+      },
+      "seed": 0,
+      "summary": {
+        "bytes": 1174,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/B0/seed0/PREDICTION_SUMMARY.json",
+        "sha256": "119beb9f8c9b09a5c7f0e76104e8d737dd268353d6343855fdba1fed3b1ed42f"
+      }
+    },
+    "B0_seed1": {
+      "method": "B0",
+      "prediction": {
+        "bytes": 16250223,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/B0/seed1/predictions.json",
+        "sha256": "0a37faa0cb9dc91bd6ef82193345e8b90d175a6bdadad2107c31eef941f4e96f"
+      },
+      "seed": 1,
+      "summary": {
+        "bytes": 1191,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/B0/seed1/PREDICTION_SUMMARY.json",
+        "sha256": "ea1b280d6935615eaad5c1586677984a53e4d6f8a9d22e734d49a426350f7a27"
+      }
+    },
+    "B0_seed2": {
+      "method": "B0",
+      "prediction": {
+        "bytes": 16233113,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/B0/seed2/predictions.json",
+        "sha256": "bb9620bb0f5e4eb8d306c02a6f56d95b18d5faf99e51950b59963fef3cd74ea8"
+      },
+      "seed": 2,
+      "summary": {
+        "bytes": 1175,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/B0/seed2/PREDICTION_SUMMARY.json",
+        "sha256": "b13174f31dccad84d48377fc51878a8e0765ca93773c116a07a0301e2be3b122"
+      }
+    },
+    "Full_seed0": {
+      "method": "Full",
+      "prediction": {
+        "bytes": 16237032,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/Full/seed0/predictions.json",
+        "sha256": "be1ef240c5c38e18cc94976054263716015caf3785340964d1e00bed9ec5f28d"
+      },
+      "seed": 0,
+      "summary": {
+        "bytes": 1186,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/Full/seed0/PREDICTION_SUMMARY.json",
+        "sha256": "38d4e0dcfb65557ebd075208f077b84e8d43274c44ccc0c5a953b45b657e011c"
+      }
+    },
+    "Full_seed1": {
+      "method": "Full",
+      "prediction": {
+        "bytes": 16233897,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/Full/seed1/predictions.json",
+        "sha256": "1a07c42b53bc9b038f3a122f6e42f034b5ba5b99bb81e07295f0253361373aaf"
+      },
+      "seed": 1,
+      "summary": {
+        "bytes": 1171,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/Full/seed1/PREDICTION_SUMMARY.json",
+        "sha256": "00e11d160c389369bff3a1eacde682595912ab13906a51fab79487c3d242ba82"
+      }
+    },
+    "Full_seed2": {
+      "method": "Full",
+      "prediction": {
+        "bytes": 16239519,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/Full/seed2/predictions.json",
+        "sha256": "c39338f8de70eb7a7f6b24af97a39a8ce96d956c13ce84f63200c303a3c18e69"
+      },
+      "seed": 2,
+      "summary": {
+        "bytes": 1188,
+        "path": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1/predictions/Full/seed2/PREDICTION_SUMMARY.json",
+        "sha256": "fccdbaae6131c65938d9c9e38f695f7ae71c07dd702ac6eeef9e82c7d5fd7db1"
+      }
+    }
+  },
+  "release": "HiLoR-DETR",
+  "release_write": false,
+  "test_annotation": {
+    "bytes": 174707,
+    "path": "main_host/datasets/CDW1630/annotations/instances_test2017.json",
+    "sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05"
+  }
+}

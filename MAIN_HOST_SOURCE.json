@@ -1,0 +1,11 @@
+{
+  "schema": "hilor-main-host-source-binding-v1",
+  "source": "main_host/source/FINAL_CODE",
+  "source_manifest_sha256": "f3efa05b07483b636fb61714ede86424609841b7537d0a9d1ac0e88d9ea2e417",
+  "profiles_sha256": "2ccf2822d541fa481954d00b4beb3b2949c28721d67ce12769f30dd28a84a980",
+  "datasets": [
+    "CDW1630",
+    "BTC"
+  ],
+  "test_used_for_selection_fitting_or_tuning": false
+}

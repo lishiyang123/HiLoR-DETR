@@ -1,0 +1,1661 @@
+[
+  {
+    "detections": 4,
+    "file_name": "20250901_121628_jpg.rf.4ae538a6c3c906e0e6befb835da649fd.jpg",
+    "height": 640,
+    "image_id": 1,
+    "width": 640
+  },
+  {
+    "detections": 2,
+    "file_name": "20250901_121636_jpg.rf.b09c41adb2eb643d675d99f86e7c3ef3.jpg",
+    "height": 640,
+    "image_id": 2,
+    "width": 640
+  },
+  {
+    "detections": 2,
+    "file_name": "20250901_121703_jpg.rf.065f84da5ce9df57e6b502ab4901f254.jpg",
+    "height": 640,
+    "image_id": 3,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "20250901_121706_jpg.rf.952a4789bdcfb159f8229e04e1281c5a.jpg",
+    "height": 640,
+    "image_id": 4,
+    "width": 640
+  },
+  {
+    "detections": 1,
+    "file_name": "20250901_121710_jpg.rf.45d7d5089ed9ef09b76332de819867bc.jpg",
+    "height": 640,
+    "image_id": 5,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "20250901_121850_jpg.rf.4e2124af604ae1f6c7e4633099196234.jpg",
+    "height": 640,
+    "image_id": 6,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "20250901_121900_jpg.rf.9ccb84772687382a46a6bc0e1d69c3d6.jpg",
+    "height": 640,
+    "image_id": 7,
+    "width": 640
+  },
+  {
+    "detections": 21,
+    "file_name": "20250901_122139_jpg.rf.798f01618d66ffe29bfcbbcb117b4ae6.jpg",
+    "height": 640,
+    "image_id": 8,
+    "width": 640
+  },
+  {
+    "detections": 5,
+    "file_name": "20250901_122211_jpg.rf.0c817148202dbafb58ad4ffa35d547b5.jpg",
+    "height": 640,
+    "image_id": 9,
+    "width": 640
+  },
+  {
+    "detections": 5,
+    "file_name": "20250901_122211_jpg.rf.a620ead3909306f72d55543fb3a11b2a.jpg",
+    "height": 640,
+    "image_id": 10,
+    "width": 640
+  },
+  {
+    "detections": 16,
+    "file_name": "20250901_122307_jpg.rf.dc0f0faf2829544a15c2876d03b3b1c9.jpg",
+    "height": 640,
+    "image_id": 11,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250901_122352_jpg.rf.28b50239c956f27921129fd3287a8d3d.jpg",
+    "height": 640,
+    "image_id": 12,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250901_122420_jpg.rf.4dd94e3afed83d770a2b831ca49dde21.jpg",
+    "height": 640,
+    "image_id": 13,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "20250901_122429_jpg.rf.eddfd957b1660c09479617b4d55b1fa0.jpg",
+    "height": 640,
+    "image_id": 14,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "20250901_122447_jpg.rf.f36f0fb917832a1917997e02f6d7b5ae.jpg",
+    "height": 640,
+    "image_id": 15,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "20250901_122456_jpg.rf.b98cb73537b0a6267ce8d187ebcc514c.jpg",
+    "height": 640,
+    "image_id": 16,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "20250901_122456_jpg.rf.f484b45d3dc25aca1fda7094253b061e.jpg",
+    "height": 640,
+    "image_id": 17,
+    "width": 640
+  },
+  {
+    "detections": 26,
+    "file_name": "20250901_124028_jpg.rf.f35869dcf0f1f908e70215b9b31e240c.jpg",
+    "height": 640,
+    "image_id": 18,
+    "width": 640
+  },
+  {
+    "detections": 40,
+    "file_name": "20250901_124149_jpg.rf.669c1606ffa0693a9d08e799cf3bf0ec.jpg",
+    "height": 640,
+    "image_id": 19,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "20250914_143232_jpg.rf.7d788189a916f023f6bfe910addc5e19.jpg",
+    "height": 640,
+    "image_id": 20,
+    "width": 640
+  },
+  {
+    "detections": 5,
+    "file_name": "20250914_143337_jpg.rf.4b097748367202bc5aa872a1e7e84717.jpg",
+    "height": 640,
+    "image_id": 21,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "20250914_162512_jpg.rf.6e2a97d098cd143808b1e65c195948ab.jpg",
+    "height": 640,
+    "image_id": 22,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "20250914_162546_jpg.rf.9dab086f44d465d2478df442942b1386.jpg",
+    "height": 640,
+    "image_id": 23,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "20250914_162623_jpg.rf.7af4df004a4d87630f663ef44b2a82ed.jpg",
+    "height": 640,
+    "image_id": 24,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_162629_jpg.rf.735c9346829424e6a90560f1e31eac15.jpg",
+    "height": 640,
+    "image_id": 25,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "20250914_162652_jpg.rf.e0beb8b5194fc721c14884991d2bea27.jpg",
+    "height": 640,
+    "image_id": 26,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "20250914_162735_jpg.rf.8cf1c7f0fb9c8774c9ab7802d629603e.jpg",
+    "height": 640,
+    "image_id": 27,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_162817_jpg.rf.61f9abe4d7aaa8c49877db45d5e4125e.jpg",
+    "height": 640,
+    "image_id": 28,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "20250914_162842_jpg.rf.fafbd73f83d58a80e8912beeb79f37b8.jpg",
+    "height": 640,
+    "image_id": 29,
+    "width": 640
+  },
+  {
+    "detections": 22,
+    "file_name": "20250914_163046_jpg.rf.af7fa74450deae24617a33eebd54bfcd.jpg",
+    "height": 640,
+    "image_id": 30,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "20250914_163056_jpg.rf.87589e687c4f150511734238744bb385.jpg",
+    "height": 640,
+    "image_id": 31,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "20250914_163123_jpg.rf.6343a9798a9b6fdd6fe9a5062e7cb0f9.jpg",
+    "height": 640,
+    "image_id": 32,
+    "width": 640
+  },
+  {
+    "detections": 16,
+    "file_name": "20250914_163133_jpg.rf.70013ceca382be4f05e064e89c4221d5.jpg",
+    "height": 640,
+    "image_id": 33,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "20250914_163252_jpg.rf.6ba877d7eb3873ecd7e8135b90123b27.jpg",
+    "height": 640,
+    "image_id": 34,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "20250914_163334_jpg.rf.31e650ba4e58820cb63c65f18c9f073b.jpg",
+    "height": 640,
+    "image_id": 35,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "20250914_163344_jpg.rf.25e0b176dc4ae59766241b7b317c3aaf.jpg",
+    "height": 640,
+    "image_id": 36,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "20250914_163347_jpg.rf.d531588961c6ff37346197c568e643fe.jpg",
+    "height": 640,
+    "image_id": 37,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "20250914_163404_jpg.rf.572b6e1294fcf6804c38019c254908e5.jpg",
+    "height": 640,
+    "image_id": 38,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "20250914_163441_jpg.rf.eda6941359aadcb9109736bb3e0767b3.jpg",
+    "height": 640,
+    "image_id": 39,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "20250914_163446_jpg.rf.91a77613b9e221c7491f51958a9c6fd5.jpg",
+    "height": 640,
+    "image_id": 40,
+    "width": 640
+  },
+  {
+    "detections": 3,
+    "file_name": "20250914_163514_jpg.rf.603f0748e21f81e52e9d3fd5ca677885.jpg",
+    "height": 640,
+    "image_id": 41,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "20250914_163705_jpg.rf.fe173c973bba7ba0d45704f583eb659c.jpg",
+    "height": 640,
+    "image_id": 42,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "20250914_163710_jpg.rf.a37202c50f5581a9e83038b6bd0bacf4.jpg",
+    "height": 640,
+    "image_id": 43,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "20250914_163721_jpg.rf.c95667ea18da31047e09970e710eef4c.jpg",
+    "height": 640,
+    "image_id": 44,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "20250914_163921_jpg.rf.78decf238369395c524cc1a8c2626258.jpg",
+    "height": 640,
+    "image_id": 45,
+    "width": 640
+  },
+  {
+    "detections": 19,
+    "file_name": "20250914_163948_jpg.rf.61112ec16884b1759042d6dbdddcf605.jpg",
+    "height": 640,
+    "image_id": 46,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "20250914_164009_jpg.rf.566c70a1cd6ff5f6718142fa17043ebf.jpg",
+    "height": 640,
+    "image_id": 47,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "20250914_164048_jpg.rf.d2d9d4467a66990f5f97aea6730dc6c3.jpg",
+    "height": 640,
+    "image_id": 48,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "20250914_164147_jpg.rf.bbf331b3d4fd46f936c2d7d16529e9fa.jpg",
+    "height": 640,
+    "image_id": 49,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "20250914_164200_jpg.rf.3bddc687f9f89957b33fb654f2508b30.jpg",
+    "height": 640,
+    "image_id": 50,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "20250914_164228_jpg.rf.04db8c0c7d8873dc1dac571540642950.jpg",
+    "height": 640,
+    "image_id": 51,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_164343_jpg.rf.b593ca5f94812b4fe1dbaa1456a275aa.jpg",
+    "height": 640,
+    "image_id": 52,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_164408_jpg.rf.40d6436f7e63656052284c56e440107b.jpg",
+    "height": 640,
+    "image_id": 53,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "20250914_164450_jpg.rf.636d1d2567d502ec643109d90fe0cbef.jpg",
+    "height": 640,
+    "image_id": 54,
+    "width": 640
+  },
+  {
+    "detections": 5,
+    "file_name": "20250914_165211_jpg.rf.0e4e1282054cfdd2b8a7df4a4e9d890f.jpg",
+    "height": 640,
+    "image_id": 55,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_165250_jpg.rf.5ae7bb23fa2f9b503abf8c18bffa842f.jpg",
+    "height": 640,
+    "image_id": 56,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_165414_jpg.rf.f095f91281eb6dddc7d138298ba1ccb2.jpg",
+    "height": 640,
+    "image_id": 57,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "20250914_165605_jpg.rf.b1b95ddcd86c746064c64ddc1ec58e9a.jpg",
+    "height": 640,
+    "image_id": 58,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_165728_jpg.rf.1a70e34c35cae6ca7a63b594c5528b8d.jpg",
+    "height": 640,
+    "image_id": 59,
+    "width": 640
+  },
+  {
+    "detections": 5,
+    "file_name": "20250914_165730_jpg.rf.f249054a5a4de940c126a2df65b4c248.jpg",
+    "height": 640,
+    "image_id": 60,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "20250914_165739_jpg.rf.06da5e95f2f1d1e5235ad03083ffc843.jpg",
+    "height": 640,
+    "image_id": 61,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "20250914_165755_jpg.rf.f2cdae0dd7bfe7345d091185ab919460.jpg",
+    "height": 640,
+    "image_id": 62,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "20250914_170002_jpg.rf.5c4d4a4db0f591465570d4b178149d43.jpg",
+    "height": 640,
+    "image_id": 63,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "20250914_170014_jpg.rf.5df90b0da86866967f8d3c8275198bc1.jpg",
+    "height": 640,
+    "image_id": 64,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_170018_jpg.rf.5359316e8b2585000b499afdeceb9db1.jpg",
+    "height": 640,
+    "image_id": 65,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "20250914_170434_jpg.rf.5efda9d1f0b1a8994ee84678199b6dac.jpg",
+    "height": 640,
+    "image_id": 66,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "20250914_170649_jpg.rf.93404f7066990fce7ae3957663a7c121.jpg",
+    "height": 640,
+    "image_id": 67,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "20250914_170704_jpg.rf.94be7b651a1b54c3e17f0049124e12e4.jpg",
+    "height": 640,
+    "image_id": 68,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "20250914_170712_jpg.rf.6fadaa6e2bf8ec149d4e6d500163c217.jpg",
+    "height": 640,
+    "image_id": 69,
+    "width": 640
+  },
+  {
+    "detections": 26,
+    "file_name": "20250914_170730_jpg.rf.44f9bbe30bd7817344aa9c51cb73e30a.jpg",
+    "height": 640,
+    "image_id": 70,
+    "width": 640
+  },
+  {
+    "detections": 28,
+    "file_name": "20250914_170737_jpg.rf.04ea502cdfc8cda7054e64dfb3e943b2.jpg",
+    "height": 640,
+    "image_id": 71,
+    "width": 640
+  },
+  {
+    "detections": 25,
+    "file_name": "20250914_170855_jpg.rf.ca1a0e8ea82fb1bc0177d269f827f170.jpg",
+    "height": 640,
+    "image_id": 72,
+    "width": 640
+  },
+  {
+    "detections": 29,
+    "file_name": "20250914_170904_jpg.rf.ffdafb07dee1866e011b384805f02e83.jpg",
+    "height": 640,
+    "image_id": 73,
+    "width": 640
+  },
+  {
+    "detections": 29,
+    "file_name": "20250914_170937_jpg.rf.259895fa073146b40f5578c1f4c45ad0.jpg",
+    "height": 640,
+    "image_id": 74,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "20250914_171040_jpg.rf.10fe47d006fafa72e7b72f5e12c6ec64.jpg",
+    "height": 640,
+    "image_id": 75,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "20250914_171045_jpg.rf.5122772be3ca9325892449d69dc26155.jpg",
+    "height": 640,
+    "image_id": 76,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "20250914_171113_jpg.rf.84793efe6bff021d683ef961f577011e.jpg",
+    "height": 640,
+    "image_id": 77,
+    "width": 640
+  },
+  {
+    "detections": 29,
+    "file_name": "20250914_171117_jpg.rf.5cf7815bd114b0e7f5573add8d49780f.jpg",
+    "height": 640,
+    "image_id": 78,
+    "width": 640
+  },
+  {
+    "detections": 26,
+    "file_name": "20250914_171126_jpg.rf.646c652bb203beb65ac96a579888583e.jpg",
+    "height": 640,
+    "image_id": 79,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "20250914_171158_jpg.rf.1ae60f4f7e5128f0e1244660f8c749c2.jpg",
+    "height": 640,
+    "image_id": 80,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "20250914_171240_jpg.rf.e2bd8cd01e1ac6914a3880fc7eb95e6f.jpg",
+    "height": 640,
+    "image_id": 81,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "20250914_171301_jpg.rf.948ab11be8bbe036620baa1e10cc0817.jpg",
+    "height": 640,
+    "image_id": 82,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "20250914_171312_jpg.rf.3242467fd3f164b0acf0cee09814f78a.jpg",
+    "height": 640,
+    "image_id": 83,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "20250914_171347_jpg.rf.397b9832e64fbf039cc8c84e54f887f9.jpg",
+    "height": 640,
+    "image_id": 84,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "20250914_171404_jpg.rf.38d9b7daa70290cd23f010f85e8fdbab.jpg",
+    "height": 640,
+    "image_id": 85,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "20250914_171518_jpg.rf.7b0057caf3f74a4bb0d8001bed7aa0cc.jpg",
+    "height": 640,
+    "image_id": 86,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "20250914_171540_jpg.rf.2bfecd30249eb38b1af0b35833ee541a.jpg",
+    "height": 640,
+    "image_id": 87,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "20250914_171558_jpg.rf.f910d239f2f23405a30c255a7924a8ba.jpg",
+    "height": 640,
+    "image_id": 88,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "20250914_171614_jpg.rf.82db9323a5ff3a09688a3a9d5e24f026.jpg",
+    "height": 640,
+    "image_id": 89,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "20250914_171617_jpg.rf.91ca50411cfebeed611e31b2ef820191.jpg",
+    "height": 640,
+    "image_id": 90,
+    "width": 640
+  },
+  {
+    "detections": 16,
+    "file_name": "20250914_171622_jpg.rf.79dcc3a556fbc5ef04e90c526f74daf0.jpg",
+    "height": 640,
+    "image_id": 91,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "20250914_171630_jpg.rf.c081a2fcfd5138b6ac1b015483943a15.jpg",
+    "height": 640,
+    "image_id": 92,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "20250914_171709_jpg.rf.7143ddff3148a200008243b1b30d3751.jpg",
+    "height": 640,
+    "image_id": 93,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "20250914_172032_jpg.rf.e53ecc8b80769692b7d05629bca460da.jpg",
+    "height": 640,
+    "image_id": 94,
+    "width": 640
+  },
+  {
+    "detections": 33,
+    "file_name": "20250914_172059_jpg.rf.911e3cea4947c49f84438c1d858d4b06.jpg",
+    "height": 640,
+    "image_id": 95,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "20250914_172146_jpg.rf.ab36156befe45292967cb97e3341e510.jpg",
+    "height": 640,
+    "image_id": 96,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "IMG-20250901-WA0020_jpg.rf.7439ca81c4f883cdc120454d20c73854.jpg",
+    "height": 640,
+    "image_id": 97,
+    "width": 640
+  },
+  {
+    "detections": 34,
+    "file_name": "IMG-20250901-WA0032_jpg.rf.011bcc722578b7146a20ab036233cd15.jpg",
+    "height": 640,
+    "image_id": 98,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "IMG-20250901-WA0034_jpg.rf.73c2aaed9496a7a912a006da9720f598.jpg",
+    "height": 640,
+    "image_id": 99,
+    "width": 640
+  },
+  {
+    "detections": 60,
+    "file_name": "IMG-20250901-WA0048_jpg.rf.3892255b9c394b561b60a60b49d99204.jpg",
+    "height": 640,
+    "image_id": 100,
+    "width": 640
+  },
+  {
+    "detections": 76,
+    "file_name": "IMG-20250901-WA0048_jpg.rf.be0ce49b77cbd8d111f5aecbbad91b3e.jpg",
+    "height": 640,
+    "image_id": 101,
+    "width": 640
+  },
+  {
+    "detections": 33,
+    "file_name": "IMG-20250901-WA0052_jpg.rf.94457bda30c1f0f3ec286fdcefdee8d7.jpg",
+    "height": 640,
+    "image_id": 102,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "IMG-20250901-WA0072_jpg.rf.136b95c11221c4cbae30c078748c7017.jpg",
+    "height": 640,
+    "image_id": 103,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "IMG-20250901-WA0082_jpg.rf.137332750dc1064986c07b8f1b0f21f9.jpg",
+    "height": 640,
+    "image_id": 104,
+    "width": 640
+  },
+  {
+    "detections": 54,
+    "file_name": "IMG-20250901-WA0094_jpg.rf.d447a175d5e016826b33db07d75f0f11.jpg",
+    "height": 640,
+    "image_id": 105,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "IMG-20250901-WA0112_jpg.rf.408134749b040ee145ecdf595a8297c5.jpg",
+    "height": 640,
+    "image_id": 106,
+    "width": 640
+  },
+  {
+    "detections": 56,
+    "file_name": "IMG-20250901-WA0114_jpg.rf.30718f0f2bccbfcf32740a1db21c0c47.jpg",
+    "height": 640,
+    "image_id": 107,
+    "width": 640
+  },
+  {
+    "detections": 38,
+    "file_name": "IMG-20250901-WA0114_jpg.rf.ade98436c331375bb7d7dbad8061c92f.jpg",
+    "height": 640,
+    "image_id": 108,
+    "width": 640
+  },
+  {
+    "detections": 16,
+    "file_name": "IMG-20250901-WA0122_jpg.rf.4c6f9203e69a9e9e0815b9f258906319.jpg",
+    "height": 640,
+    "image_id": 109,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "IMG-20250901-WA0132_jpg.rf.5e85837235d6b4746f1265ff688e29b6.jpg",
+    "height": 640,
+    "image_id": 110,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "IMG-20250901-WA0132_jpg.rf.832d864fe6d4fc32c474e0d54c2d8059.jpg",
+    "height": 640,
+    "image_id": 111,
+    "width": 640
+  },
+  {
+    "detections": 94,
+    "file_name": "IMG-20250901-WA0135_jpg.rf.a1f5218a28d66310ace0638ad85fb61a.jpg",
+    "height": 640,
+    "image_id": 112,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "IMG-20250901-WA0160_jpg.rf.9c812603e0c33f8fd7c285b7c2633dd2.jpg",
+    "height": 640,
+    "image_id": 113,
+    "width": 640
+  },
+  {
+    "detections": 31,
+    "file_name": "IMG-20250901-WA0166_jpg.rf.ed59ffa5ef353a53e8c6021ea550d4c5.jpg",
+    "height": 640,
+    "image_id": 114,
+    "width": 640
+  },
+  {
+    "detections": 1,
+    "file_name": "IMG-20250901-WA0179_jpg.rf.b3064a95fec7b5950e9e71f21967d7ff.jpg",
+    "height": 640,
+    "image_id": 115,
+    "width": 640
+  },
+  {
+    "detections": 92,
+    "file_name": "IMG-20250901-WA0181_jpg.rf.bb87019bef3134a4076f82d9488ff1e7.jpg",
+    "height": 640,
+    "image_id": 116,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "IMG-20250901-WA0192_jpg.rf.8411b14d551a9886edcee54ca37d64f4.jpg",
+    "height": 640,
+    "image_id": 117,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "IMG-20250901-WA0194_jpg.rf.43ba29620b06c6ea24149ce64ac9e0c5.jpg",
+    "height": 640,
+    "image_id": 118,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG-20250901-WA0205_jpg.rf.903818378e42054b72b5654f1d67d15a.jpg",
+    "height": 640,
+    "image_id": 119,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "IMG-20250901-WA0207_jpg.rf.c42889dff6a73dfe95da78054bbe0bc5.jpg",
+    "height": 640,
+    "image_id": 120,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG-20250901-WA0214_jpg.rf.72c00814087ecc0a783f9ddddccc7fdb.jpg",
+    "height": 640,
+    "image_id": 121,
+    "width": 640
+  },
+  {
+    "detections": 41,
+    "file_name": "IMG-20250901-WA0224_jpg.rf.496aaa8ad4f59bd6c099c797540c3994.jpg",
+    "height": 640,
+    "image_id": 122,
+    "width": 640
+  },
+  {
+    "detections": 5,
+    "file_name": "IMG-20250901-WA0225_jpg.rf.ff696f1250dc796205f9976f14575c41.jpg",
+    "height": 640,
+    "image_id": 123,
+    "width": 640
+  },
+  {
+    "detections": 58,
+    "file_name": "IMG-20250901-WA0231_jpg.rf.034e178cddcf9e441c56d85ff0c06899.jpg",
+    "height": 640,
+    "image_id": 124,
+    "width": 640
+  },
+  {
+    "detections": 50,
+    "file_name": "IMG-20250901-WA0231_jpg.rf.f8ad7c90645ccd598a671f32fddc7cf2.jpg",
+    "height": 640,
+    "image_id": 125,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "IMG-20250901-WA0249_jpg.rf.447ea9e1b3f3a83e90d9ee351e35b30e.jpg",
+    "height": 640,
+    "image_id": 126,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "IMG-20250901-WA0257_jpg.rf.b3fc25f93087c6830cafd928d3f6369b.jpg",
+    "height": 640,
+    "image_id": 127,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "IMG-20250901-WA0259_jpg.rf.b41ae451918af2373c14e7329c683fc8.jpg",
+    "height": 640,
+    "image_id": 128,
+    "width": 640
+  },
+  {
+    "detections": 32,
+    "file_name": "IMG-20250901-WA0263_jpg.rf.a6af6727061d448e3e87ebc8bcb6b3e6.jpg",
+    "height": 640,
+    "image_id": 129,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "IMG-20250901-WA0266_jpg.rf.8f36d75b15f42154b6ea02b0fc3fc498.jpg",
+    "height": 640,
+    "image_id": 130,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "IMG-20250901-WA0272_jpg.rf.db3431d9004a2450248fbe5f22ae2595.jpg",
+    "height": 640,
+    "image_id": 131,
+    "width": 640
+  },
+  {
+    "detections": 2,
+    "file_name": "IMG-20250901-WA0278_jpg.rf.31b56af6c04021a3b344f65872998862.jpg",
+    "height": 640,
+    "image_id": 132,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "IMG-20250901-WA0282_jpg.rf.6f42103a7614acf6f6e1cb74c218536a.jpg",
+    "height": 640,
+    "image_id": 133,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "IMG_20250901_121607_jpg.rf.0e322f1d2b133fc7a37c33f1baccd5a0.jpg",
+    "height": 640,
+    "image_id": 134,
+    "width": 640
+  },
+  {
+    "detections": 29,
+    "file_name": "IMG_20250901_121644_jpg.rf.2f9b659adcdf1dc6965a45765f552f79.jpg",
+    "height": 640,
+    "image_id": 135,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "IMG_20250901_121703_jpg.rf.441ad46b1d7810a46c39186f58e498fc.jpg",
+    "height": 640,
+    "image_id": 136,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG_20250901_121843_jpg.rf.cbf0adee383cbbe801b6ed0866af52a8.jpg",
+    "height": 640,
+    "image_id": 137,
+    "width": 640
+  },
+  {
+    "detections": 42,
+    "file_name": "IMG_20250901_121922_jpg.rf.396d59172491cbb9163a30b5a84c8286.jpg",
+    "height": 640,
+    "image_id": 138,
+    "width": 640
+  },
+  {
+    "detections": 47,
+    "file_name": "IMG_20250901_122348_jpg.rf.8f10a3055dae3d13c172e974bfb5c83a.jpg",
+    "height": 640,
+    "image_id": 139,
+    "width": 640
+  },
+  {
+    "detections": 26,
+    "file_name": "IMG_20250901_122403_jpg.rf.b4b712fa3d50cd6665fb33bef6d14a9c.jpg",
+    "height": 640,
+    "image_id": 140,
+    "width": 640
+  },
+  {
+    "detections": 29,
+    "file_name": "IMG_20250901_122416_jpg.rf.4b5fc594710b271e8fa7f5027bf8cfb5.jpg",
+    "height": 640,
+    "image_id": 141,
+    "width": 640
+  },
+  {
+    "detections": 53,
+    "file_name": "IMG_20250901_122637_jpg.rf.c53ce1c7cd36a3e24c750326fcc31f8f.jpg",
+    "height": 640,
+    "image_id": 142,
+    "width": 640
+  },
+  {
+    "detections": 42,
+    "file_name": "IMG_20250901_122656_jpg.rf.074081a7b5a19fe6f0556e533ace0d11.jpg",
+    "height": 640,
+    "image_id": 143,
+    "width": 640
+  },
+  {
+    "detections": 78,
+    "file_name": "IMG_20250901_122745_jpg.rf.5256e1fe4edf312cac902e0cc5bdacb4.jpg",
+    "height": 640,
+    "image_id": 144,
+    "width": 640
+  },
+  {
+    "detections": 25,
+    "file_name": "IMG_20250901_122823_jpg.rf.e08def026e4d027041f7445c75775eca.jpg",
+    "height": 640,
+    "image_id": 145,
+    "width": 640
+  },
+  {
+    "detections": 57,
+    "file_name": "IMG_20250901_122912_jpg.rf.7f1c0d70c7dea455885a33f92ac02808.jpg",
+    "height": 640,
+    "image_id": 146,
+    "width": 640
+  },
+  {
+    "detections": 29,
+    "file_name": "IMG_20250901_123111_jpg.rf.730c9dfe42a6461d7a3def55c259d41d.jpg",
+    "height": 640,
+    "image_id": 147,
+    "width": 640
+  },
+  {
+    "detections": 45,
+    "file_name": "IMG_20250901_123153_jpg.rf.1afab876d793920a81bec328c2726939.jpg",
+    "height": 640,
+    "image_id": 148,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250902_142036-1-_jpg.rf.e31994763d3fca2e7ff5d5cfa0c4a176.jpg",
+    "height": 640,
+    "image_id": 149,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG_20250902_142055-1-_jpg.rf.818d43430fb4dace9212438f1ebb3ddb.jpg",
+    "height": 640,
+    "image_id": 150,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250902_142111-1-_jpg.rf.2737d7361b1cd54c7f84350eb5007226.jpg",
+    "height": 640,
+    "image_id": 151,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "IMG_20250902_142132-1-_jpg.rf.64359878745981668786d7faef4be2a7.jpg",
+    "height": 640,
+    "image_id": 152,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250902_142149-1-_jpg.rf.67ef445e0710e1d9a6ebd1f1da6bd60d.jpg",
+    "height": 640,
+    "image_id": 153,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "IMG_20250902_142218-1-_jpg.rf.961290d31a2340335e087e26b236dfb4.jpg",
+    "height": 640,
+    "image_id": 154,
+    "width": 640
+  },
+  {
+    "detections": 22,
+    "file_name": "IMG_20250902_142221-1-_jpg.rf.88d86436f00d8e7350d3a94f7c33366e.jpg",
+    "height": 640,
+    "image_id": 155,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "IMG_20250902_142224-1-_jpg.rf.23a8e251697b3479fdaa74f6d20d8299.jpg",
+    "height": 640,
+    "image_id": 156,
+    "width": 640
+  },
+  {
+    "detections": 22,
+    "file_name": "IMG_20250902_142228-1-_jpg.rf.7ece3be560a9227938fd174b8ea0ba79.jpg",
+    "height": 640,
+    "image_id": 157,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "IMG_20250902_142228-1-_jpg.rf.c8e02e77db50a4b75eb2b7a103045b08.jpg",
+    "height": 640,
+    "image_id": 158,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG_20250902_142251-1-_jpg.rf.990050ff8ac4fcf040210d948469a938.jpg",
+    "height": 640,
+    "image_id": 159,
+    "width": 640
+  },
+  {
+    "detections": 25,
+    "file_name": "IMG_20250902_142415-1-_jpg.rf.db5b46c24044036ff9d5e4554159fb07.jpg",
+    "height": 640,
+    "image_id": 160,
+    "width": 640
+  },
+  {
+    "detections": 21,
+    "file_name": "IMG_20250912_191257_jpg.rf.67b033a4bbe8d817639863245485f493.jpg",
+    "height": 640,
+    "image_id": 161,
+    "width": 640
+  },
+  {
+    "detections": 16,
+    "file_name": "IMG_20250912_191735_jpg.rf.81e10ab0fa687f75e689293189616eaf.jpg",
+    "height": 640,
+    "image_id": 162,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "IMG_20250912_191745_jpg.rf.cc82a69cf6c26ec6c3b48b82255e1abf.jpg",
+    "height": 640,
+    "image_id": 163,
+    "width": 640
+  },
+  {
+    "detections": 31,
+    "file_name": "IMG_20250912_191908_jpg.rf.75eac652a3fef8b5a16ab5b46e9990db.jpg",
+    "height": 640,
+    "image_id": 164,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG_20250912_192351_jpg.rf.59f440b7468a98486adb5327499d147d.jpg",
+    "height": 640,
+    "image_id": 165,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "IMG_20250912_192529_jpg.rf.0482bbfa7f362a6d05e66a4a1dfc728c.jpg",
+    "height": 640,
+    "image_id": 166,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "IMG_20250912_192653_jpg.rf.c2efdd6b7492e97e54cf70f73f7b95b3.jpg",
+    "height": 640,
+    "image_id": 167,
+    "width": 640
+  },
+  {
+    "detections": 16,
+    "file_name": "IMG_20250912_192842_jpg.rf.3285e2fe8f1b62f914741f85886136cb.jpg",
+    "height": 640,
+    "image_id": 168,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "IMG_20250912_192939_jpg.rf.33d68e15f29ee856926faea5c646eeab.jpg",
+    "height": 640,
+    "image_id": 169,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "IMG_20250912_193058_jpg.rf.3d8e1fdf711e36d6adf2c09d10479082.jpg",
+    "height": 640,
+    "image_id": 170,
+    "width": 640
+  },
+  {
+    "detections": 41,
+    "file_name": "IMG_20250912_193136_jpg.rf.3c986a2775fd3177d1eb56cf8620399e.jpg",
+    "height": 640,
+    "image_id": 171,
+    "width": 640
+  },
+  {
+    "detections": 28,
+    "file_name": "IMG_20250912_193149_jpg.rf.6432f59bc672a4afe857517164db8a2c.jpg",
+    "height": 640,
+    "image_id": 172,
+    "width": 640
+  },
+  {
+    "detections": 23,
+    "file_name": "IMG_20250912_193320_jpg.rf.ee0c5ae6703bf0cce3f58f54cdcc5914.jpg",
+    "height": 640,
+    "image_id": 173,
+    "width": 640
+  },
+  {
+    "detections": 19,
+    "file_name": "IMG_20250912_193330_jpg.rf.4d4195ab6f3729f06812946a4afe7182.jpg",
+    "height": 640,
+    "image_id": 174,
+    "width": 640
+  },
+  {
+    "detections": 26,
+    "file_name": "IMG_20250912_193418_jpg.rf.4664b35ccdb0c302e6a249130561a52c.jpg",
+    "height": 640,
+    "image_id": 175,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "IMG_20250912_193513_jpg.rf.3daccd85f032d2b44411e71fc647de6d.jpg",
+    "height": 640,
+    "image_id": 176,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "IMG_20250914_161938_jpg.rf.97109b92127dc6c7e08a45a34225631d.jpg",
+    "height": 640,
+    "image_id": 177,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "IMG_20250914_161945_jpg.rf.7ed4bcbb622a9424c8fb9ee796c0148c.jpg",
+    "height": 640,
+    "image_id": 178,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250914_162208_jpg.rf.221aa002fdb2d468e65d6f15269141e8.jpg",
+    "height": 640,
+    "image_id": 179,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "IMG_20250914_162215_jpg.rf.7ffa55bf77327bac8c1ca21ce7c4f5e1.jpg",
+    "height": 640,
+    "image_id": 180,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250914_162559_jpg.rf.a6ccdc1b740f9ad48d2a5e167be7b484.jpg",
+    "height": 640,
+    "image_id": 181,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "IMG_20250914_162743_jpg.rf.20033d4df7299a18d3d3f946dffad114.jpg",
+    "height": 640,
+    "image_id": 182,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "IMG_20250914_162812_jpg.rf.34b75d5caafa313eb7063c2970cc3a69.jpg",
+    "height": 640,
+    "image_id": 183,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "IMG_20250914_162854_jpg.rf.9f3a6a6be1c15f229000f72039790a20.jpg",
+    "height": 640,
+    "image_id": 184,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "IMG_20250914_163051_jpg.rf.1326361bd2b3a0f3b55ee0a37fac71c5.jpg",
+    "height": 640,
+    "image_id": 185,
+    "width": 640
+  },
+  {
+    "detections": 21,
+    "file_name": "IMG_20250914_163121_jpg.rf.56a4b164f0e6fa72ce5bda52def33d17.jpg",
+    "height": 640,
+    "image_id": 186,
+    "width": 640
+  },
+  {
+    "detections": 21,
+    "file_name": "IMG_20250914_163144_jpg.rf.7022d0e6f6e036e8f68c2046e180a401.jpg",
+    "height": 640,
+    "image_id": 187,
+    "width": 640
+  },
+  {
+    "detections": 22,
+    "file_name": "IMG_20250914_163203_jpg.rf.8812aca0db6fcabf486da99e1a1951c1.jpg",
+    "height": 640,
+    "image_id": 188,
+    "width": 640
+  },
+  {
+    "detections": 20,
+    "file_name": "IMG_20250914_163225_jpg.rf.cb7ed5f2a8c439439670ed215fc39382.jpg",
+    "height": 640,
+    "image_id": 189,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250914_163228_jpg.rf.f2bcebfd96e3654fb8f3e66b4242381c.jpg",
+    "height": 640,
+    "image_id": 190,
+    "width": 640
+  },
+  {
+    "detections": 22,
+    "file_name": "IMG_20250914_163244_jpg.rf.86eb83d54f8c226ef20b51678f3af5a1.jpg",
+    "height": 640,
+    "image_id": 191,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "IMG_20250914_163337_jpg.rf.3c71fb8aaf34d1bfddf1ab2b31e37f7f.jpg",
+    "height": 640,
+    "image_id": 192,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250914_163350_jpg.rf.bc7f8bae68d1feb64c8bf050d1ac0131.jpg",
+    "height": 640,
+    "image_id": 193,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250914_163355_jpg.rf.ba68c8570558c0195b1fbec83cf027e8.jpg",
+    "height": 640,
+    "image_id": 194,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "IMG_20250914_163451_jpg.rf.6221ddb12c79bfb0763c4fda9bba3542.jpg",
+    "height": 640,
+    "image_id": 195,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "IMG_20250914_163515_jpg.rf.96a693e5f071b817037a4e3204e55094.jpg",
+    "height": 640,
+    "image_id": 196,
+    "width": 640
+  },
+  {
+    "detections": 4,
+    "file_name": "IMG_20250914_163546_jpg.rf.96457e38a17452c943365151af2c0f31.jpg",
+    "height": 640,
+    "image_id": 197,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "IMG_20250914_163620_jpg.rf.9d4b9984b9cb11ce9a8fb6525951eb9a.jpg",
+    "height": 640,
+    "image_id": 198,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "IMG_20250914_163649_jpg.rf.c3ea8f2398fbb9d8d08fe89a5bf7f11d.jpg",
+    "height": 640,
+    "image_id": 199,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "IMG_20250914_163653_jpg.rf.98e0fcd33a7b823aebdde5a168793528.jpg",
+    "height": 640,
+    "image_id": 200,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "IMG_20250914_163657_jpg.rf.a3938b2a9a80920abae7586110813e77.jpg",
+    "height": 640,
+    "image_id": 201,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "IMG_20250914_163750_jpg.rf.e363e13cd9d341256d772d722a2bd4a6.jpg",
+    "height": 640,
+    "image_id": 202,
+    "width": 640
+  },
+  {
+    "detections": 33,
+    "file_name": "IMG_20250914_163935_jpg.rf.9fdfe7b93c2fd190c06f2c56fa1d9ba0.jpg",
+    "height": 640,
+    "image_id": 203,
+    "width": 640
+  },
+  {
+    "detections": 25,
+    "file_name": "IMG_20250914_164000_jpg.rf.2321843f75a87f05defbf0bfaff06349.jpg",
+    "height": 640,
+    "image_id": 204,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "IMG_20250914_164035_jpg.rf.d93cb4cd649a88ecd80a4287d18ea6db.jpg",
+    "height": 640,
+    "image_id": 205,
+    "width": 640
+  },
+  {
+    "detections": 19,
+    "file_name": "IMG_20250914_164111_jpg.rf.dc61b629636c4c26e7c2e62b0da44e80.jpg",
+    "height": 640,
+    "image_id": 206,
+    "width": 640
+  },
+  {
+    "detections": 31,
+    "file_name": "IMG_20250914_164215_jpg.rf.9874a2e74e72db260bc782bf8fb35a4b.jpg",
+    "height": 640,
+    "image_id": 207,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250914_164329_jpg.rf.7f6f7277bd0b45fcedf0385474c10818.jpg",
+    "height": 640,
+    "image_id": 208,
+    "width": 640
+  },
+  {
+    "detections": 8,
+    "file_name": "IMG_20250914_164341_jpg.rf.82c30115bdb44156f6a10914dd8ea2be.jpg",
+    "height": 640,
+    "image_id": 209,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "IMG_20250914_165246_jpg.rf.187a9eedebd4dd65cd4f9826f7267908.jpg",
+    "height": 640,
+    "image_id": 210,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250914_165405_jpg.rf.d33106cb6137289401c87e658b362682.jpg",
+    "height": 640,
+    "image_id": 211,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "IMG_20250914_165409_jpg.rf.47d68ddd187ac8a767cd6b7feba3cf96.jpg",
+    "height": 640,
+    "image_id": 212,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250914_165548_jpg.rf.2f0f666b3a6ec56f0ec290e8851060ea.jpg",
+    "height": 640,
+    "image_id": 213,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250914_165810_jpg.rf.d1657b397126b26205d26e9ca8431bb3.jpg",
+    "height": 640,
+    "image_id": 214,
+    "width": 640
+  },
+  {
+    "detections": 13,
+    "file_name": "IMG_20250914_165833_jpg.rf.33df860f548b8ae48e43cea6aed52bbb.jpg",
+    "height": 640,
+    "image_id": 215,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG_20250914_170005_jpg.rf.58f86436257149a6149dd2e963bdbd35.jpg",
+    "height": 640,
+    "image_id": 216,
+    "width": 640
+  },
+  {
+    "detections": 17,
+    "file_name": "IMG_20250914_170116_jpg.rf.aae6e389aca7cf7ec1aee5ca1ff5d4b4.jpg",
+    "height": 640,
+    "image_id": 217,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250914_170504_jpg.rf.00716d6a8f713ca4e30a0d53a22712b0.jpg",
+    "height": 640,
+    "image_id": 218,
+    "width": 640
+  },
+  {
+    "detections": 10,
+    "file_name": "IMG_20250914_170659_jpg.rf.d163cb7b4b9fe1ed4e886ffc67d3fd37.jpg",
+    "height": 640,
+    "image_id": 219,
+    "width": 640
+  },
+  {
+    "detections": 12,
+    "file_name": "IMG_20250914_170718_jpg.rf.dc1e911ad2c11512a0b9009fd3a7f7f2.jpg",
+    "height": 640,
+    "image_id": 220,
+    "width": 640
+  },
+  {
+    "detections": 23,
+    "file_name": "IMG_20250914_170729_jpg.rf.9c2e21b50eb51f87f72129ab643c9bea.jpg",
+    "height": 640,
+    "image_id": 221,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "IMG_20250914_170734_jpg.rf.160a7c796a4edab80f32e4100e29dbf5.jpg",
+    "height": 640,
+    "image_id": 222,
+    "width": 640
+  },
+  {
+    "detections": 14,
+    "file_name": "IMG_20250914_170737_jpg.rf.e4f7fc71084aa5db57357108ea8d34a0.jpg",
+    "height": 640,
+    "image_id": 223,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "IMG_20250914_170903_jpg.rf.726d9ed49c5932decdd22db2cba10f1e.jpg",
+    "height": 640,
+    "image_id": 224,
+    "width": 640
+  },
+  {
+    "detections": 24,
+    "file_name": "IMG_20250914_170935_jpg.rf.035cfe75fc1dfc75fa204a48ea6aa434.jpg",
+    "height": 640,
+    "image_id": 225,
+    "width": 640
+  },
+  {
+    "detections": 18,
+    "file_name": "IMG_20250914_171003_jpg.rf.62eb47e768281f24dd74309ce49ff2f0.jpg",
+    "height": 640,
+    "image_id": 226,
+    "width": 640
+  },
+  {
+    "detections": 24,
+    "file_name": "IMG_20250914_171016_jpg.rf.1a7a8bac051b29151e37346f423d31e4.jpg",
+    "height": 640,
+    "image_id": 227,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250914_171122_jpg.rf.cbda257d08181e8bcfd5f667b3d3fff4.jpg",
+    "height": 640,
+    "image_id": 228,
+    "width": 640
+  },
+  {
+    "detections": 16,
+    "file_name": "IMG_20250914_171254_jpg.rf.c7dc473b9128804d4e98a86f477db48c.jpg",
+    "height": 640,
+    "image_id": 229,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "IMG_20250914_171417_jpg.rf.5d12f11f191adf109121ef61847aa82e.jpg",
+    "height": 640,
+    "image_id": 230,
+    "width": 640
+  },
+  {
+    "detections": 6,
+    "file_name": "IMG_20250914_171429_jpg.rf.9d7ead0c13a3998631ae01819f1f06fc.jpg",
+    "height": 640,
+    "image_id": 231,
+    "width": 640
+  },
+  {
+    "detections": 9,
+    "file_name": "IMG_20250914_171530_jpg.rf.cb3b2d50e36af2a6033dab493fdeb98b.jpg",
+    "height": 640,
+    "image_id": 232,
+    "width": 640
+  },
+  {
+    "detections": 11,
+    "file_name": "IMG_20250914_171535_jpg.rf.d69d383135f25ff2fbcb290780592dc9.jpg",
+    "height": 640,
+    "image_id": 233,
+    "width": 640
+  },
+  {
+    "detections": 7,
+    "file_name": "IMG_20250914_171539_jpg.rf.4669b7f911cf27a5be67106712cfa1b0.jpg",
+    "height": 640,
+    "image_id": 234,
+    "width": 640
+  },
+  {
+    "detections": 34,
+    "file_name": "IMG_20250914_172028_jpg.rf.58f39ef68b755a1fe5033320bbaf14de.jpg",
+    "height": 640,
+    "image_id": 235,
+    "width": 640
+  },
+  {
+    "detections": 15,
+    "file_name": "IMG_20250914_172036_jpg.rf.fb09c2d87f289e631559890884f242ef.jpg",
+    "height": 640,
+    "image_id": 236,
+    "width": 640
+  },
+  {
+    "detections": 21,
+    "file_name": "IMG_20250914_172141_jpg.rf.e51780738e27323fc562bc137782d48c.jpg",
+    "height": 640,
+    "image_id": 237,
+    "width": 640
+  }
+]

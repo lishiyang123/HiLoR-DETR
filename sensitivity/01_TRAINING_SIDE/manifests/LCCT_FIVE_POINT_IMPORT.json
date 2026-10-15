@@ -1,0 +1,30 @@
+{
+  "canonical_files": [
+    {
+      "imported": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/sensitivity/01_TRAINING_SIDE/results/CURRENT/LCCT_DELTA_FIVE_POINT_VAL.csv",
+      "imported_sha256": "e88b4efe719aa045adac6278125eb768b86d5173558855fcd11865792deedce4",
+      "source": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/results/LCCT_DELTA_FIVE_POINT_VAL.csv",
+      "source_sha256": "e88b4efe719aa045adac6278125eb768b86d5173558855fcd11865792deedce4"
+    },
+    {
+      "imported": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/sensitivity/01_TRAINING_SIDE/results/CURRENT/LCCT_DELTA_FIVE_POINT_VAL.json",
+      "imported_sha256": "42a3e060ae23a817a672cccee13384fa8e3d194685e1fd1fdcc7518eda2da107",
+      "source": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/results/LCCT_DELTA_FIVE_POINT_VAL.json",
+      "source_sha256": "42a3e060ae23a817a672cccee13384fa8e3d194685e1fd1fdcc7518eda2da107"
+    },
+    {
+      "imported": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/sensitivity/01_TRAINING_SIDE/results/CURRENT/LCCT_DELTA_FIVE_POINT_VAL.md",
+      "imported_sha256": "46c4b2f1e89414e93856e9d9568069672ecac8725f0a4a39271fc60bf060e17c",
+      "source": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/results/LCCT_DELTA_FIVE_POINT_VAL.md",
+      "source_sha256": "46c4b2f1e89414e93856e9d9568069672ecac8725f0a4a39271fc60bf060e17c"
+    }
+  ],
+  "imported_utc": "2026-09-16T01:13:41.044245+00:00",
+  "large_checkpoints_copied": false,
+  "source_package": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity",
+  "source_package_status_sha256": "587b7a8c2d8dfb3856a0416ac8050b1b9184d0ff3530dcad112c04593b9ec47f",
+  "source_protocol_sha256": "3ea74398b30547c83763cf433183baf33debb4685815a0ed7ee4b4a0787ecbd2",
+  "source_queue_status_sha256": "7feda16f75dfef888b351058f50cd2e43d69b6de0f3d9e01fd68afbae0f6dafb",
+  "status": "PASS",
+  "test_accessed": false
+}

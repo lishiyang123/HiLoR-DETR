@@ -1,0 +1,135 @@
+{
+  "asset_policy": {
+    "final_reproduction_assets_read_only": true,
+    "new_outputs_must_use_adapter_owned_locations": true,
+    "official_rtdetr_assets_read_only": true,
+    "optimized_donor_assets_read_only": true,
+    "qccr_umr_assets_must_be_refit_and_checkpoint_bound_for_rtdetr": true
+  },
+  "bindings": {
+    "config_mirror": {
+      "path": "configs/hilor/LOCKED_VALUES.json",
+      "sha256": "e3ae9e72d98d7e5e141929539883685c1cde3b5202cab12f638946745365cda3"
+    },
+    "data_split_lock": {
+      "path": "provenance/DATA_SPLIT_LOCK.json",
+      "sha256": "1a0a0a956f91392de54bcd98ff8cd7c529893f4611a5cd78b1cd1835e8248e0e"
+    },
+    "formal_training_config": {
+      "include_closure_aggregate_sha256": "c2956f6cc7badc9967d97fb654294077dda1d81f148a6b5e508470e74daf06c1",
+      "include_closure_file_count": 8,
+      "path": "configs/hilor/cdw1630_rtdetr_r18_gccs.yml",
+      "sha256": "24c31f859838c2349d3a5cc908cccb880b541ae54760dfb0c7c9236a61f86669"
+    },
+    "implementation_lock": {
+      "path": "provenance/IMPLEMENTATION_LOCK.json",
+      "sha256": "26aa8f9f078a4199d5f3c94765128c5ca96231e33d5c66e3eb80cb81e85f63be"
+    },
+    "optimized_donor_lock": {
+      "content_aggregate_sha256": "ed59c8c0dc3b42c2564fe385dd6b4d544100e75573b5ed0a0f39ce859b76f7d7",
+      "path": "provenance/OPTIMIZED_DONOR_LOCK.json",
+      "sha256": "8de427ec98305bee04118a7308574ad7b1f27aa12cfee77c02dd2c256a24fae9",
+      "ufd_difficulty_cdf_sha256": "5ea69d7ed2d93ddcedb1e59070b0be7ef7a4e0060f67768ad96e30afdaa0bd40"
+    },
+    "upstream_lock": {
+      "coco_initialization_sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0",
+      "content_aggregate_sha256": "ae0b0189a458a2e9d5054c4e86e0baff38faa84e6357a2c2b70ba643db03cd8b",
+      "path": "provenance/UPSTREAM_LOCK.json",
+      "repository_commit": "29320b6fd828f8e0987a71426cf2d961b09dfed7",
+      "sha256": "6aa7d2f8d832c0f26f7ad5dd1529366d798663c404cefc03c86ef8ccfff8465b"
+    }
+  },
+  "created_at": "2026-10-07",
+  "formal_test_runtime_device_fix": {
+    "date": "2026-10-08",
+    "detector_checkpoint_changed": false,
+    "mathematical_method_changed": false,
+    "qccr_umr_fixed_tuple_changed": false,
+    "reason": "Move the parameterized frozen QCCR-UMR postprocessor to the solver device before formal inference.",
+    "test_used_for_selection_fitting_or_tuning": false,
+    "trigger": "seed-0 formal Test runtime stopped on the first UMR call with a CPU/CUDA device mismatch before metrics were produced"
+  },
+  "post_training_capture_policy_refresh": {
+    "date": "2026-10-08",
+    "detector_checkpoints_changed": false,
+    "detector_training_changed": false,
+    "previous_implementation_lock_sha256": "08f1e87910892789967bc3904a8d9d2ae84e0de62398a955b7e190724b9596f7",
+    "reason": "Exact post-sigmoid Top-300 boundary ties are recorded with the native torch.topk replay instead of aborting an all-candidate capture.",
+    "test_accessed": false
+  },
+  "public_naming": {
+    "ccvr_is_public_alias": false,
+    "implementation_identifiers": [
+      "qccr",
+      "umr"
+    ],
+    "inference_pipeline": "QCCR–UMR"
+  },
+  "schema": "cdw1630-rtdetr-r18-hilor-second-host-protocol-lock-v1",
+  "scope": {
+    "dataset": "CDW1630",
+    "formal_reproduction_assets_modified": false,
+    "host": "RT-DETR-R18",
+    "role": "second-host validation"
+  },
+  "selection": {
+    "fallback_small_grid": {
+      "default_action": "do-not-run",
+      "execution_scope": {
+        "detector_seed": 0,
+        "grid_size": "small",
+        "selection_split": "Val"
+      },
+      "locked_reference": {
+        "lambda_ufd_max": 0.75,
+        "result_binding_required_if_requested": true,
+        "result_must_be_preserved": true
+      },
+      "preregistration": {
+        "registration_path": null,
+        "registration_sha256": null,
+        "required_before_candidate_execution": true,
+        "required_schema": "cdw1630-rtdetr-r18-hilor-fallback-grid-registration-v1"
+      },
+      "requested": false,
+      "trigger": {
+        "allowed_evidence": [
+          "implementation diagnostics",
+          "Train",
+          "Val"
+        ],
+        "documented_second_host_necessity_required": true,
+        "locked_seed0_run_required_first": true,
+        "test_evidence_allowed": false
+      }
+    },
+    "test": {
+      "allowed_use_after_freeze": "formal evaluation only",
+      "used_for_calibration_or_fitting": false,
+      "used_for_checkpoint_selection": false,
+      "used_for_fallback_trigger_or_selection": false,
+      "used_for_inference_hyperparameter_selection": false,
+      "used_for_model_selection": false,
+      "used_for_threshold_selection": false,
+      "used_for_training_hyperparameter_selection": false
+    }
+  },
+  "status": "locked-before-implementation-and-execution",
+  "training": {
+    "classification_role_adjustment": {
+      "e0": 20,
+      "full_epoch_ramp_from_epoch": 25,
+      "ramp_epochs": 5,
+      "ramp_formula": "clip((epoch-e0)/ramp_epochs,0,1)",
+      "weight_at_epoch_20": 0.0
+    },
+    "epoch_indexing": "zero-based-0-through-101",
+    "geometry_supervision": {
+      "alpha_u_max": 0.0,
+      "lambda_ufd_max": 0.75,
+      "pred_corners_required": false,
+      "side_uncertainty_enabled": false
+    },
+    "total_epochs": 102
+  }
+}

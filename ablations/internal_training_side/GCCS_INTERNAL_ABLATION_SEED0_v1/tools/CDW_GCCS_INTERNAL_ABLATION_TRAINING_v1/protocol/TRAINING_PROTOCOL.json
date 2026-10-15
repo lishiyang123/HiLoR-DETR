@@ -1,0 +1,43 @@
+{
+  "dataset": "CDW1630",
+  "epochs": 102,
+  "formal_variants": [
+    "ufd_without_difficulty",
+    "ufd_only",
+    "lcct_only"
+  ],
+  "method": "GCCS training-side internal ablation",
+  "physical_batch_size": 8,
+  "precision": "FP32",
+  "reported_metrics": [
+    "AP",
+    "AP50",
+    "AP75",
+    "AR100"
+  ],
+  "reuse_rows": {
+    "b0": {
+      "checkpoint": "HiLoR-DETR/main_host/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+      "checkpoint_sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054",
+      "log": "HiLoR-DETR/main_host/training_records/CDW1630/B0/seed0/log.txt",
+      "log_sha256": "23a1f4b0240c2984632eeee3c111db3adef00df5fe0881911b40563a2ada3838"
+    },
+    "gccs": {
+      "checkpoint": "HiLoR-DETR/main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+      "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+      "log": "HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/log.txt",
+      "log_sha256": "e536df2f1efb84df93194d26f3f2e6225261c2eae5f960dec7d75b1a1524b9e2"
+    }
+  },
+  "seed": 0,
+  "selection": {
+    "checkpoint_rule": "global maximum Val AP; earliest exact tie",
+    "split": "Val"
+  },
+  "test_policy": "Test is not accessed by this training package. A separate frozen evaluation package is required after all rows are selected on Val.",
+  "train_annotation_sha256": "7fdd6dee1d2d88c25ff7248e2abe8c8277dfa2083ec9557d52b5ca9da78065c4",
+  "val_annotation_sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5",
+  "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+  "source_manifest_sha256": "e0696461f824dfb2295c3db5f7062b72076b75b416754e20b088ceba1d2a26aa"
+}
+

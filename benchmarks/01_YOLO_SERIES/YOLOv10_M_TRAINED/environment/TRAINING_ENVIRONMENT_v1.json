@@ -1,0 +1,14 @@
+{
+  "cuda_available": true,
+  "flash_attn": null,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_used_during_setup": false,
+  "model": "YOLOv10-M",
+  "pip_freeze_sha256": "d5838876e775e1c82cca49d9e5e5ff64ac241c5a755f0fe02b205860920eae3d",
+  "python": "3.11.9",
+  "schema": "cdw1630-yolo-training-environment-v1",
+  "torch": "2.5.1+cu124",
+  "torch_cuda": "12.4",
+  "ultralytics": "8.1.34",
+  "ultralytics_module": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/source/YOLOv10_official/ultralytics/__init__.py"
+}

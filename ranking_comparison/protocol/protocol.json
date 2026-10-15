@@ -1,0 +1,66 @@
+{
+  "format_version": 1,
+  "study": "CDW1630 nearest-neighbour post-processing baselines",
+  "formal_assets_policy": {
+    "read_only": true,
+    "integration_requires_user_approval": true,
+    "working_directory": "ranking_comparison"
+  },
+  "detector": {
+    "host": "GCCS seed 0 frozen checkpoint",
+    "candidate_pool": "all 300 queries x 5 classes",
+    "score": "sigmoid(raw class logit)",
+    "box_source": "one normalized cxcywh box per query",
+    "final_selection": "deterministic global Top-300 query-class candidates"
+  },
+  "splits": {
+    "fit": "Val",
+    "evaluation": "Test",
+    "test_policy": "Test evaluation and comparison are unrestricted by project decision; every tried configuration must remain disclosed."
+  },
+  "gilg_original": {
+    "mapping": "conditionally dependent bivariate Beta calibration",
+    "features": [
+      "raw sigmoid confidence",
+      "minimum Jaccard distance to a higher-score same-class candidate"
+    ],
+    "target": "COCO-style one-to-one true-positive label at IoU=0.50",
+    "fit_split": "Val",
+    "reference_near_duplicate_iou": 0.99,
+    "complete_pool_audit": true,
+    "box_coordinates_unchanged": true
+  },
+  "soft_nms": {
+    "variants": ["linear", "gaussian"],
+    "classwise": true,
+    "box_coordinates_unchanged": true,
+    "global_topk_after_rescoring": 300
+  },
+  "formal_controls": {
+    "methods": ["QCCR", "QCCR-UMR"],
+    "implementation": "loaded read-only from the formal optimized source",
+    "asset_binding": "capture checkpoint, QCCR artifact, UMR metadata, and UMR weight SHA-256 are checked before replay",
+    "boxes_unchanged": true
+  },
+  "iou_regression_rescore": {
+    "formula": "sigmoid(class_logit) * predicted_iou",
+    "head": "LayerNorm(256) followed by one 5-output linear layer over frozen final decoder features",
+    "target": "maximum same-class non-crowd GT IoU for each query-class candidate",
+    "fit_split": "Train",
+    "selection_split": "Val regression loss",
+    "test_used_for_fit_or_selection": false,
+    "box_coordinates_unchanged": true,
+    "global_topk_after_rescoring": 300
+  },
+  "report": [
+    "AP",
+    "AP50",
+    "AP75",
+    "AP80",
+    "AP85",
+    "AP90",
+    "AP95",
+    "AR100",
+    "post-processing latency"
+  ]
+}

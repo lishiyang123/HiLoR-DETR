@@ -1,0 +1,216 @@
+{
+  "files": [
+    {
+      "bytes": 889,
+      "path": "README.md",
+      "sha256": "fe48855d75400c7cdbe3b8ee2e3288074a133bf697ba5e1acaca345589a2ad35"
+    },
+    {
+      "bytes": 16284,
+      "path": "analysis/QUALITATIVE_SUMMARY.json",
+      "sha256": "2f13155e8eeefe1024ac8f99925de1ef5f2813a8c7c600f7b09a20bacb7a6825"
+    },
+    {
+      "bytes": 838,
+      "path": "analysis/SELECTION.json",
+      "sha256": "000620846a6cb0a9802e2992bc9a03bff31e5564c1b33984bb6053219bbd954f"
+    },
+    {
+      "bytes": 98359,
+      "path": "analysis/candidate_ranking/ALL_TEST_IMAGE_PAIRED_RANKING.csv",
+      "sha256": "acda1b7c8bdf455c9cc0f513893a34e7ecf1cf23fa51b793506f5ce1efb6099e"
+    },
+    {
+      "bytes": 308234,
+      "path": "analysis/candidate_ranking/ALL_TEST_IMAGE_PAIRED_RANKING.json",
+      "sha256": "d1dd8c5bb2df26a76958cdde50d6d1492445b86911dbb1ef0043d47e4fb16a8e"
+    },
+    {
+      "bytes": 18069,
+      "path": "analysis/candidate_ranking/BALANCED_GAIN_ELIGIBLE_RANKING.csv",
+      "sha256": "9252785d10a6b0601bd110f82d2ea09eb8bf79f229d003e68c8276b362a47439"
+    },
+    {
+      "bytes": 95015,
+      "path": "analysis/candidate_ranking/FAILURE_RANKING.csv",
+      "sha256": "bb8868ed5377be5e4c1aa57a5325d7ee42270a214af98580f0a393b508928233"
+    },
+    {
+      "bytes": 63965,
+      "path": "analysis/selected_cases/images/107__IMG-20250901-WA0114_jpg.rf.30718f0f2bccbfcf32740a1db21c0c47.jpg",
+      "sha256": "df0e7c2cef100dd8ea5ba1b628f614bf8ae09ee336065365aa56bea21e422f2e"
+    },
+    {
+      "bytes": 63956,
+      "path": "analysis/selected_cases/images/108__IMG-20250901-WA0114_jpg.rf.ade98436c331375bb7d7dbad8061c92f.jpg",
+      "sha256": "c55dc2baba3d9248e518c96502beb686bd19a097f6459770d824c4758636603d"
+    },
+    {
+      "bytes": 93360,
+      "path": "analysis/selected_cases/images/133__IMG-20250901-WA0282_jpg.rf.6f42103a7614acf6f6e1cb74c218536a.jpg",
+      "sha256": "1c5bb65031103194be242c3eda167965ec2d1ee26884319853c92abce76a63c4"
+    },
+    {
+      "bytes": 74794,
+      "path": "analysis/selected_cases/images/158__IMG_20250902_142228-1-_jpg.rf.c8e02e77db50a4b75eb2b7a103045b08.jpg",
+      "sha256": "34960381ac165988b0e9e0021443f168a91a5992287e4434a02cd587a4bc77a3"
+    },
+    {
+      "bytes": 47841,
+      "path": "analysis/selected_cases/images/160__IMG_20250902_142415-1-_jpg.rf.db5b46c24044036ff9d5e4554159fb07.jpg",
+      "sha256": "21a2e8b269b766cb57af0770311997d3a066d7ed4fe775b73547417b21d707e3"
+    },
+    {
+      "bytes": 75598,
+      "path": "analysis/selected_cases/images/16__20250901_122456_jpg.rf.b98cb73537b0a6267ce8d187ebcc514c.jpg",
+      "sha256": "f032b844f89c0e2c642724951e14f6c5416f46b1214272e07db27196fad872ee"
+    },
+    {
+      "bytes": 71316,
+      "path": "analysis/selected_cases/images/202__IMG_20250914_163750_jpg.rf.e363e13cd9d341256d772d722a2bd4a6.jpg",
+      "sha256": "14bae94e5924b37fce6a1d96d8c7b2d5ff8af3a6f50cc390b0f0908fbe33d982"
+    },
+    {
+      "bytes": 58044,
+      "path": "analysis/selected_cases/images/33__20250914_163133_jpg.rf.70013ceca382be4f05e064e89c4221d5.jpg",
+      "sha256": "a17c3c326b88d3a03b0dc34663556e22911d437c053ec71d6654f1c21f316224"
+    },
+    {
+      "bytes": 53983,
+      "path": "analysis/selected_cases/images/51__20250914_164228_jpg.rf.04db8c0c7d8873dc1dac571540642950.jpg",
+      "sha256": "b59e758fab97378d1c2e84415ce3c95ed8557c2e3e32add477dac5ef6e6567b9"
+    },
+    {
+      "bytes": 58211,
+      "path": "analysis/selected_cases/images/61__20250914_165739_jpg.rf.06da5e95f2f1d1e5235ad03083ffc843.jpg",
+      "sha256": "df0dca1ddaf97c033f18a5361b6f575f8f4b703111f72ec1d4d60c4de4f8a72c"
+    },
+    {
+      "bytes": 61503,
+      "path": "analysis/selected_cases/images/79__20250914_171126_jpg.rf.646c652bb203beb65ac96a579888583e.jpg",
+      "sha256": "798f4aeb83ef98ceb09ea6fcad22c46c2953896c8cbd1927e1f4aee7cd1d6dd2"
+    },
+    {
+      "bytes": 8367,
+      "path": "configs/materialized/CDW1630/seed0/MATERIALIZED_CONFIGS.json",
+      "sha256": "3c240399d2fb922ce949d688272acff9275b67f041b42d3bcf18bbbc343b0162"
+    },
+    {
+      "bytes": 539,
+      "path": "configs/materialized/CDW1630/seed0/cdw_b0_test.yml",
+      "sha256": "8837cef5685f64ff7ee81d176cb847ee07dfd6721be8805bdb76455e61d85906"
+    },
+    {
+      "bytes": 315,
+      "path": "configs/materialized/CDW1630/seed0/cdw_b0_train.yml",
+      "sha256": "acaa44e841b9db585ae2f68b650d0081b8245c380144031ce814984eddb78267"
+    },
+    {
+      "bytes": 382,
+      "path": "configs/materialized/CDW1630/seed0/cdw_capture_train.yml",
+      "sha256": "dfdb4ef3d1a6f87258e7df958514fb2d9e90a6bd53ddb4fbc58d61c784068b45"
+    },
+    {
+      "bytes": 378,
+      "path": "configs/materialized/CDW1630/seed0/cdw_capture_val.yml",
+      "sha256": "45c6cb81fcbcf1cf61404c05822da122fbb68010ceabd99d11904e8019345b97"
+    },
+    {
+      "bytes": 1292,
+      "path": "configs/materialized/CDW1630/seed0/cdw_common_train.yml",
+      "sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83"
+    },
+    {
+      "bytes": 473,
+      "path": "configs/materialized/CDW1630/seed0/cdw_final_test.yml",
+      "sha256": "2cddf55a3b087393a0e9330055b2a1c2107faf55dc060ec31e0612f25c936e85"
+    },
+    {
+      "bytes": 584,
+      "path": "configs/materialized/CDW1630/seed0/cdw_native_test.yml",
+      "sha256": "1d0e0f4ebc0ea503966d7af9d4d1c2d4c5d5d0babad39c3348b47903e9dc6033"
+    },
+    {
+      "bytes": 411,
+      "path": "configs/materialized/CDW1630/seed0/cdw_qccr_test.yml",
+      "sha256": "77f24eb78cfcb56ec748f350b0857964aef4c20671806b7b71519b9354b06bf9"
+    },
+    {
+      "bytes": 878,
+      "path": "configs/materialized/CDW1630/seed0/cdw_train.yml",
+      "sha256": "4b402f0e56ad1f7aeba3acc168ed948da695ef09e062a2bae238911835e26324"
+    },
+    {
+      "bytes": 220,
+      "path": "environment/PREPARE_ENVIRONMENT.json",
+      "sha256": "5d816329d9367a274df588e3dcc29e2eb8c748e97253d57949f5b979d5de4b84"
+    },
+    {
+      "bytes": 3449,
+      "path": "manifests/INPUT_BINDINGS.json",
+      "sha256": "b60575723a04c8877508b13b4fc9a98ff414267908f43afc5031a051ba731767"
+    },
+    {
+      "bytes": 5074,
+      "path": "predictions/B0/seed0/PREDICTION_SUMMARY.json",
+      "sha256": "95d65b42a8beea3a46999daf67bfb5594ccb6f81232d403de565db9992296605"
+    },
+    {
+      "bytes": 1227668,
+      "path": "predictions/B0/seed0/eval.pth",
+      "sha256": "7d19327d1dfae1142bcea361e4b7e0523ed5397c82adab646b27622d9fd965a9"
+    },
+    {
+      "bytes": 16240328,
+      "path": "predictions/B0/seed0/predictions.json",
+      "sha256": "1f59ce2df59df8c7ed48d5e281422076a72179660ac93f0109759119694254bb"
+    },
+    {
+      "bytes": 5826,
+      "path": "predictions/B0/seed0/summary/events.out.tfevents.1789460405.autodl-container-7e2f4f8c67-891d0c1a.10663.0",
+      "sha256": "d7ed32641474110b3c2721472cb8eb7ae6bc7deb5fb46fade8add23668184a6b"
+    },
+    {
+      "bytes": 5125,
+      "path": "predictions/Ours/seed0/PREDICTION_SUMMARY.json",
+      "sha256": "69b054352a263be3ef280b9ba1eb360cebf1f3d8389855f5936b62d0f9faf2a1"
+    },
+    {
+      "bytes": 1264788,
+      "path": "predictions/Ours/seed0/eval.pth",
+      "sha256": "c3d2ae68beaf387020b1ca3fb429ce7d1baf843ebaf752c428cef54e57a12b8a"
+    },
+    {
+      "bytes": 16237714,
+      "path": "predictions/Ours/seed0/predictions.json",
+      "sha256": "87b450625eac56dd5b0e6f4a3d24f242c7410aec82358d6d87f06c53e7dc8e5d"
+    },
+    {
+      "bytes": 6784,
+      "path": "predictions/Ours/seed0/summary/events.out.tfevents.1789460418.autodl-container-7e2f4f8c67-891d0c1a.11336.0",
+      "sha256": "b66ccbaf76a33b1ecc2909627440dc8a0ede01f849d3f83098b0710234980399"
+    },
+    {
+      "bytes": 1404,
+      "path": "protocol/QUALITATIVE_PROTOCOL.md",
+      "sha256": "2cd6f175edd58c33045e22ee2161a28d13ac8264d8de2af687532d3937135453"
+    },
+    {
+      "bytes": 3138,
+      "path": "protocol/QUALITATIVE_PROTOCOL_AMENDMENT_v1_1.json",
+      "sha256": "268c8e9cf8a5e2671fa795855fc3594e635e4a37ee291e5664499827f3ec038f"
+    },
+    {
+      "bytes": 1221,
+      "path": "protocol/QUALITATIVE_PROTOCOL_AMENDMENT_v1_1.md",
+      "sha256": "b9f275977b5ce22ad42f527cfad762e32bad9b7020dc423c893f1fb4562f3b63"
+    },
+    {
+      "bytes": 2036,
+      "path": "protocol/QUALITATIVE_PROTOCOL_LOCK.json",
+      "sha256": "48841dadee8dc67ce0bfced25e4fe2b5051b9f0a5d342314285fbf032b5e9e2e"
+    }
+  ],
+  "format_version": 1,
+  "package": "qualitative_evidence"
+}

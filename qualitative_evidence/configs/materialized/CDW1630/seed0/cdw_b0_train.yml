@@ -1,0 +1,10 @@
+__include__: [./cdw_common_train.yml]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/qualitative_evidence/runtime_outputs/config_declared_only/B0/train"
+
+DFINETransformer:
+  ufd_enabled: False
+
+DEIMCriterion:
+  ufd_enabled: False
+  lcct_enabled: False
+  gglh_enabled: False

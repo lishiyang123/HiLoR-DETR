@@ -1,0 +1,15 @@
+__include__: [./btc_ours_train.yml]
+
+val_dataloader:
+  dataset:
+    img_folder: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/generalization/btc/data/coco_deim/test1"
+    ann_file: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/generalization/btc/data/coco_deim/annotations/instances_test1.json"
+  total_batch_size: 8
+  num_workers: 4
+
+DFINETransformer:
+  ufd_deploy_strip: True
+
+PostProcessor:
+  qccr_enabled: False
+  umr_enabled: False

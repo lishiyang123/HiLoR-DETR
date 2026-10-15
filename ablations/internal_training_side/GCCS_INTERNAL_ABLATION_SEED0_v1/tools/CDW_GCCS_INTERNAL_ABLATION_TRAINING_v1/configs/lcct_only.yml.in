@@ -1,0 +1,15 @@
+__include__: [@COMMON_TRAIN_CONFIG@]
+output_dir: @OUTPUT_DIR@
+
+DFINETransformer:
+  ufd_enabled: False
+
+DEIMCriterion:
+  ufd_enabled: False
+  lcct_enabled: True
+  lcct_warmup_epoch: 20
+  lcct_delta: 0.02
+  lcct_continuous_handover: True
+  lcct_transition_width: 0.02
+  lcct_ramp_epochs: 5
+

@@ -1,0 +1,33 @@
+{
+  "candidate_count": 4,
+  "dataset": "CDW1630",
+  "detector_retrained": false,
+  "detector_seed": 0,
+  "diagnostic_guard_outcome": "NO_CANDIDATE_FULLY_QUALIFIED",
+  "evaluation_executed": false,
+  "final_qccr_artifact": {
+    "release_relative_path": "main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/qccr/qccr_params.json",
+    "sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8"
+  },
+  "fitting_executed": false,
+  "frozen_selected_lambda_reg": 0.001,
+  "grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "legacy_decision_token_scope": "OOF_VAL_GO is a legacy activation token for applying the predeclared fixed protocol; it does not mean that the selected candidate passed all diagnostic guards",
+  "selected_candidate_qualified": false,
+  "selection_basis": "predeclared fixed lambda_reg=0.001; current-seed OOF guards are diagnostic and were not used for reselection",
+  "source_oof_summary": {
+    "package_relative_path": "02_INFERENCE_SIDE/QCCR_LAMBDA/raw_results/CURRENT/SOURCE_OOF_SUMMARY.json",
+    "sha256": "8a84fca0d2a4bdc0970dfeeffb9cc5e08fb3bb39bf4bd8d4964340a872d6cedf"
+  },
+  "source_qccr_fits": {
+    "package_relative_path": "02_INFERENCE_SIDE/QCCR_LAMBDA/raw_results/CURRENT/SOURCE_QCCR_FITS.json",
+    "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+  },
+  "status": "COMPLETE__IMPORTED_SHA_VERIFIED_OOF_VAL",
+  "test_accessed": false
+}

@@ -1,0 +1,74 @@
+{
+  "checkpoint_runs": [
+    {
+      "best_epoch_one_based": 96,
+      "best_epoch_zero_based": 95,
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/runs/seed0/weights/best_val_ap.pt",
+      "checkpoint_sha256": "1a481653de0758fe33ef883d2ab8c8558d6bf6f19311f0ce9e985e1b54a128da",
+      "seed": 0,
+      "val_ap": 0.77103
+    },
+    {
+      "best_epoch_one_based": 100,
+      "best_epoch_zero_based": 99,
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/runs/seed1/weights/best_val_ap.pt",
+      "checkpoint_sha256": "f78fb1ba87479ffc2b1c26e52a500725f03f7a3fd990492f9aa9f7b8da29c040",
+      "seed": 1,
+      "val_ap": 0.7707
+    },
+    {
+      "best_epoch_one_based": 102,
+      "best_epoch_zero_based": 101,
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/runs/seed2/weights/best_val_ap.pt",
+      "checkpoint_sha256": "d8fe16f0c6f1447d6e63756662afd8b9b978f7ed544b8a3b71e9352bfc16e6d9",
+      "seed": 2,
+      "val_ap": 0.76849
+    }
+  ],
+  "evaluation": {
+    "implementation": "faster_coco_eval.COCOeval_faster",
+    "iou_type": "bbox",
+    "maxDets": [
+      1,
+      10,
+      100
+    ],
+    "metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "APs",
+      "APm",
+      "APl",
+      "AR1",
+      "AR10",
+      "AR100",
+      "ARs",
+      "ARm",
+      "ARl"
+    ],
+    "package": "faster-coco-eval",
+    "replay_tolerance": "exact",
+    "version": "1.7.2"
+  },
+  "evaluation_lock_sha256": "cfaae7797854dab14962bdc2337455555872c2edbf8c2050194aed47ef54f347",
+  "fitting_on_test": false,
+  "inference": {
+    "agnostic_nms": false,
+    "augment": false,
+    "batch": 16,
+    "conf": 0.001,
+    "device": 0,
+    "half": false,
+    "imgsz": 640,
+    "iou": 0.7,
+    "max_det": 300,
+    "rect": false,
+    "seed": 0
+  },
+  "model": "YOLOv12-M (turbo)",
+  "schema": "cdw1630-yolo-frozen-test-protocol-v1",
+  "status": "FROZEN",
+  "test_binding_sha256": "83118f2ffa1f4baaf407555dc5086198782e1434f6d48989c7678c7e2157d458",
+  "test_model_or_parameter_selection": false
+}

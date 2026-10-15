@@ -1,0 +1,72 @@
+{
+  "dataset": "CDW1630",
+  "detector_seeds": [0, 1, 2],
+  "diagnostic_role": "Val-only robustness analysis; not a Test-selection or replacement protocol",
+  "fold_count": 5,
+  "fold_policy": {
+    "assignment_source": "existing image-level QCCR fold_by_image",
+    "must_match_across_detector_seeds": true,
+    "oof_aggregation": "concatenate all held-out-image detections, then run one COCO evaluation",
+    "per_fold_ap_averaging_forbidden": true
+  },
+  "qccr": {
+    "candidate_key": "1e-03",
+    "lambda_reg": 0.001,
+    "target_fold_rule": "use coefficients fitted on the other four Val folds",
+    "full_val_coefficients_for_oof_rows": false
+  },
+  "umr": {
+    "architecture": "existing UMRHead",
+    "head_seed": 0,
+    "positive_weight": 4,
+    "tau": 0.0,
+    "beta": 2.0,
+    "topk": 300,
+    "maximum_epochs": 50,
+    "early_stopping_patience": 8,
+    "inner_fit_fraction": 0.9,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_images": 16
+  },
+  "rows": [
+    "qccr_only",
+    "current_train_capture_umr",
+    "val_oof_umr",
+    "train_matched_umr"
+  ],
+  "train_matched_control": {
+    "enabled": true,
+    "selection_seed": 20260925,
+    "image_count_rule": "equal to the outer four-fold Val training-image count",
+    "purpose": "separate detector-Train source effects from UMR fitting-set size"
+  },
+  "report_metrics": [
+    "AP", "AP50", "AP75", "AP80", "AP85", "AP90", "AP95",
+    "APs", "APm", "APl", "AR1", "AR10", "AR100", "ARs", "ARm", "ARl"
+  ],
+  "data_policy": {
+    "allowed": [
+      "frozen Train capture for the same detector checkpoint",
+      "frozen Val capture for the same detector checkpoint",
+      "Val annotations",
+      "existing QCCR five-fold fit records",
+      "existing formal Train-capture UMR head"
+    ],
+    "forbidden": [
+      "Test images",
+      "Test annotations",
+      "Test captures",
+      "Test metrics",
+      "detector training",
+      "detector checkpoint selection",
+      "UMR hyperparameter search"
+    ]
+  },
+  "outcome_policy": {
+    "no_go_gate": false,
+    "no_parameter_selection": true,
+    "report_all_rows_and_all_three_detector_seeds": true,
+    "formal_Test_results_unchanged": true
+  }
+}

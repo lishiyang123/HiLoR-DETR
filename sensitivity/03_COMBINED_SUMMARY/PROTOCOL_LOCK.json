@@ -1,0 +1,10 @@
+{
+  "figure_handoff": "copy compact canonical CSV/JSON to the figure package and bind every input by SHA-256",
+  "formal_figure": "F05_PARAMETER_SENSITIVITY",
+  "numerical_archive": "all candidates, metrics, guards, receipts, and SHA bindings remain in the sensitivity package",
+  "panels": [
+    "(a) LCCT delta versus native Val AP",
+    "(b) QCCR lambda_reg versus OOF Val AP",
+    "(c) UMR tau-by-beta heatmap of Val delta AP at pw=4 and topk=300"
+  ]
+}

@@ -1,0 +1,9 @@
+checkpoint : /root/autodl-tmp/BTC_DEIM_project/CDW1630_B0_reproduction_package/checkpoint/best_stg1.pth
+last_epoch : 84
+date       : 2026-08-25T08:46:16.165521
+has model  : True
+has ema    : True
+ema keys   : ['module', 'updates']
+ema updates: 12155
+has scaler : False
+train AMP  : False (FP32 training)

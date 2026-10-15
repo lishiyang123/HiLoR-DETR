@@ -1,0 +1,340 @@
+{
+  "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+  "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "formal_evaluator_source": {
+    "path": "coco_test_evaluation.py",
+    "sha256": "ef77046999c4abbf25935b43b106e15d3addbac6b92eb7824670122595989933"
+  },
+  "ground_truth_size_counts": {
+    "large": {
+      "annotations": 677,
+      "images": 229
+    },
+    "medium": {
+      "annotations": 393,
+      "images": 138
+    },
+    "small": {
+      "annotations": 1,
+      "images": 1
+    }
+  },
+  "models": [
+    {
+      "name": "YOLOv8-L",
+      "runs": [
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv8_L_OFFICIAL/metrics.json",
+            "sha256": "efbdccf862853d30ff0497f44ec2802d80200087a0f3f8569b405066bc6c7982"
+          },
+          "detections": 4134,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv8_L_OFFICIAL/predictions.coco.json",
+          "run": "official",
+          "sha256": "a5b699e5cc4e828ed88a93246d8ac72ecc71db890cdd34ddb56d33ca21ab63fd"
+        }
+      ],
+      "scope": "official_single_checkpoint"
+    },
+    {
+      "name": "YOLO11-L",
+      "runs": [
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv11_L_OFFICIAL/metrics.json",
+            "sha256": "4ab0510f1ac9cf76bf8ef953706fee336e0a6b097c4aac9926091e526a90be2c"
+          },
+          "detections": 7866,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv11_L_OFFICIAL/predictions.coco.json",
+          "run": "official",
+          "sha256": "83d14c6dd527e5ab0802aa54b5667df716ce9faf5dbd369f4c520c5e0b28d1a4"
+        }
+      ],
+      "scope": "official_single_checkpoint"
+    },
+    {
+      "name": "RT-DETR-R18",
+      "runs": [
+        {
+          "archived_metric": {
+            "path": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed0/metrics.json",
+            "sha256": "9fccdbf0c7058a433d228fee952ff963eaeb28c724b81f6736ca277a99c24761",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "archived_evaluator_version": "1.7.2"
+          },
+          "detections": 71100,
+          "kind": "predictions",
+          "path": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed0/predictions.json",
+          "run": "seed0",
+          "sha256": "fa49ce0d3070116d2ef4c5907e139714b058ab93abb4e4c474cc4ec7cadc1605"
+        },
+        {
+          "archived_metric": {
+            "path": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed1/metrics.json",
+            "sha256": "badf204baf1244929bd07acbd919bfc0d3ec648c3c55ae83ef26e552656a85eb",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "archived_evaluator_version": "1.7.2"
+          },
+          "detections": 71100,
+          "kind": "predictions",
+          "path": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed1/predictions.json",
+          "run": "seed1",
+          "sha256": "6f048ca6189a601a371c5f464df4d91ec6cd775d18883f121db224e073a7bb8d"
+        },
+        {
+          "archived_metric": {
+            "path": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed2/metrics.json",
+            "sha256": "91b4902e91e17650fb47ee95155e8413ed6c2fdac649a065be07a4b57cab0f97",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "archived_evaluator_version": "1.7.2"
+          },
+          "detections": 71100,
+          "kind": "predictions",
+          "path": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed2/predictions.json",
+          "run": "seed2",
+          "sha256": "2510d0a15ffef3907671a0f85d5d486822db599b0f020c5b11f3b2fc9c07fb84"
+        }
+      ],
+      "scope": "three_seed_val_selected"
+    },
+    {
+      "name": "D-FINE-M",
+      "runs": [
+        {
+          "archived_metric": {
+            "path": "benchmarks/03_D_FINE_M/results/test_reeval_v1_1/seed0/metrics.json",
+            "sha256": "40fddc8f3662b782eb63d92e0da04c3c4f0f0b59d8367e5fe80b00b548f534d7",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "archived_evaluator_version": "1.7.2"
+          },
+          "detections": 71100,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/03_D_FINE_M/results/test_reeval_v1_1/seed0/predictions.json",
+          "run": "seed0",
+          "sha256": "55f0887faedaebc1ac841c5569ebb040dc3e0400617e45b5f9da20525430a645"
+        },
+        {
+          "archived_metric": {
+            "path": "benchmarks/03_D_FINE_M/results/test_reeval_v1_1/seed1/metrics.json",
+            "sha256": "b02eb38d1bb67d558172cd6fa6a73fdd3f55c8190f1f3b27a8fbb61e281b51a0",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "archived_evaluator_version": "1.7.2"
+          },
+          "detections": 71100,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/03_D_FINE_M/results/test_reeval_v1_1/seed1/predictions.json",
+          "run": "seed1",
+          "sha256": "7d52b1f95120c6ea09162f5331a7b73e984d65946c298c5e5e80c5c84ce64b09"
+        },
+        {
+          "archived_metric": {
+            "path": "benchmarks/03_D_FINE_M/results/test_reeval_v1_1/seed2/metrics.json",
+            "sha256": "222c6013ce9781c70903b6f9c18e9049243faac40a144099f8a490a1f5efd274",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "archived_evaluator_version": "1.7.2"
+          },
+          "detections": 71100,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/03_D_FINE_M/results/test_reeval_v1_1/seed2/predictions.json",
+          "run": "seed2",
+          "sha256": "8f890af1a66c6c95bb101cd264dea39cd1393296e8367e24b8a92bd704f4184d"
+        }
+      ],
+      "scope": "three_seed_val_selected"
+    },
+    {
+      "name": "YOLOv10-M",
+      "runs": [
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/results/test_reeval_v1/seed0/metrics.json",
+            "sha256": "8af2a36c176b46be7f43c09e96d1c40ec5b638f546cf7ea5e1e2555fb2398519"
+          },
+          "detections": 1974,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/results/test_reeval_v1/seed0/predictions.coco.json",
+          "run": "seed0",
+          "sha256": "cb45e4d68430126c7c9c7774be644314924e6cc2d62df1d79f2403d23850b6a4"
+        },
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/results/test_reeval_v1/seed1/metrics.json",
+            "sha256": "5374e3d115caa6d3d11e036697930f84aebdbfc9fb814e0c0d21f1e17eb45a8e"
+          },
+          "detections": 1915,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/results/test_reeval_v1/seed1/predictions.coco.json",
+          "run": "seed1",
+          "sha256": "bec6bcfd64762b1cd131d9698db9590e47a12064c39e7c7bc7fb89a6b97e0e6d"
+        },
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/results/test_reeval_v1/seed2/metrics.json",
+            "sha256": "cec379afee4e2a4065ca4d152ae0e4372646e6cd43326d91f5b914eea8f70a3a"
+          },
+          "detections": 2063,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/results/test_reeval_v1/seed2/predictions.coco.json",
+          "run": "seed2",
+          "sha256": "2a647a3fb49e43d635d8c9301f6d9b829d5e6cddeef67cb4af1ae841094b9828"
+        }
+      ],
+      "scope": "three_seed_val_selected"
+    },
+    {
+      "name": "YOLOv12-M (turbo)",
+      "runs": [
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/results/test_reeval_v1/seed0/metrics.json",
+            "sha256": "82d6a8d6987bc8965f84374958d0ce85134f8934bdb60d82adc06a05645e1390"
+          },
+          "detections": 2528,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/results/test_reeval_v1/seed0/predictions.coco.json",
+          "run": "seed0",
+          "sha256": "f43d49ad557e1524cf6b04d02e8e19cb3ab94d7fae6ebc531b081ae6793d63d5"
+        },
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/results/test_reeval_v1/seed1/metrics.json",
+            "sha256": "8c6ca232206c71029dd84faa23d49cbf1a5cfa3654b42a5c1d3aa979b94ee4ef"
+          },
+          "detections": 2290,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/results/test_reeval_v1/seed1/predictions.coco.json",
+          "run": "seed1",
+          "sha256": "dfe4b60bc07cf6c51e0348787b59486654d2f0cdd234039b274335008e853b04"
+        },
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/results/test_reeval_v1/seed2/metrics.json",
+            "sha256": "66cf9bf402d38ff054b130ea1107db5164db718b596790572d353161c8a1a338"
+          },
+          "detections": 2256,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv12_M_TRAINED/results/test_reeval_v1/seed2/predictions.coco.json",
+          "run": "seed2",
+          "sha256": "96b6285f0654ffb030b991baadaf02a0907456e060fef0d7022d0779657c2e70"
+        }
+      ],
+      "scope": "three_seed_val_selected"
+    },
+    {
+      "name": "YOLOv9-C",
+      "runs": [
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/results/test_batch8_v1/seed0/metrics.json",
+            "sha256": "f451b6b330c0f84b1d55cae2775c63446bb986dc99d3a6ac645f86df3ff8b82f"
+          },
+          "detections": 2785,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/results/test_batch8_v1/seed0/predictions.coco.json",
+          "run": "seed0",
+          "sha256": "3e6fae731371ef260cb1d6e169248f4c574ef9cf2bbc3f1505c001218fe1457f"
+        },
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/results/test_batch8_v1/seed1/metrics.json",
+            "sha256": "e499ed6287014fd0c736555b3d9859eb1ec0ec66d534480d1925f46537a5c037"
+          },
+          "detections": 2764,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/results/test_batch8_v1/seed1/predictions.coco.json",
+          "run": "seed1",
+          "sha256": "363c7112392fa04dff8d42bcb199ac4814cd27427796403fe73fc64618082803"
+        },
+        {
+          "archived_metric": {
+            "archived_evaluator_version": "1.7.2",
+            "implementation": "faster_coco_eval.COCOeval_faster",
+            "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/results/test_batch8_v1/seed2/metrics.json",
+            "sha256": "778cc9fce3e71fdf550857e6e99c518ad3734d126b559a029f8f593123fc5086"
+          },
+          "detections": 3114,
+          "kind": "predictions",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/results/test_batch8_v1/seed2/predictions.coco.json",
+          "run": "seed2",
+          "sha256": "3f9e5e2f5f28248d75fe03e7b67a8a797db575abb4b38c09df8359b880c7b6c5"
+        }
+      ],
+      "scope": "three_seed_val_selected"
+    },
+    {
+      "name": "B0 (HGNetv2-M)",
+      "runs": [
+        {
+          "kind": "eval_pth",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+          "run": "seed0",
+          "sha256": "67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42"
+        },
+        {
+          "kind": "eval_pth",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/B0/seed1/official_test/eval.pth",
+          "run": "seed1",
+          "sha256": "c605384b7c8d9615121f38de4cc81b12bccb63d005e3e3a57ace0dfcb288698f"
+        },
+        {
+          "kind": "eval_pth",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/B0/seed2/official_test/eval.pth",
+          "run": "seed2",
+          "sha256": "fb52d5cebbfba4c30abff96b0adbd067083ffc07c5f4cd60bfcb0242e03e9ccf"
+        }
+      ],
+      "scope": "three_seed_val_selected"
+    },
+    {
+      "name": "Ours (HGNetv2-M)",
+      "runs": [
+        {
+          "kind": "eval_pth",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/Ours/seed0/final/eval.pth",
+          "run": "seed0",
+          "sha256": "49276c79f4d4323ae596a69013bb3484586130b5969c701356e3b53e2218a3a6"
+        },
+        {
+          "kind": "eval_pth",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/Ours/seed1/final/eval.pth",
+          "run": "seed1",
+          "sha256": "9fff69def845221ef975981616fdaf428ddd9672163d8c3502b300f896c682a8"
+        },
+        {
+          "kind": "eval_pth",
+          "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/Ours/seed2/final/eval.pth",
+          "run": "seed2",
+          "sha256": "af92c2033c1a8e3e80183e33890bdd86fe5189ec8baa1737c8b65a2c836c62d2"
+        }
+      ],
+      "scope": "three_seed_val_selected"
+    }
+  ],
+  "test_annotations": 1071,
+  "test_images": 237,
+  "test_images_accessed": false,
+  "test_used_for_selection": false,
+  "training_or_inference_executed": false
+}

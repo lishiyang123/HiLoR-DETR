@@ -1,0 +1,25 @@
+{
+  "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "effective_test_batch": 8,
+  "evaluator": "faster-coco-eval==1.7.2",
+  "models": [
+    {
+      "effective_batch": 8,
+      "model": "YOLOv8-L",
+      "predictions_sha256": "a5b699e5cc4e828ed88a93246d8ac72ecc71db890cdd34ddb56d33ca21ab63fd",
+      "weight_md5": "29dfa5d726d4b51cb693d3b026c69d98",
+      "weight_sha256": "aaff4d6f857724dbcfcec54ba517bd246ae7c9c9cf39f84a897b4f1eb254932c"
+    },
+    {
+      "effective_batch": 8,
+      "model": "YOLO11-L",
+      "predictions_sha256": "83d14c6dd527e5ab0802aa54b5667df716ce9faf5dbd369f4c520c5e0b28d1a4",
+      "weight_md5": "32ce83b42455218a0a100921efc49c01",
+      "weight_sha256": "c9d665bf34ca0acc913835cd7db455a6251a5c9f1fe5d0e66b5f3d9f3898e284"
+    }
+  ],
+  "protocol_sha256": "e8ea215867c98a3d2c7dadcaef2b757f72a660c7a007f66e271d7904d4f1e63f",
+  "schema": "cdw1630-official-yolo-batch8-comparative-binding-v1",
+  "status": "PASS",
+  "test_used_for_model_or_parameter_selection": false
+}

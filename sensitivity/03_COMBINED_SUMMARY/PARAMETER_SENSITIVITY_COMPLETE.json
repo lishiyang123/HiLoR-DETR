@@ -1,0 +1,115 @@
+{
+  "components": {
+    "LCCT_DELTA": {
+      "center": 0.02,
+      "grid": [
+        0.005,
+        0.01,
+        0.02,
+        0.04,
+        0.08
+      ],
+      "rows": [
+        {
+          "AP": 0.7774986370946596,
+          "AP50": 0.967340333093281,
+          "AP75": 0.8901243538171466,
+          "AR100": 0.876293687932,
+          "best_epoch": 94,
+          "checkpoint_sha256": "66af5eb035bd0d996534755ddecfde8c17169993a9b2a88bd85c80f12cc06054",
+          "delta": 0.005,
+          "log_sha256": "287dd11b38c8634e2603ef498a1ed66262da18eb90eb7f4a1e1e432d0891ab66",
+          "seed": 0,
+          "selected_stage": "stage2",
+          "source": "new formal run"
+        },
+        {
+          "AP": 0.7794636413022304,
+          "AP50": 0.9683782109799204,
+          "AP75": 0.89429787196885,
+          "AR100": 0.8761127110482748,
+          "best_epoch": 98,
+          "checkpoint_sha256": "9f3631ed4fdfdb93bf997f9fc6cbca6a539c9effd58f6536b8171496f0d52e1f",
+          "delta": 0.01,
+          "log_sha256": "124a42e165fbbcf959c42791e3c285b49953c8807ef3b21c5eece4be6a5acd01",
+          "seed": 0,
+          "selected_stage": "stage2",
+          "source": "new formal run"
+        },
+        {
+          "AP": 0.7839574063619668,
+          "AP50": 0.9722525909862445,
+          "AP75": 0.9005406547269437,
+          "AR100": 0.8756820466389367,
+          "best_epoch": 99,
+          "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+          "delta": 0.02,
+          "log_sha256": "e536df2f1efb84df93194d26f3f2e6225261c2eae5f960dec7d75b1a1524b9e2",
+          "seed": 0,
+          "selected_stage": "stage2",
+          "source": "exact final run reused"
+        },
+        {
+          "AP": 0.7811706153549048,
+          "AP50": 0.9734773233022741,
+          "AP75": 0.9050920283326975,
+          "AR100": 0.8705750881929077,
+          "best_epoch": 101,
+          "checkpoint_sha256": "2c53543a458e4e347554c28bffeb0247da4ddc3fefaf290feda850a434809102",
+          "delta": 0.04,
+          "log_sha256": "f7ec0f82530a306f3f332d35bfb61094a5c34a11359c37c676f1e171f08db032",
+          "seed": 0,
+          "selected_stage": "stage2",
+          "source": "new formal run"
+        },
+        {
+          "AP": 0.7802615418729325,
+          "AP50": 0.9763969752314421,
+          "AP75": 0.9033778051587232,
+          "AR100": 0.8651150307010356,
+          "best_epoch": 92,
+          "checkpoint_sha256": "000ab64628882f456c545fd6ca72c0cfffb223b31f300a35a6d7d3b9e5080440",
+          "delta": 0.08,
+          "log_sha256": "9ae62d3557b83dbd1cc50999e0a715cc5526f0caad3589a43820bb0b3076f377",
+          "seed": 0,
+          "selected_stage": "stage2",
+          "source": "new formal run"
+        }
+      ]
+    },
+    "QCCR_LAMBDA": {
+      "frozen": 0.001,
+      "grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1
+      ]
+    },
+    "UMR_TAU_BETA": {
+      "beta": [
+        0,
+        0.25,
+        0.5,
+        1,
+        2
+      ],
+      "frozen": {
+        "beta": 2,
+        "tau": 0
+      },
+      "pw": 4,
+      "tau": [
+        0,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "topk": 300
+    }
+  },
+  "detector_seed": 0,
+  "protocol_version": "1.2",
+  "status": "COMPLETE",
+  "test_accessed": false
+}

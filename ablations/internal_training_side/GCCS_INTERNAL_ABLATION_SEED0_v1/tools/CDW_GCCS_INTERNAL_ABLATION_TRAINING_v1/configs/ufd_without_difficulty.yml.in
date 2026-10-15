@@ -1,0 +1,20 @@
+__include__: [@COMMON_TRAIN_CONFIG@]
+output_dir: @OUTPUT_DIR@
+
+DFINETransformer:
+  ufd_enabled: True
+
+DEIMCriterion:
+  ufd_enabled: True
+  ufd_cdf_path: @UFD_CDF@
+  ufd_total_epochs: 102
+  ufd_k: 9
+  ufd_base_size: 640.0
+  ufd_alpha_h: 0.0
+  ufd_alpha_u_max: 0.5
+  ufd_lambda_max: 0.75
+  ufd_lambda_ramp_fraction: 0.05
+  ufd_uncertainty_delay_fraction: 0.05
+  ufd_uncertainty_ramp_fraction: 0.05
+  lcct_enabled: False
+

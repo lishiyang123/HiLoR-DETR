@@ -1,0 +1,87 @@
+{
+  "bindings": {
+    "data_split_lock": {
+      "path": "provenance/DATA_SPLIT_LOCK.json",
+      "sha256": "1a0a0a956f91392de54bcd98ff8cd7c529893f4611a5cd78b1cd1835e8248e0e"
+    },
+    "implementation_lock": {
+      "path": "provenance/IMPLEMENTATION_LOCK.json",
+      "sha256": "26aa8f9f078a4199d5f3c94765128c5ca96231e33d5c66e3eb80cb81e85f63be"
+    }
+  },
+  "compatibility": {
+    "compatibility_fields_are_not_observed_gates": true,
+    "qccr_decision": "OOF_VAL_GO",
+    "umr_decision": "VAL_GO"
+  },
+  "created_at": "2026-10-08",
+  "dataset": "CDW1630",
+  "existing_locked_tools": {
+    "tools/fit_common.py": "0329ef30905eb6eb80007704f2ea928a5062efdee0802b835788fa55303a0a94",
+    "tools/fit_qccr.py": "b1aae202d3db67137080d42ef66e3758fd7a2c1693a014be713d0a7667d49e0e",
+    "tools/freeze_inference_binding.py": "06dc2f1204e2b1651dbf38b69b51edc3c6f26494ccd75e1a524b543f87c934c6",
+    "tools/train_umr_select_val.py": "e5f03c467089e85faa3ba415e2ce2a3b9e6d114adee2d8065fc7808f21dc537a"
+  },
+  "fit_runtime_sources": {
+    "hilor_qccr.py": "8579a5c661f6267b2e0fa96e3f78965b3742cd2de2b9bfc1167c10a2e5e4147d",
+    "hilor_umr.py": "83c82f1be700d89fb1bc8672fb6d7df4c11a19fd0e45f8e8efd4aa6b6cc46a2f"
+  },
+  "fixed_protocol_tools": {
+    "tools/fixed_protocol_common.py": "7c0db626051d9d6ffd823ec3286ab5082ca49c05746974de65be91626bfa0193",
+    "tools/freeze_inference_binding_fixed.py": "4852f4160f6d01472993deef81fbcca9dc10ff34bd7ba314a498f72413a7aa1f",
+    "tools/freeze_qccr_fixed.py": "f9059bc871fe4aac1a2c30a4ae346f089f4ad41125c1e3beba797edfbee5b5c6",
+    "tools/train_umr_fixed.py": "9168f533ea4d9fdf37b377510d70ae1cce05dbc1767490c6fce30d26be1a5e3a"
+  },
+  "formal_test_runtime_device_fix": {
+    "date": "2026-10-08",
+    "fitted_objective_changed": false,
+    "fixed_hyperparameters_changed": false,
+    "test_metrics_observed_before_fix": false,
+    "test_used_for_selection_fitting_or_tuning": false
+  },
+  "host": "RT-DETR-R18",
+  "post_training_capture_policy_refresh": {
+    "date": "2026-10-08",
+    "detector_training_changed": false,
+    "inference_hyperparameters_changed": false,
+    "test_accessed": false
+  },
+  "qccr": {
+    "fit_split": "Val",
+    "lambda_reg": 0.001,
+    "oof_gate_used": false
+  },
+  "schema": "cdw1630-rtdetr-r18-qccr-umr-fixed-protocol-lock-v1",
+  "selection_policy": {
+    "adaptive_candidate_evidence_used": false,
+    "adaptive_selection_performed": false,
+    "name": "predeclared-fixed-hyperparameters",
+    "test_accessed": false,
+    "val_metrics_computed": false
+  },
+  "source_policy": {
+    "donor_content_aggregate_sha256": "ed59c8c0dc3b42c2564fe385dd6b4d544100e75573b5ed0a0f39ce859b76f7d7",
+    "inherited_without_parameter_change": true,
+    "name": "DEIM fixed QCCR-UMR protocol",
+    "optimized_donor_lock": {
+      "path": "provenance/OPTIMIZED_DONOR_LOCK.json",
+      "sha256": "8de427ec98305bee04118a7308574ad7b1f27aa12cfee77c02dd2c256a24fae9"
+    },
+    "relative_path": "tools/calibration/fixed_protocol/PROTOCOL_LOCK.json",
+    "sha256": "b4e4c1ae48762d746309b15147ef2bf3503db9e860f8d3272f925a16d3fddc27"
+  },
+  "status": "fixed-before-test-access",
+  "test": {
+    "allowed_after_complete_freeze": "formal evaluation only",
+    "allowed_for_fitting_or_selection": false
+  },
+  "umr": {
+    "beta": 2.0,
+    "fit_split": "Train",
+    "head_seed": 0,
+    "positive_weight": 4,
+    "tau": 0.0,
+    "topk": 300,
+    "val_grid_used": false
+  }
+}

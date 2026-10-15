@@ -1,0 +1,50 @@
+{
+  "canonical_detector_seed": 0,
+  "coco_computation": "per-image COCO matching is computed once; sampled evaluation records are repeated with replacement and COCO accumulation is rerun exactly",
+  "dataset": "CDW1630 official Test",
+  "gpu_required": false,
+  "input_binding_policy": "copied prediction/annotation inputs plus SHA-256 bindings to formal evals and source packages",
+  "interval": {
+    "confidence": 0.95,
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "type": "two-sided percentile bootstrap"
+  },
+  "methods": [
+    "B0",
+    "Ours"
+  ],
+  "metrics": {
+    "primary": "COCO AP@[0.50:0.95]",
+    "secondary_descriptive": [
+      "AP50",
+      "AP75",
+      "AR100"
+    ],
+    "units": "Ours minus B0 in percentage points"
+  },
+  "pairing": "the identical bootstrap image multiplicities are used for B0 and Ours",
+  "protocol_name": "CDW1630_PAIRED_IMAGE_BOOTSTRAP_v1",
+  "protocol_version": "1.0",
+  "replicates": 5000,
+  "resampling_unit": "image",
+  "rng": {
+    "algorithm": "NumPy PCG64",
+    "seed": 20260915
+  },
+  "sample_size_per_replicate": 237,
+  "sampling": "ordinary nonparametric sampling with replacement from all 237 Test images",
+  "seed_scope": {
+    "bootstrap": "canonical detector seed0; conditional image-sampling uncertainty",
+    "training_randomness": "reported separately using exact seed0/1/2 results; not estimated by this image bootstrap"
+  },
+  "selection_policy": "analysis is reporting-only after model/parameter freezing; no result may alter the model, parameter, or case selection",
+  "status": "FROZEN_BEFORE_BOOTSTRAP_COMPUTATION",
+  "tail_probability": {
+    "claim_scope": "primary AP only; secondary metrics are descriptive and not separate confirmatory tests",
+    "type": "two-sided empirical sign-tail probability with plus-one correction"
+  },
+  "test_used_for_model_or_parameter_selection": false
+}

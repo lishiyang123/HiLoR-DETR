@@ -1,0 +1,29 @@
+{
+  "all_other_settings": "byte/config identical to the final seed0 training protocol",
+  "authoritative_package": "gate_sensitivity",
+  "input_bindings": "gate_sensitivity/INPUT_BINDINGS.json",
+  "center": 0.02,
+  "center_policy": "reuse the exact final seed0 run only after source/config/log/checkpoint SHA verification",
+  "checkpoint_rule": "within each level, use the checkpoint selected by maximum native Val AP; no Test tie-break",
+  "epoch_budget": 102,
+  "grid": [
+    0.005,
+    0.01,
+    0.02,
+    0.04,
+    0.08
+  ],
+  "interpretation": "sensitivity curve only; no level may replace the frozen final setting",
+  "new_training_runs": 4,
+  "parameter": "lcct_delta",
+  "primary_metric": "native Val AP@[0.50:0.95]",
+  "result_status": "COMPLETE",
+  "run_count": 5,
+  "secondary_metrics": [
+    "Val AP50",
+    "Val AP75",
+    "Val AR100"
+  ],
+  "seed": 0,
+  "symbol": "delta"
+}

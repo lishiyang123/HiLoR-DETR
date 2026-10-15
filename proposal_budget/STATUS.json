@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-09-27T10:07:04.071288+00:00",
+  "formal_prediction_pairs": 6,
+  "gpu_used": false,
+  "inference_executed": false,
+  "release_write": false,
+  "status": "COMPLETE__OFFLINE_BUDGETED_SORTING_PROPOSAL_EVALUATION__STAGED_ONLY",
+  "training_executed": false
+}

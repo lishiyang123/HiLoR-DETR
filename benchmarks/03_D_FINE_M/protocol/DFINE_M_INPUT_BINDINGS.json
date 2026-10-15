@@ -1,0 +1,50 @@
+{
+  "checkpoint": {
+    "80_class_heads": 10,
+    "head_examples": {
+      "decoder.dec_score_head.0.bias": [
+        80
+      ],
+      "decoder.dec_score_head.0.weight": [
+        80,
+        256
+      ],
+      "decoder.enc_score_head.bias": [
+        80
+      ],
+      "decoder.enc_score_head.weight": [
+        80,
+        256
+      ]
+    },
+    "keys": 1053
+  },
+  "dataset": {
+    "train": {
+      "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_train2017.json",
+      "image_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/train2017",
+      "images": 1144,
+      "instances": 5581,
+      "sha256": "7fdd6dee1d2d88c25ff7248e2abe8c8277dfa2083ec9557d52b5ca9da78065c4"
+    },
+    "val": {
+      "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_val2017.json",
+      "image_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/val2017",
+      "images": 249,
+      "instances": 988,
+      "sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5"
+    }
+  },
+  "environment": {
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "python": "3.11.9",
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124"
+  },
+  "formal_config_sha256": "5259d990a3998040829dbe9d6bed998d6c1f4ce4215d1478b2851b3d31bca24e",
+  "protocol_sha256": "5a6964a93a5b9fc1fb9f16b3eca91c75e0f25f9375ed7fee9850cbc4f6ff0411",
+  "schema": "dfine-m-input-bindings-v1",
+  "source_commit": "956d1709314c2c6a4df6f34de232054578a7449f",
+  "weight_sha256": "b44a7586bf490858c7b8bce9e44bd025cb88724df9a07a8deb3ae1c12e608195"
+}

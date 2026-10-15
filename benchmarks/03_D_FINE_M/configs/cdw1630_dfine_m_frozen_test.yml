@@ -1,0 +1,8 @@
+# Frozen Test-only loader override; model and transforms inherit formal Val configuration.
+__include__: ["/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/03_D_FINE_M/configs/cdw1630_dfine_m_formal.yml"]
+val_dataloader:
+  dataset:
+    img_folder: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/test2017"
+    ann_file: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json"
+  total_batch_size: 8
+  num_workers: 4

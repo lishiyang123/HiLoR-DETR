@@ -1,0 +1,19 @@
+{
+  "schema": "cdw1630-b0-qccr-only-three-seed-control-v1",
+  "dataset": "CDW1630",
+  "detector": "B0",
+  "detector_seeds": [0, 1, 2],
+  "detector_training": false,
+  "postprocessor_fitting": false,
+  "comparison_rows": ["B0", "B0_QCCR", "B0_QCCR_UMR"],
+  "new_evaluation_row": "B0_QCCR",
+  "qccr_lambda_reg": 0.001,
+  "qccr_source": "reuse the checkpoint-specific frozen QCCR artifact from the completed B0_QCCR_UMR control",
+  "umr_enabled_for_new_row": false,
+  "selection": {
+    "detector_checkpoint": "existing B0 checkpoint selected on Val",
+    "qccr_coefficients": "existing checkpoint-specific artifact fitted on Val at fixed lambda=1e-3",
+    "test_used_for_parameter_selection": false
+  },
+  "test_role": "final reporting only"
+}

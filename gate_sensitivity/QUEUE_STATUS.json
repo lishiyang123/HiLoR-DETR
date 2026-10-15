@@ -1,0 +1,27 @@
+{
+  "completed": [
+    0.01,
+    0.04,
+    0.005,
+    0.08
+  ],
+  "current": null,
+  "error": null,
+  "finished_utc": "2026-09-16T00:44:06.420093+00:00",
+  "last_update_utc": "2026-09-16T00:44:06.420153+00:00",
+  "launch_command": [
+    "/root/autodl-tmp/envs/deim_cvpr2025/bin/python",
+    "-u",
+    "-B",
+    "/root/autodl-tmp/BTC_DEIM_project/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/manager.py",
+    "worker",
+    "--project",
+    "/root/autodl-tmp/BTC_DEIM_project"
+  ],
+  "launch_mode": "start",
+  "pending": [],
+  "pid": null,
+  "started_utc": "2026-09-15T16:43:25.517456+00:00",
+  "state": "COMPLETE",
+  "test_accessed": false
+}

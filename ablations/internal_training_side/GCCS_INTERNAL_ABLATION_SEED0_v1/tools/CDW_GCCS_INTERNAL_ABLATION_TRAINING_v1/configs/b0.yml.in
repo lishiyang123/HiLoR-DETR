@@ -1,0 +1,10 @@
+__include__: [@COMMON_TRAIN_CONFIG@]
+output_dir: @OUTPUT_DIR@
+
+DFINETransformer:
+  ufd_enabled: False
+
+DEIMCriterion:
+  ufd_enabled: False
+  lcct_enabled: False
+

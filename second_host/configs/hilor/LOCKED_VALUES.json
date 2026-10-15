@@ -1,0 +1,34 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-locked-values-v1",
+  "status": "locked-before-execution",
+  "host": "RT-DETR-R18",
+  "dataset": "CDW1630",
+  "public_inference_name": "QCCR–UMR",
+  "training": {
+    "total_epochs": 102,
+    "geometry_supervision": {
+      "alpha_u_max": 0.0,
+      "lambda_ufd_max": 0.75
+    },
+    "classification_role_adjustment": {
+      "e0": 20,
+      "ramp_epochs": 5
+    }
+  },
+  "selection": {
+    "test_used_for_selection": false,
+    "fallback_grid_requested": false,
+    "fallback_detector_seed": 0,
+    "fallback_selection_split": "Val"
+  },
+  "runtime_field_mapping": {
+    "training.total_epochs": [
+      "epoches",
+      "HiLoRSetCriterion.ufd_total_epochs"
+    ],
+    "training.geometry_supervision.alpha_u_max": "HiLoRSetCriterion.ufd_alpha_u_max",
+    "training.geometry_supervision.lambda_ufd_max": "HiLoRSetCriterion.ufd_lambda_max",
+    "training.classification_role_adjustment.e0": "HiLoRSetCriterion.lcct_warmup_epoch",
+    "training.classification_role_adjustment.ramp_epochs": "HiLoRSetCriterion.lcct_ramp_epochs"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-data-split-lock-v1",
+  "created_at": "2026-10-07",
+  "corrected_at": "2026-10-07",
+  "correction_note": "Pre-execution correction: recomputed image-id and file-name set hashes with the declared LF-delimited methods after the first write-free server preflight; annotation and image-tree bindings were unchanged; no training or Test evaluation had started.",
+  "image_id_set_sha256_method": "SHA-256 of ascending decimal image ids, one id plus LF per line",
+  "file_name_set_sha256_method": "SHA-256 of lexicographically sorted COCO file_name values, one value plus LF per line",
+  "image_tree_sha256_method": "SHA-256 of sorted '<file-sha256>  ./<COCO-file_name>\\n' records for every image in the split",
+  "category_ids": [0, 1, 2, 3, 4],
+  "selection_eligible_splits": ["train", "val"],
+  "splits": {
+    "train": {
+      "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_train2017.json",
+      "annotation_sha256": "7fdd6dee1d2d88c25ff7248e2abe8c8277dfa2083ec9557d52b5ca9da78065c4",
+      "images_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/train2017",
+      "image_count": 1144,
+      "instance_count": 5581,
+      "image_id_set_sha256": "ab9e4d30fcab944a3ddfb7a0684d76747e344128cd2741f0035073dad021f22c",
+      "file_name_set_sha256": "5906a2992230850da1530800d65a7cef276e314fcb43b5c124315ab2111c09a8",
+      "image_tree_sha256": "ff3a28c60b2e71983d804d280302f0b4fdbe147f407a4d7fb3b9ee120fe42bab"
+    },
+    "val": {
+      "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_val2017.json",
+      "annotation_sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5",
+      "images_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/val2017",
+      "image_count": 249,
+      "instance_count": 988,
+      "image_id_set_sha256": "3121ec980975da69cc64d1313e6817e1ff265818a1eb8a0ab0c065e4bbe98905",
+      "file_name_set_sha256": "66e2be8d996f9d6719500e00cc0cf21cbdd21ee8ef2a67d915ccb2d7e2522793",
+      "image_tree_sha256": "817c84740643dc395ac5e450ecbfc56267204fdf1295f9cecc25c04fe144b917"
+    },
+    "test": {
+      "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+      "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+      "images_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/test2017",
+      "image_count": 237,
+      "instance_count": 1071,
+      "image_id_set_sha256": "ecae25ba285b85d92d4bab796f659d8742b3882e2b704c49d7f15f438289725d",
+      "file_name_set_sha256": "75ce574d769488d81a5b3dcffb42d05319c957fd9eb3dd34036349ddb5ccef9d",
+      "image_tree_sha256": "ca0afe5843c4a5e970026f41d40d204ce7d755346d51b523eb0af62b23cfee68",
+      "selection_or_fitting_allowed": false
+    }
+  }
+}

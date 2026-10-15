@@ -1,0 +1,164 @@
+{
+  "capture_configs": {
+    "train": {
+      "include_closure": [
+        {
+          "path": "configs/hilor/cdw1630_rtdetr_r18_capture.yml",
+          "sha256": "575d42d426f90c36c7de9e0f0b7a57c68e3b5454aa0d4b2694c2ef9c7b792a2d"
+        },
+        {
+          "path": "configs/hilor/cdw1630_rtdetr_r18_capture_train.yml",
+          "sha256": "066f0358951916287089b41b04493a6c481ab8d9ba76e3351b83a6afb00a063c"
+        },
+        {
+          "path": "configs/hilor/cdw1630_rtdetr_r18_gccs.yml",
+          "sha256": "24c31f859838c2349d3a5cc908cccb880b541ae54760dfb0c7c9236a61f86669"
+        },
+        {
+          "path": "configs/native_off/cdw1630_rtdetr_r18_native.yml",
+          "sha256": "dc9fa66c5fccc5152e56073b2eee96401962a7090e0aa163626eadfbff9f43b6"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/dataset/coco_detection.yml",
+          "sha256": "4d584c1e8ee86f3f51eb3f85b4ed3e32159232850e1001160d64b778bfe7ef56"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/include/dataloader.yml",
+          "sha256": "be594d0ee141b74e47368afff5674b2212b8c3e849163a6b821fb901e58f6d3c"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/include/optimizer.yml",
+          "sha256": "0499a2af76f497cec3174f69ec4888a53597ba05387a9ab2ac7263d240c3d581"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/include/rtdetr_r50vd.yml",
+          "sha256": "1c771ee60ea276813c2745cd2f776004be7bdeaae6c022bb194ca8ea6a2e2786"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_6x_coco.yml",
+          "sha256": "0c1ee4bcfff1a678a1691bb1dfe6b6d3a4d62a1a52fb10b23197016ee7e6f0ea"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/runtime.yml",
+          "sha256": "6b3bfc5af6359186bfbde90f6197372ff7461a84bc43740a7682af3278e0faa6"
+        }
+      ],
+      "include_closure_aggregate_sha256": "bba99117ab4ea28c53e42d847584c0c963585c2ddd36587b1a61f9fddde79bab",
+      "include_closure_file_count": 10,
+      "path": "configs/hilor/cdw1630_rtdetr_r18_capture_train.yml",
+      "sha256": "066f0358951916287089b41b04493a6c481ab8d9ba76e3351b83a6afb00a063c"
+    },
+    "val": {
+      "include_closure": [
+        {
+          "path": "configs/hilor/cdw1630_rtdetr_r18_capture.yml",
+          "sha256": "575d42d426f90c36c7de9e0f0b7a57c68e3b5454aa0d4b2694c2ef9c7b792a2d"
+        },
+        {
+          "path": "configs/hilor/cdw1630_rtdetr_r18_capture_val.yml",
+          "sha256": "c55d90a98714d5fb252861ab9f38b144afc71548cbc2b5bf33dd4c17413edade"
+        },
+        {
+          "path": "configs/hilor/cdw1630_rtdetr_r18_gccs.yml",
+          "sha256": "24c31f859838c2349d3a5cc908cccb880b541ae54760dfb0c7c9236a61f86669"
+        },
+        {
+          "path": "configs/native_off/cdw1630_rtdetr_r18_native.yml",
+          "sha256": "dc9fa66c5fccc5152e56073b2eee96401962a7090e0aa163626eadfbff9f43b6"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/dataset/coco_detection.yml",
+          "sha256": "4d584c1e8ee86f3f51eb3f85b4ed3e32159232850e1001160d64b778bfe7ef56"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/include/dataloader.yml",
+          "sha256": "be594d0ee141b74e47368afff5674b2212b8c3e849163a6b821fb901e58f6d3c"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/include/optimizer.yml",
+          "sha256": "0499a2af76f497cec3174f69ec4888a53597ba05387a9ab2ac7263d240c3d581"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/include/rtdetr_r50vd.yml",
+          "sha256": "1c771ee60ea276813c2745cd2f776004be7bdeaae6c022bb194ca8ea6a2e2786"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_6x_coco.yml",
+          "sha256": "0c1ee4bcfff1a678a1691bb1dfe6b6d3a4d62a1a52fb10b23197016ee7e6f0ea"
+        },
+        {
+          "path": "source/RT-DETR_HiLoR/rtdetr_pytorch/configs/runtime.yml",
+          "sha256": "6b3bfc5af6359186bfbde90f6197372ff7461a84bc43740a7682af3278e0faa6"
+        }
+      ],
+      "include_closure_aggregate_sha256": "5861879e74b5bfa970dbff8fc0073afce134143f5225219b95c235c32a61e803",
+      "include_closure_file_count": 10,
+      "path": "configs/hilor/cdw1630_rtdetr_r18_capture_val.yml",
+      "sha256": "c55d90a98714d5fb252861ab9f38b144afc71548cbc2b5bf33dd4c17413edade"
+    }
+  },
+  "created_at_utc": "2026-10-08T15:04:23.140133+00:00",
+  "dataset": "CDW1630",
+  "fit_runtime_sources": {
+    "hilor_qccr.py": "8579a5c661f6267b2e0fa96e3f78965b3742cd2de2b9bfc1167c10a2e5e4147d",
+    "hilor_umr.py": "83c82f1be700d89fb1bc8672fb6d7df4c11a19fd0e45f8e8efd4aa6b6cc46a2f"
+  },
+  "formal_training_config": {
+    "include_closure_aggregate_sha256": "c2956f6cc7badc9967d97fb654294077dda1d81f148a6b5e508470e74daf06c1",
+    "include_closure_file_count": 8,
+    "path": "configs/hilor/cdw1630_rtdetr_r18_gccs.yml",
+    "sha256": "24c31f859838c2349d3a5cc908cccb880b541ae54760dfb0c7c9236a61f86669"
+  },
+  "host": "RT-DETR-R18",
+  "host_off_equivalence": {
+    "path": "artifacts/equivalence/HOST_OFF_EQUIVALENCE.json",
+    "required_schema": "cdw1630-rtdetr-r18-host-off-equivalence-v1",
+    "required_state": "PASS"
+  },
+  "provenance": {
+    "data_split_lock_sha256": "1a0a0a956f91392de54bcd98ff8cd7c529893f4611a5cd78b1cd1835e8248e0e",
+    "optimized_donor_lock_sha256": "8de427ec98305bee04118a7308574ad7b1f27aa12cfee77c02dd2c256a24fae9",
+    "ufd_cdf_sha256": "5ea69d7ed2d93ddcedb1e59070b0be7ef7a4e0060f67768ad96e30afdaa0bd40",
+    "upstream_lock_sha256": "6aa7d2f8d832c0f26f7ad5dd1529366d798663c404cefc03c86ef8ccfff8465b"
+  },
+  "public_inference_name": "QCCR–UMR",
+  "runtime_environment": {
+    "faster_coco_eval": "1.7.2",
+    "numpy": "1.26.4",
+    "pillow": "10.4.0",
+    "pycocotools": "2.0.10",
+    "python": "3.11.9",
+    "pyyaml": "6.0.2",
+    "scipy": "1.13.1",
+    "torch": "2.0.1+cu118",
+    "torchvision": "0.15.2+cu118"
+  },
+  "schema": "cdw1630-rtdetr-r18-hilor-implementation-lock-v1",
+  "source": {
+    "aggregate_method": "SHA-256 of sorted '<file-sha256>  <relative-path>\\n' records for .py/.yml/.yaml/.json/.txt/.md files; bytecode excluded",
+    "content_aggregate_sha256": "7c6b9c9ff7830fadca5d2464f99df115d63d70e973d141bb236492de7964c839",
+    "file_count": 77,
+    "path": "source/RT-DETR_HiLoR/rtdetr_pytorch"
+  },
+  "status": "frozen-before-host-off-equivalence-and-formal-training",
+  "test_policy": {
+    "allowed_after_complete_freeze": "formal evaluation only",
+    "selection_or_fitting_allowed": false
+  },
+  "tools": {
+    "tools/build_qccr_targets.py": "4968b07e7307381feabb9b3ef352540ecdf443b3845b924736aac0007e976202",
+    "tools/capture_train_val.py": "451dc007764940dbe1ba4e1e277a55ab91f0f9bcaaddae063ac1628c4eb0f8e5",
+    "tools/evaluate_formal_test.py": "b8112771ec8099fd5a72b4e2d13fe94b1f2ab0a9ae613f633dbe523b81e081c0",
+    "tools/evaluate_qccr_oof_val.py": "d4bef5db1b5e9f684a03e1bfbb74c1eff97466507d5cc5b90024c4a2850173d9",
+    "tools/fit_common.py": "0329ef30905eb6eb80007704f2ea928a5062efdee0802b835788fa55303a0a94",
+    "tools/fit_qccr.py": "b1aae202d3db67137080d42ef66e3758fd7a2c1693a014be713d0a7667d49e0e",
+    "tools/freeze_implementation_lock.py": "acd967cc0e74ad4dc1be55b108e5154d9d840e19b249c953c089633512f2f3ab",
+    "tools/freeze_inference_binding.py": "06dc2f1204e2b1651dbf38b69b51edc3c6f26494ccd75e1a524b543f87c934c6",
+    "tools/freeze_qccr.py": "affb2a57a652645d7b46e9de422e8fe1e3426f82550d90bd0500dc953834d239",
+    "tools/launch_formal_training.py": "ac3c325dc040c7ac50761d3a0826e4458f3790305b6b98cee92be5423b35accf",
+    "tools/render_inference_config.py": "0650e8395e15e2e182930141d37412bdc491c359497b795f20c750bd1ac866e6",
+    "tools/train_umr_select_val.py": "e5f03c467089e85faa3ba415e2ce2a3b9e6d114adee2d8065fc7808f21dc537a",
+    "tools/verify_host_off_equivalence.py": "cff7e082fae7cb010e81164cf1344110f3c4062d7e0e6663ce8ca2d6262f780e",
+    "tools/verify_protocol_lock.py": "4d957e9d7a384c3251ad60d9a646a18ea8f779d536736337ed9824cb6989b418"
+  }
+}

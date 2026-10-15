@@ -1,0 +1,63 @@
+{
+  "amp": false,
+  "augmentation": {
+    "copy_paste": 0.0,
+    "degrees": 0.0,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "mixup": 0.0,
+    "mosaic": 1.0,
+    "perspective": 0.0,
+    "scale": 0.5,
+    "shear": 0.0,
+    "translate": 0.1
+  },
+  "batch": 8,
+  "checkpoint_selection": "maximum validation metrics/mAP50-95(B), independently per seed; earliest epoch on an exact tie",
+  "close_mosaic": 10,
+  "cos_lr": false,
+  "data": {
+    "dataset_yaml": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/00_PROTOCOL/DATA_VIEWS/CDW1630_YOLO_TRAIN_VAL_v1/dataset.yaml",
+    "dataset_yaml_sha256": "454c928ca9ae9c3dc3ddc1f1d29c2c645bcffe8075fbcf9c0f5a41f630d3d8d7",
+    "manifest": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/00_PROTOCOL/DATA_VIEWS/CDW1630_YOLO_TRAIN_VAL_v1/MANIFEST.json",
+    "manifest_sha256": "120b21ce99e011ba713300786e8c72a49464f05d61389c64d28a845c6227eed4"
+  },
+  "ema": true,
+  "environment": {
+    "cuda_available": true,
+    "flash_attn": null,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "python": "3.11.9",
+    "torch": "2.5.1+cu124",
+    "torch_cuda": "12.4",
+    "ultralytics": "8.1.34",
+    "ultralytics_module": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/source/YOLOv10_official/ultralytics/__init__.py"
+  },
+  "epochs": 102,
+  "formal_test_claimed": false,
+  "imgsz": 640,
+  "lr0": 0.01,
+  "lrf": 0.01,
+  "model": "YOLOv10-M",
+  "model_key": "yolov10m",
+  "momentum": 0.937,
+  "official_weight_sha256": "ff2c559f11d13701abc4e0345f82851d146ecfe7035efaafcc08475cfd8b5f2d",
+  "optimizer": "SGD",
+  "schema": "cdw1630-yolo-model-training-protocol-v1",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_commit": "799ff3be47d21173bcf29b351820d4b8e955e0fe",
+  "test_access": false,
+  "training_precision": "FP32",
+  "warmup_bias_lr": 0.1,
+  "warmup_epochs": 3.0,
+  "warmup_momentum": 0.8,
+  "weight_decay": 0.0005,
+  "workers": 4
+}

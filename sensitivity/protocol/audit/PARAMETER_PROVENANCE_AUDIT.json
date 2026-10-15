@@ -1,0 +1,165 @@
+{
+  "audit_version": "1.0",
+  "dataset": "CDW1630",
+  "final_source": {
+    "file_count": 123,
+    "matches_sensitivity_package_binding": true,
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1",
+    "tree_sha256": "8ab1c7e6e46d4b68bcef655bd176c807629dc1c9ea984fb4e01cfc35388362bf"
+  },
+  "formal_recommendation": {
+    "detector_retraining_for_inference_sensitivity": false,
+    "detector_seed1_seed2_role": "final performance robustness only; excluded from hyperparameter selection and sensitivity",
+    "inference_figure": "two-panel QCCR lambda curve plus UMR tau-by-beta heatmap",
+    "next_gate": "USER_REVIEW_THEN_PROTOCOL_LOCK",
+    "parameter_selection_detector_seeds": [
+      0
+    ],
+    "test_access": "NO",
+    "topk_sweep": false,
+    "training_figure": "one-dimensional lcct_delta sensitivity with three levels"
+  },
+  "qccr": {
+    "artifact": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/qccr/qccr_params.json",
+      "sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8"
+    },
+    "candidate_evidence_candidates": [
+      "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/calibration_evidence/qccr_fits.json",
+      "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed1/calibration_evidence/qccr_fits.json",
+      "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed2/calibration_evidence/qccr_fits.json"
+    ],
+    "candidate_lambda_reg": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "detector_seed": 0,
+    "fit_source": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/tools/qccr/fit_qccr.py",
+      "sha256": "6c42c24667c90c5dfd78871efbf69b425d06f96127732cdf957d3ddac5702fb9"
+    },
+    "recommended_plot": "detector seed0 OOF Val metric versus lambda_reg; retain all four source-defined candidates",
+    "selected_lambda_reg": 0.001,
+    "selection_protocol": "image-level-five-fold-OOF-Val",
+    "status": "SOURCE_GRID_AND_SELECTION_VERIFIED",
+    "test_used_for_selection": false
+  },
+  "status": "PASS__PROTOCOL_PROPOSAL_READY",
+  "training_side": {
+    "final_values": {
+      "lcct_continuous_handover": true,
+      "lcct_delta": 0.02,
+      "lcct_ramp_epochs": 5,
+      "lcct_transition_width": 0.02,
+      "lcct_warmup_epoch": 20,
+      "ufd_alpha_h": 0.5,
+      "ufd_alpha_u_max": 0.5,
+      "ufd_base_size": 640.0,
+      "ufd_k": 9,
+      "ufd_lambda_max": 0.75,
+      "ufd_lambda_ramp_fraction": 0.05,
+      "ufd_total_epochs": 102,
+      "ufd_uncertainty_delay_fraction": 0.05,
+      "ufd_uncertainty_ramp_fraction": 0.05
+    },
+    "recommended_sensitivity": {
+      "all_other_training_settings": "fixed to final source",
+      "center_run_policy": "reuse exact final seed0 run after SHA/config verification",
+      "current_value": 0.02,
+      "grid_rationale": "half/current/double around the final value",
+      "parameter": "lcct_delta",
+      "primary_report_split": "Val",
+      "proposed_grid": [
+        0.01,
+        0.02,
+        0.04
+      ],
+      "runs_needed": 2,
+      "seed": 0,
+      "status": "PROPOSED_NOT_YET_LOCKED",
+      "symbol": "delta",
+      "test_access": "PROHIBITED"
+    },
+    "source_config": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/configs/reproduction/templates/cdw_train.yml.in",
+      "sha256": "175caa9505b23db4d6c7a7ff27f4658c585090f87de2fddacc2978202fd08697"
+    }
+  },
+  "umr": {
+    "detector_seed": 0,
+    "metadata": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/models/umr_mlp_seed0_pw4_best.metadata.json",
+      "sha256": "a2913b15e778642187620241f23ce6d2ffd749a6a5718b2a7017329310ca5f4f"
+    },
+    "positive_weight_policy": "retain pw=4 in the primary heatmap; preserve the source pw=1/2/4 selection evidence in supplementary records",
+    "recommended_heatmap": {
+      "aggregation": "mean across the source-defined UMR head-fit seeds on the same detector-seed0 captures",
+      "detector_seed": 0,
+      "fixed_positive_weight": 4,
+      "fixed_topk": 300,
+      "split": "Val only",
+      "x": "tau",
+      "x_values": [
+        0.0,
+        0.1,
+        0.2,
+        0.4
+      ],
+      "y": "beta",
+      "y_values": [
+        0.0,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ]
+    },
+    "selected": {
+      "beta": 2.0,
+      "positive_weight": 4,
+      "tau": 0.0,
+      "topk": 300
+    },
+    "selection_evidence": null,
+    "selection_source": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/tools/calibration/common/train_umr_select_val.py",
+      "sha256": "426b788c93bbae41d2169a9ff732f0b0ad73fb57e92168da3f0f82f7b58d2be7"
+    },
+    "source_grids": {
+      "beta": [
+        0.0,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "head_seeds": [
+        0,
+        1,
+        2
+      ],
+      "positive_weight": [
+        1,
+        2,
+        4
+      ],
+      "tau": [
+        0.0,
+        0.1,
+        0.2,
+        0.4
+      ]
+    },
+    "status": "SOURCE_GRID_AND_FINAL_SELECTION_VERIFIED",
+    "test_used_for_selection": false,
+    "topk_provenance": {
+      "candidate_grid_present": false,
+      "final_value": 300,
+      "source_NUM_QUERIES": 300,
+      "source_TOPK": 300,
+      "verdict": "FIXED_CANDIDATE_BUDGET__NO_SENSITIVITY_SWEEP_REQUIRED"
+    }
+  }
+}

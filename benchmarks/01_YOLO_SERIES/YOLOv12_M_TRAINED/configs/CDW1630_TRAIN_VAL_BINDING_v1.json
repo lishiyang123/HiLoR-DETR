@@ -1,0 +1,20 @@
+{
+  "checkpoint_selection": "maximum validation COCO AP@[0.50:0.95] only",
+  "configured_epochs": 102,
+  "data_view": "benchmarks/00_PROTOCOL/DATA_VIEWS/CDW1630_YOLO_TRAIN_VAL_v1/dataset.yaml",
+  "environment": "separate model-specific environment required",
+  "formal_training_authorized": false,
+  "image_size": 640,
+  "model": "YOLOv12-M (turbo)",
+  "schema": "cdw1630-yolo-model-train-val-binding-v1",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_commit": "28a618bb06f38eef5402ae8f7326e86063db93de",
+  "source_tag": "turbo",
+  "test_selection": false,
+  "weight_filename": "yolov12m.pt",
+  "weight_sha256": "1b5eb229105a69db0ead76b82fd6edb85673716ed898f1c5b16f77ceba23d5a1"
+}

@@ -1,0 +1,112 @@
+{
+  "capture_inputs": {
+    "seed0_train_capture": {
+      "included": false,
+      "reason": "large regenerable intermediate tensor",
+      "sha256": "abcd053c817e267d5c84d526fa41269bbb3cd7eafebbb825606227ee4a7dc084"
+    },
+    "seed0_val_capture": {
+      "included": false,
+      "reason": "large regenerable intermediate tensor",
+      "sha256": "62594e1900e255fb1ed295b9356471935a0c562de5c5c10918edd1e68f5ade6b"
+    },
+    "seed1_train_capture": {
+      "included": false,
+      "reason": "large regenerable intermediate tensor",
+      "sha256": "056412cd4fe5549a66d425f9598a8111a59446c6a7a28d8eed365f0123b9dfd6"
+    },
+    "seed1_val_capture": {
+      "included": false,
+      "reason": "large regenerable intermediate tensor",
+      "sha256": "7d0212c9b0b83e3ff96818e8278600c43c23cc2108fade192424e0bec6b53c41"
+    },
+    "seed2_train_capture": {
+      "included": false,
+      "reason": "large regenerable intermediate tensor",
+      "sha256": "8178f20b7414aa5c471044e8d6c39c063dae23216a2b55452f34d30c807fffc9"
+    },
+    "seed2_val_capture": {
+      "included": false,
+      "reason": "large regenerable intermediate tensor",
+      "sha256": "0f05eb319b816e02d47de9108d08963c1eda33e87a55201bf37c6f8fdef0e334"
+    }
+  },
+  "capture_regeneration": "Regenerate Train/Val captures from the bound detector checkpoint, released CDW1630 data and released source; hashes above identify the exact inputs used for this completed analysis.",
+  "formal_test_results_replaced": false,
+  "release_assets": {
+    "qccr_source": {
+      "path": "../../source/FINAL_CODE/engine/deim/competition_mapping.py",
+      "sha256": "3b1bf1baa81b414c3d73efe289c0b299abd7a7702cc26c84bcf95e1f07f1ebf6"
+    },
+    "seed0_detector_checkpoint": {
+      "path": "../../checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+      "sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885"
+    },
+    "seed0_formal_umr_head": {
+      "path": "../../checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.pt",
+      "sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82"
+    },
+    "seed0_formal_umr_metadata": {
+      "path": "../../checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+      "sha256": "a2913b15e778642187620241f23ce6d2ffd749a6a5718b2a7017329310ca5f4f"
+    },
+    "seed0_qccr_artifact": {
+      "path": "../../checkpoints/CDW1630/Ours/seed0/calibration/qccr_params.json",
+      "sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8"
+    },
+    "seed0_qccr_fits": {
+      "path": "../../training_records/CDW1630/Ours/seed0/calibration_evidence/qccr_fits.json",
+      "sha256": "bf24170c6b07d04d0d4cca60c2fdd0e99a7fe1fd96fd0c7f6dff0ee9df4b6cf3"
+    },
+    "seed1_detector_checkpoint": {
+      "path": "../../checkpoints/CDW1630/Ours/seed1/best_stg2.pth",
+      "sha256": "8d0a7bb59576e045536a57777e7f1f45fbfc9ffe121c35d7ae45e6a0e2ad16af"
+    },
+    "seed1_formal_umr_head": {
+      "path": "../../checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.pt",
+      "sha256": "b78f7e7b9f6d0ea10e04187f9c9c729863b6a3a85ddbfbb6cdbc51a9ae66cc31"
+    },
+    "seed1_formal_umr_metadata": {
+      "path": "../../checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+      "sha256": "14e5c3a047281bc95cd43baf73c3b49de6dea4c258d98463c27c549a168fba9b"
+    },
+    "seed1_qccr_artifact": {
+      "path": "../../checkpoints/CDW1630/Ours/seed1/calibration/qccr_params.json",
+      "sha256": "a7a1a6f64b0042e8bca86a1eadf27b3b4243b2b24602828848130d7c75632c04"
+    },
+    "seed1_qccr_fits": {
+      "path": "../../training_records/CDW1630/Ours/seed1/calibration_evidence/qccr_fits.json",
+      "sha256": "27391668f60f4d1d5c60b5f967a5ae799d0029d95eabe519b47e42a4f5a26172"
+    },
+    "seed2_detector_checkpoint": {
+      "path": "../../checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+      "sha256": "77a52249ce706decaf46da68fb347801bd2fc4f4624001c75fe37a3d78f1a146"
+    },
+    "seed2_formal_umr_head": {
+      "path": "../../checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.pt",
+      "sha256": "7d3f78d6731c5c154626839dc9502805486b09b635340e6345ba0d1cc32d98ff"
+    },
+    "seed2_formal_umr_metadata": {
+      "path": "../../checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+      "sha256": "40e1c407214e435e13375b6db6b1472fe9561265c33aed2fe22284ae2f662eec"
+    },
+    "seed2_qccr_artifact": {
+      "path": "../../checkpoints/CDW1630/Ours/seed2/calibration/qccr_params.json",
+      "sha256": "e81842881d31bb56c91abaa6d4ee68aba28b4ba096d417a0d0a42bef788b182f"
+    },
+    "seed2_qccr_fits": {
+      "path": "../../training_records/CDW1630/Ours/seed2/calibration_evidence/qccr_fits.json",
+      "sha256": "64c7a37a77ce8c216a23cd10a8fddc750ab12594543ae395790fd92975dae81c"
+    },
+    "umr_source": {
+      "path": "../../source/FINAL_CODE/engine/deim/candidate_value.py",
+      "sha256": "1c0b4f8e9d76017ab6499ad75d08950191ccb6ea6af5ba675a2baa1f0f90e483"
+    },
+    "val_annotation": {
+      "path": "../../datasets/CDW1630/annotations/instances_val2017.json",
+      "sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5"
+    }
+  },
+  "schema": "cdw1630-umr-val-oof-robustness-assets-v1",
+  "test_accessed": false
+}

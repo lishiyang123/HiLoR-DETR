@@ -1,0 +1,121 @@
+{
+  "schema": "scoped-efficiency-run-bindings-v1",
+  "seed": 0,
+  "data": {
+    "root": "${DATA_ROOT}",
+    "annotation": "${DATA_ROOT}/annotations/instances_test2017.json",
+    "val_annotation": "${DATA_ROOT}/annotations/instances_val2017.json",
+    "test_annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05"
+  },
+  "primary_frozen_inference": {
+    "path": "${PRIMARY_ROOT}/training_records/CDW1630/Ours/seed0/calibration_evidence/FROZEN_INFERENCE.json",
+    "sha256": "8a5c2d7292b67319f030e022151981df14980c0ab7546beaabc2c167afcd18b3"
+  },
+  "secondary_binding": {
+    "path": "${SECOND_ROOT}/artifacts/inference/seed0/qccr_umr_binding.json",
+    "sha256": "1310ca5ce62cca5fbabfa58ff00464867d934655b37d8603d3316de938b7e850"
+  },
+  "models": {
+    "deim": {
+      "label": "DEIM",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "checkpoint": "${PRIMARY_ROOT}/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+      "checkpoint_sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "gccs": {
+      "label": "DEIM + GCCS",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "checkpoint": "${PRIMARY_ROOT}/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+      "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "hilor": {
+      "label": "HiLoR-DETR",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "checkpoint": "${PRIMARY_ROOT}/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+      "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": true,
+      "fitted_scalars": 4,
+      "head": {
+        "path": "${PRIMARY_ROOT}/checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82"
+      }
+    },
+    "r18": {
+      "label": "RT-DETR-R18",
+      "source": "${SOTA_ROOT}/02_RT_DETR_R18/source/RT-DETR_official/rtdetr_pytorch",
+      "flavor": "src",
+      "checkpoint": "${SOTA_ROOT}/02_RT_DETR_R18/runs/seed0/best_val.pth",
+      "checkpoint_sha256": "f6581e9d6cd6b77178a70ad4fa225f9e0bc0e92bdfb2362570ec3c7f9cd33a84",
+      "python": "${ENV_ROOT}/rtdetr_sota/bin/python",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "r18_hilor": {
+      "label": "RT-DETR-R18 + HiLoR",
+      "source": "${SECOND_ROOT}/source/RT-DETR_HiLoR/rtdetr_pytorch",
+      "flavor": "src",
+      "checkpoint": "${SECOND_ROOT}/runs/seed0/best_val.pth",
+      "checkpoint_sha256": "3f3bf84405d4c5dfdd22ec94940c736267d648e58df576a0500a07a1ade481a7",
+      "python": "${ENV_ROOT}/rtdetr_sota/bin/python",
+      "full": true,
+      "fitted_scalars": 4,
+      "head": {
+        "path": "${SECOND_ROOT}/artifacts/inference/seed0/umr_fixed/models/umr_seed0_pw4_best.pt",
+        "sha256": "369585a0825673858acad493a4aa8487bd9cf930ea41e47b4d7d090c7f4224d6"
+      }
+    },
+    "train_deim": {
+      "label": "DEIM",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false
+    },
+    "train_gccs": {
+      "label": "DEIM + GCCS",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false
+    }
+  },
+  "complexity_models": [
+    "hilor",
+    "r18",
+    "r18_hilor"
+  ],
+  "latency_models": [
+    "deim",
+    "gccs",
+    "hilor"
+  ],
+  "training": {
+    "models": [
+      "train_deim",
+      "train_gccs"
+    ],
+    "epochs": 102,
+    "batch_size": 8,
+    "precision": "FP32",
+    "ema": true,
+    "mean_scope": "all 102 complete train_one_epoch calls; validation and checkpoint writing excluded",
+    "peak_scope": "max allocated CUDA memory over training only; model/criterion/optimizer/EMA included",
+    "initialization": "same official COCO pretrained checkpoint",
+    "tensorboard": "disabled for both; engine diagnostic logging retained",
+    "initialization_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc"
+  },
+  "prepared_from": {
+    "primary_common_config_sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+    "secondary_generated_config_sha256": "aa3a6933884e4fa00b708b5bf0a9033b48371af197973a91eb8766d60a458b7c"
+  }
+}

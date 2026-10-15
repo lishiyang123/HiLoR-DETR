@@ -1,0 +1,12 @@
+__include__: [./cdw_train.yml]
+output_dir: @LCCT_TEST_OUTPUT@
+
+val_dataloader:
+  dataset:
+    img_folder: @TEST_IMAGES@
+    ann_file: @TEST_ANN@
+  total_batch_size: 8
+  num_workers: 4
+
+DFINETransformer:
+  ufd_deploy_strip: True

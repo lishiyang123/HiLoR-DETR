@@ -1,0 +1,16 @@
+{
+  "completed": [
+    0,
+    1,
+    2
+  ],
+  "config_sha256": "5259d990a3998040829dbe9d6bed998d6c1f4ce4215d1478b2851b3d31bca24e",
+  "current": null,
+  "error": null,
+  "original_failed_queue_sha256": "b06ff423528db1a4ed6df6eac0aeaeb885b935ea83d9b0fa9f190c8e791b3f6b",
+  "pending": [],
+  "pid": 61245,
+  "recovery_amendment": "SOTA_DFINE_M_TRAINING_RECOVERY_v1",
+  "source_commit": "956d1709314c2c6a4df6f34de232054578a7449f",
+  "state": "COMPLETE"
+}

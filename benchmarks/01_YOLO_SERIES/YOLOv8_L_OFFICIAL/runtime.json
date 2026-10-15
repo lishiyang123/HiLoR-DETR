@@ -1,0 +1,67 @@
+{
+  "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+  "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "canonical_classes": [
+    "Brick",
+    "Concrete",
+    "Plastic Bottle",
+    "Reinforcement",
+    "timber"
+  ],
+  "class_mapping_policy": "identity_by_class_index_with_frozen_display_name_aliases",
+  "classes": [
+    "Brick",
+    "Concrete",
+    "PlasticBottle",
+    "Reinforcement",
+    "Timber"
+  ],
+  "detections": 4134,
+  "images": 237,
+  "images_directory": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/test2017",
+  "inference": {
+    "agnostic_nms": false,
+    "allowed_loader_classes": [
+      "LoadImagesAndVideos",
+      "LoadImages"
+    ],
+    "augment": false,
+    "batch": 8,
+    "conf": 0.001,
+    "device": 0,
+    "half": false,
+    "imgsz": 640,
+    "iou": 0.7,
+    "max_det": 300,
+    "rect": false,
+    "seed": 0,
+    "source_type": "directory_path_string"
+  },
+  "loader": {
+    "class": "LoadImagesAndVideos",
+    "effective_batch": 8,
+    "requested_batch": 8,
+    "source_argument_type": "str",
+    "source_is_directory": true
+  },
+  "mode": "FORMAL",
+  "model": "YOLOv8-L",
+  "model_key": "YOLOv8_L_OFFICIAL",
+  "outside_canvas": 0,
+  "parameters": 43610463,
+  "runtime": {
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "python": "3.11.9",
+    "torch": "2.5.1+cu124",
+    "torch_cuda": "12.4",
+    "ultralytics": "8.3.221"
+  },
+  "schema": "cdw1630-official-yolo-batch8-inference-v1",
+  "scope": "official_single_checkpoint",
+  "status": "PASS",
+  "test_selection_or_fitting": false,
+  "training_executed": false,
+  "weight": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/OFFICIAL_ASSETS_INBOX/YOLOv8l.pt",
+  "weight_md5": "29dfa5d726d4b51cb693d3b026c69d98",
+  "weight_sha256": "aaff4d6f857724dbcfcec54ba517bd246ae7c9c9cf39f84a897b4f1eb254932c"
+}

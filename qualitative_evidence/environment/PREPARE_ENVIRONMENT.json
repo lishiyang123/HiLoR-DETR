@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-15T09:26:43.746036+00:00",
+  "cuda_visible_devices": null,
+  "gpu_required_for_prediction_only": true,
+  "platform": "linux",
+  "python": "3.11.9 (main, Apr 19 2024, 16:48:06) [GCC 11.2.0]"
+}

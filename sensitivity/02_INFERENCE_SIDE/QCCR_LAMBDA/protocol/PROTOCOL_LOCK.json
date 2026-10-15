@@ -1,0 +1,37 @@
+{
+  "audit_source": {
+    "candidate_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "selected": 0.001
+  },
+  "detector_retraining": false,
+  "detector_seed": 0,
+  "diagnostic_guard_outcome": "NO_CANDIDATE_FULLY_QUALIFIED",
+  "evaluation": "image-level five-fold OOF Val COCO evaluation",
+  "fit": "original balanced-BCE QCCR fit with image-level five-fold splits",
+  "frozen_selected_value": 0.001,
+  "grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "legacy_decision_token_scope": "OOF_VAL_GO is a legacy activation token for applying the predeclared fixed protocol; it does not mean that the selected candidate passed all diagnostic guards",
+  "qualification_guards": {
+    "AP75_drop": "<= 0.05 pp",
+    "AP90_drop": "<= 0.05 pp",
+    "AP_gain": ">= +0.1 pp versus native baseline",
+    "APm": "not lower",
+    "AR100_drop": "<= 0.1 pp"
+  },
+  "ranking": "diagnostic counterfactual only; current-seed reselection was disabled and the frozen value was not chosen by this ranking",
+  "result_status": "COMPLETE__IMPORTED_SHA_VERIFIED_OOF_VAL",
+  "reuse_policy": "reuse the original complete candidate/OOF evidence when SHA-verified; otherwise rerun the identical Val-only protocol",
+  "selected_candidate_qualified": false,
+  "selection_basis": "predeclared fixed lambda_reg=0.001; current-seed OOF guards are diagnostic and were not used for reselection",
+  "sensitivity_plot": "OOF Val AP versus lambda_reg on a log-scaled x-axis; mark 1e-3"
+}

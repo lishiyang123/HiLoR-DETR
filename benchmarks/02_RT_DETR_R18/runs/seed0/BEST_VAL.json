@@ -1,0 +1,32 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-best-val-selection-v1",
+  "state": "complete",
+  "selection_split": "Val",
+  "test_used": false,
+  "selection_rule": "maximum Val COCO bbox AP; earliest exact tie",
+  "epoch_zero_based": 92,
+  "epoch_one_based": 93,
+  "val_coco_bbox_ap": 0.7677963903481351,
+  "val_coco_bbox_ap50": 0.9768946487075882,
+  "val_coco_bbox_ap75": 0.880486859972001,
+  "checkpoint": "best_val.pth",
+  "checkpoint_sha256": "f6581e9d6cd6b77178a70ad4fa225f9e0bc0e92bdfb2362570ec3c7f9cd33a84",
+  "seed": 0,
+  "config_sha256": "8c5c84ed3b7c6a49d2965bf3a695dd3cfcdd198f36e53a8ac79d6e9a71ec3fee",
+  "coco_initialization_sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0",
+  "protocol_lock_sha256": "4694cb86acea3b55c4542a1dcf478fb9dab58e91c8c6923669ef794a27badc45",
+  "implementation_lock_sha256": "26aa8f9f078a4199d5f3c94765128c5ca96231e33d5c66e3eb80cb81e85f63be",
+  "training_run_manifest": "TRAIN_RUN_MANIFEST.json",
+  "val_evaluator": {
+    "name": "faster-coco-eval",
+    "version": "1.7.2",
+    "iou_type": "bbox",
+    "max_dets": [
+      1,
+      10,
+      100
+    ]
+  },
+  "training_seconds": 9678.331517219543,
+  "training_run_manifest_sha256": "eebd0bffc7e27a8cc63ea304a7397125645bb7a67084ba1a4b5ea3de630f4c7a"
+}

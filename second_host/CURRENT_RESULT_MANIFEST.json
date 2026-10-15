@@ -1,0 +1,58 @@
+{
+  "schema": "rtdetr-published-assets-v1",
+  "configurations": {
+    "native": {
+      "0": {
+        "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed0/best_val.pth",
+        "checkpoint_sha256": "f6581e9d6cd6b77178a70ad4fa225f9e0bc0e92bdfb2362570ec3c7f9cd33a84",
+        "evaluation": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed0"
+      },
+      "1": {
+        "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed1/best_val.pth",
+        "checkpoint_sha256": "3b4015d0d1ce8e44fb50a77e97ade5a488554f581f567837415e911f8c56e2b0",
+        "evaluation": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed1"
+      },
+      "2": {
+        "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed2/best_val.pth",
+        "checkpoint_sha256": "330829acabb2abd45863a243e9e2304141f6c99190dffd64e884cc4b4bab6ab0",
+        "evaluation": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed2"
+      }
+    },
+    "gccs": {
+      "0": {
+        "checkpoint": "second_host/runs/seed0/best_val.pth",
+        "checkpoint_sha256": "3f3bf84405d4c5dfdd22ec94940c736267d648e58df576a0500a07a1ade481a7",
+        "evaluation": "second_host/evaluations_gccs/seed0"
+      },
+      "1": {
+        "checkpoint": "second_host/runs/seed1/best_val.pth",
+        "checkpoint_sha256": "6c0e2e8db555b51bc5503d43730f7ecbf44d8cd7cc9b1bba03cd5b9ada544fce",
+        "evaluation": "second_host/evaluations_gccs/seed1"
+      },
+      "2": {
+        "checkpoint": "second_host/runs/seed2/best_val.pth",
+        "checkpoint_sha256": "f2e08903419c8838f70c6c6bfc5ffaa35295cda894a2a4925451e685f25a8974",
+        "evaluation": "second_host/evaluations_gccs/seed2"
+      }
+    },
+    "full": {
+      "0": {
+        "checkpoint": "second_host/runs/seed0/best_val.pth",
+        "checkpoint_sha256": "3f3bf84405d4c5dfdd22ec94940c736267d648e58df576a0500a07a1ade481a7",
+        "evaluation": "second_host/evaluations/seed0"
+      },
+      "1": {
+        "checkpoint": "second_host/runs/seed1/best_val.pth",
+        "checkpoint_sha256": "6c0e2e8db555b51bc5503d43730f7ecbf44d8cd7cc9b1bba03cd5b9ada544fce",
+        "evaluation": "second_host/evaluations/seed1"
+      },
+      "2": {
+        "checkpoint": "second_host/runs/seed2/best_val.pth",
+        "checkpoint_sha256": "f2e08903419c8838f70c6c6bfc5ffaa35295cda894a2a4925451e685f25a8974",
+        "evaluation": "second_host/evaluations/seed2"
+      }
+    }
+  },
+  "results": "paper_tables/RTDETR_COCO_AND_COMPLEXITY.csv",
+  "test_used_for_selection": false
+}

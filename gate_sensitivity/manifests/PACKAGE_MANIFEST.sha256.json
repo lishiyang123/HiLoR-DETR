@@ -1,0 +1,375 @@
+{
+  "algorithm": "sha256",
+  "created_utc": "2026-09-16T00:58:20.747813+00:00",
+  "excluded_volatile": [
+    "PACKAGE_STATUS.json",
+    "QUEUE_STATUS.json",
+    "manifests/PACKAGE_MANIFEST.sha256.json",
+    "logs/",
+    "runtime/",
+    "diagnostics/failed_runs/"
+  ],
+  "files": [
+    {
+      "path": "INPUT_BINDINGS.json",
+      "sha256": "f01a2314501e2dac2e735a82cfafca6df73a65e1e6ab79f4b783fa67e9f73aef",
+      "bytes": 8587
+    },
+    {
+      "path": "PACKAGE_STATUS.json",
+      "sha256": "587b7a8c2d8dfb3856a0416ac8050b1b9184d0ff3530dcad112c04593b9ec47f",
+      "bytes": 441
+    },
+    {
+      "path": "QUEUE_PLAN.json",
+      "sha256": "9ea7242094427d2519e2e1dc21fe0348a44b8d8a74caab95468391b56bd88232",
+      "bytes": 333
+    },
+    {
+      "path": "QUEUE_STATUS.json",
+      "sha256": "7feda16f75dfef888b351058f50cd2e43d69b6de0f3d9e01fd68afbae0f6dafb",
+      "bytes": 636
+    },
+    {
+      "path": "README.md",
+      "sha256": "9810620ed8d9b5d95ef03d3c77c3f2ff141d287c63b2d41f558e7b7471e6afc6",
+      "bytes": 1182
+    },
+    {
+      "path": "configs/formal/delta_0p005/cdw_common_train.yml",
+      "sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+      "bytes": 1292
+    },
+    {
+      "path": "configs/formal/delta_0p005/cdw_train.yml",
+      "sha256": "bb28f36c400bb49d02b4cc8b13b22ba2ae3c23fc3e6dbcb1717685365edecd06",
+      "bytes": 850
+    },
+    {
+      "path": "configs/formal/delta_0p010/cdw_common_train.yml",
+      "sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+      "bytes": 1292
+    },
+    {
+      "path": "configs/formal/delta_0p010/cdw_train.yml",
+      "sha256": "c64e0d7a2771cdda49da082c3d26c10f6edf6d71dc411a0f223debdc251d0546",
+      "bytes": 849
+    },
+    {
+      "path": "configs/formal/delta_0p020/cdw_common_train.yml",
+      "sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+      "bytes": 1292
+    },
+    {
+      "path": "configs/formal/delta_0p020/cdw_train.yml",
+      "sha256": "043c4c36d05d0602820d9e4ddecb19e486d8f53c429337b0223786a4b74886ad",
+      "bytes": 849
+    },
+    {
+      "path": "configs/formal/delta_0p040/cdw_common_train.yml",
+      "sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+      "bytes": 1292
+    },
+    {
+      "path": "configs/formal/delta_0p040/cdw_train.yml",
+      "sha256": "f7f7c9e9b44a19c69d99297fd6b1e9c6998a581da6225147c5b226d6a5d7e7c2",
+      "bytes": 849
+    },
+    {
+      "path": "configs/formal/delta_0p080/cdw_common_train.yml",
+      "sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+      "bytes": 1292
+    },
+    {
+      "path": "configs/formal/delta_0p080/cdw_train.yml",
+      "sha256": "a77476314ec49331df9246c80ec22b492129cb92f4621c8de2bab415c06a7569",
+      "bytes": 849
+    },
+    {
+      "path": "logs/SUPERVISOR.log",
+      "sha256": "990b99103ec2fec0e6c12f523c5033a04416c54c45560c2d06aabc2c3316a71f",
+      "bytes": 781
+    },
+    {
+      "path": "outputs/formal/delta_0p005/RUN_INTENT.json",
+      "sha256": "df14aeb19d1d453d025f273d102f2939c9fc2345a8e4230937a1d6f9c719977c",
+      "bytes": 1011
+    },
+    {
+      "path": "outputs/formal/delta_0p005/RUN_RECEIPT.json",
+      "sha256": "0c03063eba1a8d089f987ed710200a22d920e5400a327753940bdb1577d79a3c",
+      "bytes": 1275
+    },
+    {
+      "path": "outputs/formal/delta_0p005/TRAINING_SELECTION.json",
+      "sha256": "596f88b3fe139f549f735f843ae6a232b925e23eefcb4dff6f0b023dfa73203e",
+      "bytes": 810
+    },
+    {
+      "path": "outputs/formal/delta_0p005/best_stg2.pth",
+      "sha256": "66af5eb035bd0d996534755ddecfde8c17169993a9b2a88bd85c80f12cc06054",
+      "bytes": 314208414
+    },
+    {
+      "path": "outputs/formal/delta_0p005/console.log",
+      "sha256": "693bcd70a32a4fd21419f01a6055efa854dd54b81b60e04a27b237c0ce7834f4",
+      "bytes": 1202877
+    },
+    {
+      "path": "outputs/formal/delta_0p005/eval/000.pth",
+      "sha256": "8e61bff67e8a4aaf19c0702b715cba6cbba1c84dcc108114c8d39354a87404ab",
+      "bytes": 1224848
+    },
+    {
+      "path": "outputs/formal/delta_0p005/eval/050.pth",
+      "sha256": "c0ead2f4ebb404c084aed0e61d62e9e0b5e92db1932d4dfc21b4852c522217e6",
+      "bytes": 1240784
+    },
+    {
+      "path": "outputs/formal/delta_0p005/eval/100.pth",
+      "sha256": "b73ad7e84a863af2b81559f3d98ab0643a0ae5aaa08be43df23c420dcb67df6b",
+      "bytes": 1241168
+    },
+    {
+      "path": "outputs/formal/delta_0p005/eval/latest.pth",
+      "sha256": "42be1dc6487d38358206a8e757b5fd9e3ebffa1006df2ebe6302f9b7ccb15f52",
+      "bytes": 1239964
+    },
+    {
+      "path": "outputs/formal/delta_0p005/log.txt",
+      "sha256": "287dd11b38c8634e2603ef498a1ed66262da18eb90eb7f4a1e1e432d0891ab66",
+      "bytes": 345353
+    },
+    {
+      "path": "outputs/formal/delta_0p005/summary/events.out.tfevents.1789505296.autodl-container-7e2f4f8c67-891d0c1a.113902.0",
+      "sha256": "34c8ee8da27d2abdfe1fb14385e7567c2dfade7b1fd0f754118a8b604c9d757f",
+      "bytes": 4541030
+    },
+    {
+      "path": "outputs/formal/delta_0p010/RUN_INTENT.json",
+      "sha256": "cb335063e584228f199c5f404d0e9a35503b3280745bcce328a4b7fb311b6f14",
+      "bytes": 1010
+    },
+    {
+      "path": "outputs/formal/delta_0p010/RUN_RECEIPT.json",
+      "sha256": "8e5d59e079c49d17da133cc382932cbb778c5234d08b1e03b388157832f899be",
+      "bytes": 1274
+    },
+    {
+      "path": "outputs/formal/delta_0p010/TRAINING_SELECTION.json",
+      "sha256": "bb6ca4d55c4b0d9b72b004d519f48011147cae733ff3ed7081443ce93e2bc668",
+      "bytes": 812
+    },
+    {
+      "path": "outputs/formal/delta_0p010/best_stg2.pth",
+      "sha256": "9f3631ed4fdfdb93bf997f9fc6cbca6a539c9effd58f6536b8171496f0d52e1f",
+      "bytes": 314208414
+    },
+    {
+      "path": "outputs/formal/delta_0p010/console.log",
+      "sha256": "82b86b56fe1ad5754f23bb62f4b2c326d18fb3d53eb125afb81570b3e2174098",
+      "bytes": 1202493
+    },
+    {
+      "path": "outputs/formal/delta_0p010/eval/000.pth",
+      "sha256": "ee97757b07f6325074000784cf5801d0adbbeb01cfcf8a47512e9fc2358be764",
+      "bytes": 1224336
+    },
+    {
+      "path": "outputs/formal/delta_0p010/eval/050.pth",
+      "sha256": "fa71f3181d662e9c09a4be6bd62b2035e2933bac4a68c6fd6f5b994f863f683c",
+      "bytes": 1241168
+    },
+    {
+      "path": "outputs/formal/delta_0p010/eval/100.pth",
+      "sha256": "e94599be5c2d935c1eb14cb02f9653cbda7395797f37e9cc60effb7320efba48",
+      "bytes": 1242896
+    },
+    {
+      "path": "outputs/formal/delta_0p010/eval/latest.pth",
+      "sha256": "6b8413f88eb267933d1eeff9cd559de35c12add9d062e2a08e535af59b3945f1",
+      "bytes": 1241884
+    },
+    {
+      "path": "outputs/formal/delta_0p010/log.txt",
+      "sha256": "124a42e165fbbcf959c42791e3c285b49953c8807ef3b21c5eece4be6a5acd01",
+      "bytes": 345550
+    },
+    {
+      "path": "outputs/formal/delta_0p010/summary/events.out.tfevents.1789490610.autodl-container-7e2f4f8c67-891d0c1a.2605.0",
+      "sha256": "b70ce5e8993b1f96678c9d32c01c8ab03017873cdea579babe9b0481aaf9499c",
+      "bytes": 4541029
+    },
+    {
+      "path": "outputs/formal/delta_0p040/RUN_INTENT.json",
+      "sha256": "ae35da4efc0db8305dc9ff81d8399c5f6a5b5a7af1278a57ec61a37656aebfa1",
+      "bytes": 1010
+    },
+    {
+      "path": "outputs/formal/delta_0p040/RUN_RECEIPT.json",
+      "sha256": "acec4ffef1302a8dfe09b113c663b619538ccc27c68f29cd4e46690305a200d7",
+      "bytes": 1274
+    },
+    {
+      "path": "outputs/formal/delta_0p040/TRAINING_SELECTION.json",
+      "sha256": "26e02df5e53fe2c251d26cd71936a0de65348b601a68192bd78862e8221efedb",
+      "bytes": 815
+    },
+    {
+      "path": "outputs/formal/delta_0p040/best_stg2.pth",
+      "sha256": "2c53543a458e4e347554c28bffeb0247da4ddc3fefaf290feda850a434809102",
+      "bytes": 314208414
+    },
+    {
+      "path": "outputs/formal/delta_0p040/console.log",
+      "sha256": "5b561f7ad6d80ba1b96b479c5a2cea5346786197216de05ff5b60538a44dcf27",
+      "bytes": 1201549
+    },
+    {
+      "path": "outputs/formal/delta_0p040/eval/000.pth",
+      "sha256": "035fe5892d89a1cafebfd476da1ad7c72097a4eaeab5b8c8716d15f4cf02d3b7",
+      "bytes": 1224080
+    },
+    {
+      "path": "outputs/formal/delta_0p040/eval/050.pth",
+      "sha256": "140aa1223cd5a06de9b035ddc7fb790b0d7ed4c60bda564e9192e642c5b7c25f",
+      "bytes": 1244176
+    },
+    {
+      "path": "outputs/formal/delta_0p040/eval/100.pth",
+      "sha256": "c17e0d4b7808debc4c49dee9322030675ee65fbb6381b1c9a6760021540a0852",
+      "bytes": 1245520
+    },
+    {
+      "path": "outputs/formal/delta_0p040/eval/latest.pth",
+      "sha256": "3305b5be45723995e08a45e45ee09594b47d738f2c5c3ec292e2751dddb28f39",
+      "bytes": 1247516
+    },
+    {
+      "path": "outputs/formal/delta_0p040/log.txt",
+      "sha256": "f7ec0f82530a306f3f332d35bfb61094a5c34a11359c37c676f1e171f08db032",
+      "bytes": 346559
+    },
+    {
+      "path": "outputs/formal/delta_0p040/summary/events.out.tfevents.1789497682.autodl-container-7e2f4f8c67-891d0c1a.58336.0",
+      "sha256": "c140df0566c1e3911cacf6220f9fa3b342de88cfb44e59855d0f566b862e053a",
+      "bytes": 4541029
+    },
+    {
+      "path": "outputs/formal/delta_0p080/RUN_INTENT.json",
+      "sha256": "be75b31e6a9b70dbfd12273490946602dc02f63fcf6bf2b16df35adf617b4d9d",
+      "bytes": 1010
+    },
+    {
+      "path": "outputs/formal/delta_0p080/RUN_RECEIPT.json",
+      "sha256": "253e5db4b1c9aae352512a0da168eb6125ca69e1be306a71ffb91a5b40986e52",
+      "bytes": 1274
+    },
+    {
+      "path": "outputs/formal/delta_0p080/TRAINING_SELECTION.json",
+      "sha256": "74097d941969e381b28d84ddeab3ffbf41d540af97a7c393658523e49534ae72",
+      "bytes": 814
+    },
+    {
+      "path": "outputs/formal/delta_0p080/best_stg2.pth",
+      "sha256": "000ab64628882f456c545fd6ca72c0cfffb223b31f300a35a6d7d3b9e5080440",
+      "bytes": 314208414
+    },
+    {
+      "path": "outputs/formal/delta_0p080/console.log",
+      "sha256": "826f9e20517883ebe0137c23cffcd27407b553f37da7e8bf727f515fd69611d2",
+      "bytes": 1201076
+    },
+    {
+      "path": "outputs/formal/delta_0p080/eval/000.pth",
+      "sha256": "1983aab1dedc2e07334555465503f9df928b169cbcddd759525f6f4fdc28e132",
+      "bytes": 1222032
+    },
+    {
+      "path": "outputs/formal/delta_0p080/eval/050.pth",
+      "sha256": "0a039423a9294b54e0e9df4959a5009bdb4f107f3bfce6f34c4963f24ab01c42",
+      "bytes": 1242256
+    },
+    {
+      "path": "outputs/formal/delta_0p080/eval/100.pth",
+      "sha256": "1a510dc4d5ee4a403e767718665bcdbd94d2b80d9d11c9263553e459f081f6e6",
+      "bytes": 1242384
+    },
+    {
+      "path": "outputs/formal/delta_0p080/eval/latest.pth",
+      "sha256": "4d7f2ac609767a191abc3ae76ddbe31d59e9a70f170386df3121b7ef774e5b6a",
+      "bytes": 1240924
+    },
+    {
+      "path": "outputs/formal/delta_0p080/log.txt",
+      "sha256": "9ae62d3557b83dbd1cc50999e0a715cc5526f0caad3589a43820bb0b3076f377",
+      "bytes": 346769
+    },
+    {
+      "path": "outputs/formal/delta_0p080/summary/events.out.tfevents.1789512502.autodl-container-7e2f4f8c67-891d0c1a.169396.0",
+      "sha256": "c7444272389c687d7e1a77c3533287aed6eb0aec3666ffaca9d20260d8c60660",
+      "bytes": 4541029
+    },
+    {
+      "path": "protocol/TRAINING_GRID_AMENDMENT_v1_2.json",
+      "sha256": "3ea74398b30547c83763cf433183baf33debb4685815a0ed7ee4b4a0787ecbd2",
+      "bytes": 1608
+    },
+    {
+      "path": "protocol/TRAINING_GRID_AMENDMENT_v1_2.md",
+      "sha256": "d05ace03dd348df7da5a832dc3876e5234b532a07154b422a7e7e9a7877b28ca",
+      "bytes": 1903
+    },
+    {
+      "path": "results/LCCT_DELTA_FIVE_POINT_VAL.csv",
+      "sha256": "e88b4efe719aa045adac6278125eb768b86d5173558855fcd11865792deedce4",
+      "bytes": 1291
+    },
+    {
+      "path": "results/LCCT_DELTA_FIVE_POINT_VAL.json",
+      "sha256": "42a3e060ae23a817a672cccee13384fa8e3d194685e1fd1fdcc7518eda2da107",
+      "bytes": 2696
+    },
+    {
+      "path": "results/LCCT_DELTA_FIVE_POINT_VAL.md",
+      "sha256": "46c4b2f1e89414e93856e9d9568069672ecac8725f0a4a39271fc60bf060e17c",
+      "bytes": 611
+    },
+    {
+      "path": "tools/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/PAYLOAD_MANIFEST.sha256",
+      "sha256": "9adc5c148443d5cb9b8c90a77a307cbd677c0c03bb219f0590f65f268960f35b",
+      "bytes": 528
+    },
+    {
+      "path": "tools/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/README.md",
+      "sha256": "6a684520b66d769eb83caa9910e6e79f7f0cec79875d386e4f4e3598142ebff7",
+      "bytes": 2294
+    },
+    {
+      "path": "tools/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/manager.py",
+      "sha256": "1fe67160f716fc6d73bf7f032896f09bee3965c383fe9189bee18cd85bffa3ce",
+      "bytes": 676
+    },
+    {
+      "path": "tools/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/protocol/TRAINING_GRID_AMENDMENT_v1_2.json",
+      "sha256": "3ea74398b30547c83763cf433183baf33debb4685815a0ed7ee4b4a0787ecbd2",
+      "bytes": 1608
+    },
+    {
+      "path": "tools/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/protocol/TRAINING_GRID_AMENDMENT_v1_2.md",
+      "sha256": "d05ace03dd348df7da5a832dc3876e5234b532a07154b422a7e7e9a7877b28ca",
+      "bytes": 1903
+    },
+    {
+      "path": "tools/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/run_server.sh",
+      "sha256": "0b69e47f200c2f030c4b1bb8ae8c6004c1e40d5734f83a536abad2df653ff166",
+      "bytes": 1426
+    },
+    {
+      "path": "tools/LCCT_FIVE_POINT_TRAINING_SENSITIVITY_v1/self_test.py",
+      "sha256": "2f80b5bb7ea52f3c523443676c7e2dcd0943e3b31ead9f1c321a8e72bde85399",
+      "bytes": 3107
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "ablation_type": "cumulative functional ablation",
+  "checkpoint_selection": "Val AP",
+  "dataset": "CDW1630",
+  "interpretation_limit": "cumulative rows support stage increments only; no UFD-only or LCCT-only causal attribution",
+  "main_package": {
+    "relative_path": "../main_host",
+    "source_manifest_sha256": "e49227ae48ba2f0f4f804acd36aee50e5d38eb5753f75b1efe86adac7184bb5c"
+  },
+  "module_policy": {
+    "QCCR": "checkpoint-specific Val coefficients with predeclared lambda=1e-3; OOF guards are diagnostic and no candidate fully qualified",
+    "UFD_LCCT": "independently configurable UFD and LCCT mechanisms, jointly enabled in the released detector; the cumulative row does not identify their separate effects or strict interaction",
+    "UMR": "checkpoint-specific MLP head fitted on Train; pw4/tau0/beta2/topk300/head-seed0"
+  },
+  "rows": [
+    "B0",
+    "UFD_LCCT",
+    "UFD_LCCT_QCCR",
+    "FULL"
+  ],
+  "schema_version": 1,
+  "seed": 0,
+  "status": "FROZEN_FROM_FINAL_RELEASE_ASSETS",
+  "test_policy": "official Test used only for final reporting",
+  "test_used_for_parameter_selection": false
+}

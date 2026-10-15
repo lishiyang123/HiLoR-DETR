@@ -1,0 +1,29 @@
+{
+  "authoritative_data": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630",
+  "categories": [
+    "Brick",
+    "Concrete",
+    "Plastic Bottle",
+    "Reinforcement",
+    "timber"
+  ],
+  "image_transport": "per-file hardlinks to authoritative Train/Val images",
+  "schema": "cdw1630-yolo-train-val-data-view-v2",
+  "source_manifest_sha256": "120b21ce99e011ba713300786e8c72a49464f05d61389c64d28a845c6227eed4",
+  "source_view": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/00_PROTOCOL/DATA_VIEWS/CDW1630_YOLO_TRAIN_VAL_v1",
+  "splits": {
+    "train": {
+      "images": 1144,
+      "instances": 5581,
+      "label_tree_sha256": "6f80aff50fbcd21373592a3db3c5cd57cff1cc3b2f2384762b6dbf0a61b4073b",
+      "labels": 1144
+    },
+    "val": {
+      "images": 249,
+      "instances": 988,
+      "label_tree_sha256": "c30e3e1fef1de0425f5edb9a2ffd6174aa1c8a66ac40b6f7992ce0a64f25692b",
+      "labels": 249
+    }
+  },
+  "test_included": false
+}

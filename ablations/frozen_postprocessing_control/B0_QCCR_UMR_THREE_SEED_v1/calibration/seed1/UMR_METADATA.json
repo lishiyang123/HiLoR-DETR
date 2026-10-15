@@ -1,0 +1,17 @@
+{
+  "detector_seed": 1,
+  "diagnostic_split": "Val",
+  "fit_split": "Train",
+  "fusion": {
+    "beta": 2.0,
+    "tau": 0.0,
+    "topk": 300
+  },
+  "head_seed": 0,
+  "positive_weight": 4,
+  "qccr_sha256": "59b80f8c89de86fc1e1b7ad068fac9acdb0cee5349bea25499f7116558325b22",
+  "schema": "cdw1630-b0-fixed-umr-metadata-v1",
+  "source_checkpoint_sha256": "422ec0956963b07f59d2cdd29488bdedcf24fc23f02697bfb817adcb2d5a550d",
+  "test_used_for_selection": false,
+  "weight_sha256": "992fd0cf2d0c1a089b7d7d6d3312e9a9e1738ccb255903c44362153037c1ff3c"
+}

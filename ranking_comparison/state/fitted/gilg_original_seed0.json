@@ -1,0 +1,39 @@
+{
+  "format_version": 1,
+  "model": "conditionally_dependent_beta",
+  "epsilon": 1e-12,
+  "weights": [
+    0.40696166050192184,
+    2.820505526516282,
+    2.2275051489281075,
+    2.772543266188044,
+    0.4632705988067112,
+    0.7624168222325016,
+    2.2105364977348843,
+    0.8114604852976818,
+    1.9637549134245904,
+    0.43582443225071665,
+    2.224130315762609,
+    1.6866970347023023
+  ],
+  "bias": 0.05356865666201973,
+  "fit_summary": {
+    "success": true,
+    "status": 0,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 43,
+    "function_evaluations": 61,
+    "final_nll": 0.000618372048065972,
+    "sample_count": 367594,
+    "positive_count": 987,
+    "feature_count": 2,
+    "seed": 123,
+    "capture": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/capture/cdw_bounded_lcct_seed0_val_capture.pt",
+    "capture_sha256": "62594e1900e255fb1ed295b9356471935a0c562de5c5c10918edd1e68f5ade6b",
+    "split": "val",
+    "label_iou": 0.5,
+    "near_duplicate_iou": 0.99,
+    "elapsed_seconds": 116.81326826661825,
+    "image_count": 249
+  }
+}

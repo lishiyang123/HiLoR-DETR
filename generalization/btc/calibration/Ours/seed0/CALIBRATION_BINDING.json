@@ -1,0 +1,32 @@
+{
+  "aggregate_val_gate": {
+    "decision": "VAL_GO_READY_FOR_FROZEN_TEST1_TEST2",
+    "mean_delta_pp": 0.4713253051943663,
+    "nonnegative_seed_count": 2,
+    "required_nonnegative_seed_count": 2,
+    "sample_std_delta_pp": 0.48111948760583134,
+    "test1_or_test2_accessed": false
+  },
+  "archived_qccr_sha256": "0d9df9d37b0013aa08580f247b8fe45c078499e4c5b9b5929f037f3fbfae7cc5",
+  "archived_umr_sha256": "5fcfd822a60e5d21dfd2b5d8fe11d1fcd183df9be83d967fa111580b16f7b9c0",
+  "dataset": "BTC",
+  "deployed_head_val_ap": 0.7180083662899693,
+  "detector_checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+  "detector_checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+  "detector_seed": 0,
+  "qccr_artifact": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed0_run_20260913_215353_386011/qccr/qccr_params.json",
+  "qccr_artifact_sha256": "0d9df9d37b0013aa08580f247b8fe45c078499e4c5b9b5929f037f3fbfae7cc5",
+  "qccr_lambda": 0.001,
+  "selection": "locked CDW hyperparameters; checkpoint-specific BTC Train/Val fit",
+  "source_calibration_run": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed0_run_20260913_215353_386011",
+  "test_used_for_selection": false,
+  "umr": {
+    "beta": 2.0,
+    "head_seed": 0,
+    "pw": 4,
+    "tau": 0.0,
+    "topk": 300
+  },
+  "umr_weight": "/root/autodl-tmp/BTC_DEIM_project/BTC_FINAL_OURS_VAL_CALIBRATION_v1/runs/seed0_run_20260913_215353_386011/umr_candidates/models/umr_seed0_pw4_best.pt",
+  "umr_weight_sha256": "5fcfd822a60e5d21dfd2b5d8fe11d1fcd183df9be83d967fa111580b16f7b9c0"
+}

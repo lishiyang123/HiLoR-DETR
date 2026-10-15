@@ -1,0 +1,183 @@
+{
+  "claimed_results": 3,
+  "dataset": "CDW1630",
+  "detector_seed_policy": {
+    "seed1_seed2": "final main-result robustness only; excluded from sensitivity and parameter selection",
+    "selection_and_sensitivity": [
+      0
+    ]
+  },
+  "protocol_name": "CDW1630_PARAMETER_SENSITIVITY_v1",
+  "protocol_version": "1.2",
+  "provenance": {
+    "audit_path": "protocol/audit/PARAMETER_PROVENANCE_AUDIT.json",
+    "audit_sha256": "44ab38d19d76278183080a2aba0f37fda07342d9ac916103f6a93022f10ffc57",
+    "final_source_tree_sha256": "8ab1c7e6e46d4b68bcef655bd176c807629dc1c9ea984fb4e01cfc35388362bf"
+  },
+  "qccr_lambda": {
+    "audit_source": {
+      "candidate_grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1
+      ],
+      "selected": 0.001
+    },
+    "detector_retraining": false,
+    "detector_seed": 0,
+    "diagnostic_guard_outcome": "NO_CANDIDATE_FULLY_QUALIFIED",
+    "evaluation": "image-level five-fold OOF Val COCO evaluation",
+    "fit": "original balanced-BCE QCCR fit with image-level five-fold splits",
+    "frozen_selected_value": 0.001,
+    "grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1
+    ],
+    "legacy_decision_token_scope": "OOF_VAL_GO is a legacy activation token for applying the predeclared fixed protocol; it does not mean that the selected candidate passed all diagnostic guards",
+    "measurement_plan": "import the SHA-verified existing four-candidate fits and OOF-Val COCO evidence",
+    "qualification_guards": {
+      "AP75_drop": "<= 0.05 pp",
+      "AP90_drop": "<= 0.05 pp",
+      "AP_gain": ">= +0.1 pp versus native baseline",
+      "APm": "not lower",
+      "AR100_drop": "<= 0.1 pp"
+    },
+    "ranking": "diagnostic counterfactual only; current-seed reselection was disabled and the frozen value was not chosen by this ranking",
+    "replay_required": false,
+    "result_status": "COMPLETE__IMPORTED_SHA_VERIFIED_OOF_VAL",
+    "reuse_policy": "reuse the original complete candidate/OOF evidence when SHA-verified; otherwise rerun the identical Val-only protocol",
+    "selected_candidate_qualified": false,
+    "selection_basis": "predeclared fixed lambda_reg=0.001; current-seed OOF guards are diagnostic and were not used for reselection",
+    "sensitivity_plot": "OOF Val AP versus lambda_reg on a log-scaled x-axis; mark 1e-3"
+  },
+  "reporting": {
+    "figure_handoff": "unrounded numerical evidence; publication layouts prepared separately",
+    "formal_figure": "F05_PARAMETER_SENSITIVITY",
+    "numerical_archive": "QCCR imports verified original OOF records; UMR stores only newly evaluated corrected-semantics pw4 tau-by-beta results. The pre-correction 60-row UMR grid remains quarantined as historical provenance and is excluded from figures and claims.",
+    "panels": [
+      "(a) LCCT delta versus native Val AP",
+      "(b) QCCR lambda_reg versus OOF Val AP",
+      "(c) UMR tau-by-beta heatmap of Val delta AP at pw=4 and topk=300"
+    ]
+  },
+  "split_policy": {
+    "inference_side": "Train/Val according to the original QCCR/UMR protocol",
+    "test": "PROHIBITED for all sensitivity measurement, ranking, guards, and revisions",
+    "training_side": "Train for fitting and Val for checkpoint/result reporting"
+  },
+  "status": "COMPLETE__FIVE_POINT_TRAINING_AND_INFERENCE_SENSITIVITY",
+  "study_role": "post-finalization robustness analysis; not retrospective Test optimization",
+  "test_used_for_parameter_selection": false,
+  "training_side": {
+    "all_other_settings": "byte/config identical to the final seed0 training protocol",
+    "authoritative_package": "gate_sensitivity",
+    "input_bindings": "gate_sensitivity/INPUT_BINDINGS.json",
+    "center": 0.02,
+    "center_policy": "reuse the exact final seed0 run only after source/config/log/checkpoint SHA verification",
+    "checkpoint_rule": "within each level, use the checkpoint selected by maximum native Val AP; no Test tie-break",
+    "epoch_budget": 102,
+    "grid": [
+      0.005,
+      0.01,
+      0.02,
+      0.04,
+      0.08
+    ],
+    "interpretation": "sensitivity curve only; no level may replace the frozen final setting",
+    "new_training_runs": 4,
+    "parameter": "lcct_delta",
+    "primary_metric": "native Val AP@[0.50:0.95]",
+    "result_status": "COMPLETE",
+    "run_count": 5,
+    "secondary_metrics": [
+      "Val AP50",
+      "Val AP75",
+      "Val AR100"
+    ],
+    "seed": 0,
+    "symbol": "delta"
+  },
+  "umr_tau_beta": {
+    "aggregation": "arithmetic mean across the three UMR head-fit seeds",
+    "audit_source": {
+      "selected": {
+        "beta": 2.0,
+        "positive_weight": 4,
+        "tau": 0.0,
+        "topk": 300
+      },
+      "source_grids": {
+        "beta": [
+          0.0,
+          0.25,
+          0.5,
+          1.0,
+          2.0
+        ],
+        "head_seeds": [
+          0,
+          1,
+          2
+        ],
+        "positive_weight": [
+          1,
+          2,
+          4
+        ],
+        "tau": [
+          0.0,
+          0.1,
+          0.2,
+          0.4
+        ]
+      }
+    },
+    "beta_grid": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "detector_retraining": false,
+    "detector_seed": 0,
+    "fixed_topk": 300,
+    "frozen_selected_tuple": {
+      "beta": 2.0,
+      "positive_weight": 4,
+      "tau": 0.0,
+      "topk": 300
+    },
+    "head_fit_seeds": [
+      0,
+      1,
+      2
+    ],
+    "head_seed_definition": "three lightweight MLP fits on the same detector-seed0 Train captures; not detector seeds",
+    "legacy_positive_weight_and_full_grid": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/provenance/MLP_VAL_GRID_MEAN.csv",
+      "reason": "generated before correction of disjoint-competitor feature semantics",
+      "rows": 60,
+      "sha256": "bf062a4d15f33c5309f42c603afee428267d25e473dc5d85374f3dd67bd62622",
+      "status": "EXCLUDED"
+    },
+    "measurement_plan": "use the three SHA-verified corrected pw4 heads and frozen Val capture; run tau-by-beta grid evaluation only",
+    "positive_weight_policy": "pw=4 remains fixed by the frozen final method; no pw sensitivity is claimed under protocol v1.1",
+    "primary_heatmap_fixed_positive_weight": 4,
+    "primary_heatmap_value": "Val delta AP in percentage points versus QCCR Val baseline",
+    "qccr_refitting": false,
+    "result_status": "COMPLETE",
+    "selection_score_and_guards": "retain the original final-source composite score, safety guards, and AP/AP75 tie-break exactly",
+    "tau_grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "topk_policy": "fixed source candidate budget; no candidate grid and no sensitivity sweep",
+    "umr_head_refit_required": false
+  }
+}

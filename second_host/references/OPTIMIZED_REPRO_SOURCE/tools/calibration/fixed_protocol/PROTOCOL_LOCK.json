@@ -1,0 +1,17 @@
+{
+  "dataset": "CDW1630",
+  "detector_seed": 0,
+  "qccr_lambda_reg": 0.001,
+  "umr_positive_weight": 4,
+  "umr_head_seed": 0,
+  "umr_tau": 0.0,
+  "umr_beta": 2.0,
+  "umr_topk": 300,
+  "selection": {
+    "detector": "Val",
+    "qccr_coefficients": "new-checkpoint Val fit with fixed regularization",
+    "umr_weights": "new-checkpoint Train fit",
+    "inference_hyperparameters": "fixed identically for detector seeds 0, 1 and 2",
+    "test_used_for_parameter_selection": false
+  }
+}

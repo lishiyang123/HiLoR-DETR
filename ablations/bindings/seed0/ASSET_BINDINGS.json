@@ -1,0 +1,52 @@
+{
+  "calibration": {
+    "binding_sha256": "4916b45e04cde722e3588f463fdad07fe906f2dc03d62d73eeb9ca502466f04f",
+    "qccr_sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8",
+    "umr_metadata_sha256": "a2913b15e778642187620241f23ce6d2ffd749a6a5718b2a7017329310ca5f4f",
+    "umr_weight_sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82"
+  },
+  "checkpoints": {
+    "B0": {
+      "path": "../main_host/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+      "sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054"
+    },
+    "UFD_LCCT": {
+      "path": "../main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+      "sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885"
+    }
+  },
+  "main_package": "../main_host",
+  "results": {
+    "B0": {
+      "local_path": "../../results/seed0/B0/eval.pth",
+      "local_sha256": "67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42",
+      "main_path": "../main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+      "main_sha256": "67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42"
+    },
+    "FULL": {
+      "local_path": "../../results/seed0/FULL/eval.pth",
+      "local_sha256": "49276c79f4d4323ae596a69013bb3484586130b5969c701356e3b53e2218a3a6",
+      "main_path": "../main_host/results/CDW1630/Ours/seed0/final/eval.pth",
+      "main_sha256": "49276c79f4d4323ae596a69013bb3484586130b5969c701356e3b53e2218a3a6"
+    },
+    "UFD_LCCT": {
+      "local_path": "../../results/seed0/UFD_LCCT/eval.pth",
+      "local_sha256": "a1121aa43ce3443a5edcee31e8eeb9259e56b33a3d4ce828df9d17212128795e",
+      "main_path": "../main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
+      "main_sha256": "a1121aa43ce3443a5edcee31e8eeb9259e56b33a3d4ce828df9d17212128795e"
+    },
+    "UFD_LCCT_QCCR": {
+      "local_path": "../../results/seed0/UFD_LCCT_QCCR/eval.pth",
+      "local_sha256": "b4d7f2be875aa827fc506d8b5efb29dda6e627d8c8d351dc1824fa921a22d53a",
+      "main_path": "../main_host/results/CDW1630/Ours/seed0/qccr_test/eval.pth",
+      "main_sha256": "b4d7f2be875aa827fc506d8b5efb29dda6e627d8c8d351dc1824fa921a22d53a"
+    }
+  },
+  "schema_version": 1,
+  "source": {
+    "path": "../main_host/source/FINAL_CODE",
+    "manifest_sha256": "f3efa05b07483b636fb61714ede86424609841b7537d0a9d1ac0e88d9ea2e417",
+    "role": "reproduction"
+  },
+  "test_used_for_parameter_selection": false
+}

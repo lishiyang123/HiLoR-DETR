@@ -1,0 +1,229 @@
+{
+  "authority": "main_host only; read-only",
+  "center": {
+    "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+    "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+    "delta": 0.02,
+    "log": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/training_records/CDW1630/Ours/seed0/log.txt",
+    "log_sha256": "e536df2f1efb84df93194d26f3f2e6225261c2eae5f960dec7d75b1a1524b9e2",
+    "selection": {
+      "best_epoch": 99,
+      "epochs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "metrics": {
+        "AP": 0.7839574063619668,
+        "AP50": 0.9722525909862445,
+        "AP75": 0.9005406547269437,
+        "AR100": 0.8756820466389367
+      },
+      "row_count": 102,
+      "selected_stage": "stage2"
+    }
+  },
+  "config_materialization": {
+    "base_config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/configs/deim_dfine/deim_hgnetv2_m_coco.yml",
+    "base_config_sha256": "ebf8af86ff09c9e341d23159c5db83cf7cc78b51c49e8239158e57ffe1cb5091",
+    "generated": [
+      {
+        "center_reused": false,
+        "common_sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+        "config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p005/cdw_train.yml",
+        "config_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p005",
+        "config_sha256": "bb28f36c400bb49d02b4cc8b13b22ba2ae3c23fc3e6dbcb1717685365edecd06",
+        "delta": 0.005,
+        "output": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/outputs/formal/delta_0p005"
+      },
+      {
+        "center_reused": false,
+        "common_sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+        "config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p010/cdw_train.yml",
+        "config_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p010",
+        "config_sha256": "c64e0d7a2771cdda49da082c3d26c10f6edf6d71dc411a0f223debdc251d0546",
+        "delta": 0.01,
+        "output": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/outputs/formal/delta_0p010"
+      },
+      {
+        "center_reused": true,
+        "common_sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+        "config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p020/cdw_train.yml",
+        "config_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p020",
+        "config_sha256": "043c4c36d05d0602820d9e4ddecb19e486d8f53c429337b0223786a4b74886ad",
+        "delta": 0.02,
+        "output": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/outputs/formal/delta_0p020"
+      },
+      {
+        "center_reused": false,
+        "common_sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+        "config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p040/cdw_train.yml",
+        "config_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p040",
+        "config_sha256": "f7f7c9e9b44a19c69d99297fd6b1e9c6998a581da6225147c5b226d6a5d7e7c2",
+        "delta": 0.04,
+        "output": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/outputs/formal/delta_0p040"
+      },
+      {
+        "center_reused": false,
+        "common_sha256": "6d8832500dd0a9b22fb29e0e554bfdeefaae96eb27c867e413a531ad2d26fc83",
+        "config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p080/cdw_train.yml",
+        "config_dir": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/configs/formal/delta_0p080",
+        "config_sha256": "a77476314ec49331df9246c80ec22b492129cb92f4621c8de2bab415c06a7569",
+        "delta": 0.08,
+        "output": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/gate_sensitivity/outputs/formal/delta_0p080"
+      }
+    ]
+  },
+  "created_utc": "2026-09-15T16:41:58.302009+00:00",
+  "dataset": {
+    "Train": {
+      "annotation_sha256": "7fdd6dee1d2d88c25ff7248e2abe8c8277dfa2083ec9557d52b5ca9da78065c4",
+      "annotations": 5581,
+      "categories": 5,
+      "image_tree": {
+        "file_count": 1144,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/train2017",
+        "total_bytes": 73101910,
+        "tree_sha256": "31f457c24eaadffe079aee05d39b46d76d7d120f5693188809c327aac9dcc804"
+      },
+      "images": 1144
+    },
+    "Val": {
+      "annotation_sha256": "345d6a25c7795f17558e64b082637798ecd191b6c90fbcd16330bf8025f0a9e5",
+      "annotations": 988,
+      "categories": 5,
+      "image_tree": {
+        "file_count": 249,
+        "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/val2017",
+        "total_bytes": 15895406,
+        "tree_sha256": "815cdb42b6231aaa55c02ff77aabe40fe3aa810f69291b64445c29df90a58d64"
+      },
+      "images": 249
+    }
+  },
+  "format_version": 1,
+  "main_package": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host",
+  "pretrained": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc"
+  },
+  "source": {
+    "file_count": 123,
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1",
+    "tree_sha256": "8ab1c7e6e46d4b68bcef655bd176c807629dc1c9ea984fb4e01cfc35388362bf"
+  },
+  "templates": {
+    "common": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/configs/reproduction/templates/cdw_common_train.yml.in",
+      "sha256": "18904fe7ff521270f78cb7bb7ed2d992ddb88a84c55a0cb3103767df88103b17"
+    },
+    "train": {
+      "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/configs/reproduction/templates/cdw_train.yml.in",
+      "sha256": "175caa9505b23db4d6c7a7ff27f4658c585090f87de2fddacc2978202fd08697"
+    }
+  },
+  "test_accessed": false,
+  "ufd": {
+    "path": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1/artifacts/ufd/difficulty_cdf_train640.json",
+    "sha256": "5ea69d7ed2d93ddcedb1e59070b0be7ef7a4e0060f67768ad96e30afdaa0bd40"
+  }
+}

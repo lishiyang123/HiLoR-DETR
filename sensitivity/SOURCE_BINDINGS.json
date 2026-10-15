@@ -1,0 +1,11 @@
+{
+  "binding_type": "read_only_origin",
+  "checkpoints_bound": false,
+  "datasets_bound": false,
+  "final_source": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1",
+  "final_source_file_count": 123,
+  "final_source_tree_sha256": "8ab1c7e6e46d4b68bcef655bd176c807629dc1c9ea984fb4e01cfc35388362bf",
+  "main_package": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host",
+  "main_readme_sha256": "43413a2f7a92021a5d195e4d37e8814104fdff6998d308925c1b5e07284da0dc",
+  "reason": "Scaffold only; exact experiment assets are bound when each protocol is frozen."
+}

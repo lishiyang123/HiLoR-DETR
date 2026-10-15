@@ -1,0 +1,102 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "PAYLOAD_MANIFEST.sha256",
+      "bytes": 569,
+      "sha256": "3d450cba2088cef3be7113da8fa5e38b18bac8cdc7dc342a1b16351dc01a3192"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1964,
+      "sha256": "1d86120a3cd33b49062b805bf09fca25cc2c1101160e86c9c97962b7f1f28d76"
+    },
+    {
+      "path": "RELEASE_COPY_BINDINGS.json",
+      "bytes": 2452,
+      "sha256": "51367e5f024981d25c953503a2cdd5afc29466c18adfd2f7bb4b131b4fb1a50a"
+    },
+    {
+      "path": "RELEASE_ENTRY.md",
+      "bytes": 1964,
+      "sha256": "1d86120a3cd33b49062b805bf09fca25cc2c1101160e86c9c97962b7f1f28d76"
+    },
+    {
+      "path": "STATUS.json",
+      "bytes": 281,
+      "sha256": "745db2c7695918f0252e261622598a0a4fef26cba8a39d14a2e4224bd580a708"
+    },
+    {
+      "path": "common.py",
+      "bytes": 5691,
+      "sha256": "cf96d3b0ab2e4145ecbb6b9c80fffcc16893296cb650f925e10cf5d5e6f10709"
+    },
+    {
+      "path": "evaluate.py",
+      "bytes": 22631,
+      "sha256": "17440855919152b749f79e0c456cbbc30c26e5d5d57a2b344f143d8b70561c6b"
+    },
+    {
+      "path": "manager.py",
+      "bytes": 19347,
+      "sha256": "cdd43db3dcf8ecd55e9a18a5fa25646c7a8ccda9a75a8d4957d8c589dc9ea6d8"
+    },
+    {
+      "path": "manifests/INPUT_BINDINGS.json",
+      "bytes": 4511,
+      "sha256": "f5aeb2fc1f3ba65bc9a6c21743feac8e38eac47c2e5a809436ea22c1a5a14195"
+    },
+    {
+      "path": "protocol/ACTION_BUDGET_PROTOCOL.json",
+      "bytes": 3155,
+      "sha256": "8e6c43472b9b83689e26215500d1eb1f9cd82fbd4bd6f44a6b8c01c1d60b5420"
+    },
+    {
+      "path": "protocol/ACTION_BUDGET_PROTOCOL_LOCK.json",
+      "bytes": 3155,
+      "sha256": "8e6c43472b9b83689e26215500d1eb1f9cd82fbd4bd6f44a6b8c01c1d60b5420"
+    },
+    {
+      "path": "results/ACTION_BUDGET_RESULTS.json",
+      "bytes": 131044,
+      "sha256": "df1e8afb8fecd8875d95579d26fbe6a49f4b5ec36093bbef12129648c59d544e"
+    },
+    {
+      "path": "results/INTERPRETATION.md",
+      "bytes": 619,
+      "sha256": "2d9cc3fa2cdb4fea79da7dddc31aba421a728b5a6287d3aee375e4f3ff14f00b"
+    },
+    {
+      "path": "results/MAIN_TABLE_K5_TAU075.csv",
+      "bytes": 1248,
+      "sha256": "f24b4f49029b679a4da12e40a6f9d3253b2f490bf06e6fce64596b74f25fb154"
+    },
+    {
+      "path": "results/PER_IMAGE_COUNTS.csv",
+      "bytes": 945981,
+      "sha256": "8e0a8dafc3ba2c4df3e638e9a777fb96c1ab73c0e3d828505322e8015589d043"
+    },
+    {
+      "path": "results/PER_SEED_METRICS.csv",
+      "bytes": 16878,
+      "sha256": "77170f778affee20d1cf814e1371aba35be0accce4aec49edd8836411afe466f"
+    },
+    {
+      "path": "results/THREE_SEED_SUMMARY.csv",
+      "bytes": 21648,
+      "sha256": "60c9c1d9770a65aac919b1dc8e46b704e77c521b687cd7ecbed079b3ed096960"
+    },
+    {
+      "path": "run_server.sh",
+      "bytes": 813,
+      "sha256": "be5a5f00605bd88e1eb1cd4b772ffe01895cf3d851f5ed39bbf29aeb6344eacd"
+    },
+    {
+      "path": "self_test.py",
+      "bytes": 5863,
+      "sha256": "90d9d1143ee85e257b77bed918fdf72a4fa59f7a0ae5822c0cd27b5a50252a51"
+    }
+  ],
+  "format_version": 1,
+  "package": "proposal_budget"
+}

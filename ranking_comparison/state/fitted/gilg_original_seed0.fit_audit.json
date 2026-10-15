@@ -1,0 +1,1537 @@
+{
+  "model": {
+    "format_version": 1,
+    "model": "conditionally_dependent_beta",
+    "epsilon": 1e-12,
+    "weights": [
+      0.40696166050192184,
+      2.820505526516282,
+      2.2275051489281075,
+      2.772543266188044,
+      0.4632705988067112,
+      0.7624168222325016,
+      2.2105364977348843,
+      0.8114604852976818,
+      1.9637549134245904,
+      0.43582443225071665,
+      2.224130315762609,
+      1.6866970347023023
+    ],
+    "bias": 0.05356865666201973,
+    "fit_summary": {
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "iterations": 43,
+      "function_evaluations": 61,
+      "final_nll": 0.000618372048065972,
+      "sample_count": 367594,
+      "positive_count": 987,
+      "feature_count": 2,
+      "seed": 123,
+      "capture": "/root/autodl-tmp/BTC_DEIM_project/diagnostics/CDW_LCCT_BOUNDED_HANDOVER_SEED0_FINAL_v1/runs/run_20260912_214047_435675/capture/cdw_bounded_lcct_seed0_val_capture.pt",
+      "capture_sha256": "62594e1900e255fb1ed295b9356471935a0c562de5c5c10918edd1e68f5ade6b",
+      "split": "val",
+      "label_iou": 0.5,
+      "near_duplicate_iou": 0.99,
+      "elapsed_seconds": 116.81326826661825,
+      "image_count": 249
+    }
+  },
+  "images": [
+    {
+      "image_id": 1,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 1
+    },
+    {
+      "image_id": 2,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 1
+    },
+    {
+      "image_id": 3,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 4,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 5,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 1
+    },
+    {
+      "image_id": 6,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 1
+    },
+    {
+      "image_id": 7,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 1
+    },
+    {
+      "image_id": 8,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 9,
+      "candidate_count": 1500,
+      "active_count": 1479,
+      "positive_count": 2
+    },
+    {
+      "image_id": 10,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 2
+    },
+    {
+      "image_id": 11,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 12,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 13,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 1
+    },
+    {
+      "image_id": 14,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 15,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 16,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 17,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 5
+    },
+    {
+      "image_id": 18,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 4
+    },
+    {
+      "image_id": 19,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 3
+    },
+    {
+      "image_id": 20,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 21,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 22,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 23,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 24,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 1
+    },
+    {
+      "image_id": 25,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 5
+    },
+    {
+      "image_id": 26,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 5
+    },
+    {
+      "image_id": 27,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 28,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 7
+    },
+    {
+      "image_id": 29,
+      "candidate_count": 1500,
+      "active_count": 1468,
+      "positive_count": 1
+    },
+    {
+      "image_id": 30,
+      "candidate_count": 1500,
+      "active_count": 1455,
+      "positive_count": 1
+    },
+    {
+      "image_id": 31,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 4
+    },
+    {
+      "image_id": 32,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 1
+    },
+    {
+      "image_id": 33,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 1
+    },
+    {
+      "image_id": 34,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 2
+    },
+    {
+      "image_id": 35,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 2
+    },
+    {
+      "image_id": 36,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 3
+    },
+    {
+      "image_id": 37,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 2
+    },
+    {
+      "image_id": 38,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 39,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 40,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 41,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 42,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 43,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 5
+    },
+    {
+      "image_id": 44,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 6
+    },
+    {
+      "image_id": 45,
+      "candidate_count": 1500,
+      "active_count": 1487,
+      "positive_count": 7
+    },
+    {
+      "image_id": 46,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 47,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 5
+    },
+    {
+      "image_id": 48,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 5
+    },
+    {
+      "image_id": 49,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 50,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 51,
+      "candidate_count": 1500,
+      "active_count": 1449,
+      "positive_count": 4
+    },
+    {
+      "image_id": 52,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 5
+    },
+    {
+      "image_id": 53,
+      "candidate_count": 1500,
+      "active_count": 1484,
+      "positive_count": 5
+    },
+    {
+      "image_id": 54,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 5
+    },
+    {
+      "image_id": 55,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 5
+    },
+    {
+      "image_id": 56,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 57,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 5
+    },
+    {
+      "image_id": 58,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 5
+    },
+    {
+      "image_id": 59,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 5
+    },
+    {
+      "image_id": 60,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 61,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 5
+    },
+    {
+      "image_id": 62,
+      "candidate_count": 1500,
+      "active_count": 1478,
+      "positive_count": 4
+    },
+    {
+      "image_id": 63,
+      "candidate_count": 1500,
+      "active_count": 1455,
+      "positive_count": 5
+    },
+    {
+      "image_id": 64,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 7
+    },
+    {
+      "image_id": 65,
+      "candidate_count": 1500,
+      "active_count": 1471,
+      "positive_count": 7
+    },
+    {
+      "image_id": 66,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 7
+    },
+    {
+      "image_id": 67,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 6
+    },
+    {
+      "image_id": 68,
+      "candidate_count": 1500,
+      "active_count": 1468,
+      "positive_count": 6
+    },
+    {
+      "image_id": 69,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 70,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 71,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 72,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 73,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 74,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 5
+    },
+    {
+      "image_id": 75,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 5
+    },
+    {
+      "image_id": 76,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 77,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 78,
+      "candidate_count": 1500,
+      "active_count": 1488,
+      "positive_count": 6
+    },
+    {
+      "image_id": 79,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 80,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 81,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 82,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 6
+    },
+    {
+      "image_id": 83,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 7
+    },
+    {
+      "image_id": 84,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 7
+    },
+    {
+      "image_id": 85,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 86,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 87,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 88,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 5
+    },
+    {
+      "image_id": 89,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 3
+    },
+    {
+      "image_id": 90,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 1
+    },
+    {
+      "image_id": 91,
+      "candidate_count": 1500,
+      "active_count": 1425,
+      "positive_count": 1
+    },
+    {
+      "image_id": 92,
+      "candidate_count": 1500,
+      "active_count": 1446,
+      "positive_count": 1
+    },
+    {
+      "image_id": 93,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 3
+    },
+    {
+      "image_id": 94,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 1
+    },
+    {
+      "image_id": 95,
+      "candidate_count": 1500,
+      "active_count": 1450,
+      "positive_count": 1
+    },
+    {
+      "image_id": 96,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 97,
+      "candidate_count": 1500,
+      "active_count": 1455,
+      "positive_count": 2
+    },
+    {
+      "image_id": 98,
+      "candidate_count": 1500,
+      "active_count": 1455,
+      "positive_count": 2
+    },
+    {
+      "image_id": 99,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 3
+    },
+    {
+      "image_id": 100,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 1
+    },
+    {
+      "image_id": 101,
+      "candidate_count": 1500,
+      "active_count": 1454,
+      "positive_count": 2
+    },
+    {
+      "image_id": 102,
+      "candidate_count": 1500,
+      "active_count": 1430,
+      "positive_count": 4
+    },
+    {
+      "image_id": 103,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 2
+    },
+    {
+      "image_id": 104,
+      "candidate_count": 1500,
+      "active_count": 1436,
+      "positive_count": 1
+    },
+    {
+      "image_id": 105,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 1
+    },
+    {
+      "image_id": 106,
+      "candidate_count": 1500,
+      "active_count": 1450,
+      "positive_count": 1
+    },
+    {
+      "image_id": 107,
+      "candidate_count": 1500,
+      "active_count": 1450,
+      "positive_count": 1
+    },
+    {
+      "image_id": 108,
+      "candidate_count": 1500,
+      "active_count": 1424,
+      "positive_count": 3
+    },
+    {
+      "image_id": 109,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 5
+    },
+    {
+      "image_id": 110,
+      "candidate_count": 1500,
+      "active_count": 1460,
+      "positive_count": 1
+    },
+    {
+      "image_id": 111,
+      "candidate_count": 1500,
+      "active_count": 1440,
+      "positive_count": 1
+    },
+    {
+      "image_id": 112,
+      "candidate_count": 1500,
+      "active_count": 1347,
+      "positive_count": 1
+    },
+    {
+      "image_id": 113,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 3
+    },
+    {
+      "image_id": 114,
+      "candidate_count": 1500,
+      "active_count": 1481,
+      "positive_count": 3
+    },
+    {
+      "image_id": 115,
+      "candidate_count": 1500,
+      "active_count": 1476,
+      "positive_count": 3
+    },
+    {
+      "image_id": 116,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 2
+    },
+    {
+      "image_id": 117,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 1
+    },
+    {
+      "image_id": 118,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 1
+    },
+    {
+      "image_id": 119,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 1
+    },
+    {
+      "image_id": 120,
+      "candidate_count": 1500,
+      "active_count": 1450,
+      "positive_count": 4
+    },
+    {
+      "image_id": 121,
+      "candidate_count": 1500,
+      "active_count": 1288,
+      "positive_count": 3
+    },
+    {
+      "image_id": 122,
+      "candidate_count": 1500,
+      "active_count": 1384,
+      "positive_count": 3
+    },
+    {
+      "image_id": 123,
+      "candidate_count": 1500,
+      "active_count": 1435,
+      "positive_count": 1
+    },
+    {
+      "image_id": 124,
+      "candidate_count": 1500,
+      "active_count": 1465,
+      "positive_count": 2
+    },
+    {
+      "image_id": 125,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 3
+    },
+    {
+      "image_id": 126,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 1
+    },
+    {
+      "image_id": 127,
+      "candidate_count": 1500,
+      "active_count": 1415,
+      "positive_count": 1
+    },
+    {
+      "image_id": 128,
+      "candidate_count": 1500,
+      "active_count": 1400,
+      "positive_count": 1
+    },
+    {
+      "image_id": 129,
+      "candidate_count": 1500,
+      "active_count": 1424,
+      "positive_count": 1
+    },
+    {
+      "image_id": 130,
+      "candidate_count": 1500,
+      "active_count": 1360,
+      "positive_count": 1
+    },
+    {
+      "image_id": 131,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 3
+    },
+    {
+      "image_id": 132,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 133,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 3
+    },
+    {
+      "image_id": 134,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 135,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 136,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 137,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 1
+    },
+    {
+      "image_id": 138,
+      "candidate_count": 1500,
+      "active_count": 1465,
+      "positive_count": 2
+    },
+    {
+      "image_id": 139,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 2
+    },
+    {
+      "image_id": 140,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 1
+    },
+    {
+      "image_id": 141,
+      "candidate_count": 1500,
+      "active_count": 1440,
+      "positive_count": 1
+    },
+    {
+      "image_id": 142,
+      "candidate_count": 1500,
+      "active_count": 1334,
+      "positive_count": 1
+    },
+    {
+      "image_id": 143,
+      "candidate_count": 1500,
+      "active_count": 1445,
+      "positive_count": 1
+    },
+    {
+      "image_id": 144,
+      "candidate_count": 1500,
+      "active_count": 1455,
+      "positive_count": 1
+    },
+    {
+      "image_id": 145,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 1
+    },
+    {
+      "image_id": 146,
+      "candidate_count": 1500,
+      "active_count": 1491,
+      "positive_count": 1
+    },
+    {
+      "image_id": 147,
+      "candidate_count": 1500,
+      "active_count": 1291,
+      "positive_count": 1
+    },
+    {
+      "image_id": 148,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 149,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 150,
+      "candidate_count": 1500,
+      "active_count": 1392,
+      "positive_count": 2
+    },
+    {
+      "image_id": 151,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 152,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 2
+    },
+    {
+      "image_id": 153,
+      "candidate_count": 1500,
+      "active_count": 1342,
+      "positive_count": 2
+    },
+    {
+      "image_id": 154,
+      "candidate_count": 1500,
+      "active_count": 1434,
+      "positive_count": 3
+    },
+    {
+      "image_id": 155,
+      "candidate_count": 1500,
+      "active_count": 1488,
+      "positive_count": 3
+    },
+    {
+      "image_id": 156,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 3
+    },
+    {
+      "image_id": 157,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 3
+    },
+    {
+      "image_id": 158,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 3
+    },
+    {
+      "image_id": 159,
+      "candidate_count": 1500,
+      "active_count": 1478,
+      "positive_count": 3
+    },
+    {
+      "image_id": 160,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 4
+    },
+    {
+      "image_id": 161,
+      "candidate_count": 1500,
+      "active_count": 1410,
+      "positive_count": 1
+    },
+    {
+      "image_id": 162,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 2
+    },
+    {
+      "image_id": 163,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 164,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 165,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 2
+    },
+    {
+      "image_id": 166,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 2
+    },
+    {
+      "image_id": 167,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 2
+    },
+    {
+      "image_id": 168,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 169,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 170,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 2
+    },
+    {
+      "image_id": 171,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 3
+    },
+    {
+      "image_id": 172,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 3
+    },
+    {
+      "image_id": 173,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 3
+    },
+    {
+      "image_id": 174,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 2
+    },
+    {
+      "image_id": 175,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 176,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 177,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 5
+    },
+    {
+      "image_id": 178,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 5
+    },
+    {
+      "image_id": 179,
+      "candidate_count": 1500,
+      "active_count": 1473,
+      "positive_count": 6
+    },
+    {
+      "image_id": 180,
+      "candidate_count": 1500,
+      "active_count": 1471,
+      "positive_count": 6
+    },
+    {
+      "image_id": 181,
+      "candidate_count": 1500,
+      "active_count": 1460,
+      "positive_count": 7
+    },
+    {
+      "image_id": 182,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 7
+    },
+    {
+      "image_id": 183,
+      "candidate_count": 1500,
+      "active_count": 1484,
+      "positive_count": 4
+    },
+    {
+      "image_id": 184,
+      "candidate_count": 1500,
+      "active_count": 1459,
+      "positive_count": 7
+    },
+    {
+      "image_id": 185,
+      "candidate_count": 1500,
+      "active_count": 1458,
+      "positive_count": 6
+    },
+    {
+      "image_id": 186,
+      "candidate_count": 1500,
+      "active_count": 1466,
+      "positive_count": 4
+    },
+    {
+      "image_id": 187,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 6
+    },
+    {
+      "image_id": 188,
+      "candidate_count": 1500,
+      "active_count": 1463,
+      "positive_count": 6
+    },
+    {
+      "image_id": 189,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 4
+    },
+    {
+      "image_id": 190,
+      "candidate_count": 1500,
+      "active_count": 1472,
+      "positive_count": 2
+    },
+    {
+      "image_id": 191,
+      "candidate_count": 1500,
+      "active_count": 1468,
+      "positive_count": 3
+    },
+    {
+      "image_id": 192,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 5
+    },
+    {
+      "image_id": 193,
+      "candidate_count": 1500,
+      "active_count": 1452,
+      "positive_count": 2
+    },
+    {
+      "image_id": 194,
+      "candidate_count": 1500,
+      "active_count": 1449,
+      "positive_count": 3
+    },
+    {
+      "image_id": 195,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 2
+    },
+    {
+      "image_id": 196,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 7
+    },
+    {
+      "image_id": 197,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 7
+    },
+    {
+      "image_id": 198,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 6
+    },
+    {
+      "image_id": 199,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 200,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 8
+    },
+    {
+      "image_id": 201,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 8
+    },
+    {
+      "image_id": 202,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 5
+    },
+    {
+      "image_id": 203,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 9
+    },
+    {
+      "image_id": 204,
+      "candidate_count": 1500,
+      "active_count": 1477,
+      "positive_count": 3
+    },
+    {
+      "image_id": 205,
+      "candidate_count": 1500,
+      "active_count": 1471,
+      "positive_count": 3
+    },
+    {
+      "image_id": 206,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 3
+    },
+    {
+      "image_id": 207,
+      "candidate_count": 1500,
+      "active_count": 1422,
+      "positive_count": 2
+    },
+    {
+      "image_id": 208,
+      "candidate_count": 1500,
+      "active_count": 1455,
+      "positive_count": 3
+    },
+    {
+      "image_id": 209,
+      "candidate_count": 1500,
+      "active_count": 1460,
+      "positive_count": 4
+    },
+    {
+      "image_id": 210,
+      "candidate_count": 1500,
+      "active_count": 1465,
+      "positive_count": 5
+    },
+    {
+      "image_id": 211,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 8
+    },
+    {
+      "image_id": 212,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 8
+    },
+    {
+      "image_id": 213,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 8
+    },
+    {
+      "image_id": 214,
+      "candidate_count": 1500,
+      "active_count": 1439,
+      "positive_count": 5
+    },
+    {
+      "image_id": 215,
+      "candidate_count": 1500,
+      "active_count": 1445,
+      "positive_count": 5
+    },
+    {
+      "image_id": 216,
+      "candidate_count": 1500,
+      "active_count": 1435,
+      "positive_count": 5
+    },
+    {
+      "image_id": 217,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 4
+    },
+    {
+      "image_id": 218,
+      "candidate_count": 1500,
+      "active_count": 1460,
+      "positive_count": 4
+    },
+    {
+      "image_id": 219,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 4
+    },
+    {
+      "image_id": 220,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 6
+    },
+    {
+      "image_id": 221,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 7
+    },
+    {
+      "image_id": 222,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 5
+    },
+    {
+      "image_id": 223,
+      "candidate_count": 1500,
+      "active_count": 1465,
+      "positive_count": 5
+    },
+    {
+      "image_id": 224,
+      "candidate_count": 1500,
+      "active_count": 1463,
+      "positive_count": 4
+    },
+    {
+      "image_id": 225,
+      "candidate_count": 1500,
+      "active_count": 1460,
+      "positive_count": 6
+    },
+    {
+      "image_id": 226,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 6
+    },
+    {
+      "image_id": 227,
+      "candidate_count": 1500,
+      "active_count": 1427,
+      "positive_count": 6
+    },
+    {
+      "image_id": 228,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 7
+    },
+    {
+      "image_id": 229,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 7
+    },
+    {
+      "image_id": 230,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 8
+    },
+    {
+      "image_id": 231,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 232,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 6
+    },
+    {
+      "image_id": 233,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 6
+    },
+    {
+      "image_id": 234,
+      "candidate_count": 1500,
+      "active_count": 1469,
+      "positive_count": 6
+    },
+    {
+      "image_id": 235,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 236,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 237,
+      "candidate_count": 1500,
+      "active_count": 1479,
+      "positive_count": 1
+    },
+    {
+      "image_id": 238,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 7
+    },
+    {
+      "image_id": 239,
+      "candidate_count": 1500,
+      "active_count": 1480,
+      "positive_count": 7
+    },
+    {
+      "image_id": 240,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 7
+    },
+    {
+      "image_id": 241,
+      "candidate_count": 1500,
+      "active_count": 1475,
+      "positive_count": 6
+    },
+    {
+      "image_id": 242,
+      "candidate_count": 1500,
+      "active_count": 1500,
+      "positive_count": 6
+    },
+    {
+      "image_id": 243,
+      "candidate_count": 1500,
+      "active_count": 1470,
+      "positive_count": 7
+    },
+    {
+      "image_id": 244,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 7
+    },
+    {
+      "image_id": 245,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    },
+    {
+      "image_id": 246,
+      "candidate_count": 1500,
+      "active_count": 1490,
+      "positive_count": 6
+    },
+    {
+      "image_id": 247,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 7
+    },
+    {
+      "image_id": 248,
+      "candidate_count": 1500,
+      "active_count": 1485,
+      "positive_count": 7
+    },
+    {
+      "image_id": 249,
+      "candidate_count": 1500,
+      "active_count": 1495,
+      "positive_count": 6
+    }
+  ]
+}

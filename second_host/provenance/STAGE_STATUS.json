@@ -1,0 +1,22 @@
+{
+  "state": "COMPLETE",
+  "training_runs": 6,
+  "detector_seeds": [
+    0,
+    1,
+    2
+  ],
+  "test_configurations": [
+    "native",
+    "gccs",
+    "full"
+  ],
+  "test_runs": 9,
+  "complexity_models": [
+    "native",
+    "full"
+  ],
+  "evaluator": "faster-coco-eval",
+  "evaluator_version": "1.7.2",
+  "selection": "Val AP; CCVR settings fixed; Test evaluation only"
+}

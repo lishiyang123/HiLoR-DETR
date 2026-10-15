@@ -1,0 +1,17 @@
+===== B0 CLEAN BEST CHECKPOINT =====
+c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054  /root/autodl-tmp/BTC_DEIM_project/CDW1630_B0_reproduction_package/checkpoint/best_stg1.pth
+
+===== TRAIN/VAL CONFIG =====
+eddbff0febef956c22bce157d0d2b8c37cb12174da72c1563f25f2b82f0c11b4  /root/autodl-tmp/BTC_DEIM_project/code/CDW1630_final_line/B0_DEIM/configs/cdw1630_official/deim_hgnetv2_m_b0.yml
+
+===== OFFICIAL TEST CONFIG =====
+d082a661321120d4a268ed3b7ef9a03da5ff92787c8bc89e4b7311c664b01972  /root/autodl-tmp/BTC_DEIM_project/code/CDW1630_final_line/B0_DEIM/configs/cdw1630_official/deim_hgnetv2_m_b0_official_test.yml
+
+===== TEST EVALUATOR OUTPUT =====
+67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42  /root/autodl-tmp/BTC_DEIM_project/CDW1630_B0_reproduction_package/official_test/runtime_output/eval.pth
+
+===== TEST CONSOLE =====
+7ddc57e274e36e7bae4c616a18d2c26a5167baf2526a60b73e06b21a9004d244  /root/autodl-tmp/BTC_DEIM_project/CDW1630_B0_reproduction_package/official_test/console.txt
+
+===== EXACT METRICS =====
+dcfa42e9bdc5bf531b83613034b2038dcb06c2241a6ac1060b62f355b6c704bc  /root/autodl-tmp/BTC_DEIM_project/CDW1630_B0_reproduction_package/official_test/exact_metrics.csv

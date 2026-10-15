@@ -1,0 +1,45 @@
+{
+  "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "detections": 4134,
+  "faster_coco_eval": "1.7.2",
+  "high_quality": {
+    "AP80": 0.7380808426528114,
+    "AP85": 0.5834965475752052,
+    "AP90": 0.3246813582931151,
+    "AP95": 0.047119808124005944
+  },
+  "images": 237,
+  "implementation": "faster_coco_eval.COCOeval_faster",
+  "iou_type": "bbox",
+  "maxDets": [
+    1,
+    10,
+    100
+  ],
+  "metrics": {
+    "AP": 0.7242333928502473,
+    "AP50": 0.9693412185312863,
+    "AP75": 0.8452516660040312,
+    "APl": 0.7745197130267195,
+    "APm": 0.6311645034723451,
+    "APs": 0.5,
+    "AR1": 0.40104807562421463,
+    "AR10": 0.7730283002439099,
+    "AR100": 0.7747726405149858,
+    "ARl": 0.8131262094203682,
+    "ARm": 0.7003658713654767,
+    "ARs": 0.5
+  },
+  "per_class_AP": {
+    "Brick": 0.7206238460442,
+    "Concrete": 0.7935860051641082,
+    "Plastic Bottle": 0.6888404257467289,
+    "Reinforcement": 0.6515662413831533,
+    "timber": 0.7665504459130459
+  },
+  "precision_sha256": "896297d70e26f25bd3577f668ce87e6062f3d1f1a92da146779d4857206d0472",
+  "predictions_sha256": "a5b699e5cc4e828ed88a93246d8ac72ecc71db890cdd34ddb56d33ca21ab63fd",
+  "recall_sha256": "cc175ad9df1df5c8e2ef8029344d92f92f3b733a449c84549bbb14142e956046",
+  "schema": "cdw1630-official-yolo-batch8-faster-coco-result-v1",
+  "status": "PASS"
+}

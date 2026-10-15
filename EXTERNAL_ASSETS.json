@@ -1,0 +1,23 @@
+{
+  "schema": "hilordetr.external-assets.v1",
+  "policy": "original-provider-download-only",
+  "source_record": "https://zenodo.org/records/17447590",
+  "files": [
+    {
+      "path": "benchmarks/01_YOLO_SERIES/OFFICIAL_ASSETS_INBOX/YOLOv8l.pt",
+      "bytes": 87715578,
+      "sha256": "aaff4d6f857724dbcfcec54ba517bd246ae7c9c9cf39f84a897b4f1eb254932c",
+      "model": "YOLOv8-L",
+      "original_provider_md5": "29dfa5d726d4b51cb693d3b026c69d98",
+      "url": "https://zenodo.org/records/17447590/files/YOLOv8l.pt?download=1"
+    },
+    {
+      "path": "benchmarks/01_YOLO_SERIES/OFFICIAL_ASSETS_INBOX/YOLOv11l.pt",
+      "bytes": 153031575,
+      "sha256": "c9d665bf34ca0acc913835cd7db455a6251a5c9f1fe5d0e66b5f3d9f3898e284",
+      "model": "YOLO11-L",
+      "original_provider_md5": "32ce83b42455218a0a100921efc49c01",
+      "url": "https://zenodo.org/records/17447590/files/YOLOv11l.pt?download=1"
+    }
+  ]
+}

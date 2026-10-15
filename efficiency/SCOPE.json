@@ -1,0 +1,62 @@
+{
+  "schema": "cdw1630-efficiency-working-scope-v1",
+  "status": "COMPLETE",
+  "retained_complexity_models": [
+    "YOLOv8-L",
+    "YOLO11-L",
+    "D-FINE-M",
+    "YOLOv10-M",
+    "YOLOv12-M (turbo)",
+    "YOLOv9-C",
+    "DEIM"
+  ],
+  "inference_metrics": [
+    "postprocess_latency_ms",
+    "total_latency_ms"
+  ],
+  "inference_auxiliary_metric": "forward_latency_ms for timing-partition verification",
+  "training_metrics": [
+    "mean_training_epoch_time_s",
+    "peak_training_allocated_memory_MiB"
+  ],
+  "training_validation_scope": "all 102 complete train_one_epoch calls; validation and checkpoint writing excluded",
+  "full_hilor_detector_training": "same GCCS detector training; later CCVR fitting is separate",
+  "params": "inference-required deployment parameters, including the value head and fitted mapping scalars when enabled",
+  "flops": "detector forward only; postprocessing excluded",
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "profiler": "calflops",
+  "profiler_version": "0.3.2",
+  "mac_to_flop_factor": 2,
+  "hardware_for_latency": "NVIDIA GeForce RTX 4090",
+  "detector_precision_for_latency": "FP16 autocast",
+  "postprocess_precision_for_latency": "FP32",
+  "warmup_real_images": 50,
+  "test_images": 237,
+  "timed_repeats": 3,
+  "latency_included": [
+    "detector forward",
+    "required FP32 conversion",
+    "complete native/full CCVR postprocessing",
+    "box scaling"
+  ],
+  "latency_excluded": [
+    "disk IO",
+    "decoding",
+    "preprocessing",
+    "host-to-device transfer",
+    "dataloader",
+    "COCO evaluation"
+  ],
+  "hilor_required_binding": "formal optimized MLP value head with pw=4 and checkpoint-specific frozen mapping; no legacy attention head",
+  "rtdetr_parameter_requirement": "exclude retired RepVGG branches after deployment; bind the counted and profiled graph",
+  "legacy_full_nine_model_orchestration_enabled": false,
+  "final_publication_ready": true,
+  "runner": "run_scoped.py; separate check, smoke, inference, training-smoke, training stages",
+  "inference_latency_runner": "run_scoped.py --stage latency; single process, balanced order, common GCCS/HiLoR detector instance",
+  "authoritative_results_index": "publication/FINAL_RESULTS_INDEX.json"
+}

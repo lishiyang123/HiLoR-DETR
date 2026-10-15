@@ -1,0 +1,41 @@
+{
+  "annotation": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+  "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "base_protocol_sha256": "48841dadee8dc67ce0bfced25e4fe2b5051b9f0a5d342314285fbf032b5e9e2e",
+  "dataset": "CDW1630 official Test",
+  "detector_seed": 0,
+  "format_version": 2,
+  "image_count": 237,
+  "main_package_manifest": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/manifests/FILE_MANIFEST.sha256.json",
+  "main_package_manifest_sha256": "b392d5eb02a99094f9455f9b2612be358042b691fcd9071d4255dada0d099723",
+  "methods": {
+    "B0": {
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/checkpoints/CDW1630/B0/seed0/best_stg1.pth",
+      "checkpoint_sha256": "c6a6466d2ce9f5fd3d737a97c1941c301f338d822f12b3e8011f2a722a352054",
+      "config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/qualitative_evidence/configs/materialized/CDW1630/seed0/cdw_b0_test.yml",
+      "config_sha256": "8837cef5685f64ff7ee81d176cb847ee07dfd6721be8805bdb76455e61d85906",
+      "formal_eval": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+      "formal_eval_sha256": "67eec85cbb5b99d6f15e5c0cd682f2e7d7f487eadf7520d2ee46d731b5584d42",
+      "runtime_source": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1",
+      "runtime_source_manifest_sha256": "e49227ae48ba2f0f4f804acd36aee50e5d38eb5753f75b1efe86adac7184bb5c",
+      "runtime_source_policy": "final unified source; proposed modules disabled by B0 config"
+    },
+    "Ours": {
+      "calibration_binding_sha256": "4916b45e04cde722e3588f463fdad07fe906f2dc03d62d73eeb9ca502466f04f",
+      "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/checkpoints/CDW1630/Ours/seed0/best_stg2.pth",
+      "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+      "config": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/qualitative_evidence/configs/materialized/CDW1630/seed0/cdw_final_test.yml",
+      "config_sha256": "2cddf55a3b087393a0e9330055b2a1c2107faf55dc060ec31e0612f25c936e85",
+      "formal_eval": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/results/CDW1630/Ours/seed0/final/eval.pth",
+      "formal_eval_sha256": "49276c79f4d4323ae596a69013bb3484586130b5969c701356e3b53e2218a3a6",
+      "runtime_source": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/source/FINAL_REPRO_SOURCE_v1/CDW1630_REPRO_SOURCE_v1",
+      "runtime_source_manifest_sha256": "e49227ae48ba2f0f4f804acd36aee50e5d38eb5753f75b1efe86adac7184bb5c"
+    }
+  },
+  "package_role": "frozen qualitative evidence only",
+  "protocol_sha256": "268c8e9cf8a5e2671fa795855fc3594e635e4a37ee291e5664499827f3ec038f",
+  "selection_protocol_revision": "1.1",
+  "selection_protocol_sha256": "268c8e9cf8a5e2671fa795855fc3594e635e4a37ee291e5664499827f3ec038f",
+  "source_manifest_sha256": "e49227ae48ba2f0f4f804acd36aee50e5d38eb5753f75b1efe86adac7184bb5c",
+  "test_used_for_parameter_or_model_selection": false
+}

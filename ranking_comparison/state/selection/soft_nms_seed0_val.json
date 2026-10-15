@@ -1,0 +1,528 @@
+{
+  "format_version": 1,
+  "split": "val",
+  "capture_sha256": "62594e1900e255fb1ed295b9356471935a0c562de5c5c10918edd1e68f5ade6b",
+  "test_used_for_parameter_selection": false,
+  "methods": {
+    "soft_nms_gaussian": {
+      "selection_rule": "highest Val AP, then AP75, then smaller grid value",
+      "selected_index": 6,
+      "selected": {
+        "grid_value": 2.0,
+        "iou_threshold": 0.5,
+        "sigma": 2.0,
+        "metrics": {
+          "AP": 78.76896827935632,
+          "AP50": 97.79024074861194,
+          "AP75": 90.61909743017169,
+          "AR100": 87.22489067665218,
+          "threshold_ap": {
+            "AP50": 97.79024074861194,
+            "AP55": 97.29085084775376,
+            "AP60": 96.37754912513512,
+            "AP65": 95.53922075254273,
+            "AP70": 93.8603896926748,
+            "AP75": 90.61909743017169,
+            "AP80": 83.73909777326554,
+            "AP85": 71.45313295637503,
+            "AP90": 49.9813209462657,
+            "AP95": 11.03878252076677
+          },
+          "image_count": 249,
+          "detection_count": 74700
+        },
+        "cpu_replay_latency_ms": {
+          "mean": 217.91486732931727,
+          "median": 206.146422,
+          "p95": 294.0797638,
+          "note": "CPU capture-replay timing; not formal GPU latency."
+        }
+      },
+      "all_configurations": [
+        {
+          "grid_value": 0.3,
+          "iou_threshold": 0.5,
+          "sigma": 0.3,
+          "metrics": {
+            "AP": 77.31158481915584,
+            "AP50": 97.77465549875056,
+            "AP75": 89.234760044931,
+            "AR100": 83.83083878882879,
+            "threshold_ap": {
+              "AP50": 97.77465549875056,
+              "AP55": 97.28836939231358,
+              "AP60": 96.34330696277479,
+              "AP65": 95.01044002025587,
+              "AP70": 93.24495940788623,
+              "AP75": 89.234760044931,
+              "AP80": 80.85673578615531,
+              "AP85": 67.37607019434522,
+              "AP90": 46.11767190422572,
+              "AP95": 9.868878979920137
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 259.666771,
+            "median": 270.587259,
+            "p95": 349.77639999999974,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 0.5,
+          "iou_threshold": 0.5,
+          "sigma": 0.5,
+          "metrics": {
+            "AP": 78.0532438976412,
+            "AP50": 98.02328029178938,
+            "AP75": 90.03518326438964,
+            "AR100": 85.04892845190284,
+            "threshold_ap": {
+              "AP50": 98.02328029178938,
+              "AP55": 97.55854851595845,
+              "AP60": 96.51677197482073,
+              "AP65": 95.39226683298409,
+              "AP70": 93.881312372189,
+              "AP75": 90.03518326438964,
+              "AP80": 82.18768652100536,
+              "AP85": 69.13709039334684,
+              "AP90": 47.59071154758307,
+              "AP95": 10.209587262345355
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 222.0240047309237,
+            "median": 206.70179,
+            "p95": 295.626696,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 0.7,
+          "iou_threshold": 0.5,
+          "sigma": 0.7,
+          "metrics": {
+            "AP": 78.39290244045888,
+            "AP50": 97.96089272552848,
+            "AP75": 90.49997753534014,
+            "AR100": 85.89354573907876,
+            "threshold_ap": {
+              "AP50": 97.96089272552848,
+              "AP55": 97.47274394863321,
+              "AP60": 96.5902520942386,
+              "AP65": 95.51460050162684,
+              "AP70": 94.01915328147244,
+              "AP75": 90.49997753534014,
+              "AP80": 82.97691963815198,
+              "AP85": 70.0029739271537,
+              "AP90": 48.414487543490694,
+              "AP95": 10.477023208952673
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 215.02958515261045,
+            "median": 204.026512,
+            "p95": 286.0752966,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 1.0,
+          "iou_threshold": 0.5,
+          "sigma": 1.0,
+          "metrics": {
+            "AP": 78.58130081621188,
+            "AP50": 97.90650384615283,
+            "AP75": 90.52710990908378,
+            "AR100": 86.52223003408191,
+            "threshold_ap": {
+              "AP50": 97.90650384615283,
+              "AP55": 97.44146604564502,
+              "AP60": 96.55373814077029,
+              "AP65": 95.63876869764302,
+              "AP70": 93.99451922351616,
+              "AP75": 90.52710990908378,
+              "AP80": 83.52627218438691,
+              "AP85": 70.49944731445528,
+              "AP90": 49.01101693504517,
+              "AP95": 10.714165865420334
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 267.1803397309238,
+            "median": 276.921409,
+            "p95": 348.04606559999996,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 1.25,
+          "iou_threshold": 0.5,
+          "sigma": 1.25,
+          "metrics": {
+            "AP": 78.69508889169047,
+            "AP50": 97.86806647512147,
+            "AP75": 90.62562862945892,
+            "AR100": 86.84099412104199,
+            "threshold_ap": {
+              "AP50": 97.86806647512147,
+              "AP55": 97.40798629088432,
+              "AP60": 96.51212142406315,
+              "AP65": 95.62410736864831,
+              "AP70": 94.01434277367647,
+              "AP75": 90.62562862945892,
+              "AP80": 83.63541255343068,
+              "AP85": 70.99510055172583,
+              "AP90": 49.42342815639717,
+              "AP95": 10.844694693498404
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 254.79067654618476,
+            "median": 238.258375,
+            "p95": 321.036496,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 1.5,
+          "iou_threshold": 0.5,
+          "sigma": 1.5,
+          "metrics": {
+            "AP": 78.73778779842925,
+            "AP50": 97.8368653089777,
+            "AP75": 90.64505116562944,
+            "AR100": 87.05621158101795,
+            "threshold_ap": {
+              "AP50": 97.8368653089777,
+              "AP55": 97.36074675691985,
+              "AP60": 96.46252161643801,
+              "AP65": 95.57886621081819,
+              "AP70": 93.99856861527253,
+              "AP75": 90.64505116562944,
+              "AP80": 83.68212470692085,
+              "AP85": 71.17658805349548,
+              "AP90": 49.697022131610076,
+              "AP95": 10.939523418210396
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 261.3027146746988,
+            "median": 267.721682,
+            "p95": 329.36668280000004,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 2.0,
+          "iou_threshold": 0.5,
+          "sigma": 2.0,
+          "metrics": {
+            "AP": 78.76896827935632,
+            "AP50": 97.79024074861194,
+            "AP75": 90.61909743017169,
+            "AR100": 87.22489067665218,
+            "threshold_ap": {
+              "AP50": 97.79024074861194,
+              "AP55": 97.29085084775376,
+              "AP60": 96.37754912513512,
+              "AP65": 95.53922075254273,
+              "AP70": 93.8603896926748,
+              "AP75": 90.61909743017169,
+              "AP80": 83.73909777326554,
+              "AP85": 71.45313295637503,
+              "AP90": 49.9813209462657,
+              "AP95": 11.03878252076677
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 217.91486732931727,
+            "median": 206.146422,
+            "p95": 294.0797638,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 3.0,
+          "iou_threshold": 0.5,
+          "sigma": 3.0,
+          "metrics": {
+            "AP": 78.7620292551268,
+            "AP50": 97.67367318007516,
+            "AP75": 90.52122639919165,
+            "AR100": 87.40635667670685,
+            "threshold_ap": {
+              "AP50": 97.67367318007516,
+              "AP55": 97.1966334050634,
+              "AP60": 96.2989272744019,
+              "AP65": 95.47228309669413,
+              "AP70": 93.81249053667432,
+              "AP75": 90.52122639919165,
+              "AP80": 83.75582877842162,
+              "AP85": 71.54305803146367,
+              "AP90": 50.21926458558191,
+              "AP95": 11.126907263700408
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 217.9844794939759,
+            "median": 204.752621,
+            "p95": 290.58560459999995,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        }
+      ],
+      "source_sweeps": [
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/gaussian_val_extension2.json",
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/gaussian_val_extension3.json",
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/gaussian_val_extension.json",
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/gaussian_val_grid.json"
+      ]
+    },
+    "soft_nms_linear": {
+      "selection_rule": "highest Val AP, then AP75, then smaller grid value",
+      "selected_index": 4,
+      "selected": {
+        "grid_value": 0.95,
+        "iou_threshold": 0.95,
+        "sigma": 0.5,
+        "metrics": {
+          "AP": 78.53520401864401,
+          "AP50": 97.30223976161079,
+          "AP75": 90.30814721308957,
+          "AR100": 87.23125068300412,
+          "threshold_ap": {
+            "AP50": 97.30223976161079,
+            "AP55": 96.83475246260514,
+            "AP60": 96.0079212727546,
+            "AP65": 95.25859512842193,
+            "AP70": 93.68021995425576,
+            "AP75": 90.30814721308957,
+            "AP80": 83.57562972743318,
+            "AP85": 71.48155481545848,
+            "AP90": 50.0497280593609,
+            "AP95": 10.853251791449797
+          },
+          "image_count": 249,
+          "detection_count": 74700
+        },
+        "cpu_replay_latency_ms": {
+          "mean": 256.08218908433736,
+          "median": 263.210524,
+          "p95": 321.14712000000003,
+          "note": "CPU capture-replay timing; not formal GPU latency."
+        }
+      },
+      "all_configurations": [
+        {
+          "grid_value": 0.3,
+          "iou_threshold": 0.3,
+          "sigma": 0.5,
+          "metrics": {
+            "AP": 77.69608415216693,
+            "AP50": 98.0033958651801,
+            "AP75": 89.83742638334546,
+            "AR100": 84.04307288678524,
+            "threshold_ap": {
+              "AP50": 98.0033958651801,
+              "AP55": 97.43866360869892,
+              "AP60": 96.42175399890445,
+              "AP65": 95.30590429621097,
+              "AP70": 93.69002581008692,
+              "AP75": 89.83742638334546,
+              "AP80": 81.69074700969836,
+              "AP85": 68.23678911799198,
+              "AP90": 46.44878651151414,
+              "AP95": 9.887348920037988
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 277.23616468273093,
+            "median": 284.209779,
+            "p95": 356.3151646,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 0.5,
+          "iou_threshold": 0.5,
+          "sigma": 0.5,
+          "metrics": {
+            "AP": 77.62292909858328,
+            "AP50": 97.76116587161098,
+            "AP75": 89.6169376542331,
+            "AR100": 84.1634595354206,
+            "threshold_ap": {
+              "AP50": 97.76116587161098,
+              "AP55": 97.30080045493267,
+              "AP60": 96.33199871223582,
+              "AP65": 95.19009023790372,
+              "AP70": 93.49418248840065,
+              "AP75": 89.6169376542331,
+              "AP80": 81.61793247483617,
+              "AP85": 68.27797173732849,
+              "AP90": 46.646032031969895,
+              "AP95": 9.992179322381407
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 289.1362865381526,
+            "median": 214.716976,
+            "p95": 788.1936324,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 0.7,
+          "iou_threshold": 0.7,
+          "sigma": 0.5,
+          "metrics": {
+            "AP": 77.847874218363,
+            "AP50": 97.73155431612427,
+            "AP75": 90.15656768728317,
+            "AR100": 84.80250030735186,
+            "threshold_ap": {
+              "AP50": 97.73155431612427,
+              "AP55": 97.32401156699815,
+              "AP60": 96.51272643687513,
+              "AP65": 95.80854707643257,
+              "AP70": 93.99853777036405,
+              "AP75": 90.15656768728317,
+              "AP80": 81.92626285025824,
+              "AP85": 68.17857264075214,
+              "AP90": 46.757339698977034,
+              "AP95": 10.084622139565306
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 226.96192595582326,
+            "median": 211.459571,
+            "p95": 292.2006826,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 0.9,
+          "iou_threshold": 0.9,
+          "sigma": 0.5,
+          "metrics": {
+            "AP": 78.48402414072395,
+            "AP50": 97.42835097738501,
+            "AP75": 90.63418620595696,
+            "AR100": 86.55224371123953,
+            "threshold_ap": {
+              "AP50": 97.42835097738501,
+              "AP55": 96.9807459546346,
+              "AP60": 96.17765115140826,
+              "AP65": 95.47405517868923,
+              "AP70": 93.8817015630491,
+              "AP75": 90.63418620595696,
+              "AP80": 83.7302545970894,
+              "AP85": 71.34804499791151,
+              "AP90": 48.93321878872627,
+              "AP95": 10.252031992389016
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 251.63299207228914,
+            "median": 234.154737,
+            "p95": 318.2121752,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 0.95,
+          "iou_threshold": 0.95,
+          "sigma": 0.5,
+          "metrics": {
+            "AP": 78.53520401864401,
+            "AP50": 97.30223976161079,
+            "AP75": 90.30814721308957,
+            "AR100": 87.23125068300412,
+            "threshold_ap": {
+              "AP50": 97.30223976161079,
+              "AP55": 96.83475246260514,
+              "AP60": 96.0079212727546,
+              "AP65": 95.25859512842193,
+              "AP70": 93.68021995425576,
+              "AP75": 90.30814721308957,
+              "AP80": 83.57562972743318,
+              "AP85": 71.48155481545848,
+              "AP90": 50.0497280593609,
+              "AP95": 10.853251791449797
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 256.08218908433736,
+            "median": 263.210524,
+            "p95": 321.14712000000003,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        },
+        {
+          "grid_value": 0.99,
+          "iou_threshold": 0.99,
+          "sigma": 0.5,
+          "metrics": {
+            "AP": 78.41334753300173,
+            "AP50": 97.24351806247805,
+            "AP75": 90.07658110362631,
+            "AR100": 87.5445475353796,
+            "threshold_ap": {
+              "AP50": 97.24351806247805,
+              "AP55": 96.76690919669832,
+              "AP60": 95.92376665763867,
+              "AP65": 95.13579889442582,
+              "AP70": 93.51679817443868,
+              "AP75": 90.07658110362631,
+              "AP80": 83.21172959411352,
+              "AP85": 71.1188173895956,
+              "AP90": 50.07005462647721,
+              "AP95": 11.069501630525107
+            },
+            "image_count": 249,
+            "detection_count": 74700
+          },
+          "cpu_replay_latency_ms": {
+            "mean": 252.5510154819277,
+            "median": 235.060624,
+            "p95": 318.47755959999995,
+            "note": "CPU capture-replay timing; not formal GPU latency."
+          }
+        }
+      ],
+      "source_sweeps": [
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/linear_val_extension2.json",
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/linear_val_extension3.json",
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/linear_val_extension.json",
+        "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/ranking_comparison/results/val/soft_nms_sweeps/linear_val_grid.json"
+      ]
+    }
+  }
+}

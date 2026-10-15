@@ -1,0 +1,13 @@
+{
+  "evaluator": {
+    "faster_coco_eval": "1.7.2",
+    "implementation": "faster_coco_eval.COCOeval_faster"
+  },
+  "models": 9,
+  "runs": 23,
+  "state": "COMPLETE",
+  "test_images_accessed": false,
+  "test_used_for_selection": false,
+  "training_or_inference_executed": false,
+  "operation": "reporting from saved final evaluation arrays"
+}

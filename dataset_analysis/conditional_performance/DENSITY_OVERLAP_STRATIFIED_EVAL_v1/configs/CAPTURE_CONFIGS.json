@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "method_seed_configs": {
+    "B0_seed0": {
+      "detector_seed": 0,
+      "qccr_enabled": false,
+      "sha256": "60069395b895c2646fa8a144928dd3ea7796dc9b5b955b0752b6b62ed79641cb",
+      "source_include": "cdw_b0_test.yml",
+      "umr_enabled": false
+    },
+    "B0_seed1": {
+      "detector_seed": 1,
+      "qccr_enabled": false,
+      "sha256": "d5ea47a978c30f63d4d18e30ded8835fc1fb78818d38b896758109045448ab7d",
+      "source_include": "cdw_b0_test.yml",
+      "umr_enabled": false
+    },
+    "B0_seed2": {
+      "detector_seed": 2,
+      "qccr_enabled": false,
+      "sha256": "877179ac607f1a04c8c1f5a64e160a7a22a177d561e0114c1028d34b27ba340b",
+      "source_include": "cdw_b0_test.yml",
+      "umr_enabled": false
+    },
+    "Full_seed0": {
+      "detector_seed": 0,
+      "qccr_enabled": true,
+      "sha256": "2f623c90c2c91d1904c3b6e41b5f916ad7d60b2cc4fc0bad42e9db800d4da916",
+      "source_include": "cdw_native_test.yml",
+      "umr_enabled": true
+    },
+    "Full_seed1": {
+      "detector_seed": 1,
+      "qccr_enabled": true,
+      "sha256": "2e1cb38401160b6c67face348a03cfa948535f6c7852026c2cb5bde04911e065",
+      "source_include": "cdw_native_test.yml",
+      "umr_enabled": true
+    },
+    "Full_seed2": {
+      "detector_seed": 2,
+      "qccr_enabled": true,
+      "sha256": "cbd6fb43395511f4688fcd6590d49233b9511cb85eee449742deda3516300e2e",
+      "source_include": "cdw_native_test.yml",
+      "umr_enabled": true
+    }
+  },
+  "purpose": "exact prediction-capture configuration identity; paths are release-relative in input_bindings.json"
+}

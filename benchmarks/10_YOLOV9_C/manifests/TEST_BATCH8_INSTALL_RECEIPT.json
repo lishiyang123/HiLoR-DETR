@@ -1,0 +1,26 @@
+{
+  "canonical_files": {
+    "CANONICAL_README.md": "2426851313a92fe40ea72e443a972d59ce7b387076c4a3bb44f42894f5caa983",
+    "PAYLOAD_MANIFEST.sha256": "bed8a7899100a934f7e4a1bb32f429e5f6f6793bbf045df4812451774dba98ea",
+    "common.py": "e9acfe715360e53332a2347970efcda77b2a27607eb16ad49e5631817d1bdcff",
+    "evaluate.py": "8f69b797115b93e97c02240378c4e840e6d5bd790e55aa8000731f45f0533234",
+    "predict.py": "bf515f57eeb9775c7da9e1b70256f52996613a575c7784e6b17d707910745b3f",
+    "protocol/EVALUATION_LOCK.json": "e95dec6a24dce67b3b499a841b40299b3aa1e2d3e419974be1bfdab6105f1f06",
+    "reproduce_test.sh": "1618ef502787729ed80e7f488dd06e779c95fff512cee041121a31162a15548e"
+  },
+  "canonical_protocol_directory": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/protocol/frozen_test_batch8_v1",
+  "evaluation_lock_sha256": "e95dec6a24dce67b3b499a841b40299b3aa1e2d3e419974be1bfdab6105f1f06",
+  "fitting_on_test": false,
+  "input_binding_sha256": "7f55bf73069f18f9aeeb363bb7bacad9a6a9b99ed692e80633bdec612802088a",
+  "result_directory": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/10_YOLOV9_C/results/test_batch8_v1",
+  "schema": "cdw1630-sota-yolov9-c-test-install-v1",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "status": "COMPLETE",
+  "summary_sha256": "6aae13cecfa8e17b12586eff860d5fd87c366e4f286db40b14cd0d42a8d37fd4",
+  "test_model_or_parameter_selection": false,
+  "training_modified": false
+}

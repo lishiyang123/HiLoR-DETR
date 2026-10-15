@@ -1,0 +1,6 @@
+# Frozen Train/Val candidate capture. The model remains in eval mode; this
+# switch only exposes the already-computed final decoder hidden state.
+__include__: ["./cdw1630_rtdetr_r18_gccs.yml"]
+
+RTDETRTransformer:
+  hilor_return_decoder_features: True

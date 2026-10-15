@@ -1,0 +1,4 @@
+__include__: ["./cdw1630_rtdetr_r18_capture.yml"]
+
+val_dataloader:
+  shuffle: False

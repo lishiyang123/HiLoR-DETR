@@ -1,0 +1,46 @@
+{
+  "protocol_name": "CDW1630_DENSITY_OVERLAP_STRATIFIED_EVAL_v1",
+  "protocol_version": "1.0",
+  "status": "RULES_FROZEN_BEFORE_SUBGROUP_TEST_EVALUATION",
+  "placement": "dataset_analysis/conditional_performance/DENSITY_OVERLAP_STRATIFIED_EVAL_v1",
+  "analysis_type": "post-hoc condition-stratified performance analysis",
+  "detector_seeds": [0, 1, 2],
+  "methods": ["B0", "Full"],
+  "prediction_capture": {
+    "execution": "official train.py test-only path",
+    "required_pairs": 6,
+    "full_test_metric_replay_required_before_stratification": true,
+    "checkpoint_selection": "existing Val-selected checkpoints only",
+    "new_training": false,
+    "new_fitting": false
+  },
+  "density": {
+    "image_score": "number of valid GT boxes in the image",
+    "threshold_source": "Train annotation only",
+    "threshold_rule": "Train image-score median",
+    "low_rule": "N_i <= threshold",
+    "high_rule": "N_i > threshold",
+    "expected_threshold_for_bound_CDW1630_release": 5
+  },
+  "overlap": {
+    "object_score": "maximum intersection area divided by the object's own box area over all other GT boxes in the same image",
+    "image_score": "mean object score; zero for images containing zero or one GT object",
+    "class_policy": "all GT classes participate",
+    "threshold_source": "Train annotation only",
+    "threshold_rule": "median if positive; otherwise positive 75th percentile; otherwise zero-versus-positive",
+    "low_rule": "O_i <= threshold",
+    "high_rule": "O_i > threshold",
+    "expected_strategy_for_bound_CDW1630_release": "positive_median"
+  },
+  "evaluation": {
+    "unit": "whole images",
+    "gt_policy": "retain every GT object in each selected image; object-level deletion is forbidden",
+    "evaluator": "the same faster-coco-eval COCO bbox evaluator used by the formal release",
+    "metrics": ["AP", "AP50", "AP75", "AR100"],
+    "pairing": "B0 and Full with the same detector seed",
+    "summary": "three-seed mean and sample standard deviation; deltas are paired within seed",
+    "test_role": "reporting only",
+    "test_used_for_model_checkpoint_threshold_or_parameter_selection": false
+  },
+  "claim_boundary": "The analysis describes condition-specific behavior of the full system. It does not identify a causal contribution of UFD, LCCT, QCCR, or UMR in isolation."
+}

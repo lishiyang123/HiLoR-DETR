@@ -1,0 +1,41 @@
+{
+  "schema": "cdw1630-gccs-internal-ablation-frozen-test-v1",
+  "status": "FROZEN_BEFORE_TEST_INFERENCE",
+  "dataset": "CDW1630",
+  "seed": 0,
+  "formal_new_rows": [
+    "ufd_without_difficulty",
+    "ufd_only",
+    "lcct_only"
+  ],
+  "reuse_rows": {
+    "b0": "HiLoR-DETR/main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+    "gccs": "HiLoR-DETR/main_host/results/CDW1630/Ours/seed0/native_test/eval.pth"
+  },
+  "training_package": "CDW_GCCS_INTERNAL_ABLATION_TRAINING_v1",
+  "training_state": "CDW_GCCS_INTERNAL_ABLATION_TRAINING_STATE_v1",
+  "source": "HiLoR-DETR/main_host/source/CLEAN_REPRO_SOURCE",
+  "test_annotation": "HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+  "test_annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "test_images": "HiLoR-DETR/main_host/datasets/CDW1630/test2017",
+  "test_image_count": 237,
+  "test_annotation_count": 1071,
+  "class_ids": [0, 1, 2, 3, 4],
+  "inference": {
+    "input_size": [640, 640],
+    "actual_total_batch_size": 8,
+    "precision": "FP32",
+    "qccr_enabled": false,
+    "umr_enabled": false,
+    "native_detector_output": true
+  },
+  "checkpoint_selection": "Val AP only; global maximum with earliest exact tie",
+  "test_role": "one frozen reporting evaluation for every already selected row",
+  "test_model_or_parameter_selection": false,
+  "fitting_on_test": false,
+  "reported_metrics": [
+    "AP", "AP50", "AP75", "APs", "APm", "APl",
+    "AR1", "AR10", "AR100", "ARs", "ARm", "ARl",
+    "AP80", "AP85", "AP90", "AP95"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "center_reused": true,
+  "claimed_results": 5,
+  "created_utc": "2026-09-15T16:41:58.302862+00:00",
+  "formal_runs_completed": [
+    0.01,
+    0.04,
+    0.005,
+    0.08
+  ],
+  "formal_runs_pending": [],
+  "gpu_smoke": "PASS",
+  "static_audit": "PASS",
+  "status": "COMPLETE",
+  "summary_sha256": "42a3e060ae23a817a672cccee13384fa8e3d194685e1fd1fdcc7518eda2da107",
+  "test_accessed": false,
+  "test_used_for_parameter_selection": false
+}

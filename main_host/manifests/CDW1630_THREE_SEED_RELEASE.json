@@ -1,0 +1,36 @@
+{
+  "canonical_records": {
+    "classwise_metrics": {
+      "bytes": 2579,
+      "path": "results/CDW1630/classwise_metrics/CLASSWISE_METRICS_MANIFEST.json",
+      "sha256": "ae4c1e36b7f0d49654128f9b42d5c4428bf4b23661ef37270b07501b7c78ed93"
+    },
+    "protocol_lock": {
+      "bytes": 5814,
+      "path": "protocols/CDW1630_three_seed/PROTOCOL_LOCK.json",
+      "sha256": "82ad45e6e76e901e26f3f91f239f52a1cbf94ff57dd649af32885d83e6c6c3bf"
+    },
+    "three_seed_summary": {
+      "bytes": 13541,
+      "path": "paper_tables/three_seed/CDW_FINAL_THREE_SEED_SUMMARY.json",
+      "sha256": "7ecac55c521eea78cd08bb58bc5a3dafdf2f6219d985a983443d88c268677e83"
+    },
+    "source_manifest": {
+      "path": "source/FINAL_CODE/SOURCE_MANIFEST.json",
+      "sha256": "a0fcca24b2c1cf698871d51d1d5fbf0313d1380d36c4853a8087a63721238e57",
+      "bytes": 15146
+    }
+  },
+  "formal_package": "main_host",
+  "format_version": 2,
+  "operation": "Release binding of source, protocol and numerical evidence",
+  "protected_assets_unchanged": true,
+  "protected_scope": [
+    "all detector checkpoints",
+    "all QCCR/UMR fitted assets",
+    "all datasets",
+    "all training logs"
+  ],
+  "status": "PASS",
+  "test_used_for_parameter_selection": false
+}

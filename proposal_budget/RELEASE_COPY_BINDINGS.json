@@ -1,0 +1,66 @@
+{
+  "schema": "cdw1630.study-release-copy.v1",
+  "original_preserved": true,
+  "included_original_files": [
+    {
+      "path": "PAYLOAD_MANIFEST_ORIGINAL.sha256",
+      "origin": "proposal_budget/PAYLOAD_MANIFEST.sha256",
+      "bytes": 569,
+      "sha256": "44accbd696abba5cc88545176b88a154e9081696d11fa41fb4ab4078756ae8f8"
+    },
+    {
+      "path": "common.py",
+      "origin": "proposal_budget/common.py",
+      "bytes": 5691,
+      "sha256": "cf96d3b0ab2e4145ecbb6b9c80fffcc16893296cb650f925e10cf5d5e6f10709"
+    },
+    {
+      "path": "protocol/ACTION_BUDGET_PROTOCOL.json",
+      "origin": "proposal_budget/protocol/ACTION_BUDGET_PROTOCOL.json",
+      "bytes": 3155,
+      "sha256": "8e6c43472b9b83689e26215500d1eb1f9cd82fbd4bd6f44a6b8c01c1d60b5420"
+    },
+    {
+      "path": "run_server.sh",
+      "origin": "proposal_budget/run_server.sh",
+      "bytes": 813,
+      "sha256": "be5a5f00605bd88e1eb1cd4b772ffe01895cf3d851f5ed39bbf29aeb6344eacd"
+    },
+    {
+      "path": "self_test.py",
+      "origin": "proposal_budget/self_test.py",
+      "bytes": 5863,
+      "sha256": "90d9d1143ee85e257b77bed918fdf72a4fa59f7a0ae5822c0cd27b5a50252a51"
+    }
+  ],
+  "omitted_from_public_copy_only": [],
+  "note": "Omitted files remain in the external original; no deletion was performed. Paths identify preserved original copies, not newly authored release entries.",
+  "initial_copy_records": [
+    {
+      "path": "evaluate.py",
+      "origin": "proposal_budget/evaluate.py",
+      "bytes": 25653,
+      "sha256": "8812982bc4d47dee71bd5d4633c06102aff65f1fe5b59359ccbed8b667864a12"
+    },
+    {
+      "path": "manager.py",
+      "origin": "proposal_budget/manager.py",
+      "bytes": 19599,
+      "sha256": "44caf41f49996fd1a2535f1d84ef1d8038d498afe1e15a0e0fb9d401d5b6a72f"
+    }
+  ],
+  "rendering_only_changes": [
+    {
+      "path": "proposal_budget/evaluate.py",
+      "original_sha256": "8812982bc4d47dee71bd5d4633c06102aff65f1fe5b59359ccbed8b667864a12",
+      "new_sha256": "17440855919152b749f79e0c456cbbc30c26e5d5d57a2b344f143d8b70561c6b",
+      "scope": "render/output handling only; mathematical functions unchanged"
+    },
+    {
+      "path": "proposal_budget/manager.py",
+      "original_sha256": "44caf41f49996fd1a2535f1d84ef1d8038d498afe1e15a0e0fb9d401d5b6a72f",
+      "new_sha256": "cdd43db3dcf8ecd55e9a18a5fa25646c7a8ccda9a75a8d4957d8c589dc9ea6d8",
+      "scope": "render/output handling only; mathematical functions unchanged"
+    }
+  ]
+}

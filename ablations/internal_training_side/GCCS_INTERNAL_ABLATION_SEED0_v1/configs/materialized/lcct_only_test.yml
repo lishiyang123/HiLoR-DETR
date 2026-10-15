@@ -1,0 +1,13 @@
+__include__: ["/root/autodl-tmp/BTC_DEIM_project/CDW_GCCS_INTERNAL_ABLATION_TRAINING_STATE_v1/configs/lcct_only.yml"]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/CDW_GCCS_INTERNAL_ABLATION_FROZEN_TEST_STATE_v1/formal/lcct_only/output"
+
+val_dataloader:
+  dataset:
+    img_folder: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/test2017"
+    ann_file: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json"
+  total_batch_size: 8
+  num_workers: 4
+
+PostProcessor:
+  qccr_enabled: False
+  umr_enabled: False

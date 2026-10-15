@@ -1,0 +1,9 @@
+__include__: [./cdw_b0_train.yml]
+output_dir: @B0_TEST_OUTPUT@
+
+val_dataloader:
+  dataset:
+    img_folder: @TEST_IMAGES@
+    ann_file: @TEST_ANN@
+  total_batch_size: 8
+  num_workers: 4

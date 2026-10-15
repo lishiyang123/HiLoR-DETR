@@ -1,0 +1,265 @@
+{
+  "schema": "cdw1630.numerical-evidence-manifest.v1",
+  "files": [
+    {
+      "path": "NUMERICAL_EVIDENCE_INDEX.json",
+      "bytes": 1988,
+      "sha256": "54ae0b41993e3e139098e2d1019b48ff52f4187bb2b018f88f5f696664370961"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2070,
+      "sha256": "ab17533ee6723e309fd7f2446fcbd02ad38e84c5479f6d8d47aaff695e6e6646"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 17360,
+      "sha256": "94de07b2da3c7dbb2c6861830d17f304124456a3bff2a666046af8bf7591a9b3"
+    },
+    {
+      "path": "evidence/ap_iou_curve/CDW_AP_IOU_THREE_SEED.csv",
+      "bytes": 3176,
+      "sha256": "c8184c04d3a39089b256c573fa64ea77fa60169826faba151b76c40d6b0fe725"
+    },
+    {
+      "path": "evidence/ap_iou_curve/CDW_AP_IOU_THREE_SEED.json",
+      "bytes": 11491,
+      "sha256": "ebb6965089282f8a76509238e3cec4fd4f71e54eb7abb6963b37cc73a29df503"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/MANIFEST.sha256.json",
+      "bytes": 3789,
+      "sha256": "93a2dde46bc3f8efe7005b7d14fafc3bd9daa375f8dfe7f3deb6f2b6507d7d9a"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/README.md",
+      "bytes": 3337,
+      "sha256": "6c61f02d55be5be8e3406ebcea128260dd930e8a8e8caef3abeb483c3def6d7f"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/RUN_LOG.txt",
+      "bytes": 4152,
+      "sha256": "4960071b7f720e8ad6ac897e394a52fa858f606319becd489e9d9f2ab4ab3bab"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/bindings.json",
+      "bytes": 83835,
+      "sha256": "ec8a9723863c8f801ccbed62dee020cd554249ee521d813cfb6dcde50da239ab"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/DEIM/seed0/CAPTURE_SUMMARY.json",
+      "bytes": 762,
+      "sha256": "4acb5bb5e4046ecb3c879a5b9cdfcc8ec74997210af8b9cb9e822749e17f301d"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/DEIM/seed0/full_query_boxes.npz",
+      "bytes": 2350833,
+      "sha256": "03a9066c5c0e6539c754fae315ceb4b3a753de14679a4a465c7af6c37a240dde"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/DEIM/seed1/CAPTURE_SUMMARY.json",
+      "bytes": 762,
+      "sha256": "af9694cda1196e2abbb9b1ef805331973bc4612963a9c80b81e7afee6479f654"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/DEIM/seed1/full_query_boxes.npz",
+      "bytes": 2345112,
+      "sha256": "037260a52d9c8083a08cb3a049aef6c703459f031d050d0809b5d266f3728b6f"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/DEIM/seed2/CAPTURE_SUMMARY.json",
+      "bytes": 762,
+      "sha256": "1781ab102b4a9e8d8fc1fc735ab09370fa935c45b9fb816f4e898e554b3b4d94"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/DEIM/seed2/full_query_boxes.npz",
+      "bytes": 2342522,
+      "sha256": "07c6eab33364de73bd434078e45c1a7fcb62955afb7f5fde1445a073a70d5025"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/GCCS/seed0/CAPTURE_SUMMARY.json",
+      "bytes": 1010,
+      "sha256": "4540fc8566c4fcedd48ac76f4ae28fc096b48c53fc99b2dca42acea2f3bb61f4"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/GCCS/seed0/full_query_boxes.npz",
+      "bytes": 2354068,
+      "sha256": "133a38cf365a247c37b35618433bd7251f207076ec99e4db4b6bc4970c9c3688"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/GCCS/seed1/CAPTURE_SUMMARY.json",
+      "bytes": 1010,
+      "sha256": "952b4c1c087139a4bf0f75db09dd263ab5ed23d8965b4b9c9b14b684aed5cfc9"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/GCCS/seed1/full_query_boxes.npz",
+      "bytes": 2345520,
+      "sha256": "f2a7ccbdfb82b0d13dbb341b4f2567abbb1d38ddedc1be2ced35da9011391605"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/GCCS/seed2/CAPTURE_SUMMARY.json",
+      "bytes": 1010,
+      "sha256": "c0316e04f6b84728b7e9d02f483472715f85cbbde61a679cf79ae4085c0dd106"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/captures/GCCS/seed2/full_query_boxes.npz",
+      "bytes": 2345803,
+      "sha256": "c34bd2b2280ce02d98d31c88bea07947301e571f6e0406ccd8e51bff04f5035f"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/MATERIALIZED_CONFIGS.json",
+      "bytes": 8724,
+      "sha256": "58a6a5747c33dab47e108f996e771a51c91945176a6118bfa0a9d45620452346"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_b0_test.yml",
+      "bytes": 597,
+      "sha256": "58a7a5dea628f06f9e1590fdcd5502dec116a682accd51f6e298eeb0947198ed"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_b0_train.yml",
+      "bytes": 351,
+      "sha256": "c0ed325a112c237e88bb49962440e7cbb63d5bf24448f34a8d83644221b5b8d5"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_capture_train.yml",
+      "bytes": 382,
+      "sha256": "dfdb4ef3d1a6f87258e7df958514fb2d9e90a6bd53ddb4fbc58d61c784068b45"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_capture_val.yml",
+      "bytes": 378,
+      "sha256": "45c6cb81fcbcf1cf61404c05822da122fbb68010ceabd99d11904e8019345b97"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_common_train.yml",
+      "bytes": 1269,
+      "sha256": "0ddb8bbd4eeae35f31fb0da5ddd99c0c9282e30555b11d06cc6b0884d772cf6c"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_final_test.yml",
+      "bytes": 508,
+      "sha256": "f4fd021490a8f4edfc3bf49dc2c63894bcc8b9f33ca86bac182eb6dde62b6968"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_native_test.yml",
+      "bytes": 642,
+      "sha256": "f16b76a476cc8b3d71cec9854adc7409eddd6875dfff92f2805c66769f78863b"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_qccr_test.yml",
+      "bytes": 469,
+      "sha256": "0700082dbaa4cc85cbf41355c84652f07acecc3ca1ac4ef6b18c8287024e3b2a"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/configs/cdw_train.yml",
+      "bytes": 891,
+      "sha256": "a8b02641ea9ef8220b3e05e1b79b25966b80684abaf2b11d623f2d3fa10166b4"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/oracle_geometry.py",
+      "bytes": 2509,
+      "sha256": "68aee10622374a997b9e6c0dc2af794dcd2ddf56e2fd2174c4b83757bc0cf201"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/protocol.json",
+      "bytes": 1489,
+      "sha256": "7bc775b8f00acee571ced307567a6a0ae3ec7d936c4071dee66b41b4aac9966d"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/results/PER_GT_PAIRED.csv",
+      "bytes": 248141,
+      "sha256": "f5071a230acbfc8f7cc01d7409adc100650a8d030069976cb68c6d8c36f259ff"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/results/PER_SEED_METRICS.csv",
+      "bytes": 495,
+      "sha256": "c19c6138a91ddceaf369fac17c36940cab7c34f05a5e2ac6597fe309d4a86986"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/results/REPORT.md",
+      "bytes": 937,
+      "sha256": "4c354da483c751699677844b65c78c9395fc03ae97cace19d0ca562fa6cb138a"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/results/SUMMARY.json",
+      "bytes": 5984,
+      "sha256": "7e53ee9d237b2812f80e685364a9f6bd9babb6b8dfb5d5ee3ca140ebe9fa97f3"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/results/THREE_SEED_SUMMARY.csv",
+      "bytes": 532,
+      "sha256": "a3cda25337d5c843c34e72dbf9e2dbf8e3462ca1836db0879f3d64494b0d6e00"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/run_analysis.py",
+      "bytes": 28488,
+      "sha256": "30c6e2f4e7f92334737579c21a08b41c0a73f81d0c7923f7e1c0256c58091a53"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/tests/test_geometry.py",
+      "bytes": 2320,
+      "sha256": "14e7fe8cbc91f2a2dc17f15a7d6d0ac508ff22ec8b76baaeffa1e6467432098b"
+    },
+    {
+      "path": "evidence/ap_iou_curve/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/tests/test_replay_inputs.py",
+      "bytes": 5824,
+      "sha256": "b0d55cfed1c84d2064da9a5e6126fb0607146e0f52a2dfb8189faa23fc940f72"
+    },
+    {
+      "path": "evidence/gccs_assignment_evidence/GCCS_MECHANISM_CAPTURE.json",
+      "bytes": 29524,
+      "sha256": "71f8e7f69545a4c826b33bd14f269b559dac769e8f0f6eee393a3c3b18143ba3"
+    },
+    {
+      "path": "evidence/gccs_assignment_evidence/original_protocol.json",
+      "bytes": 3260,
+      "sha256": "09901e33c3abbf093a57157332ad1f2455b70cdefdecd0151f5259417080075b"
+    },
+    {
+      "path": "evidence/introduction_comparison/INTRO_FIGURE_EVIDENCE.json",
+      "bytes": 3178,
+      "sha256": "93e5d769419deb62d3d572558d04fdc0f4b404644391bef4e67c7c4700a42fb9"
+    },
+    {
+      "path": "evidence/introduction_comparison/original_protocol.json",
+      "bytes": 1737,
+      "sha256": "35b072db9587d71c1cfa7683a7b9d42d3f4ccb98167b0cbedccf1c1d665f7df9"
+    },
+    {
+      "path": "evidence/parameter_sensitivity/LCCT_DELTA_FIVE_POINT_VAL.csv",
+      "bytes": 1291,
+      "sha256": "e88b4efe719aa045adac6278125eb768b86d5173558855fcd11865792deedce4"
+    },
+    {
+      "path": "evidence/parameter_sensitivity/PARAMETER_SENSITIVITY_FIGURE.json",
+      "bytes": 10337,
+      "sha256": "9f723d869282eb7e18505e8c76b31cc11bdbb31e0558c92e4bbf714816ff53c5"
+    },
+    {
+      "path": "evidence/parameter_sensitivity/QCCR_LAMBDA_OOF_VAL.csv",
+      "bytes": 2407,
+      "sha256": "4341d411e68d9c6dfbe09fb2310dd23933cd5f501637e9173b98eea9fdc0b197"
+    },
+    {
+      "path": "evidence/parameter_sensitivity/UMR_TAU_BETA_MEAN.csv",
+      "bytes": 11730,
+      "sha256": "67393253b3a2e8c2a6b3832a3e2a2491c0de99b3491bd6ccf00c3274cc0657f7"
+    },
+    {
+      "path": "evidence/qualitative_cases/CASE_METADATA.csv",
+      "bytes": 238,
+      "sha256": "375dde4e83038674deca469205e8b7c752bae9ad29299e7fd4ae5b029f63e390"
+    },
+    {
+      "path": "evidence/qualitative_cases/QUALITATIVE_CASE_EVIDENCE.json",
+      "bytes": 593996,
+      "sha256": "ec94386e0589a18ca5c275a3b849ee0d021101e9d4f358b2a3c0261abb9032dc"
+    },
+    {
+      "path": "evidence/qualitative_cases/original_protocol.json",
+      "bytes": 4396,
+      "sha256": "012b8d99d7714a030e525c490dd5aa4325cf47931e7604b7b4e46e68f9157eb0"
+    }
+  ]
+}

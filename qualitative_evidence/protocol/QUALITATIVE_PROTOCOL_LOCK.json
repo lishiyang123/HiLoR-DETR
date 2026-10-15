@@ -1,0 +1,65 @@
+{
+  "format_version": 1,
+  "status": "FROZEN_BEFORE_PREDICTION",
+  "dataset": "CDW1630 official Test",
+  "detector_seed": 0,
+  "methods": [
+    "B0",
+    "Ours"
+  ],
+  "display": {
+    "score_threshold": 0.3,
+    "maximum_detections_per_image": 50,
+    "show_confidence": true,
+    "class_color_policy": "fixed color-blind-safe color per COCO category"
+  },
+  "paired_image_analysis": {
+    "score_threshold": 0.3,
+    "maximum_detections_per_image": 100,
+    "matching": "class-aware greedy matching in descending prediction-score order",
+    "iou_thresholds": [
+      0.5,
+      0.75
+    ],
+    "primary_ranking": "Ours minus B0 image-level F1 at IoU 0.75",
+    "secondary_ranking": "Ours minus B0 image-level F1 at IoU 0.50",
+    "final_tie_break": "ascending integer image_id"
+  },
+  "representative_selection": {
+    "prediction_blind": true,
+    "count": 6,
+    "rule": "six annotation-only medoids nearest fixed density-rank x overlap-rank targets",
+    "density_rank_targets": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "overlap_rank_targets": [
+      0.25,
+      0.75
+    ],
+    "distance": "squared Euclidean distance in empirical percentile-rank space",
+    "without_replacement": true,
+    "tie_break": "ascending integer image_id"
+  },
+  "improvement_selection": {
+    "count": 4,
+    "rule": "highest paired F1 deltas under the frozen ranking",
+    "exclude_representative_images": true
+  },
+  "failure_selection": {
+    "count": 4,
+    "rule": "lowest paired F1 deltas under the frozen ranking",
+    "exclude_representative_and_improvement_images": true,
+    "honest_fallback": "if fewer than four negative deltas exist, retain the lowest residual cases and label their signed deltas"
+  },
+  "reporting_policy": {
+    "test_accessed": true,
+    "test_used_for_parameter_or_model_selection": false,
+    "detector_retraining": false,
+    "qccr_refitting": false,
+    "umr_refitting": false,
+    "purpose": "post-hoc qualitative reporting and disclosed error analysis only",
+    "all_candidate_ranks_retained": true
+  }
+}

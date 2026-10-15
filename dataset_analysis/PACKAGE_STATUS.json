@@ -1,0 +1,7 @@
+{
+  "analysis_profile": "CONSERVATIVE_CORE_ONLY",
+  "claimed_results": 1,
+  "gpu_used": false,
+  "status": "COMPLETE__VERIFIED",
+  "test_used_for_model_or_parameter_selection": false
+}

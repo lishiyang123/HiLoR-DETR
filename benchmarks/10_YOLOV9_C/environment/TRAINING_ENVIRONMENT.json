@@ -1,0 +1,8 @@
+{
+  "cuda": "12.4",
+  "cuda_available": true,
+  "device": "NVIDIA GeForce RTX 4090",
+  "python": "3.11.9",
+  "torch": "2.5.1+cu124",
+  "torchvision": "0.20.1+cu124"
+}

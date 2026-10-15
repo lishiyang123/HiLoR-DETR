@@ -1,0 +1,77 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 868,
+      "sha256": "326415c8e0e701b6c1aca087de8fb7661bb65b710da5fbc5542bd14a151986bc"
+    },
+    {
+      "path": "environment/PREPARE_ENVIRONMENT.json",
+      "bytes": 177,
+      "sha256": "336027673b983d0e9e29c6cf1f29239286bb2e0d6258a4f9852a451c52984cca"
+    },
+    {
+      "path": "inputs/B0_seed0_predictions.json",
+      "bytes": 16240328,
+      "sha256": "1f59ce2df59df8c7ed48d5e281422076a72179660ac93f0109759119694254bb"
+    },
+    {
+      "path": "inputs/Ours_seed0_predictions.json",
+      "bytes": 16237714,
+      "sha256": "87b450625eac56dd5b0e6f4a3d24f242c7410aec82358d6d87f06c53e7dc8e5d"
+    },
+    {
+      "path": "inputs/instances_test2017.json",
+      "bytes": 174707,
+      "sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05"
+    },
+    {
+      "path": "manifests/INPUT_BINDINGS.json",
+      "bytes": 2971,
+      "sha256": "fcf387f4dbf15899c6aeb8195c0f8511b0cf6c2c5df4754970e38a8e923a897a"
+    },
+    {
+      "path": "protocol/BOOTSTRAP_PROTOCOL.md",
+      "bytes": 1261,
+      "sha256": "c36841cf8f0d8845885445ee9781400f9fe6950e5eea191ef8806cda6abe6bc9"
+    },
+    {
+      "path": "protocol/BOOTSTRAP_PROTOCOL_LOCK.json",
+      "bytes": 1868,
+      "sha256": "b118a95b4bed191afb66e3cb3d79a181d9b979a600749dc554612efa3d60d8f1"
+    },
+    {
+      "path": "results/BOOTSTRAP_REPLICATES.csv",
+      "bytes": 412130,
+      "sha256": "a2f77a148605e59889947b17a1fa676c0d584a7b070cf4691b861947dbca509a"
+    },
+    {
+      "path": "results/BOOTSTRAP_SUMMARY.csv",
+      "bytes": 877,
+      "sha256": "6ec8474e39dd707a1f9217ed825c3beb7b9caded3705b139a985f32a01ebc118"
+    },
+    {
+      "path": "results/BOOTSTRAP_SUMMARY.json",
+      "bytes": 2685,
+      "sha256": "c27d41effaff69598da887c83e9b3ba24960f687314b7429b994f5a93bd6b09a"
+    },
+    {
+      "path": "results/INTERPRETATION.md",
+      "bytes": 676,
+      "sha256": "8d557f0a10691b83430101adcab033584ce8d25a05591d88847b3f8e1d0f3047"
+    },
+    {
+      "path": "results/THREE_SEED_CONTEXT.json",
+      "bytes": 2996,
+      "sha256": "31f1be3d801df222b5cc88d1197f92d8fdfd701b4098aba67567be910c570f15"
+    },
+    {
+      "path": "scripts/bootstrap_analysis.py",
+      "bytes": 34199,
+      "sha256": "5e0a1a03e51f93cd0b66671dc7a7a4ab8ac6e9b6c30c2b62771cd4d743677f4a"
+    }
+  ],
+  "format_version": 1,
+  "package": "bootstrap"
+}

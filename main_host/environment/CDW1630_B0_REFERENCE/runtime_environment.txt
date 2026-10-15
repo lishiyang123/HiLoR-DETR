@@ -1,0 +1,14 @@
+===== Python =====
+Python 3.11.9
+
+===== PyTorch =====
+torch       : 2.5.1+cu124
+torchvision : 0.20.1+cu124
+cuda        : 12.4
+cudnn       : 90100
+
+===== GPU =====
+NVIDIA GeForce RTX 4090, 560.35.03
+
+===== Conda environment =====
+/root/autodl-tmp/envs/deim_cvpr2025

@@ -1,0 +1,55 @@
+{
+  "schema": "cdw1630.paper-numerical-evidence.v1",
+  "state": "NUMERICAL_EVIDENCE_ONLY",
+  "graphics_generated": false,
+  "new_training_or_inference": false,
+  "figure_mappings": [
+    {
+      "user_image": 1,
+      "description": "Three-panel sensitivity: delta, mapping lambda, tau x beta",
+      "files": [
+        "evidence/parameter_sensitivity/LCCT_DELTA_FIVE_POINT_VAL.csv",
+        "evidence/parameter_sensitivity/QCCR_LAMBDA_OOF_VAL.csv",
+        "evidence/parameter_sensitivity/UMR_TAU_BETA_MEAN.csv",
+        "evidence/parameter_sensitivity/PARAMETER_SENSITIVITY_FIGURE.json"
+      ]
+    },
+    {
+      "user_image": 2,
+      "description": "Three qualitative cases: images 107, 160, 158; boxes, scores, ranks, IoUs",
+      "files": [
+        "evidence/qualitative_cases/QUALITATIVE_CASE_EVIDENCE.json",
+        "evidence/qualitative_cases/CASE_METADATA.csv"
+      ]
+    },
+    {
+      "user_image": 3,
+      "description": "AP-versus-IoU, per-seed values, means and paired sample SD",
+      "files": [
+        "evidence/ap_iou_curve/CDW_AP_IOU_THREE_SEED.csv",
+        "evidence/ap_iou_curve/CDW_AP_IOU_THREE_SEED.json"
+      ]
+    },
+    {
+      "user_image": 4,
+      "description": "Five-point localization-gain threshold curve; shares image-1 panel-a source",
+      "files": [
+        "evidence/parameter_sensitivity/LCCT_DELTA_FIVE_POINT_VAL.csv"
+      ]
+    },
+    {
+      "user_image": 5,
+      "description": "Test image 34, R1/R2 paired GT and prediction coordinates, scores and IoUs",
+      "files": [
+        "evidence/introduction_comparison/INTRO_FIGURE_EVIDENCE.json"
+      ]
+    }
+  ],
+  "additional_preserved_evidence": [
+    "GCCS query/token assignment capture",
+    "six-seed-pair oracle geometry captures/results"
+  ],
+  "shared_raw_images": "../main_host/datasets/CDW1630/test2017",
+  "shared_formal_predictions": "../qualitative_evidence/predictions",
+  "number_policy": "retain unrounded source values; figure display rounding is not authoritative"
+}

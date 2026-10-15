@@ -1,0 +1,20 @@
+{
+  "center_reused": 0.02,
+  "detached_start_supported": true,
+  "epochs": 102,
+  "grid": [
+    0.005,
+    0.01,
+    0.02,
+    0.04,
+    0.08
+  ],
+  "new_run_order": [
+    0.01,
+    0.04,
+    0.005,
+    0.08
+  ],
+  "restart_policy": "retain complete runs; archive incomplete current value; restart it from pretrained",
+  "seed": 0
+}

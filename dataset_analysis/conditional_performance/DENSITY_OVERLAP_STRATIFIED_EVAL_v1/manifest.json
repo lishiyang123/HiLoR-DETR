@@ -1,0 +1,132 @@
+{
+  "algorithm": "sha256",
+  "files": [
+    {
+      "bytes": 1574,
+      "path": "README.md",
+      "sha256": "5eb66a624d699fac86feea2acbdf9d32900cc77e23b2f35f6c7136d4456c7c44"
+    },
+    {
+      "bytes": 1588,
+      "path": "configs/CAPTURE_CONFIGS.json",
+      "sha256": "a6706ca6f2799c9bb5c53f3c82d22caa765c6cb562ce6d0c1290b3ba0cb4a8c7"
+    },
+    {
+      "bytes": 9975,
+      "path": "input_bindings.json",
+      "sha256": "45a8e618e7b5a18a4ab856ef6824d087573b61963c5f6ea595f52a51fef2c87a"
+    },
+    {
+      "bytes": 3085,
+      "path": "per_seed_results.csv",
+      "sha256": "76c61acdde3c6d802059408b7b61fb47c0dede5440ee5086fd72f459a2062364"
+    },
+    {
+      "bytes": 1174,
+      "path": "predictions/B0/seed0/PREDICTION_SUMMARY.json",
+      "sha256": "119beb9f8c9b09a5c7f0e76104e8d737dd268353d6343855fdba1fed3b1ed42f"
+    },
+    {
+      "bytes": 16239645,
+      "path": "predictions/B0/seed0/predictions.json",
+      "sha256": "6a5e75cf902c95ba77bcc9cff17b2457ec1dea4bdfb13df9be04d5b64c27047e"
+    },
+    {
+      "bytes": 1191,
+      "path": "predictions/B0/seed1/PREDICTION_SUMMARY.json",
+      "sha256": "ea1b280d6935615eaad5c1586677984a53e4d6f8a9d22e734d49a426350f7a27"
+    },
+    {
+      "bytes": 16250223,
+      "path": "predictions/B0/seed1/predictions.json",
+      "sha256": "0a37faa0cb9dc91bd6ef82193345e8b90d175a6bdadad2107c31eef941f4e96f"
+    },
+    {
+      "bytes": 1175,
+      "path": "predictions/B0/seed2/PREDICTION_SUMMARY.json",
+      "sha256": "b13174f31dccad84d48377fc51878a8e0765ca93773c116a07a0301e2be3b122"
+    },
+    {
+      "bytes": 16233113,
+      "path": "predictions/B0/seed2/predictions.json",
+      "sha256": "bb9620bb0f5e4eb8d306c02a6f56d95b18d5faf99e51950b59963fef3cd74ea8"
+    },
+    {
+      "bytes": 1186,
+      "path": "predictions/Full/seed0/PREDICTION_SUMMARY.json",
+      "sha256": "38d4e0dcfb65557ebd075208f077b84e8d43274c44ccc0c5a953b45b657e011c"
+    },
+    {
+      "bytes": 16237032,
+      "path": "predictions/Full/seed0/predictions.json",
+      "sha256": "be1ef240c5c38e18cc94976054263716015caf3785340964d1e00bed9ec5f28d"
+    },
+    {
+      "bytes": 1171,
+      "path": "predictions/Full/seed1/PREDICTION_SUMMARY.json",
+      "sha256": "00e11d160c389369bff3a1eacde682595912ab13906a51fab79487c3d242ba82"
+    },
+    {
+      "bytes": 16233897,
+      "path": "predictions/Full/seed1/predictions.json",
+      "sha256": "1a07c42b53bc9b038f3a122f6e42f034b5ba5b99bb81e07295f0253361373aaf"
+    },
+    {
+      "bytes": 1188,
+      "path": "predictions/Full/seed2/PREDICTION_SUMMARY.json",
+      "sha256": "fccdbaae6131c65938d9c9e38f695f7ae71c07dd702ac6eeef9e82c7d5fd7db1"
+    },
+    {
+      "bytes": 16239519,
+      "path": "predictions/Full/seed2/predictions.json",
+      "sha256": "c39338f8de70eb7a7f6b24af97a39a8ce96d956c13ce84f63200c303a3c18e69"
+    },
+    {
+      "bytes": 2315,
+      "path": "protocol.json",
+      "sha256": "af4ec9d64846addc841bebc877a668b89cd835a66b3c60c88a3a3fa1b940e657"
+    },
+    {
+      "bytes": 11736,
+      "path": "results.json",
+      "sha256": "f7976679db4d5b371f353d3e10854804645d32b67bbe5048cd2668842c3afd52"
+    },
+    {
+      "bytes": 15081,
+      "path": "scripts/analysis.py",
+      "sha256": "006bd9fc10a6d487fa90f704898ffac0897d42046efda39a9eb67b2e5bc09812"
+    },
+    {
+      "bytes": 8639,
+      "path": "scripts/capture.py",
+      "sha256": "944180b1a44ee14e544b3bf55de3453e1ec8073fbc55f02a98a364293628bd05"
+    },
+    {
+      "bytes": 4909,
+      "path": "scripts/common.py",
+      "sha256": "9f300876bf4ed29623a210d9e766c77825f216dc116fb878520db8dae6526ae1"
+    },
+    {
+      "bytes": 5679,
+      "path": "scripts/verify_child.py",
+      "sha256": "64ec15f77f2e6c8ce7cf0f3137066231c1e029532772c81158e63b784f9b5b32"
+    },
+    {
+      "bytes": 2372,
+      "path": "summary_table.csv",
+      "sha256": "3754d44d0f3f86661660785911a3d629a43dc0fd12842cb44abfe5abbbe51df1"
+    },
+    {
+      "bytes": 25747,
+      "path": "test_image_groups.json",
+      "sha256": "027a21b96ecac83193d5a2e42c61dfe3ca65a88f72bf079d1221e95c03b1e554"
+    },
+    {
+      "bytes": 558,
+      "path": "train_thresholds.json",
+      "sha256": "25e8bfa8a0972f6194d357d62a9425d7729353daa2114e205df951ddf81ba5b2"
+    }
+  ],
+  "format_version": 1,
+  "package": "DENSITY_OVERLAP_STRATIFIED_EVAL_v1"
+}

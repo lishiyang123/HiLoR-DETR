@@ -1,0 +1,24 @@
+__include__: [./btc_common_train.yml]
+
+DFINETransformer:
+  ufd_enabled: True
+
+DEIMCriterion:
+  ufd_enabled: True
+  ufd_cdf_path: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/generalization/btc/analysis/UFD/difficulty_cdf_train640.json"
+  ufd_total_epochs: 102
+  ufd_k: 9
+  ufd_base_size: 640.0
+  ufd_alpha_h: 0.5
+  ufd_alpha_u_max: 0.5
+  ufd_lambda_max: 0.75
+  ufd_lambda_ramp_fraction: 0.05
+  ufd_uncertainty_delay_fraction: 0.05
+  ufd_uncertainty_ramp_fraction: 0.05
+  lcct_enabled: True
+  lcct_warmup_epoch: 20
+  lcct_delta: 0.02
+  lcct_continuous_handover: True
+  lcct_transition_width: 0.02
+  lcct_ramp_epochs: 5
+  gglh_enabled: False

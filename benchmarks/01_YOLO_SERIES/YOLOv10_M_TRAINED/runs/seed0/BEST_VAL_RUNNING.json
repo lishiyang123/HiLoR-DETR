@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/benchmarks/01_YOLO_SERIES/YOLOv10_M_TRAINED/runs/seed0/weights/best_val_ap.pt",
+  "checkpoint_sha256": "b0a515c1f4ee5f3a0ab6672c7cc2debcb56d5541a1c34b46852ba7fa3fb20528",
+  "epoch_one_based": 98,
+  "epoch_zero_based": 97,
+  "metric_key": "metrics/mAP50-95(B)",
+  "tie_rule": "earliest epoch retained on an exact AP tie",
+  "val_ap": 0.74201
+}

@@ -1,0 +1,122 @@
+{
+  "dataset": "CDW1630",
+  "detector_seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 102,
+  "format_version": 2,
+  "metadata_rebuilt_without_experiment_rerun": true,
+  "method": "UFD-LCCT bounded continuous handover + QCCR + corrected MLP UMR",
+  "precision": "FP32",
+  "qccr": {
+    "diagnostic_guard_outcome": "NO_CANDIDATE_FULLY_QUALIFIED",
+    "fit": "checkpoint-specific Val coefficients",
+    "lambda_reg": 0.001,
+    "legacy_decision_token_scope": "OOF_VAL_GO is a legacy activation token for applying the predeclared fixed protocol; it does not mean that the selected candidate passed all diagnostic guards",
+    "selected_candidate_qualified": false,
+    "selection_basis": "predeclared fixed lambda_reg=0.001; current-seed OOF guards are diagnostic and were not used for reselection"
+  },
+  "records": {
+    "0": {
+      "calibration_binding_sha256": "4916b45e04cde722e3588f463fdad07fe906f2dc03d62d73eeb9ca502466f04f",
+      "checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+      "final_eval_sha256": "49276c79f4d4323ae596a69013bb3484586130b5969c701356e3b53e2218a3a6",
+      "final_metrics": {
+        "AP": 0.7892299933598063,
+        "AP50": 0.9791925378502002,
+        "AP75": 0.9101325167302943,
+        "AP80": 0.839890128870367,
+        "AP85": 0.7238225287822166,
+        "AP90": 0.4796454494525541,
+        "AP95": 0.11502593142438312,
+        "APl": 0.8315460209208989,
+        "APm": 0.7036358403647457,
+        "APs": 0.6071428571428571,
+        "AR1": 0.4190062532779982,
+        "AR10": 0.8528023532741524,
+        "AR100": 0.8736837943489134,
+        "ARl": 0.9058073066147528,
+        "ARm": 0.8148354076186972,
+        "ARs": 0.7
+      },
+      "final_stage_report": "training_records/CDW1630/Ours/seed0/calibration_evidence/FINAL_STAGE_REPORT.json",
+      "final_stage_report_sha256": "8873b37c162654e3bd0db115df81adba28df3c6c19102a3769b4f2c5fabc7087",
+      "frozen_inference": "training_records/CDW1630/Ours/seed0/calibration_evidence/FROZEN_INFERENCE.json",
+      "frozen_inference_sha256": "8a5c2d7292b67319f030e022151981df14980c0ab7546beaabc2c167afcd18b3",
+      "qccr_sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8",
+      "umr_metadata_sha256": "a2913b15e778642187620241f23ce6d2ffd749a6a5718b2a7017329310ca5f4f",
+      "umr_weight_sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82"
+    },
+    "1": {
+      "calibration_binding_sha256": "ccdde8e2c64c6f0f4859cb9472a26415ff1612949a8b181f480d073d67ac890e",
+      "checkpoint_sha256": "8d0a7bb59576e045536a57777e7f1f45fbfc9ffe121c35d7ae45e6a0e2ad16af",
+      "final_eval_sha256": "9fff69def845221ef975981616fdaf428ddd9672163d8c3502b300f896c682a8",
+      "final_metrics": {
+        "AP": 0.7826199157861682,
+        "AP50": 0.974655746444999,
+        "AP75": 0.9073011306780123,
+        "AP80": 0.8332846541437936,
+        "AP85": 0.718949714518358,
+        "AP90": 0.45914177184886834,
+        "AP95": 0.10063316161209922,
+        "APl": 0.8216718386249984,
+        "APm": 0.700598602197099,
+        "APs": 0.6,
+        "AR1": 0.41608398906597066,
+        "AR10": 0.8501593980674034,
+        "AR100": 0.8747821531641147,
+        "ARl": 0.9061529290811532,
+        "ARm": 0.8149895316525583,
+        "ARs": 0.6
+      },
+      "final_stage_report": "training_records/CDW1630/Ours/seed1/calibration_evidence/FINAL_STAGE_REPORT.json",
+      "final_stage_report_sha256": "d9b48e617c079e4e15d46d5c4d4fd1ce08769718704827c961ff8a5dfe5d5851",
+      "frozen_inference": "training_records/CDW1630/Ours/seed1/calibration_evidence/FROZEN_INFERENCE.json",
+      "frozen_inference_sha256": "e8fe1f379ed975aef48842622132669b0369465853dbe473f55a399d3cdf6e30",
+      "qccr_sha256": "a7a1a6f64b0042e8bca86a1eadf27b3b4243b2b24602828848130d7c75632c04",
+      "umr_metadata_sha256": "14e5c3a047281bc95cd43baf73c3b49de6dea4c258d98463c27c549a168fba9b",
+      "umr_weight_sha256": "b78f7e7b9f6d0ea10e04187f9c9c729863b6a3a85ddbfbb6cdbc51a9ae66cc31"
+    },
+    "2": {
+      "calibration_binding_sha256": "a3030258915dd4b7b5649ad36b70fa6641d520a342f929648b48ce2c46702313",
+      "checkpoint_sha256": "77a52249ce706decaf46da68fb347801bd2fc4f4624001c75fe37a3d78f1a146",
+      "final_eval_sha256": "af92c2033c1a8e3e80183e33890bdd86fe5189ec8baa1737c8b65a2c836c62d2",
+      "final_metrics": {
+        "AP": 0.7836549922129534,
+        "AP50": 0.9733884963654236,
+        "AP75": 0.9065772504574926,
+        "AP80": 0.8360511626728191,
+        "AP85": 0.7158655047234861,
+        "AP90": 0.4679050424839162,
+        "AP95": 0.10911319997880595,
+        "APl": 0.8256573674089004,
+        "APm": 0.6987567070975018,
+        "APs": 0.6142857142857143,
+        "AR1": 0.41712745050094696,
+        "AR10": 0.8490709278706783,
+        "AR100": 0.8740185658396372,
+        "ARl": 0.9082995074375743,
+        "ARm": 0.8115525478468899,
+        "ARs": 0.7
+      },
+      "final_stage_report": "training_records/CDW1630/Ours/seed2/calibration_evidence/FINAL_STAGE_REPORT.json",
+      "final_stage_report_sha256": "750481454b0cd0746854c2b66fd16626973d26f361fc4665adb43c808a7744af",
+      "frozen_inference": "training_records/CDW1630/Ours/seed2/calibration_evidence/FROZEN_INFERENCE.json",
+      "frozen_inference_sha256": "89980e0232f29f926955e5e40fdb49cdd31429e571649b656895ae000a26bb9d",
+      "qccr_sha256": "e81842881d31bb56c91abaa6d4ee68aba28b4ba096d417a0d0a42bef788b182f",
+      "umr_metadata_sha256": "40e1c407214e435e13375b6db6b1472fe9561265c33aed2fe22284ae2f662eec",
+      "umr_weight_sha256": "7d3f78d6731c5c154626839dc9502805486b09b635340e6345ba0d1cc32d98ff"
+    }
+  },
+  "test_used_for_parameter_selection": false,
+  "umr": {
+    "beta": 2.0,
+    "fit": "checkpoint-specific Train head",
+    "head_seed": 0,
+    "positive_weight": 4,
+    "tau": 0.0,
+    "topk": 300
+  }
+}

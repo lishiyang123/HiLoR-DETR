@@ -1,0 +1,9 @@
+__include__: [./cdw_b0_train.yml]
+output_dir: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/PAPER_FIGURES_REPRO_PACKAGE_v1/figures/F04_AP_IOU_TRADEOFF/ORACLE_GEOMETRIC_COVERAGE_REPRO_v1/unused_formal_outputs/B0/test"
+
+val_dataloader:
+  dataset:
+    img_folder: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/test2017"
+    ann_file: "/root/autodl-tmp/BTC_DEIM_project/RELEASE_RENAME_TRIAL_20261015/HiLoR-DETR/main_host/datasets/CDW1630/annotations/instances_test2017.json"
+  total_batch_size: 8
+  num_workers: 4

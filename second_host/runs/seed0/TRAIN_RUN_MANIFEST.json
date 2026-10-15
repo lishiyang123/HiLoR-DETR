@@ -1,0 +1,27 @@
+{
+  "seed": 0,
+  "method": "gccs",
+  "val_evaluator": {
+    "name": "faster-coco-eval",
+    "version": "1.7.2",
+    "iou_type": "bbox",
+    "max_dets": [
+      1,
+      10,
+      100
+    ]
+  },
+  "config": {
+    "path": "config.yml",
+    "sha256": "b3ce0abaad1b6ff17f708cd19cea5ffe7642ae233ad1ffe9f8e418ee7f8f21bc"
+  },
+  "coco_initialization": {
+    "path": "../../../benchmarks/02_RT_DETR_R18/source/rtdetr_r18vd_dec3_6x_coco_from_paddle.pth",
+    "sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0"
+  },
+  "bindings": {
+    "protocol_lock_sha256": "4694cb86acea3b55c4542a1dcf478fb9dab58e91c8c6923669ef794a27badc45",
+    "implementation_lock_sha256": "26aa8f9f078a4199d5f3c94765128c5ca96231e33d5c66e3eb80cb81e85f63be"
+  },
+  "record_scope": "completed training; run-local relative asset paths"
+}

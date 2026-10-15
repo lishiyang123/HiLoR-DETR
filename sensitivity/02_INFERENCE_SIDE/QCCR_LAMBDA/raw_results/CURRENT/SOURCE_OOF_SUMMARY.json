@@ -1,0 +1,247 @@
+{
+  "baseline_metrics": {
+    "AP": 0.783969434502589,
+    "AP50": 0.9722565423013227,
+    "AP75": 0.9005420998951679,
+    "AP80": 0.8319030165791684,
+    "AP85": 0.7109867457062499,
+    "AP90": 0.5007485667045464,
+    "AP95": 0.11062933196727459,
+    "APl": 0.8185599773438631,
+    "APm": 0.6986049686278117,
+    "APs": 0.4316831683168317,
+    "AR1": 0.4160859308833975,
+    "AR10": 0.8548378232317024,
+    "AR100": 0.8756820466389367,
+    "ARl": 0.8974039669704226,
+    "ARm": 0.8249292502863931,
+    "ARs": 0.4666666666666666
+  },
+  "baseline_replay_max_error": 0.0,
+  "candidate_decisions": {
+    "1e-01": {
+      "deltas_vs_pd": {
+        "AP": -5.4837918428418675e-06,
+        "AP50": -3.3081930626344125e-05,
+        "AP75": -7.995586171294367e-05,
+        "AP90": 0.00030021185701123443,
+        "AP95": 8.275339729194031e-05,
+        "APl": -2.4130446152348384e-06,
+        "APm": -7.87430207128681e-05,
+        "AR100": 0.0
+      },
+      "guards": {
+        "ap75_drop_no_more_than_0.05pp": true,
+        "ap90_drop_no_more_than_0.05pp": true,
+        "ap_gain_at_least_0.1pp": false,
+        "apm_not_lower": false,
+        "ar100_drop_no_more_than_0.1pp": true
+      },
+      "method": "QCCR_lambda_1e-01",
+      "metrics": {
+        "AP": 0.7839639507107462,
+        "AP50": 0.9722234603706964,
+        "AP75": 0.9004621440334549,
+        "AP80": 0.8318112966314215,
+        "AP85": 0.7108654473536308,
+        "AP90": 0.5010487785615576,
+        "AP95": 0.11071208536456653,
+        "APl": 0.8185575642992479,
+        "APm": 0.6985262256070989,
+        "APs": 0.4316831683168317,
+        "AR1": 0.4160859308833975,
+        "AR10": 0.8548378232317024,
+        "AR100": 0.8756820466389367,
+        "ARl": 0.8974039669704226,
+        "ARm": 0.8249292502863931,
+        "ARs": 0.4666666666666666
+      },
+      "qualified": false
+    },
+    "1e-02": {
+      "deltas_vs_pd": {
+        "AP": 0.00015864731932369036,
+        "AP50": 0.00022694162243630522,
+        "AP75": 0.00013900778053177465,
+        "AP90": 8.382057109301844e-05,
+        "AP95": 0.00017937032120400598,
+        "APl": -1.864822362496188e-05,
+        "APm": 0.0003513127275452943,
+        "AR100": 0.0
+      },
+      "guards": {
+        "ap75_drop_no_more_than_0.05pp": true,
+        "ap90_drop_no_more_than_0.05pp": true,
+        "ap_gain_at_least_0.1pp": false,
+        "apm_not_lower": true,
+        "ar100_drop_no_more_than_0.1pp": true
+      },
+      "method": "QCCR_lambda_1e-02",
+      "metrics": {
+        "AP": 0.7841280818219127,
+        "AP50": 0.972483483923759,
+        "AP75": 0.9006811076756996,
+        "AP80": 0.8319603918989678,
+        "AP85": 0.7107018876614836,
+        "AP90": 0.5008323872756394,
+        "AP95": 0.1108087022884786,
+        "APl": 0.8185413291202381,
+        "APm": 0.698956281355357,
+        "APs": 0.4316831683168317,
+        "AR1": 0.4160859308833975,
+        "AR10": 0.8548378232317024,
+        "AR100": 0.8756820466389367,
+        "ARl": 0.8974039669704226,
+        "ARm": 0.8249292502863931,
+        "ARs": 0.4666666666666666
+      },
+      "qualified": false
+    },
+    "1e-03": {
+      "deltas_vs_pd": {
+        "AP": 0.0009809834628037306,
+        "AP50": 0.0021090471148733636,
+        "AP75": 0.0013497403292583865,
+        "AP90": -0.0005624298869435496,
+        "AP95": -0.0012277914170592957,
+        "APl": 0.0004534266323956704,
+        "APm": 0.0021066201548796126,
+        "AR100": 0.0
+      },
+      "guards": {
+        "ap75_drop_no_more_than_0.05pp": true,
+        "ap90_drop_no_more_than_0.05pp": false,
+        "ap_gain_at_least_0.1pp": false,
+        "apm_not_lower": true,
+        "ar100_drop_no_more_than_0.1pp": true
+      },
+      "method": "QCCR_lambda_1e-03",
+      "metrics": {
+        "AP": 0.7849504179653928,
+        "AP50": 0.9743655894161961,
+        "AP75": 0.9018918402244263,
+        "AP80": 0.8327416180671902,
+        "AP85": 0.7110221794098186,
+        "AP90": 0.5001861368176028,
+        "AP95": 0.1094015405502153,
+        "APl": 0.8190134039762588,
+        "APm": 0.7007115887826914,
+        "APs": 0.4316831683168317,
+        "AR1": 0.4160859308833975,
+        "AR10": 0.8555323018263532,
+        "AR100": 0.8756820466389367,
+        "ARl": 0.8974039669704226,
+        "ARm": 0.8249292502863931,
+        "ARs": 0.4666666666666666
+      },
+      "qualified": false
+    },
+    "1e-04": {
+      "deltas_vs_pd": {
+        "AP": 0.0017198809335916554,
+        "AP50": 0.0046429626291445425,
+        "AP75": 0.0035596739939849353,
+        "AP90": -0.0038423177529803842,
+        "AP95": -0.0031702285203068226,
+        "APl": 0.0006963010775995482,
+        "APm": 0.005824965930667281,
+        "AR100": 0.0
+      },
+      "guards": {
+        "ap75_drop_no_more_than_0.05pp": true,
+        "ap90_drop_no_more_than_0.05pp": false,
+        "ap_gain_at_least_0.1pp": true,
+        "apm_not_lower": true,
+        "ar100_drop_no_more_than_0.1pp": true
+      },
+      "method": "QCCR_lambda_1e-04",
+      "metrics": {
+        "AP": 0.7856893154361807,
+        "AP50": 0.9768995049304673,
+        "AP75": 0.9041017738891528,
+        "AP80": 0.834017137223493,
+        "AP85": 0.7108498511771667,
+        "AP90": 0.496906248951566,
+        "AP95": 0.10745910344696777,
+        "APl": 0.8192562784214626,
+        "APm": 0.704429934558479,
+        "APs": 0.46534653465346537,
+        "AR1": 0.4160859308833975,
+        "AR10": 0.856272699642106,
+        "AR100": 0.8756820466389367,
+        "ARl": 0.8974039669704226,
+        "ARm": 0.8249292502863931,
+        "ARs": 0.4666666666666666
+      },
+      "qualified": false
+    }
+  },
+  "capture_status": "legacy runtime capture path removed from reviewer release metadata; recorded OOF metrics and fitted QCCR evidence are retained",
+  "decision": "OOF_VAL_GO",
+  "decision_scope": "fixed_protocol_activation",
+  "decision_semantics": "OOF_VAL_GO is a legacy activation token for applying the predeclared fixed protocol; it does not mean that the selected candidate passed all diagnostic guards",
+  "diagnostic_guard_outcome": "NO_CANDIDATE_FULLY_QUALIFIED",
+  "diagnostic_only_oof": {
+    "deltas_vs_pd": {
+      "AP": 0.0009809834628037306,
+      "AP50": 0.0021090471148733636,
+      "AP75": 0.0013497403292583865,
+      "AP90": -0.0005624298869435496,
+      "AP95": -0.0012277914170592957,
+      "APl": 0.0004534266323956704,
+      "APm": 0.0021066201548796126,
+      "AR100": 0.0
+    },
+    "guards": {
+      "ap75_drop_no_more_than_0.05pp": true,
+      "ap90_drop_no_more_than_0.05pp": false,
+      "ap_gain_at_least_0.1pp": false,
+      "apm_not_lower": true,
+      "ar100_drop_no_more_than_0.1pp": true
+    },
+    "method": "QCCR_lambda_1e-03",
+    "metrics": {
+      "AP": 0.7849504179653928,
+      "AP50": 0.9743655894161961,
+      "AP75": 0.9018918402244263,
+      "AP80": 0.8327416180671902,
+      "AP85": 0.7110221794098186,
+      "AP90": 0.5001861368176028,
+      "AP95": 0.1094015405502153,
+      "APl": 0.8190134039762588,
+      "APm": 0.7007115887826914,
+      "APs": 0.4316831683168317,
+      "AR1": 0.4160859308833975,
+      "AR10": 0.8555323018263532,
+      "AR100": 0.8756820466389367,
+      "ARl": 0.8974039669704226,
+      "ARm": 0.8249292502863931,
+      "ARs": 0.4666666666666666
+    },
+    "qualified": false
+  },
+  "evidence_paths": {
+    "annotation": "../main_host/datasets/CDW1630/annotations/instances_val2017.json",
+    "protocol_authority": "02_INFERENCE_SIDE/QCCR_LAMBDA/protocol/PROTOCOL_LOCK.json",
+    "qccr_fits": "02_INFERENCE_SIDE/QCCR_LAMBDA/raw_results/CURRENT/SOURCE_QCCR_FITS.json"
+  },
+  "format_version": 1,
+  "protocol": "image-level-five-fold-OOF-Val",
+  "selected_candidate_key": "1e-03",
+  "selected_candidate_qualified": false,
+  "selected_full_val_parameters": {
+    "beta0": 1.8673428661283082,
+    "beta_negative": 2.7299368154145243,
+    "beta_positive": 1.6131491345029758,
+    "duplicate_penalty": 0.6221647268153838
+  },
+  "selected_lambda_reg": 0.001,
+  "selection_basis": "predeclared fixed lambda_reg=0.001; current-seed OOF guards are diagnostic and were not used for reselection",
+  "selection_policy": {
+    "current_seed_reselection": false,
+    "current_test_used": false,
+    "name": "predeclared-fixed-hyperparameters",
+    "protocol_authority": "02_INFERENCE_SIDE/QCCR_LAMBDA/protocol/PROTOCOL_LOCK.json"
+  },
+  "test_used_for_policy_or_selection": false
+}
