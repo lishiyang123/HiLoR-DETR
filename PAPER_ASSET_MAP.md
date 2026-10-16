@@ -15,7 +15,8 @@ provenance records are evidence, not alternate manuscript result sources.
 | Paired bootstrap | `bootstrap/` | fixed seed0, paired image resampling, 5000 replicates |
 | BTC generalization | `generalization/btc/paper_tables/three_seed/` | separately retrained and fitted on BTC; not zero-shot transfer |
 | AP--IoU and sensitivity figures | `numerical_evidence/evidence/` | numerical sources, not graphical exports |
-| Qualitative gains and failure cases | `qualitative_evidence/` | disclosed post-hoc report analysis; no model selection |
+| F1 / F2 / F7 photographic examples | `numerical_evidence/NUMERICAL_EVIDENCE_INDEX.json` | BTC seed-0 post-hoc examples; F2 is a detection background, not assignment evidence |
+| CDW descriptive prediction study | `qualitative_evidence/` | retained 237-image analysis; not the current photographic examples |
 
 The manuscript-authoritative CDW main result files are
 `main_host/paper_tables/three_seed/CDW_FINAL_THREE_SEED_MEAN_STD.csv`

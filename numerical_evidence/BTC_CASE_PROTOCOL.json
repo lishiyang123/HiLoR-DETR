@@ -1,0 +1,92 @@
+{
+  "schema": "hilordetr.btc-figure-protocol.v1",
+  "dataset": "BTC",
+  "detector_seed": 0,
+  "inference": {
+    "device": "CPU",
+    "precision": "FP32",
+    "batch_size": 1,
+    "input_size": [
+      640,
+      640
+    ],
+    "weights": "released EMA",
+    "final_topk": 300,
+    "export_score_filter": null,
+    "new_qualitative_forward": true,
+    "aggregate_test_metrics_modified": false
+  },
+  "F1": [
+    {
+      "tag": "test2_50",
+      "annotation_id": 200000592,
+      "rule": "highest_iou_visible"
+    },
+    {
+      "tag": "test2_50",
+      "annotation_id": 200000593,
+      "rule": "highest_iou_visible"
+    }
+  ],
+  "F2": {
+    "tag": "test1_492",
+    "role": "illustrative_detection_background",
+    "display_threshold": 0.9,
+    "training_assignment_capture": false
+  },
+  "F7": [
+    {
+      "tag": "test1_474",
+      "annotation_id": 100001409,
+      "role": "ranking",
+      "rule": "highest_score_valid"
+    },
+    {
+      "tag": "test2_35",
+      "annotation_id": 200000412,
+      "role": "strict_iou_crossing",
+      "rule": "highest_iou_visible"
+    },
+    {
+      "tag": "test2_25",
+      "annotation_id": 200000291,
+      "role": "limitation",
+      "rule": "highest_iou_visible"
+    }
+  ],
+  "display": {
+    "F1_F7_score_threshold": 0.3,
+    "valid_iou": 0.75,
+    "rank": "1-based final global Top-300 score order",
+    "bbox": "COCO xywh in native 1920x1200 coordinates",
+    "highest_iou_visible": "highest-IoU same-class final candidate with score >= 0.30",
+    "highest_score_valid": "highest-score same-class candidate with IoU >= 0.75 and score >= 0.30",
+    "limitation_check": "maximum same-class IoU over all final Top-300, without score filtering"
+  },
+  "selection": {
+    "post_hoc": true,
+    "candidate_pool": {
+      "test1": [
+        "492.jpg",
+        "474.jpg",
+        "480.jpg"
+      ],
+      "test2": [
+        "43.jpg",
+        "1.jpg",
+        "25.jpg",
+        "17.jpg",
+        "35.jpg",
+        "50.jpg"
+      ]
+    },
+    "exhaustive_test_ranking": false,
+    "criteria": "native image resolution, target visibility and illustrative paired outcomes",
+    "used_for_model_checkpoint_or_hyperparameter_selection": false
+  },
+  "interpretation": [
+    "DEIM versus complete HiLoR-DETR, not isolated CCVR causality",
+    "Qualitative illustration, not prevalence or aggregate-performance evidence",
+    "F2 ordinary detections are not training query assignments; no empirical assignment IoUs or query IDs"
+  ]
+}

@@ -130,3 +130,13 @@ at the release root. It restores only the two cataloged original-provider
 files and verifies their bytes before installing them at the expected paths.
 The release verifier accepts these optional restored files only when their
 sizes and SHA-256 values match; they remain excluded from archive inventories.
+
+## v1.0.1 download assembly
+
+Use the v1.0.1 code and results archives together. Its `DOWNLOAD_MANIFEST.json`
+also lists unchanged weight/data/feature attachments at their exact v1.0.0 URLs;
+these bytes are shared, not alternative experiment results. Download each selected
+archive from its `download_url`, verify its SHA-256, and extract into the same
+clean directory. Do not overlay the old code/results archives. Source photos
+are in the unchanged optional BTC dataset files. Only qualitative figure evidence
+and navigation changed; detector/fitted weights and quantitative tables did not.

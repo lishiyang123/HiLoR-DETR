@@ -39,7 +39,7 @@ separate workflows; neither overwrites the supplied results.
 | Parameter sensitivity | `sensitivity/` |
 | Five-point localization-gain threshold study | `gate_sensitivity/` |
 | Source numbers for manuscript figures | `numerical_evidence/` |
-| Qualitative-case evidence | `qualitative_evidence/` |
+| CDW descriptive prediction study | `qualitative_evidence/` |
 | Bootstrap statistics | `bootstrap/` |
 | Dataset, per-class and density/overlap analyses | `dataset_analysis/` |
 | Controlled candidate-ranking comparison | `ranking_comparison/` |
@@ -49,6 +49,9 @@ The directory names are also used by configuration and asset references. Extract
 the selected downloads into one directory, preserving these relative paths.
 Generated publication graphics are not required; their numerical evidence is
 included. Use a case-sensitive Linux/WSL filesystem when extracting the release.
+
+Current photographic examples (F1, F2 and F7) use BTC seed 0; see
+`numerical_evidence/README.md` for the exact cases and numerical replay.
 
 ## Method source organization
 
@@ -97,7 +100,7 @@ the public-upload checklist in `DISTRIBUTION.md` before distributing assets.
 ## Code and asset availability
 
 Public source: [HiLoR-DETR](https://github.com/lishiyang123/HiLoR-DETR).
-Versioned downloads: [repository Releases](https://github.com/lishiyang123/HiLoR-DETR/releases).
+Current version: [v1.0.1](https://github.com/lishiyang123/HiLoR-DETR/releases/tag/v1.0.1).
 
 Code, formal results, model weights and optional data/features are separate
 downloads. `DOWNLOAD_MANIFEST.json` attached to each release maps archive parts

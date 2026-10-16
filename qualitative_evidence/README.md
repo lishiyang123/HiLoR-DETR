@@ -1,12 +1,11 @@
-# CDW1630 qualitative evidence package
+# CDW1630 descriptive prediction study
 
-This package retains the frozen seed-0 B0/Ours qualitative evidence used by the paper: the two prediction payloads, metric-replay records, complete 237-image paired ranking, selected reporting-case IDs, per-image metrics, source images, materialized configurations, and input bindings.
+This package retains the frozen seed-0 DEIM/HiLoR-DETR prediction payloads,
+metric replay, complete 237-image ranking and post-hoc reporting-case analysis
+for CDW1630. These analysis records do not specify the current photographic
+figure examples, which use BTC and are indexed by `../numerical_evidence/README.md`.
 
-Test data were used only for the disclosed post-hoc qualitative reporting analysis and were not used for model, checkpoint, training-parameter, inference-parameter, or evaluation-threshold selection.
-
-This package provides numerical and prediction evidence, not publication layouts.
-Use its selected-case records, source images and prediction payloads to inspect
-the examples. Unrounded figure data are indexed by
-`../numerical_evidence/README.md`.
-Publication graphics are prepared separately; no plotting package is required
-to reproduce the reported metrics.
+The retained CDW predictions and analysis remain available for offline inspection.
+Test cases were used for descriptive reporting, not model, checkpoint or
+hyperparameter selection. Publication artwork is prepared separately; no plotting
+package is needed to reproduce numerical results.

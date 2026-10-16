@@ -1,0 +1,115 @@
+{
+  "schema": "hilordetr.figure-inputs.v1",
+  "path_base": "release_root",
+  "files": [
+    {
+      "path": "generalization/btc/checkpoints/B0/seed0/best_stg1.pth",
+      "sha256": "a00ee7658ea57a23e28996bf2d56f33832dd920fca02c92afbcd5ac48042f797",
+      "role": "detector_checkpoint"
+    },
+    {
+      "path": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+      "sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+      "role": "detector_checkpoint"
+    },
+    {
+      "path": "generalization/btc/calibration/Ours/seed0/qccr_params.json",
+      "sha256": "0d9df9d37b0013aa08580f247b8fe45c078499e4c5b9b5929f037f3fbfae7cc5",
+      "role": "fitted_CCVR"
+    },
+    {
+      "path": "generalization/btc/calibration/Ours/seed0/umr_head_seed0.pt",
+      "sha256": "5fcfd822a60e5d21dfd2b5d8fe11d1fcd183df9be83d967fa111580b16f7b9c0",
+      "role": "fitted_CCVR"
+    },
+    {
+      "path": "generalization/btc/data/coco_deim/annotations/instances_test1.json",
+      "bytes": 395276,
+      "sha256": "049a6be5a8cb6222eb6d568bac3bd4b21523050a5ec3e63e0c21506c7e8c30bd",
+      "role": "annotations"
+    },
+    {
+      "path": "generalization/btc/data/coco_deim/annotations/instances_test2.json",
+      "bytes": 136305,
+      "sha256": "cd40a40b11b8276efd473069cec4b012a608269fc94fe18f5dbe4ea66a4fe06b",
+      "role": "annotations"
+    },
+    {
+      "path": "generalization/btc/data/coco_deim/test2/50.jpg",
+      "bytes": 205400,
+      "sha256": "eadd0909269c68cfa676ca2f6bc81623e838942c9365f36894b62e15f5b6f885",
+      "role": "source_image"
+    },
+    {
+      "path": "generalization/btc/data/coco_deim/test1/474.jpg",
+      "bytes": 213932,
+      "sha256": "11e3ab839b16c6b02b9e93a4e0d4da8fef4336635316d5c6fe4c023111f555d0",
+      "role": "source_image"
+    },
+    {
+      "path": "generalization/btc/data/coco_deim/test2/35.jpg",
+      "bytes": 198991,
+      "sha256": "406b62480730a3b112ea4fbe4c5f65e776155da413dae20b865ca196723b9fa8",
+      "role": "source_image"
+    },
+    {
+      "path": "generalization/btc/data/coco_deim/test2/25.jpg",
+      "bytes": 198739,
+      "sha256": "4aed43dd7aef21a9496168f23726a46135157ffd0f4d32a669ed9f2df6f1b327",
+      "role": "source_image"
+    },
+    {
+      "path": "generalization/btc/data/coco_deim/test1/492.jpg",
+      "bytes": 232567,
+      "sha256": "d485b0c304c65bfa6e3bbf9ec3b54090ae7961c9c794e649957a7b1e37e03b70",
+      "role": "source_image"
+    }
+  ],
+  "prediction_files": [
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test1_474_deim.json",
+      "bytes": 73404,
+      "sha256": "1ff2b53717e554fcee6395d34bd8c3d3d94f1923317f99cad37eadebaa33efa3"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test1_474_hilor.json",
+      "bytes": 73550,
+      "sha256": "6964b1bb66a3597f68b88ee192929fe3d7c6720bda5a5fc10d1b17d74d6e44e6"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test1_492_hilor.json",
+      "bytes": 73601,
+      "sha256": "690a632e9c5084bfb59be27d883471eb00d65102bab7f70535ad75db39ecc357"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test2_25_deim.json",
+      "bytes": 73188,
+      "sha256": "c40c53ae11ce1191c9179c0ba3fd9d228ef6d29793bbd9a4d71fa4a207dc071b"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test2_25_hilor.json",
+      "bytes": 73517,
+      "sha256": "45abf20d1884c2b9bee787f304755a27bbda887fea4d4fb4801a8453733f5d7c"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test2_35_deim.json",
+      "bytes": 73142,
+      "sha256": "4dbee7c94c582378e7aa5673374f82b9c5744b51181278bf59250942311f7273"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test2_35_hilor.json",
+      "bytes": 73375,
+      "sha256": "dd0737c671fd843b8a98468da8ccf77d249dce958292c1289f512e0e8ecbf1cf"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test2_50_deim.json",
+      "bytes": 73306,
+      "sha256": "701b0706a25c8fca6491cfb0e50ee8a06c46bf0fe00a46c08bd2efa78fd5933c"
+    },
+    {
+      "path": "numerical_evidence/evidence/btc_predictions/test2_50_hilor.json",
+      "bytes": 73518,
+      "sha256": "d5f3556d39a9c99970003beaa35bbd1fb5e72c63bf37f04b0803d93ac9e521ff"
+    }
+  ]
+}
