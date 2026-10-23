@@ -1,0 +1,6 @@
+{
+  "torch": "2.5.1+cu124",
+  "cuda": "12.4",
+  "ultralytics": "8.3.63",
+  "gpu": "NVIDIA GeForce RTX 4090"
+}

@@ -1,0 +1,32 @@
+{
+  "aggregate_val_gate": {
+    "decision": "VAL_GO_READY_FOR_FROZEN_TEST1_TEST2",
+    "mean_delta_pp": 0.4713253051943663,
+    "nonnegative_seed_count": 2,
+    "required_nonnegative_seed_count": 2,
+    "sample_std_delta_pp": 0.48111948760583134,
+    "test1_or_test2_accessed": false
+  },
+  "archived_qccr_sha256": "69e8ffdb15c0b49350cfccae396e6dafeec689810d57bc96d6c2406988430326",
+  "archived_umr_sha256": "1d1fd6e8b9f7220875a71b6fd599093c045562475215454e62f3d24c45235656",
+  "dataset": "BTC",
+  "deployed_head_val_ap": 0.7003046582322721,
+  "detector_checkpoint": "${RELEASE_ROOT}/generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+  "detector_checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+  "detector_seed": 2,
+  "qccr_artifact": "${AUTHOR_WORK}/qccr_params.json",
+  "qccr_artifact_sha256": "69e8ffdb15c0b49350cfccae396e6dafeec689810d57bc96d6c2406988430326",
+  "qccr_lambda": 0.001,
+  "selection": "locked CDW hyperparameters; checkpoint-specific BTC Train/Val fit",
+  "source_calibration_run": "${AUTHOR_WORK}/seed2_run_20260913_215922_393973",
+  "test_used_for_selection": false,
+  "umr": {
+    "beta": 2.0,
+    "head_seed": 0,
+    "pw": 4,
+    "tau": 0.0,
+    "topk": 300
+  },
+  "umr_weight": "${AUTHOR_WORK}/umr_seed0_pw4_best.pt",
+  "umr_weight_sha256": "1d1fd6e8b9f7220875a71b6fd599093c045562475215454e62f3d24c45235656"
+}

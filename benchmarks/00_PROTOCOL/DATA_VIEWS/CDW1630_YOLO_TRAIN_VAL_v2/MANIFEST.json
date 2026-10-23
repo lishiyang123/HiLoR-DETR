@@ -1,0 +1,25 @@
+{
+  "authoritative_data": "${RELEASE_ROOT}/main_host/datasets/CDW1630",
+  "categories": [
+    "Brick",
+    "Concrete",
+    "Plastic Bottle",
+    "Reinforcement",
+    "timber"
+  ],
+  "image_transport": "per-file hardlinks to authoritative Train/Val images",
+  "schema": "cdw1630-yolo-train-val-data-view-v2",
+  "splits": {
+    "train": {
+      "images": 1042,
+      "instances": 5336,
+      "labels": 1042
+    },
+    "val": {
+      "images": 237,
+      "instances": 958,
+      "labels": 237
+    }
+  },
+  "test_included": false
+}

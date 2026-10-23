@@ -1,0 +1,14 @@
+{
+  "method": "QCCR-v1",
+  "parameters": {
+    "beta0": 1.2707228308030494,
+    "beta_positive": 0.9722587562391333,
+    "beta_negative": 2.255442951481512,
+    "duplicate_penalty": 0.0
+  },
+  "selected_lambda_reg": 0.001,
+  "source_checkpoint_sha256": "dc734d8b6258ff50352af0195b5494b516528a1b3c9ffaad506407eb0a94ef14",
+  "source_capture_sha256": "fbf7ee2907fae1d51ad7af8661a80053415b4ed0695ae2dfa4e41b25b1a81d4e",
+  "selection_decision": "FIXED_PROTOCOL_READY",
+  "test_used_for_selection": false
+}

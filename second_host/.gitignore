@@ -1,0 +1,14 @@
+references/
+artifacts/
+runs/
+evaluations/
+outputs/
+configs/hilor/generated/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.pth
+*.pt
+*.onnx
+*.engine
+*.log

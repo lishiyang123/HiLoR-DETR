@@ -1,0 +1,83 @@
+{
+  "categories": [
+    "brick",
+    "concrete",
+    "tile"
+  ],
+  "combined_test_used_for_training_or_selection": false,
+  "coordinate_conversion": "x=xmin-1,y=ymin-1,w=xmax-xmin,h=ymax-ymin",
+  "dataset": "BTC/CDW Version 1",
+  "doi": "10.17632/24d45pf8wm.1",
+  "exact_duplicate_image_groups": 0,
+  "format_version": 2,
+  "ignored_empty_object_nodes": {
+    "testing_set_1": 807,
+    "testing_set_2": 13,
+    "training": 125
+  },
+  "ignored_empty_object_nodes_total": 945,
+  "license": "CC BY 4.0",
+  "model_selection_source": "internal 70-image validation subset only",
+  "raw_file_count": 1100,
+  "splits": {
+    "test1": {
+      "annotations": 1727,
+      "class_counts": {
+        "brick": 567,
+        "concrete": 595,
+        "tile": 565
+      },
+      "images": 150,
+      "max_instances": 16,
+      "source_split": "testing_set_1"
+    },
+    "test2": {
+      "annotations": 596,
+      "class_counts": {
+        "brick": 199,
+        "concrete": 200,
+        "tile": 197
+      },
+      "images": 50,
+      "max_instances": 13,
+      "source_split": "testing_set_2"
+    },
+    "test_combined": {
+      "annotations": 2323,
+      "class_counts": {
+        "brick": 766,
+        "concrete": 795,
+        "tile": 762
+      },
+      "images": 200,
+      "max_instances": 16,
+      "source_split": "testing_set_1 + testing_set_2"
+    },
+    "train": {
+      "annotations": 3390,
+      "class_counts": {
+        "brick": 1137,
+        "concrete": 1151,
+        "tile": 1102
+      },
+      "images": 280,
+      "max_instances": 20,
+      "source_split": "training"
+    },
+    "val": {
+      "annotations": 840,
+      "class_counts": {
+        "brick": 282,
+        "concrete": 285,
+        "tile": 273
+      },
+      "images": 70,
+      "max_instances": 16,
+      "source_split": "training"
+    }
+  },
+  "test1_used_for_training_or_selection": false,
+  "test2_used_for_training_or_selection": false,
+  "image_bytes_unchanged": true,
+  "voc_path_field": "image filename"
+}

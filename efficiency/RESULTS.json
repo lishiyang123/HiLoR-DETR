@@ -1,0 +1,46 @@
+{
+  "schema": "base-deployment-complexity-inputs-v1",
+  "status": "COMPLETE_BASE_COMPLEXITY_INPUTS",
+  "columns": [
+    "Model",
+    "Params_M",
+    "Detector_GFLOPs"
+  ],
+  "rows": [
+    {
+      "Model": "YOLOv8-L",
+      "Params_M": 43.610463,
+      "Detector_GFLOPs": 172.0080548
+    },
+    {
+      "Model": "YOLO11-L",
+      "Params_M": 25.283167,
+      "Detector_GFLOPs": 100.3285668
+    },
+    {
+      "Model": "D-FINE-M",
+      "Params_M": 19.190439,
+      "Detector_GFLOPs": 56.350360584
+    },
+    {
+      "Model": "YOLOv10-M",
+      "Params_M": 16.456174,
+      "Detector_GFLOPs": 69.8194632
+    },
+    {
+      "Model": "YOLOv12-M (turbo)",
+      "Params_M": 19.580383,
+      "Detector_GFLOPs": 65.54257
+    },
+    {
+      "Model": "YOLOv9-C",
+      "Params_M": 25.440927,
+      "Detector_GFLOPs": 111.976424464
+    },
+    {
+      "Model": "DEIM",
+      "Params_M": 19.190439,
+      "Detector_GFLOPs": 56.350360584
+    }
+  ]
+}

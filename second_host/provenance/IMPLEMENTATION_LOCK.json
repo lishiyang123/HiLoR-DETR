@@ -1,0 +1,44 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-implementation-lock-v1",
+  "host": "RT-DETR-R18",
+  "dataset": "CDW1630",
+  "runtime_environment": {
+    "faster_coco_eval": "1.7.2",
+    "numpy": "1.26.4",
+    "pillow": "10.4.0",
+    "pycocotools": "2.0.10",
+    "python": "3.11.9",
+    "pyyaml": "6.0.2",
+    "scipy": "1.13.1",
+    "torch": "2.0.1+cu118",
+    "torchvision": "0.15.2+cu118"
+  },
+  "fit_runtime_sources": {
+    "hilor_qccr.py": "8579a5c661f6267b2e0fa96e3f78965b3742cd2de2b9bfc1167c10a2e5e4147d",
+    "hilor_umr.py": "83c82f1be700d89fb1bc8672fb6d7df4c11a19fd0e45f8e8efd4aa6b6cc46a2f"
+  },
+  "formal_training_config": {
+    "path": "configs/hilor/cdw1630_rtdetr_r18_gccs.yml",
+    "sha256": "f69e0b470ef323e33cd53ce6ea490f5e14f2b23a2ad69a8a41d03d690b80a34d"
+  },
+  "provenance": {
+    "data_split_lock_sha256": "9ee73b8a104b4f0e61b9c512b0b2b535498498659e09c628da4debe74380b98a",
+    "ufd_cdf_sha256": "b856b9ad8271fd8a41f51ce88d11b643840575d4b99575703719552e0c31d682"
+  },
+  "tools": {
+    "tools/build_qccr_targets.py": "4968b07e7307381feabb9b3ef352540ecdf443b3845b924736aac0007e976202",
+    "tools/capture.py": "01731e0c445548ad3bdedc32dfcd3563e07791b683493bca05fad35989c8a4c2",
+    "tools/evaluate_qccr_oof_val.py": "d4bef5db1b5e9f684a03e1bfbb74c1eff97466507d5cc5b90024c4a2850173d9",
+    "tools/fit_common.py": "7b4c619e593c9873f875a4c323f501516a8bad06e9a8a1bc4b0245f85501173d",
+    "tools/fit_qccr.py": "b1aae202d3db67137080d42ef66e3758fd7a2c1693a014be713d0a7667d49e0e",
+    "tools/fixed_protocol_common.py": "c4f15878f3b2aa125cf2520270ce4da73363c2743605c9742b0c47926f1e9563",
+    "tools/freeze_inference_binding.py": "06dc2f1204e2b1651dbf38b69b51edc3c6f26494ccd75e1a524b543f87c934c6",
+    "tools/freeze_inference_binding_fixed.py": "4852f4160f6d01472993deef81fbcca9dc10ff34bd7ba314a498f72413a7aa1f",
+    "tools/freeze_qccr.py": "affb2a57a652645d7b46e9de422e8fe1e3426f82550d90bd0500dc953834d239",
+    "tools/freeze_qccr_fixed.py": "f9059bc871fe4aac1a2c30a4ae346f089f4ad41125c1e3beba797edfbee5b5c6",
+    "tools/render_inference_config.py": "0650e8395e15e2e182930141d37412bdc491c359497b795f20c750bd1ac866e6",
+    "tools/train_umr_fixed.py": "e0a7d66750d2173bf3ba1a80eb3a52d6eccf512aac31265170e601748c3fbd80",
+    "tools/train_umr_select_val.py": "396f03ec553f37fcfff991c2060afc9a2f0a7ed74d69cdaf67c54170dd811679",
+    "tools/training.py": "e78ad84e28ce14b48a6b85a18cbc411f4b34d42004f9f0400ff54d7dfb312287"
+  }
+}

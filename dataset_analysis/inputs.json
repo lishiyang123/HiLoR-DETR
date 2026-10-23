@@ -1,0 +1,81 @@
+{
+  "dataset": "CDW1630 Test",
+  "image_count": 237,
+  "gt_count": 1071,
+  "annotation": "main_host/datasets/CDW1630/annotations/instances_test2017.json",
+  "precision": "FP32",
+  "weight_source": "ema.module",
+  "topk": 300,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "evaluator": "faster-coco-eval 1.7.2",
+  "predictions": {
+    "deim": {
+      "0": {
+        "path": "dataset_analysis/predictions/deim/seed0.json.gz",
+        "profile": "cdw_deim_seed0_test",
+        "formal_metrics": {
+          "AP": 0.7541321544667828,
+          "AP50": 0.9768638646672829,
+          "AP75": 0.8587038056770627,
+          "AR100": 0.827644601611358
+        }
+      },
+      "1": {
+        "path": "dataset_analysis/predictions/deim/seed1.json.gz",
+        "profile": "cdw_deim_seed1_test",
+        "formal_metrics": {
+          "AP": 0.7604646286660001,
+          "AP50": 0.9767018956793803,
+          "AP75": 0.8746532922652637,
+          "AR100": 0.8371219016662637
+        }
+      },
+      "2": {
+        "path": "dataset_analysis/predictions/deim/seed2.json.gz",
+        "profile": "cdw_deim_seed2_test",
+        "formal_metrics": {
+          "AP": 0.7608897964877911,
+          "AP50": 0.9778567343263993,
+          "AP75": 0.8691880174892285,
+          "AR100": 0.8431850297746728
+        }
+      }
+    },
+    "hilor": {
+      "0": {
+        "path": "dataset_analysis/predictions/hilor/seed0.json.gz",
+        "profile": "cdw_full_seed0_test",
+        "formal_metrics": {
+          "AP": 0.7691755212887181,
+          "AP50": 0.9710155181954345,
+          "AP75": 0.8850130156165148,
+          "AR100": 0.8617001819754957
+        }
+      },
+      "1": {
+        "path": "dataset_analysis/predictions/hilor/seed1.json.gz",
+        "profile": "cdw_full_seed1_test",
+        "formal_metrics": {
+          "AP": 0.7677075984195101,
+          "AP50": 0.9702488466131578,
+          "AP75": 0.8874731373525436,
+          "AR100": 0.867675027545083
+        }
+      },
+      "2": {
+        "path": "dataset_analysis/predictions/hilor/seed2.json.gz",
+        "profile": "cdw_full_seed2_test",
+        "formal_metrics": {
+          "AP": 0.7710216523778645,
+          "AP50": 0.9726069322622953,
+          "AP75": 0.8880082521131583,
+          "AR100": 0.8622510744038245
+        }
+      }
+    }
+  }
+}

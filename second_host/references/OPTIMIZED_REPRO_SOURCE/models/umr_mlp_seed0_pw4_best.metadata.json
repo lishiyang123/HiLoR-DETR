@@ -1,0 +1,40 @@
+{
+  "architecture": "MLP",
+  "architecture_selection": "Train-fitted heads compared on Val",
+  "best_epoch": 34,
+  "best_holdout_qfl": 0.0017052830662578344,
+  "competitor_definition": "maximum-IoU same-class candidate among those with strictly higher first-pass mapped scores; score-gap and cosine features are zero when no positive-overlap competitor exists",
+  "competitor_semantics": "gap/cosine are zero unless a higher-score same-class candidate has IoU > 0",
+  "feature_semantics": {
+    "competitor_cosine": "zero unless an overlapping higher-score same-class candidate exists",
+    "score_gap": "zero unless an overlapping higher-score same-class candidate exists"
+  },
+  "fusion": {
+    "beta": 2.0,
+    "tau": 0.0,
+    "topk": 300
+  },
+  "head_parameters": 14729,
+  "num_classes": 5,
+  "positive_weight": 4,
+  "qccr_sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8",
+  "seed": 0,
+  "selection_evidence": {
+    "policy": "heads fitted on Train; fixed fusion tuple and candidate selected on Val; Test used once after freezing",
+    "train_provenance_sha256": "33fa81f529df90a36fb21e85616ecf65e07ebd58f919ff2018d3118aa793a0a0",
+    "val_gate_sha256": "7045fc53cabb77c778c173c5af8a90c0228b50477536683bf4ee5a667dd83e46",
+    "val_selection_sha256": "87aabead35366a3515beee22f55f693086e8c7dac54576a09c8913bd7d5d0324"
+  },
+  "source_checkpoint_sha256": "7774e65d01e0bfe1774022095dc29c6f60bd75b9f535fee3eb850de0452d2885",
+  "source_split": "CDW1630 Train",
+  "test_used_for_selection": false,
+  "weight_sha256": "601e84be138a1b1bc3068b04d11a9c5e560e1113471cae59179eab9881312f82",
+  "epochs_run": 43,
+  "fit_image_count": 1030,
+  "holdout_image_count": 114,
+  "training_evidence": {
+    "path": "training_records/CDW1630/Ours/seed0/calibration_evidence/UMR_OVERLAP_COMPETITOR_HEAD0_TRAINING.json",
+    "sha256": "c84b1dc843e4e5eeb9781bf4f321fe1fe3399817dfb7e2cbc9153ec81aaf7fc3",
+    "path_base": "main_host"
+  }
+}

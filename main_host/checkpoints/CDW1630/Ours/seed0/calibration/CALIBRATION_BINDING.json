@@ -1,0 +1,33 @@
+{
+  "host": "deim",
+  "dataset": "cdw",
+  "detector_seed": 0,
+  "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866",
+  "settings": {
+    "lambda_reg": 0.001,
+    "head_seed": 0,
+    "positive_weight": 4,
+    "tau": 0.0,
+    "beta": 2.0,
+    "topk": 300
+  },
+  "test_used_for_fitting_or_selection": false,
+  "qccr": {
+    "path": "qccr_params.json",
+    "sha256": "4348b99f6820cddf8a1652533d4418514ba84a3c1ce29373b38f4d80cb9ff6f3"
+  },
+  "umr": {
+    "path": "umr_mlp_head_seed0_pw4.pt",
+    "sha256": "89eca180f663908802bb9d7cfa34a6d8ae23b9f418255ae9dd888a075659132f"
+  },
+  "captures": {
+    "train": {
+      "path": "../../../../../../sensitivity/tau_beta/inputs/train_capture.pt",
+      "sha256": "2f784f5732c3e8fa962394a91c96656d074721a4e4f0174b28aa0be849511912"
+    },
+    "val": {
+      "path": "../../../../../../sensitivity/tau_beta/inputs/val_capture.pt",
+      "sha256": "ffd8fd2dd62f2b51e428709f45f326fbb79999d1ae5f454d47b701ba057bf24e"
+    }
+  }
+}

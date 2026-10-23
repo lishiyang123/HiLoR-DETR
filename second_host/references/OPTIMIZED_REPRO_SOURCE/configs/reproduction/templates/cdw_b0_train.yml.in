@@ -1,0 +1,9 @@
+__include__: [./cdw_common_train.yml]
+output_dir: @B0_TRAIN_OUTPUT@
+
+DFINETransformer:
+  ufd_enabled: False
+
+DEIMCriterion:
+  ufd_enabled: False
+  lcct_enabled: False

@@ -1,0 +1,56 @@
+{
+  "environment": {
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "python": "3.11.9",
+    "torch": "2.5.1+cu124"
+  },
+  "pycocotools": "2.0.10",
+  "source_commit": "956d1709314c2c6a4df6f34de232054578a7449f",
+  "test": {
+    "annotation": "${RELEASE_ROOT}/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+    "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+    "image_count": 237,
+    "images_dir": "${RELEASE_ROOT}/main_host/datasets/CDW1630/test2017",
+    "instance_count": 1071
+  },
+  "val_selection": {
+    "0": {
+      "model": "dfine",
+      "seed": 0,
+      "epoch_zero_based": 23,
+      "epoch_one_based": 24,
+      "val_AP": 0.753668778892563,
+      "checkpoint": "best_stg1.pth",
+      "source_checkpoint": "best_stg1.pth",
+      "selection": "Maximum Val AP across 102 epochs; earliest exact tie",
+      "test_used": false,
+      "checkpoint_sha256": "0fdf1023f14a528c6e23fb39896328f17c81b4b271a7609f3e36bb6e0b47ea8f"
+    },
+    "1": {
+      "model": "dfine",
+      "seed": 1,
+      "epoch_zero_based": 31,
+      "epoch_one_based": 32,
+      "val_AP": 0.7509770920195765,
+      "checkpoint": "best_stg1.pth",
+      "source_checkpoint": "best_stg1.pth",
+      "selection": "Maximum Val AP across 102 epochs; earliest exact tie",
+      "test_used": false,
+      "checkpoint_sha256": "8a1bf7e4210286a3da34ae48d7bca0fe72e9c24604d5d938bc5401057b04c87b"
+    },
+    "2": {
+      "model": "dfine",
+      "seed": 2,
+      "epoch_zero_based": 31,
+      "epoch_one_based": 32,
+      "val_AP": 0.7530526651528254,
+      "checkpoint": "best_stg1.pth",
+      "source_checkpoint": "best_stg1.pth",
+      "selection": "Maximum Val AP across 102 epochs; earliest exact tie",
+      "test_used": false,
+      "checkpoint_sha256": "83d0204c8a9044c3fb74f1c739a7b28ee417eedc4f2b05d1988c56ef7e674f58"
+    }
+  },
+  "evaluator": "faster-coco-eval==1.7.2"
+}

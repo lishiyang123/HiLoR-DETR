@@ -1,0 +1,8 @@
+__include__: [./cdw_qccr_test.yml]
+output_dir: @FINAL_TEST_OUTPUT@
+PostProcessor:
+  umr_enabled: True
+  umr_topk: @UMR_TOPK@
+  umr_tau: @UMR_TAU@
+  umr_beta: @UMR_BETA@
+  umr_checkpoint: @UMR_CHECKPOINT@

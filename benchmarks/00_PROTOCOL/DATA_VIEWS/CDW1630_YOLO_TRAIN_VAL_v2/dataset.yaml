@@ -1,0 +1,9 @@
+path: ${RELEASE_ROOT}/benchmarks/00_PROTOCOL/DATA_VIEWS/CDW1630_YOLO_TRAIN_VAL_v2
+train: images/train
+val: images/val
+names:
+  0: Brick
+  1: Concrete
+  2: Plastic Bottle
+  3: Reinforcement
+  4: timber

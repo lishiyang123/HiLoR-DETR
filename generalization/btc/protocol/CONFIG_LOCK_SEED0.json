@@ -1,0 +1,66 @@
+{
+  "protocol_version": "BTC_GENERALIZATION_SEED0_v1",
+  "status": "INITIALIZED_NOT_STARTED",
+  "dataset": {
+    "name": "Construction and Demolition Waste Object Detection Dataset",
+    "short_name": "BTC",
+    "version": 1,
+    "doi": "10.17632/24d45pf8wm.1",
+    "classes": [
+      "brick",
+      "concrete",
+      "tile"
+    ],
+    "raw_tree_files": 1100,
+    "raw_tree_digest_sha256": "c7524a8cb7ab154b155740af507c23e6bfd0bd4aa19d75a6960ecbde42b97ae3",
+    "raw_unchanged": true
+  },
+  "split_roles": {
+    "training": "train",
+    "testing_set_1": "validation_and_checkpoint_selection",
+    "testing_set_2": "sealed_final_hard_scene_test"
+  },
+  "counts": {
+    "training": {
+      "images": 350,
+      "valid_boxes": 4230
+    },
+    "testing_set_1": {
+      "images": 150,
+      "valid_boxes": 1727
+    },
+    "testing_set_2": {
+      "images": 50,
+      "valid_boxes": 596
+    }
+  },
+  "conversion": {
+    "source_format": "PASCAL_VOC_XML",
+    "target_format": "COCO_DETECTION_JSON",
+    "ignore_empty_object_nodes": true,
+    "split_qualified_image_ids": true,
+    "category_ids": {
+      "brick": 0,
+      "concrete": 1,
+      "tile": 2
+    }
+  },
+  "training": {
+    "seed": 0,
+    "epochs": 102,
+    "precision": "FP32",
+    "amp": false,
+    "total_batch_size": 8,
+    "pretrained_usage": "tuning_flag_not_resume",
+    "b0_and_ours_matched": true,
+    "ufd_cdf_source": "training_only",
+    "test2_during_training": false
+  },
+  "inference_calibration": {
+    "allowed_fit_splits": [
+      "training",
+      "testing_set_1"
+    ],
+    "testing_set_2_allowed_for_fit_or_selection": false
+  }
+}

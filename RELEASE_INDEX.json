@@ -1,0 +1,67 @@
+{
+  "schema": "hilordetr.release-index.v1",
+  "layout": "flat",
+  "asset_count": 10,
+  "assets": [
+    {
+      "order": 1,
+      "name": "main_host",
+      "relative_path": "main_host",
+      "scope": "core"
+    },
+    {
+      "order": 2,
+      "name": "btc",
+      "relative_path": "generalization/btc",
+      "scope": "generalization"
+    },
+    {
+      "order": 3,
+      "name": "benchmarks",
+      "relative_path": "benchmarks",
+      "scope": "extension"
+    },
+    {
+      "order": 4,
+      "name": "sensitivity",
+      "relative_path": "sensitivity",
+      "scope": "extension"
+    },
+    {
+      "order": 5,
+      "name": "numerical_evidence",
+      "relative_path": "numerical_evidence",
+      "scope": "extension"
+    },
+    {
+      "order": 6,
+      "name": "bootstrap",
+      "relative_path": "bootstrap",
+      "scope": "extension"
+    },
+    {
+      "order": 7,
+      "name": "dataset_analysis",
+      "relative_path": "dataset_analysis",
+      "scope": "extension"
+    },
+    {
+      "order": 8,
+      "name": "second_host",
+      "relative_path": "second_host",
+      "scope": "second_host"
+    },
+    {
+      "order": 9,
+      "name": "efficiency",
+      "relative_path": "efficiency",
+      "scope": "efficiency"
+    },
+    {
+      "order": 10,
+      "name": "ranking_comparison",
+      "relative_path": "ranking_comparison",
+      "scope": "ranking_comparison"
+    }
+  ]
+}

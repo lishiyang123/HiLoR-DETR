@@ -1,0 +1,26 @@
+{
+  "dataset": "CDW1630",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 102,
+  "precision": "FP32",
+  "ema": true,
+  "checkpoint_selection": "highest Val AP; earlier exact tie",
+  "ccvr": {
+    "lambda_reg": 0.001,
+    "head_seed": 0,
+    "positive_weight": 4,
+    "tau": 0.0,
+    "beta": 2.0,
+    "topk": 300
+  },
+  "mapping_fit_split": "Val",
+  "value_fit_split": "Train with internal image-level holdout",
+  "train_images": 1042,
+  "val_images": 237,
+  "test_images": 237,
+  "delta": 0.02
+}

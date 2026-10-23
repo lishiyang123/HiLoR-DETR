@@ -1,0 +1,81 @@
+{
+  "dataset": "CDW1630",
+  "source": "main_host/source/FINAL_CODE",
+  "annotations": {
+    "train": "main_host/datasets/CDW1630/annotations/instances_train2017.json",
+    "val": "main_host/datasets/CDW1630/annotations/instances_val2017.json"
+  },
+  "split_counts": {
+    "train": {
+      "images": 1042,
+      "gt": 5336
+    },
+    "val": {
+      "images": 237,
+      "gt": 958
+    }
+  },
+  "settings": {
+    "qccr": {
+      "candidate_key": "1e-03",
+      "lambda_reg": 0.001,
+      "target_fold_rule": "use coefficients fitted on the other four Val folds",
+      "full_val_coefficients_for_oof_rows": false
+    },
+    "umr": {
+      "architecture": "existing UMRHead",
+      "head_seed": 0,
+      "positive_weight": 4,
+      "tau": 0.0,
+      "beta": 2.0,
+      "topk": 300,
+      "maximum_epochs": 50,
+      "early_stopping_patience": 8,
+      "inner_fit_fraction": 0.9,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "batch_images": 16
+    },
+    "rows": [
+      "qccr_only",
+      "current_train_capture_umr",
+      "val_oof_umr",
+      "train_matched_umr"
+    ],
+    "train_matched_control": {
+      "enabled": true,
+      "selection_seed": 20260925,
+      "image_count_rule": "equal to the outer four-fold Val training-image count",
+      "purpose": "separate detector-Train source effects from UMR fitting-set size"
+    }
+  },
+  "seeds": {
+    "0": {
+      "train_capture": "sensitivity/tau_beta/inputs/train_capture.pt",
+      "val_capture": "sensitivity/tau_beta/inputs/val_capture.pt",
+      "formal_umr_head": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.pt",
+      "formal_umr_metadata": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+      "qccr_artifact": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/qccr_params.json",
+      "mapping_fits": "main_host/robustness/ccvr_fitting_sources/inputs/seed0/mapping_fits.json",
+      "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866"
+    },
+    "1": {
+      "train_capture": "main_host/features/gccs/seed1/train_capture.pt",
+      "val_capture": "main_host/features/gccs/seed1/val_capture.pt",
+      "formal_umr_head": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.pt",
+      "formal_umr_metadata": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+      "qccr_artifact": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/qccr_params.json",
+      "mapping_fits": "main_host/robustness/ccvr_fitting_sources/inputs/seed1/mapping_fits.json",
+      "checkpoint_sha256": "ffe04839b8e10e52aa92968c73291f03a0c9ff4312c06025a720e96fabca7253"
+    },
+    "2": {
+      "train_capture": "main_host/features/gccs/seed2/train_capture.pt",
+      "val_capture": "main_host/features/gccs/seed2/val_capture.pt",
+      "formal_umr_head": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.pt",
+      "formal_umr_metadata": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+      "qccr_artifact": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/qccr_params.json",
+      "mapping_fits": "main_host/robustness/ccvr_fitting_sources/inputs/seed2/mapping_fits.json",
+      "checkpoint_sha256": "9d2c19878688b53b2f1cacbdc9de5609de1f2aab3d635573fd41f4b13fb5d041"
+    }
+  }
+}

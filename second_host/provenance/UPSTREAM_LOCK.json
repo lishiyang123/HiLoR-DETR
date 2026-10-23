@@ -1,0 +1,32 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-upstream-lock-v1",
+  "repository": "https://github.com/lyuwenyu/RT-DETR",
+  "commit": "29320b6fd828f8e0987a71426cf2d961b09dfed7",
+  "model": "RT-DETR-R18",
+  "official_config": "rtdetr_pytorch/configs/rtdetr/rtdetr_r18vd_6x_coco.yml",
+  "server_baseline_snapshot": "benchmarks/02_RT_DETR_R18/source/RT-DETR_official",
+  "server_reference_copy": "benchmarks/02_RT_DETR_R18/source/RT-DETR_official",
+  "server_working_copy": "second_host/source/RT-DETR_HiLoR",
+  "content_aggregate_sha256": "ae0b0189a458a2e9d5054c4e86e0baff38faa84e6357a2c2b70ba643db03cd8b",
+  "content_aggregate_method": "SHA-256 of the sorted per-file sha256sum stream, paths relative to tree root",
+  "reference_copy_read_only": true,
+  "coco_initialization": {
+    "filename": "rtdetr_r18vd_dec3_6x_coco_from_paddle.pth",
+    "sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0"
+  },
+  "training_protocol": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "epochs": 102,
+    "train_batch_size_per_device": 4,
+    "train_world_size": 1,
+    "effective_train_batch_size": 4,
+    "val_batch_size_per_device": 8,
+    "batch_evidence": "1042 Train images; batch 4; drop_last=True; 260 iterations per epoch",
+    "precision": "FP32",
+    "ema": true
+  }
+}

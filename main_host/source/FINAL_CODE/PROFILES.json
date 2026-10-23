@@ -1,0 +1,518 @@
+{
+  "cdw_deim_seed0_test": {
+    "dataset": "cdw",
+    "method": "deim",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_deim_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed0/best_stg2.pth",
+    "checkpoint_sha256": "a4285b67728fa990fdef5998a3184d517f1f8a7d6629633f2714f6a577e15bfe",
+    "reference_eval": "main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+    "reference_eval_sha256": "86dc2f86a80ccdd4a750861a6a0a97fe4f4189a4d206fdeb42325e0efba7e3dc",
+    "inference_assets": []
+  },
+  "cdw_deim_seed1_test": {
+    "dataset": "cdw",
+    "method": "deim",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_deim_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed1/best_stg1.pth",
+    "checkpoint_sha256": "3733f5f027ed38ed1050879d6dca622f82a2d898fc367bc6b0e417e2c31f5a79",
+    "reference_eval": "main_host/results/CDW1630/B0/seed1/official_test/eval.pth",
+    "reference_eval_sha256": "97507de6322369bdf831c0ba7d34380460c5dfd66297bf4821c775d7ec7f4826",
+    "inference_assets": []
+  },
+  "cdw_deim_seed2_test": {
+    "dataset": "cdw",
+    "method": "deim",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_deim_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed2/best_stg1.pth",
+    "checkpoint_sha256": "dc734d8b6258ff50352af0195b5494b516528a1b3c9ffaad506407eb0a94ef14",
+    "reference_eval": "main_host/results/CDW1630/B0/seed2/official_test/eval.pth",
+    "reference_eval_sha256": "47c7aafcb014242d9ca573c3dc6526049b17f2d5ba96a00c651fbe79aa96214d",
+    "inference_assets": []
+  },
+  "cdw_full_seed0_test": {
+    "dataset": "cdw",
+    "method": "full",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_full_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed0/final/eval.pth",
+    "reference_eval_sha256": "abdc62911c7d09aa6f82cdad5961b6ef884809aec78d51015d604a6b06e4c82a",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/qccr_params.json",
+        "sha256": "4348b99f6820cddf8a1652533d4418514ba84a3c1ce29373b38f4d80cb9ff6f3"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "89eca180f663908802bb9d7cfa34a6d8ae23b9f418255ae9dd888a075659132f"
+      }
+    ]
+  },
+  "cdw_gccs_seed0_test": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_gccs_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
+    "reference_eval_sha256": "d4360dfd8aaca1dc7e23c3233300ec35680f4f9cbb8e377c15a902834341b22f",
+    "inference_assets": []
+  },
+  "cdw_full_seed1_test": {
+    "dataset": "cdw",
+    "method": "full",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_full_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "ffe04839b8e10e52aa92968c73291f03a0c9ff4312c06025a720e96fabca7253",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed1/final/eval.pth",
+    "reference_eval_sha256": "de399fc2d4ac1829f11992083d86e47bcf892c53c9d31eab538e8696155807bf",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/qccr_params.json",
+        "sha256": "ff060ad62746af1c772428c83b9259991f5f192a7a406d9ee9b02481c8b02924"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "85db23f0f7eed55abe3339c59520ebb6ec567f4cf109b93bc542cebc03bbecaa"
+      }
+    ]
+  },
+  "cdw_gccs_seed1_test": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_gccs_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "ffe04839b8e10e52aa92968c73291f03a0c9ff4312c06025a720e96fabca7253",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed1/native_test/eval.pth",
+    "reference_eval_sha256": "223b84310a60735cd2772a4b51d7388619b58f017e8849f0cb0ffd6387471df7",
+    "inference_assets": []
+  },
+  "cdw_full_seed2_test": {
+    "dataset": "cdw",
+    "method": "full",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_full_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "9d2c19878688b53b2f1cacbdc9de5609de1f2aab3d635573fd41f4b13fb5d041",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed2/final/eval.pth",
+    "reference_eval_sha256": "114d106e4c86d66299724fe705d90f11a31293cbccc370c10a08705d3e8463e2",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/qccr_params.json",
+        "sha256": "6cff75e6367f715272e126ab8885a58bf2fb77fec11682585edc65e530f81cf0"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "e19d22a6dbe40f15b5137c3ec6751df49298e391b52a5284f234c83356cd2a35"
+      }
+    ]
+  },
+  "cdw_gccs_seed2_test": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_gccs_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "9d2c19878688b53b2f1cacbdc9de5609de1f2aab3d635573fd41f4b13fb5d041",
+    "reference_eval": "main_host/results/CDW1630/Ours/seed2/native_test/eval.pth",
+    "reference_eval_sha256": "6aad6ed034b10370bf8fe23359a52993d8ec06677b4530a1a5ce15d8844597fb",
+    "inference_assets": []
+  },
+  "cdw_deim_train": {
+    "dataset": "cdw",
+    "method": "deim",
+    "split": "train",
+    "config": "profiles/cdw_deim_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_gccs_train": {
+    "dataset": "cdw",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/cdw_gccs_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "btc_deim_seed0_test1": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 0,
+    "split": "test1",
+    "config": "profiles/btc_deim_seed0_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed0/best_stg1.pth",
+    "checkpoint_sha256": "a00ee7658ea57a23e28996bf2d56f33832dd920fca02c92afbcd5ac48042f797",
+    "reference_eval": "generalization/btc/results/B0/seed0/test1/eval.pth",
+    "reference_eval_sha256": "7fcda42dec14c005d91f7e49829bbfcc5ee80e79d3521753a9e7c6d1a987c4a0",
+    "inference_assets": []
+  },
+  "btc_deim_seed0_test2": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 0,
+    "split": "test2",
+    "config": "profiles/btc_deim_seed0_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed0/best_stg1.pth",
+    "checkpoint_sha256": "a00ee7658ea57a23e28996bf2d56f33832dd920fca02c92afbcd5ac48042f797",
+    "reference_eval": "generalization/btc/results/B0/seed0/test2/eval.pth",
+    "reference_eval_sha256": "0a7a3d35b21c20dfab2f0d1b3f09715171f7b355256d68e4d5eff34cef487266",
+    "inference_assets": []
+  },
+  "btc_deim_seed1_test1": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 1,
+    "split": "test1",
+    "config": "profiles/btc_deim_seed1_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed1/best_stg1.pth",
+    "checkpoint_sha256": "531ad024a209a29a0a3f59f04f5eda3247b2c094dd0dcac3b6927a05686cb33f",
+    "reference_eval": "generalization/btc/results/B0/seed1/test1/eval.pth",
+    "reference_eval_sha256": "8cb19eb7662583fef9d3f5e3fdf943ba53b868f1051740b8ddcb68ba128189a4",
+    "inference_assets": []
+  },
+  "btc_deim_seed1_test2": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 1,
+    "split": "test2",
+    "config": "profiles/btc_deim_seed1_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed1/best_stg1.pth",
+    "checkpoint_sha256": "531ad024a209a29a0a3f59f04f5eda3247b2c094dd0dcac3b6927a05686cb33f",
+    "reference_eval": "generalization/btc/results/B0/seed1/test2/eval.pth",
+    "reference_eval_sha256": "55851a24a4839ea6063ae8e1fa7600102feff4d280500739a5b0914032befce0",
+    "inference_assets": []
+  },
+  "btc_deim_seed2_test1": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 2,
+    "split": "test1",
+    "config": "profiles/btc_deim_seed2_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed2/best_stg1.pth",
+    "checkpoint_sha256": "2c58c639b8c3144d285e2230efd839f57a75053e36a3bec87352e1082bbae432",
+    "reference_eval": "generalization/btc/results/B0/seed2/test1/eval.pth",
+    "reference_eval_sha256": "42027e075f1d5b55e5e250656a3d49170acb9f96150ca33f536554ddb77a0390",
+    "inference_assets": []
+  },
+  "btc_deim_seed2_test2": {
+    "dataset": "btc",
+    "method": "deim",
+    "seed": 2,
+    "split": "test2",
+    "config": "profiles/btc_deim_seed2_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/B0/seed2/best_stg1.pth",
+    "checkpoint_sha256": "2c58c639b8c3144d285e2230efd839f57a75053e36a3bec87352e1082bbae432",
+    "reference_eval": "generalization/btc/results/B0/seed2/test2/eval.pth",
+    "reference_eval_sha256": "539087576d7578240ea98bd4e79f2a8d757c614580d95f626fcb4f280a22d18a",
+    "inference_assets": []
+  },
+  "btc_full_seed0_test1": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 0,
+    "split": "test1",
+    "config": "profiles/btc_full_seed0_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/test1/eval.pth",
+    "reference_eval_sha256": "9a5d7e57695e99ceb2556bec1ffb364a01f93f11e95e646cc35c0595755eaf5a",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/qccr_params.json",
+        "sha256": "ba9d759bed0e2da01c8b7ba1640d27d9ea5cee1e4006f884a616aac33936d083"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/umr_head_seed0.pt",
+        "sha256": "5fcfd822a60e5d21dfd2b5d8fe11d1fcd183df9be83d967fa111580b16f7b9c0"
+      }
+    ]
+  },
+  "btc_gccs_seed0_test1": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 0,
+    "split": "test1",
+    "config": "profiles/btc_gccs_seed0_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/native/test1/eval.pth",
+    "reference_eval_sha256": "261f55d1af9b05636ba5eece6fc127f068e477dc7b8c88698878fd2f075c8a4b",
+    "inference_assets": []
+  },
+  "btc_full_seed0_test2": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 0,
+    "split": "test2",
+    "config": "profiles/btc_full_seed0_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/test2/eval.pth",
+    "reference_eval_sha256": "ae4f48f5bf62bd2702ce8b87ba936b23c494a7c641b19b4648557e32fa2da0e2",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/qccr_params.json",
+        "sha256": "ba9d759bed0e2da01c8b7ba1640d27d9ea5cee1e4006f884a616aac33936d083"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed0/umr_head_seed0.pt",
+        "sha256": "5fcfd822a60e5d21dfd2b5d8fe11d1fcd183df9be83d967fa111580b16f7b9c0"
+      }
+    ]
+  },
+  "btc_gccs_seed0_test2": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 0,
+    "split": "test2",
+    "config": "profiles/btc_gccs_seed0_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
+    "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
+    "reference_eval": "generalization/btc/results/Ours/seed0/native/test2/eval.pth",
+    "reference_eval_sha256": "aed4445c8ee35a3aea6359cff421b876bbb47eefc66ba518aadc2524bbbd226a",
+    "inference_assets": []
+  },
+  "btc_full_seed1_test1": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 1,
+    "split": "test1",
+    "config": "profiles/btc_full_seed1_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/test1/eval.pth",
+    "reference_eval_sha256": "4cdb05cb91589f318aa82e3c89dc9322505ccd5c074afd424a4642bb55006ce7",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/qccr_params.json",
+        "sha256": "80ccc449ebf7879abb8f439dbd73e6cb9decf6263a1236ad56f4494c9bb45ddb"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/umr_head_seed0.pt",
+        "sha256": "3b75da4f5981749742d735cfd24ef93ea1af1461cd8d50d084933cbd8fcb4ac3"
+      }
+    ]
+  },
+  "btc_gccs_seed1_test1": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 1,
+    "split": "test1",
+    "config": "profiles/btc_gccs_seed1_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/native/test1/eval.pth",
+    "reference_eval_sha256": "2fbf485f021ddf078280e258bb2535bae698beb4338f4ca0b6453f2c3833eda0",
+    "inference_assets": []
+  },
+  "btc_full_seed1_test2": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 1,
+    "split": "test2",
+    "config": "profiles/btc_full_seed1_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/test2/eval.pth",
+    "reference_eval_sha256": "0a817d89498ffbc829a1b938b893b97712831ad9549408fc2452778cab2b154b",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/qccr_params.json",
+        "sha256": "80ccc449ebf7879abb8f439dbd73e6cb9decf6263a1236ad56f4494c9bb45ddb"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed1/umr_head_seed0.pt",
+        "sha256": "3b75da4f5981749742d735cfd24ef93ea1af1461cd8d50d084933cbd8fcb4ac3"
+      }
+    ]
+  },
+  "btc_gccs_seed1_test2": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 1,
+    "split": "test2",
+    "config": "profiles/btc_gccs_seed1_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
+    "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
+    "reference_eval": "generalization/btc/results/Ours/seed1/native/test2/eval.pth",
+    "reference_eval_sha256": "57a80f6a84172f57b0d026e83d1fea22a02ab7cdd385abd47a365bff0cd13cd6",
+    "inference_assets": []
+  },
+  "btc_full_seed2_test1": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 2,
+    "split": "test1",
+    "config": "profiles/btc_full_seed2_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/test1/eval.pth",
+    "reference_eval_sha256": "cbd55fd19717e9fa774a99385da865c558280fb1149356e8f0668acc80af78a7",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/qccr_params.json",
+        "sha256": "69e8ffdb15c0b49350cfccae396e6dafeec689810d57bc96d6c2406988430326"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/umr_head_seed0.pt",
+        "sha256": "1d1fd6e8b9f7220875a71b6fd599093c045562475215454e62f3d24c45235656"
+      }
+    ]
+  },
+  "btc_gccs_seed2_test1": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 2,
+    "split": "test1",
+    "config": "profiles/btc_gccs_seed2_test1.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/native/test1/eval.pth",
+    "reference_eval_sha256": "0b966c3dbec24a2bd154339c8919f97d29437e614b9f5af825eec0dabdf72716",
+    "inference_assets": []
+  },
+  "btc_full_seed2_test2": {
+    "dataset": "btc",
+    "method": "full",
+    "seed": 2,
+    "split": "test2",
+    "config": "profiles/btc_full_seed2_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/test2/eval.pth",
+    "reference_eval_sha256": "46f6e421ff4141c05e56a56bf8621bec7417352f66333ea0fbd3cb61730668bb",
+    "inference_assets": [
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/qccr_params.json",
+        "sha256": "69e8ffdb15c0b49350cfccae396e6dafeec689810d57bc96d6c2406988430326"
+      },
+      {
+        "path": "generalization/btc/calibration/Ours/seed2/umr_head_seed0.pt",
+        "sha256": "1d1fd6e8b9f7220875a71b6fd599093c045562475215454e62f3d24c45235656"
+      }
+    ]
+  },
+  "btc_gccs_seed2_test2": {
+    "dataset": "btc",
+    "method": "gccs",
+    "seed": 2,
+    "split": "test2",
+    "config": "profiles/btc_gccs_seed2_test2.yml",
+    "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
+    "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
+    "reference_eval": "generalization/btc/results/Ours/seed2/native/test2/eval.pth",
+    "reference_eval_sha256": "207b068dcdffc4209c8e6eb0ac418fc29319f84a80add19f8fe024a337ae31bf",
+    "inference_assets": []
+  },
+  "btc_deim_train": {
+    "dataset": "btc",
+    "method": "deim",
+    "split": "train",
+    "config": "profiles/btc_deim_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "btc_gccs_train": {
+    "dataset": "btc",
+    "method": "gccs",
+    "split": "train",
+    "config": "profiles/btc_gccs_train.yml",
+    "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
+    "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
+    "inference_assets": []
+  },
+  "cdw_deim_ccvr_seed0_test": {
+    "dataset": "cdw",
+    "method": "deim_ccvr",
+    "seed": 0,
+    "split": "test",
+    "config": "profiles/cdw_deim_ccvr_seed0_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed0/best_stg2.pth",
+    "checkpoint_sha256": "a4285b67728fa990fdef5998a3184d517f1f8a7d6629633f2714f6a577e15bfe",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed0/calibration/qccr_params.json",
+        "sha256": "cc387ad86d42862005e12da8d246bbd9ec3b106b5ee9b8134c6f9e02387ce013"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed0/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "9dbfd3da8f7521e5c867784de7d601c0e50c39c47e511f3aa225a6263b4a1020"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed0/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+        "sha256": "c8566bd5288eff1917e09b55a85e00b514709e6000f773fe76c5230e3b6ef628"
+      }
+    ],
+    "reference_eval": "main_host/results/CDW1630/B0/seed0/ccvr_test/eval.pth",
+    "reference_eval_sha256": "4842f1afdd79e269d64ecd27e68c2b46ab1a11233ded92c0fda61803a4d675ac"
+  },
+  "cdw_deim_ccvr_seed1_test": {
+    "dataset": "cdw",
+    "method": "deim_ccvr",
+    "seed": 1,
+    "split": "test",
+    "config": "profiles/cdw_deim_ccvr_seed1_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed1/best_stg1.pth",
+    "checkpoint_sha256": "3733f5f027ed38ed1050879d6dca622f82a2d898fc367bc6b0e417e2c31f5a79",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed1/calibration/qccr_params.json",
+        "sha256": "6b92791300dbced507987d81386e163cfca679ad9f54c5e513efe9bc9acd9e2c"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed1/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "148f5a2889dd94ee246fcd9627b9e897594a6bbdb3efda5352dc8a4f1a1ea6eb"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed1/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+        "sha256": "662d72f9a77ee193fdab29a02d4cbdad6f36fc1a3003822acbd51bf84408cd23"
+      }
+    ],
+    "reference_eval": "main_host/results/CDW1630/B0/seed1/ccvr_test/eval.pth",
+    "reference_eval_sha256": "94efc255af09dbcafcd071e586ca5d48573384070cb97fd09aaab081c4cb2c4d"
+  },
+  "cdw_deim_ccvr_seed2_test": {
+    "dataset": "cdw",
+    "method": "deim_ccvr",
+    "seed": 2,
+    "split": "test",
+    "config": "profiles/cdw_deim_ccvr_seed2_test.yml",
+    "checkpoint": "main_host/checkpoints/CDW1630/B0/seed2/best_stg1.pth",
+    "checkpoint_sha256": "dc734d8b6258ff50352af0195b5494b516528a1b3c9ffaad506407eb0a94ef14",
+    "inference_assets": [
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed2/calibration/qccr_params.json",
+        "sha256": "6c22ae2c60e9f9457107d36791bbf16bbe29917c8a0377fbe774036b5f890e8e"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed2/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "506ab2fc6776a600509608464679b90880fc5e0439eae0f6d15a00812383f838"
+      },
+      {
+        "path": "main_host/checkpoints/CDW1630/B0/seed2/calibration/umr_mlp_head_seed0_pw4.metadata.json",
+        "sha256": "b34e634c745a0e352f7db5f18afef755c028ebf486f95212c00497196f8cc92d"
+      }
+    ],
+    "reference_eval": "main_host/results/CDW1630/B0/seed2/ccvr_test/eval.pth",
+    "reference_eval_sha256": "75beeaa322de1134efd817a33d81e1c8a256dad510c19ed165e43801a1b23789"
+  }
+}

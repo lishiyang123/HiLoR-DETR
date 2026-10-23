@@ -1,0 +1,51 @@
+{
+  "schema": "hilordetr.paper-numerical-evidence.v2",
+  "state": "NUMERICAL_EVIDENCE_ONLY",
+  "graphics_generated": false,
+  "figure_mappings": [
+    {
+      "figure": "F1",
+      "dataset": "BTC",
+      "files": [
+        "evidence/introduction_comparison/INTRO_FIGURE_EVIDENCE.json"
+      ]
+    },
+    {
+      "figure": "F7",
+      "dataset": "BTC",
+      "files": [
+        "evidence/qualitative_cases/QUALITATIVE_CASE_EVIDENCE.json"
+      ]
+    },
+    {
+      "figure": "F2",
+      "dataset": "BTC",
+      "files": [
+        "evidence/framework_example/DETECTION_BACKGROUND.json"
+      ]
+    },
+    {
+      "figure": "F6",
+      "dataset": "CDW1630",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "files": [
+        "evidence/ap_iou_curve/results/curve.csv"
+      ]
+    }
+  ],
+  "case_table": "evidence/qualitative_cases/CASE_METADATA.csv",
+  "protocol": "BTC_CASE_PROTOCOL.json",
+  "input_bindings": "BTC_INPUT_BINDINGS.json",
+  "other_numerical_analyses": [
+    "../sensitivity/tau_beta/results",
+    "evidence/ap_iou_curve",
+    "evidence/oracle"
+  ],
+  "shared_raw_images": "../generalization/btc/data/coco_deim",
+  "shared_qualitative_predictions": "evidence/btc_predictions",
+  "number_policy": "unrounded source values; display rounding is not authoritative"
+}

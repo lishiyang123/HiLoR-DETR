@@ -1,0 +1,63 @@
+{
+  "schema": "cdw1630.final-efficiency-results.v1",
+  "state": "COMPLETE",
+  "tables": {
+    "COMPLEXITY_TABLE.csv": {
+      "source": "outputs/complexity/COMPLEXITY_TABLE.csv",
+      "sha256": "a525c9e7daa201c0c9555c66c6e54dfb2f70454ef8b0681722bd940450a431ac",
+      "bytes": 373
+    },
+    "LATENCY_TABLE.csv": {
+      "source": "outputs/latency/LATENCY_TABLE.csv",
+      "sha256": "83416172bcb9f6c924569f9fc696a0fd00bd03bf8b01a3722d062274dcfd1978",
+      "bytes": 245
+    },
+    "TRAINING_COST_TABLE.csv": {
+      "source": "outputs/training/TRAINING_COST_TABLE.csv",
+      "sha256": "223809819d416e02af4b9b80622df7443dbceab8b358d33b39ee0fc49b7e6205",
+      "bytes": 146
+    }
+  },
+  "complexity_measurements": {
+    "yolov8": {
+      "path": "outputs/complexity/yolov8/MEASUREMENT.json",
+      "sha256": "7f246e031259d362a8de69f86acba14ed8e7825738744e354c7893609a957fa3"
+    },
+    "yolov11": {
+      "path": "outputs/complexity/yolov11/MEASUREMENT.json",
+      "sha256": "88c8b9d8a1c982d8e81e6a7d2eca626fa983157f2880ce3ca87313b4a2cab1b2"
+    },
+    "yolov9": {
+      "path": "outputs/complexity/yolov9/MEASUREMENT.json",
+      "sha256": "d6e5fd3f2a4c127a1de3a3449397443c09b5a9dc202fb7a096b0beaf40bd2fd8"
+    },
+    "yolov10": {
+      "path": "outputs/complexity/yolov10/MEASUREMENT.json",
+      "sha256": "0358cf61221c225394e17b86eb5b9d74e5d2e64cc187de6a1cdcdf085dcb89da"
+    },
+    "yolov12": {
+      "path": "outputs/complexity/yolov12/MEASUREMENT.json",
+      "sha256": "d0be2d86bf085b78d60025d7093e2e61491086a83395fc11a3fc1c353bd39f0f"
+    },
+    "dfine": {
+      "path": "outputs/complexity/dfine/MEASUREMENT.json",
+      "sha256": "6f7311355165554f9d3c04f7caeb419e27e13a9864db5e1908fb68bd41ebd42d"
+    },
+    "deim": {
+      "path": "outputs/complexity/deim/MEASUREMENT.json",
+      "sha256": "9c15370fd43a6bc90108bf0da2e9d852a23566917bab9fa9d0bcf6d6203175d2"
+    },
+    "hilor": {
+      "path": "outputs/complexity/hilor/MEASUREMENT.json",
+      "sha256": "ee8c4e0ec2ddb4c6f8967b657aa4b012feeb1de350c05f7e55cd7e7d77f2d855"
+    },
+    "r18": {
+      "path": "outputs/complexity/r18/MEASUREMENT.json",
+      "sha256": "074d635db6d1eaaf7d9747be7f791af6908d219aa067c0c2648e1ff5b66b5937"
+    },
+    "r18_hilor": {
+      "path": "outputs/complexity/r18_hilor/MEASUREMENT.json",
+      "sha256": "88e2ac591d1a056f3cfbe63336847f6d48a931d11574d6a92cf07f01ba85cfb8"
+    }
+  }
+}

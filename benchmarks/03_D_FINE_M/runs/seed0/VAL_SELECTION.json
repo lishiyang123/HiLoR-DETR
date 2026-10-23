@@ -1,0 +1,12 @@
+{
+  "model": "dfine",
+  "seed": 0,
+  "epoch_zero_based": 23,
+  "epoch_one_based": 24,
+  "val_AP": 0.753668778892563,
+  "checkpoint": "best_stg1.pth",
+  "source_checkpoint": "best_stg1.pth",
+  "selection": "Maximum Val AP across 102 epochs; earliest exact tie",
+  "test_used": false,
+  "checkpoint_sha256": "0fdf1023f14a528c6e23fb39896328f17c81b4b271a7609f3e36bb6e0b47ea8f"
+}

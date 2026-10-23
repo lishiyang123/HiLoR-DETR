@@ -1,0 +1,26 @@
+{
+  "seed": 1,
+  "method": "gccs",
+  "val_evaluator": {
+    "name": "faster-coco-eval",
+    "version": "1.7.2",
+    "iou_type": "bbox",
+    "max_dets": [
+      1,
+      10,
+      100
+    ]
+  },
+  "config": {
+    "path": "${RELEASE_ROOT}/second_host/runs/seed1/config.yml",
+    "sha256": "29ecbff8414e7a2d038ad4940caf4504cc1291e3c71959349756393488c49a01"
+  },
+  "coco_initialization": {
+    "path": "${RELEASE_ROOT}/benchmarks/02_RT_DETR_R18/source/rtdetr_r18vd_dec3_6x_coco_from_paddle.pth",
+    "sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0"
+  },
+  "bindings": {
+    "protocol_lock_sha256": "66629a3115cb6e78e8ce372fd884b1bc06e34bb006b347572d7a249f7267e769",
+    "implementation_lock_sha256": "5d4753f82c65a9b2e283d04bc89c26228218d76e18280670f48b938ec8bf6adb"
+  }
+}

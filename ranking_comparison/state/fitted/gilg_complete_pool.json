@@ -1,0 +1,39 @@
+{
+  "format_version": 1,
+  "model": "conditionally_dependent_beta",
+  "epsilon": 1e-12,
+  "weights": [
+    0.31950063322674904,
+    2.5708957107008747,
+    2.5205884089236026,
+    2.866236538769844,
+    1e-12,
+    0.22687720975234343,
+    1.8469002407050752,
+    0.9316146391811542,
+    2.6953467728900975,
+    0.4344110132569414,
+    1.8789591872375968,
+    2.2146353045474547
+  ],
+  "bias": 0.25066746715015603,
+  "fit_summary": {
+    "success": true,
+    "status": 0,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "iterations": 43,
+    "function_evaluations": 60,
+    "final_nll": 0.0007799880237826304,
+    "sample_count": 355500,
+    "positive_count": 955,
+    "feature_count": 2,
+    "seed": 123,
+    "capture": "${AUTHOR_WORK}/fresh_val_capture.pt",
+    "capture_sha256": "ffd8fd2dd62f2b51e428709f45f326fbb79999d1ae5f454d47b701ba057bf24e",
+    "split": "val",
+    "label_iou": 0.5,
+    "near_duplicate_iou": null,
+    "elapsed_seconds": 8.824361443519592,
+    "image_count": 237
+  }
+}

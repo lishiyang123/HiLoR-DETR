@@ -1,0 +1,27 @@
+{
+  "annotation": "main_host/datasets/CDW1630/annotations/instances_test2017.json",
+  "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+  "runs": [
+    {
+      "seed": 0,
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed0/best_val.pth",
+      "checkpoint_sha256": "b356adda76a21c556a22531e8c129cf3a1a6aa62d96f67b44702b213a656aae1",
+      "predictions": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed0/predictions.json",
+      "predictions_sha256": "a742bc5b71e456a2d0727efff06a8fc75da89dcd7ec83a6876cdcd43c3f534ed"
+    },
+    {
+      "seed": 1,
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed1/best_val.pth",
+      "checkpoint_sha256": "c8c2f246dcb3ffd493268d0268aa5e6135eef9821c63eb50950ad46141d89888",
+      "predictions": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed1/predictions.json",
+      "predictions_sha256": "539b71a7d1e05b9af963243f58a06ae8e23431d8fc8cce8ea5187ab917d1da30"
+    },
+    {
+      "seed": 2,
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed2/best_val.pth",
+      "checkpoint_sha256": "12dab1d0e40e041c11aa9f514aa12939f7aefc4eec46d314a10c5f91c858449b",
+      "predictions": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed2/predictions.json",
+      "predictions_sha256": "bd07e0b26bbfe5db2489e28c42df895ed739d23aaaf22edc32aa6980dd08a52e"
+    }
+  ]
+}

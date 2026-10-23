@@ -1,0 +1,10 @@
+{
+  "numerical_evidence_package": "numerical_evidence",
+  "project_generated_graphics_in_release": false,
+  "dataset_images_removed": false,
+  "model_weights_or_official_metrics_changed": false,
+  "photographic_examples_dataset": "BTC",
+  "figure_index": "numerical_evidence/NUMERICAL_EVIDENCE_INDEX.json",
+  "input_bindings": "numerical_evidence/BTC_INPUT_BINDINGS.json",
+  "F2_scope": "illustrative detections, not measured training assignments"
+}

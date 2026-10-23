@@ -1,0 +1,12 @@
+{
+  "model": "yolov9",
+  "seed": 2,
+  "epoch_zero_based": 99,
+  "epoch_one_based": 100,
+  "val_AP": 0.7375090644038209,
+  "checkpoint": "weights/best_val_ap.pt",
+  "selection": "maximum Val AP; earliest exact tie",
+  "test_used": false,
+  "checkpoint_sha256": "6ab38f17174201dc03eaad6de6c8b536d389865e0e874feb69ece9d6eef63518",
+  "best_epoch_zero_based": 99
+}

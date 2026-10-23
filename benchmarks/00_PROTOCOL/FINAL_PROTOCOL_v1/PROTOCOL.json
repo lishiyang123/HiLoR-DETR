@@ -1,0 +1,63 @@
+{
+  "accuracy": {
+    "dataset": "CDW1630 frozen Test split",
+    "evaluator": "faster-coco-eval==1.7.2",
+    "max_dets": [
+      1,
+      10,
+      100
+    ],
+    "metric_type": "bbox",
+    "official_single_checkpoint_models": [],
+    "official_single_checkpoint_test_batch": 8,
+    "reported_groups": [
+      "main accuracy",
+      "COCO scale",
+      "high recall",
+      "high quality"
+    ],
+    "test_batch_scope": "all eight reported models",
+    "test_batch_size": 8,
+    "test_selection_or_fitting": false
+  },
+  "models": [
+    {
+      "name": "YOLOv8-L",
+      "scope": "three seeds; maximum validation AP checkpoint"
+    },
+    {
+      "name": "YOLO11-L",
+      "scope": "three seeds; maximum validation AP checkpoint"
+    },
+    {
+      "name": "YOLOv10-M",
+      "scope": "three seeds; maximum validation AP checkpoint"
+    },
+    {
+      "name": "YOLOv12-M (turbo)",
+      "scope": "three seeds; maximum validation AP checkpoint"
+    },
+    {
+      "name": "RT-DETR-R18",
+      "scope": "three seeds; maximum validation AP checkpoint"
+    },
+    {
+      "name": "D-FINE-M",
+      "scope": "three seeds; maximum validation AP checkpoint"
+    },
+    {
+      "name": "B0 (HGNetv2-M)",
+      "scope": "three seeds; paper baseline"
+    },
+    {
+      "name": "Ours (HGNetv2-M)",
+      "scope": "three seeds; proposed method"
+    }
+  ],
+  "release_policy": {
+    "development_smoke_failure_recovery_and_auxiliary_audits_included": false,
+    "canonical_source_weights_train_val_frozen_test_and_accuracy_tables_included": true
+  },
+  "schema": "sota-final-reviewer-protocol-v1",
+  "scope": "CDW1630 external-detector comparison plus B0/Ours rows"
+}

@@ -1,0 +1,9 @@
+__include__: [./btc_common_train.yml]
+
+DFINETransformer:
+  ufd_enabled: False
+
+DEIMCriterion:
+  ufd_enabled: False
+  lcct_enabled: False
+  gglh_enabled: False

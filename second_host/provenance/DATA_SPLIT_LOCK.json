@@ -1,0 +1,46 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-data-split-lock-v1",
+  "category_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "selection_eligible_splits": [
+    "train",
+    "val"
+  ],
+  "splits": {
+    "train": {
+      "annotation": "${RELEASE_ROOT}/main_host/datasets/CDW1630/annotations/instances_train2017.json",
+      "annotation_sha256": "1820403e0e0e9be427965665adb5cefd853aeb6839e75185c74835ebb7f65218",
+      "images_dir": "${RELEASE_ROOT}/main_host/datasets/CDW1630/train2017",
+      "image_count": 1042,
+      "instance_count": 5336,
+      "image_id_set_sha256": "4390b4e0fc21da55fa12308465e529019a84d32d2b7c30052a552372510c27a7",
+      "file_name_set_sha256": "b87b4f1964448ecbe4961459abd18037c723c52c99c395d4bbafb0a89a092d4b",
+      "image_tree_sha256": "5a0dde1693a54ca4545ba7aa8b777feea592c2a652bd320fd9dec3e70cd7228a"
+    },
+    "val": {
+      "annotation": "${RELEASE_ROOT}/main_host/datasets/CDW1630/annotations/instances_val2017.json",
+      "annotation_sha256": "5a3d511e55c64bebf4652e46d4602037ae11fd7949373d3122568da7ef961c13",
+      "images_dir": "${RELEASE_ROOT}/main_host/datasets/CDW1630/val2017",
+      "image_count": 237,
+      "instance_count": 958,
+      "image_id_set_sha256": "40882c545a03c03421e4acc0eb1b3a8904442e9f3c3affdd37d3072b57e4fc07",
+      "file_name_set_sha256": "5c987d503263bc12e7695f9beb7fe2ace05a940b416a48c26c2843e5274c3e4b",
+      "image_tree_sha256": "d721f3ce36d1168376ecf56f66987b74935a333a740a7b2f657c7a2ea3bea8a4"
+    },
+    "test": {
+      "annotation": "${RELEASE_ROOT}/main_host/datasets/CDW1630/annotations/instances_test2017.json",
+      "annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+      "images_dir": "${RELEASE_ROOT}/main_host/datasets/CDW1630/test2017",
+      "image_count": 237,
+      "instance_count": 1071,
+      "image_id_set_sha256": "ecae25ba285b85d92d4bab796f659d8742b3882e2b704c49d7f15f438289725d",
+      "file_name_set_sha256": "75ce574d769488d81a5b3dcffb42d05319c957fd9eb3dd34036349ddb5ccef9d",
+      "image_tree_sha256": "ca0afe5843c4a5e970026f41d40d204ce7d755346d51b523eb0af62b23cfee68"
+    }
+  }
+}

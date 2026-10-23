@@ -1,0 +1,48 @@
+{
+  "detector_delta": 0.02,
+  "detector_seed": 0,
+  "head_seeds": [
+    0,
+    1,
+    2
+  ],
+  "tau_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "beta_grid": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "positive_weight": 4,
+  "comparison": "mean Val AP over three head-fitting seeds",
+  "current_setting": {
+    "tau": 0.0,
+    "beta": 2.0
+  },
+  "device": "cpu",
+  "precision": "float32",
+  "threads": 1,
+  "evaluator": "faster-coco-eval 1.7.2",
+  "topk": 300,
+  "source": "../../main_host/source/FINAL_CODE",
+  "train_capture": "inputs/train_capture.pt",
+  "val_capture": "inputs/val_capture.pt",
+  "train_images": 1042,
+  "val_images": 237,
+  "mapping": "inputs/mapping.json",
+  "mapping_parameters": {
+    "beta0": 2.1038617863454485,
+    "beta_positive": 1.7731060663594451,
+    "beta_negative": 2.7448378380073772,
+    "duplicate_penalty": 0.5720062188069506
+  },
+  "head_epoch_selection": "Train internal holdout loss",
+  "test_used": false
+}

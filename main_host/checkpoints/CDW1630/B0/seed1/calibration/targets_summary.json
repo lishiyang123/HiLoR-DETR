@@ -1,0 +1,15 @@
+{
+  "image_count": 237,
+  "gt_count": 958,
+  "all_candidate_count": 355500,
+  "fit_candidate_count": 71100,
+  "fit_target_mass": 799.7000732421875,
+  "fit_nonzero_target_count": 1222,
+  "fit_nonzero_target_ratio": 0.01718706078827381,
+  "fit_full_target_count": 166,
+  "fit_risk_mean": 0.6529706120491028,
+  "fit_risk_positive_ratio": 0.946765124797821,
+  "fit_risk_p50": 0.7548680901527405,
+  "fit_risk_p90": 0.9786638617515564,
+  "target_path": "${AUTHOR_WORK}/qccr_targets.pt"
+}

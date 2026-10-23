@@ -1,0 +1,61 @@
+{
+  "schema": "rtdetr-published-assets-v1",
+  "configurations": {
+    "native": {
+      "0": {
+        "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed0/best_val.pth",
+        "checkpoint_sha256": "b356adda76a21c556a22531e8c129cf3a1a6aa62d96f67b44702b213a656aae1",
+        "evaluation": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed0"
+      },
+      "1": {
+        "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed1/best_val.pth",
+        "checkpoint_sha256": "c8c2f246dcb3ffd493268d0268aa5e6135eef9821c63eb50950ad46141d89888",
+        "evaluation": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed1"
+      },
+      "2": {
+        "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed2/best_val.pth",
+        "checkpoint_sha256": "12dab1d0e40e041c11aa9f514aa12939f7aefc4eec46d314a10c5f91c858449b",
+        "evaluation": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed2"
+      }
+    },
+    "gccs": {
+      "0": {
+        "checkpoint": "second_host/runs/seed0/best_val.pth",
+        "checkpoint_sha256": "312bea63c1f74d7880ae335360cba9ccda1826c8b0a5bb8b7d3fbb648ae73ddd",
+        "evaluation": "second_host/evaluations_gccs/seed0"
+      },
+      "1": {
+        "checkpoint": "second_host/runs/seed1/best_val.pth",
+        "checkpoint_sha256": "00a9679d527b91763217b3cec1af3b1323b6caea8d44c01c92011626042f0a0b",
+        "evaluation": "second_host/evaluations_gccs/seed1"
+      },
+      "2": {
+        "checkpoint": "second_host/runs/seed2/best_val.pth",
+        "checkpoint_sha256": "3db2ab05583321b5b1b663372a62fe1f07d74de2f1f4e1a0cbbf103e78fdb7c2",
+        "evaluation": "second_host/evaluations_gccs/seed2"
+      }
+    },
+    "full": {
+      "0": {
+        "checkpoint": "second_host/runs/seed0/best_val.pth",
+        "checkpoint_sha256": "312bea63c1f74d7880ae335360cba9ccda1826c8b0a5bb8b7d3fbb648ae73ddd",
+        "evaluation": "second_host/evaluations/seed0",
+        "binding": "second_host/artifacts/inference/seed0/qccr_umr_binding.json"
+      },
+      "1": {
+        "checkpoint": "second_host/runs/seed1/best_val.pth",
+        "checkpoint_sha256": "00a9679d527b91763217b3cec1af3b1323b6caea8d44c01c92011626042f0a0b",
+        "evaluation": "second_host/evaluations/seed1",
+        "binding": "second_host/artifacts/inference/seed1/qccr_umr_binding.json"
+      },
+      "2": {
+        "checkpoint": "second_host/runs/seed2/best_val.pth",
+        "checkpoint_sha256": "3db2ab05583321b5b1b663372a62fe1f07d74de2f1f4e1a0cbbf103e78fdb7c2",
+        "evaluation": "second_host/evaluations/seed2",
+        "binding": "second_host/artifacts/inference/seed2/qccr_umr_binding.json"
+      }
+    }
+  },
+  "results": "paper_tables/RTDETR_MEAN_STD_AND_DELTA.csv",
+  "test_used_for_selection": false
+}

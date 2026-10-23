@@ -1,0 +1,21 @@
+{
+  "format_version": 1,
+  "density": {
+    "threshold": 5,
+    "strategy": "fixed",
+    "low_rule": "N_i <= 5",
+    "high_rule": "N_i > 5"
+  },
+  "overlap": {
+    "threshold": 0.1276452544706163,
+    "strategy": "positive_median",
+    "source_split": "Train",
+    "train_image_count": 1042,
+    "train_median": 0.1276452544706163,
+    "train_q75": 0.2722836299622338,
+    "zero_score_images": 243,
+    "positive_score_images": 799,
+    "low_rule": "O_i <= threshold",
+    "high_rule": "O_i > threshold"
+  }
+}

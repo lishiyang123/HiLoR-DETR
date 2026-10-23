@@ -1,0 +1,28 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 102,
+  "training_batch": 4,
+  "val_batch": 8,
+  "precision": "FP32",
+  "ema": true,
+  "val_evaluator": "faster-coco-eval",
+  "val_evaluator_version": "1.7.2",
+  "runs": {
+    "0": {
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed0/best_val.pth",
+      "selection": "benchmarks/02_RT_DETR_R18/runs/seed0/BEST_VAL.json"
+    },
+    "1": {
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed1/best_val.pth",
+      "selection": "benchmarks/02_RT_DETR_R18/runs/seed1/BEST_VAL.json"
+    },
+    "2": {
+      "checkpoint": "benchmarks/02_RT_DETR_R18/runs/seed2/best_val.pth",
+      "selection": "benchmarks/02_RT_DETR_R18/runs/seed2/BEST_VAL.json"
+    }
+  }
+}

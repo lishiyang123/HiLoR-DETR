@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['Brick', 'Concrete', 'Plastic Bottle', 'Reinforcement', 'timber']
+
+roboflow:
+  workspace: umesh-5ausw
+  project: ai-waste-sorting_2-bnqge
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/umesh-5ausw/ai-waste-sorting_2-bnqge/dataset/5

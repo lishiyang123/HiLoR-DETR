@@ -1,0 +1,21 @@
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+*.pth binary
+*.pt binary
+*.onnx binary
+*.engine binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# Preserve the exact bytes used by the released source inventories.
+tests/test_capture.py -text
+tools/capture.py -text
+tools/training.py -text

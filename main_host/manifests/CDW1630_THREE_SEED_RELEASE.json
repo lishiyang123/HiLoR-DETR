@@ -1,0 +1,310 @@
+{
+  "format_version": 3,
+  "dataset": "CDW1630",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "split_counts": {
+    "train": {
+      "images": 1042,
+      "gt": 5336
+    },
+    "val": {
+      "images": 237,
+      "gt": 958
+    },
+    "test": {
+      "images": 237,
+      "gt": 1071
+    }
+  },
+  "runs": [
+    {
+      "seed": 0,
+      "method": "DEIM",
+      "profile": "cdw_deim_seed0_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed0/best_stg2.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed0/official_test/RESULT.json",
+      "predictions": "dataset_analysis/predictions/deim/seed0.json.gz",
+      "test_capture": "main_host/features/deim/seed0/test_capture.pt"
+    },
+    {
+      "seed": 0,
+      "method": "GCCS",
+      "profile": "cdw_gccs_seed0_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed0/native_test/RESULT.json",
+      "predictions": "ranking_comparison/results/native_gccs/predictions.json.gz",
+      "test_capture": "main_host/features/gccs/seed0/test_capture.pt"
+    },
+    {
+      "seed": 0,
+      "method": "HiLoR-DETR",
+      "profile": "cdw_full_seed0_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed0/final/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed0/final/RESULT.json",
+      "predictions": "dataset_analysis/predictions/hilor/seed0.json.gz",
+      "test_capture": "main_host/features/full/seed0/test_capture.pt"
+    },
+    {
+      "seed": 1,
+      "method": "DEIM",
+      "profile": "cdw_deim_seed1_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed1/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed1/official_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed1/official_test/RESULT.json",
+      "predictions": "dataset_analysis/predictions/deim/seed1.json.gz",
+      "test_capture": "main_host/features/deim/seed1/test_capture.pt"
+    },
+    {
+      "seed": 1,
+      "method": "GCCS",
+      "profile": "cdw_gccs_seed1_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed1/native_test/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed1/native_test/RESULT.json",
+      "predictions": "main_host/results/CDW1630/Ours/seed1/native_test/predictions.json.gz",
+      "test_capture": "main_host/features/gccs/seed1/test_capture.pt"
+    },
+    {
+      "seed": 1,
+      "method": "HiLoR-DETR",
+      "profile": "cdw_full_seed1_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed1/final/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed1/final/RESULT.json",
+      "predictions": "dataset_analysis/predictions/hilor/seed1.json.gz",
+      "test_capture": "main_host/features/full/seed1/test_capture.pt"
+    },
+    {
+      "seed": 2,
+      "method": "DEIM",
+      "profile": "cdw_deim_seed2_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed2/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed2/official_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed2/official_test/RESULT.json",
+      "predictions": "dataset_analysis/predictions/deim/seed2.json.gz",
+      "test_capture": "main_host/features/deim/seed2/test_capture.pt"
+    },
+    {
+      "seed": 2,
+      "method": "GCCS",
+      "profile": "cdw_gccs_seed2_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed2/native_test/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed2/native_test/RESULT.json",
+      "predictions": "main_host/results/CDW1630/Ours/seed2/native_test/predictions.json.gz",
+      "test_capture": "main_host/features/gccs/seed2/test_capture.pt"
+    },
+    {
+      "seed": 2,
+      "method": "HiLoR-DETR",
+      "profile": "cdw_full_seed2_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed2/final/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed2/final/RESULT.json",
+      "predictions": "dataset_analysis/predictions/hilor/seed2.json.gz",
+      "test_capture": "main_host/features/full/seed2/test_capture.pt"
+    }
+  ],
+  "captures": {
+    "deim": {
+      "0": {
+        "train": "main_host/features/deim/seed0/train_capture.pt",
+        "train_evaluation": "main_host/features/deim/seed0/train_eval.pth",
+        "val": "main_host/features/deim/seed0/val_capture.pt",
+        "val_evaluation": "main_host/features/deim/seed0/val_eval.pth"
+      },
+      "1": {
+        "train": "main_host/features/deim/seed1/train_capture.pt",
+        "train_evaluation": "main_host/features/deim/seed1/train_eval.pth",
+        "val": "main_host/features/deim/seed1/val_capture.pt",
+        "val_evaluation": "main_host/features/deim/seed1/val_eval.pth"
+      },
+      "2": {
+        "train": "main_host/features/deim/seed2/train_capture.pt",
+        "train_evaluation": "main_host/features/deim/seed2/train_eval.pth",
+        "val": "main_host/features/deim/seed2/val_capture.pt",
+        "val_evaluation": "main_host/features/deim/seed2/val_eval.pth"
+      }
+    },
+    "gccs": {
+      "0": {
+        "train": "sensitivity/tau_beta/inputs/train_capture.pt",
+        "train_evaluation": "main_host/features/gccs/seed0/train_eval.pth",
+        "val": "sensitivity/tau_beta/inputs/val_capture.pt",
+        "val_evaluation": "main_host/features/gccs/seed0/val_eval.pth"
+      },
+      "1": {
+        "train": "main_host/features/gccs/seed1/train_capture.pt",
+        "train_evaluation": "main_host/features/gccs/seed1/train_eval.pth",
+        "val": "main_host/features/gccs/seed1/val_capture.pt",
+        "val_evaluation": "main_host/features/gccs/seed1/val_eval.pth"
+      },
+      "2": {
+        "train": "main_host/features/gccs/seed2/train_capture.pt",
+        "train_evaluation": "main_host/features/gccs/seed2/train_eval.pth",
+        "val": "main_host/features/gccs/seed2/val_capture.pt",
+        "val_evaluation": "main_host/features/gccs/seed2/val_eval.pth"
+      }
+    }
+  },
+  "shared_inputs": {
+    "test_predictions": "dataset_analysis/inputs.json",
+    "ranking": "ranking_comparison/settings.json",
+    "sensitivity": "sensitivity/tau_beta/settings.json",
+    "oracle": "numerical_evidence/evidence/oracle/README.md",
+    "ccvr_diagnostics": "main_host/analysis/ccvr/README.md"
+  },
+  "canonical_records": {
+    "three_seed_summary": {
+      "path": "paper_tables/three_seed/CDW_FINAL_THREE_SEED_SUMMARY.json"
+    },
+    "classwise_metrics": {
+      "path": "results/CDW1630/classwise_metrics/classwise_mean_std.csv"
+    },
+    "source_manifest": {
+      "path": "source/FINAL_CODE/SOURCE_MANIFEST.json"
+    }
+  },
+  "system_runs": [
+    {
+      "seed": 0,
+      "method": "DEIM",
+      "profile": "cdw_deim_seed0_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed0/best_stg2.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed0/official_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed0/official_test/RESULT.json",
+      "predictions": "dataset_analysis/predictions/deim/seed0.json.gz",
+      "test_capture": "main_host/features/deim/seed0/test_capture.pt"
+    },
+    {
+      "seed": 0,
+      "method": "DEIM+CCVR",
+      "profile": "cdw_deim_ccvr_seed0_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed0/best_stg2.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed0/ccvr_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed0/ccvr_test/RESULT.json",
+      "predictions": "main_host/results/CDW1630/B0/seed0/ccvr_test/predictions.json.gz",
+      "test_capture": "main_host/features/deim_ccvr/seed0/test_capture.pt",
+      "fit_binding": "main_host/checkpoints/CDW1630/B0/seed0/calibration/CALIBRATION_BINDING.json"
+    },
+    {
+      "seed": 0,
+      "method": "GCCS",
+      "profile": "cdw_gccs_seed0_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed0/native_test/RESULT.json",
+      "predictions": "ranking_comparison/results/native_gccs/predictions.json.gz",
+      "test_capture": "main_host/features/gccs/seed0/test_capture.pt"
+    },
+    {
+      "seed": 0,
+      "method": "HiLoR-DETR",
+      "profile": "cdw_full_seed0_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed0/final/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed0/final/RESULT.json",
+      "predictions": "dataset_analysis/predictions/hilor/seed0.json.gz",
+      "test_capture": "main_host/features/full/seed0/test_capture.pt"
+    },
+    {
+      "seed": 1,
+      "method": "DEIM",
+      "profile": "cdw_deim_seed1_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed1/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed1/official_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed1/official_test/RESULT.json",
+      "predictions": "dataset_analysis/predictions/deim/seed1.json.gz",
+      "test_capture": "main_host/features/deim/seed1/test_capture.pt"
+    },
+    {
+      "seed": 1,
+      "method": "DEIM+CCVR",
+      "profile": "cdw_deim_ccvr_seed1_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed1/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed1/ccvr_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed1/ccvr_test/RESULT.json",
+      "predictions": "main_host/results/CDW1630/B0/seed1/ccvr_test/predictions.json.gz",
+      "test_capture": "main_host/features/deim_ccvr/seed1/test_capture.pt",
+      "fit_binding": "main_host/checkpoints/CDW1630/B0/seed1/calibration/CALIBRATION_BINDING.json"
+    },
+    {
+      "seed": 1,
+      "method": "GCCS",
+      "profile": "cdw_gccs_seed1_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed1/native_test/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed1/native_test/RESULT.json",
+      "predictions": "main_host/results/CDW1630/Ours/seed1/native_test/predictions.json.gz",
+      "test_capture": "main_host/features/gccs/seed1/test_capture.pt"
+    },
+    {
+      "seed": 1,
+      "method": "HiLoR-DETR",
+      "profile": "cdw_full_seed1_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed1/final/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed1/final/RESULT.json",
+      "predictions": "dataset_analysis/predictions/hilor/seed1.json.gz",
+      "test_capture": "main_host/features/full/seed1/test_capture.pt"
+    },
+    {
+      "seed": 2,
+      "method": "DEIM",
+      "profile": "cdw_deim_seed2_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed2/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed2/official_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed2/official_test/RESULT.json",
+      "predictions": "dataset_analysis/predictions/deim/seed2.json.gz",
+      "test_capture": "main_host/features/deim/seed2/test_capture.pt"
+    },
+    {
+      "seed": 2,
+      "method": "DEIM+CCVR",
+      "profile": "cdw_deim_ccvr_seed2_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/B0/seed2/best_stg1.pth",
+      "evaluation": "main_host/results/CDW1630/B0/seed2/ccvr_test/eval.pth",
+      "result": "main_host/results/CDW1630/B0/seed2/ccvr_test/RESULT.json",
+      "predictions": "main_host/results/CDW1630/B0/seed2/ccvr_test/predictions.json.gz",
+      "test_capture": "main_host/features/deim_ccvr/seed2/test_capture.pt",
+      "fit_binding": "main_host/checkpoints/CDW1630/B0/seed2/calibration/CALIBRATION_BINDING.json"
+    },
+    {
+      "seed": 2,
+      "method": "GCCS",
+      "profile": "cdw_gccs_seed2_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed2/native_test/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed2/native_test/RESULT.json",
+      "predictions": "main_host/results/CDW1630/Ours/seed2/native_test/predictions.json.gz",
+      "test_capture": "main_host/features/gccs/seed2/test_capture.pt"
+    },
+    {
+      "seed": 2,
+      "method": "HiLoR-DETR",
+      "profile": "cdw_full_seed2_test",
+      "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
+      "evaluation": "main_host/results/CDW1630/Ours/seed2/final/eval.pth",
+      "result": "main_host/results/CDW1630/Ours/seed2/final/RESULT.json",
+      "predictions": "dataset_analysis/predictions/hilor/seed2.json.gz",
+      "test_capture": "main_host/features/full/seed2/test_capture.pt"
+    }
+  ],
+  "mapping_stage": {
+    "seed": 0,
+    "method": "GCCS+mapping",
+    "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+    "evaluation": "main_host/results/CDW1630/Ours/seed0/mapping_test/eval.pth",
+    "result": "main_host/results/CDW1630/Ours/seed0/mapping_test/RESULT.json",
+    "predictions": "main_host/results/CDW1630/Ours/seed0/mapping_test/predictions.json.gz",
+    "test_capture": "main_host/features/gccs/seed0/test_capture.pt",
+    "fit_binding": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/CALIBRATION_BINDING.json"
+  }
+}

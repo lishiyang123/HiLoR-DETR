@@ -1,0 +1,95 @@
+{
+  "schema": "cdw1630-sota-yolov9-c-batch8-frozen-test-v1",
+  "status": "FROZEN_AFTER_TRAIN_VAL_BEFORE_TEST_INFERENCE",
+  "model": "YOLOv9-C",
+  "model_key": "yolov9c",
+  "target_directory": "benchmarks/10_YOLOV9_C",
+  "source_directory": "source/YOLOv9_official",
+  "training_lock_sha256": "a2e7ec5aafea5f525624839dbd885a4bd0ad0410f6ea1d742b50a03c1455bac1",
+  "training_binding": "benchmarks/10_YOLOV9_C/manifests/TRAINING_BINDING.json",
+  "checkpoint_relative_path": "weights/best_val_ap.pt",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 102,
+  "class_names": [
+    "Brick",
+    "Concrete",
+    "Plastic Bottle",
+    "Reinforcement",
+    "timber"
+  ],
+  "class_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "test_annotation": "main_host/datasets/CDW1630/annotations/instances_test2017.json",
+  "test_images": "main_host/datasets/CDW1630/test2017",
+  "test_image_count": 237,
+  "test_annotation_count": 1071,
+  "inference": {
+    "imgsz": 640,
+    "batch": 8,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "device": 0,
+    "precision": "FP32",
+    "half": false,
+    "augment": false,
+    "multi_label": true,
+    "agnostic_nms": false,
+    "scaleup": false,
+    "letterbox_auto": false
+  },
+  "native_inference": "official YOLOv9 dual head: model(images)[0][1] followed by official non_max_suppression and scale_boxes",
+  "evaluation": {
+    "implementation": "faster_coco_eval.COCOeval_faster",
+    "version": "1.7.2",
+    "iou_type": "bbox",
+    "maxDets": [
+      1,
+      10,
+      100
+    ],
+    "metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "APs",
+      "APm",
+      "APl",
+      "AR1",
+      "AR10",
+      "AR100",
+      "ARs",
+      "ARm",
+      "ARl",
+      "AP80",
+      "AP85",
+      "AP90",
+      "AP95"
+    ],
+    "replay_tolerance": "exact"
+  },
+  "model_python": "/root/autodl-tmp/envs/yolov9_cdw_train/bin/python",
+  "evaluation_python": "/root/autodl-tmp/envs/deim_cvpr2025/bin/python",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "result_directory": "results/test_batch8_v1",
+  "canonical_protocol_directory": "protocol/frozen_test_batch8_v1",
+  "result_files": [
+    "predictions.coco.json",
+    "images_seen.json",
+    "runtime.json",
+    "metrics.json",
+    "RESULT.json",
+    "coco_bbox_eval.pth"
+  ],
+  "test_model_or_parameter_selection": false,
+  "fitting_on_test": false
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "scoped-efficiency-run-bindings-v1",
+  "seed": 0,
+  "data": {
+    "root": "${DATA_ROOT}",
+    "annotation": "${DATA_ROOT}/annotations/instances_test2017.json",
+    "val_annotation": "${DATA_ROOT}/annotations/instances_val2017.json",
+    "test_annotation_sha256": "8130fa5706cd260a49df43d73074b2f3a55a5d2e8525c1f1b7489005a0524e05",
+    "splits": {
+      "train": {
+        "images": 1042,
+        "objects": 5336
+      },
+      "val": {
+        "images": 237,
+        "objects": 958
+      }
+    }
+  },
+  "secondary_binding": {
+    "path": "${SECOND_ROOT}/artifacts/inference/seed0/qccr_umr_binding.json",
+    "sha256": "b8ca33ed8015576f9ad9b3d86fd5fd28eefa08413a43b43fa1c801cd942eae70"
+  },
+  "models": {
+    "deim": {
+      "label": "DEIM",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "checkpoint": "${PRIMARY_ROOT}/checkpoints/CDW1630/B0/seed0/best_stg2.pth",
+      "checkpoint_sha256": "a4285b67728fa990fdef5998a3184d517f1f8a7d6629633f2714f6a577e15bfe",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "gccs": {
+      "label": "DEIM + GCCS",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "checkpoint": "${PRIMARY_ROOT}/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+      "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "hilor": {
+      "label": "HiLoR-DETR",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "checkpoint": "${PRIMARY_ROOT}/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
+      "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": true,
+      "fitted_scalars": 4,
+      "head": {
+        "path": "${PRIMARY_ROOT}/checkpoints/CDW1630/Ours/seed0/calibration/umr_mlp_head_seed0_pw4.pt",
+        "sha256": "89eca180f663908802bb9d7cfa34a6d8ae23b9f418255ae9dd888a075659132f"
+      }
+    },
+    "r18": {
+      "label": "RT-DETR-R18",
+      "source": "${SOTA_ROOT}/02_RT_DETR_R18/source/RT-DETR_official/rtdetr_pytorch",
+      "flavor": "src",
+      "checkpoint": "${SOTA_ROOT}/02_RT_DETR_R18/runs/seed0/best_val.pth",
+      "checkpoint_sha256": "b356adda76a21c556a22531e8c129cf3a1a6aa62d96f67b44702b213a656aae1",
+      "python": "${ENV_ROOT}/rtdetr_sota/bin/python",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "r18_hilor": {
+      "label": "RT-DETR-R18 + HiLoR",
+      "source": "${SECOND_ROOT}/source/RT-DETR_HiLoR/rtdetr_pytorch",
+      "flavor": "src",
+      "checkpoint": "${SECOND_ROOT}/runs/seed0/best_val.pth",
+      "checkpoint_sha256": "312bea63c1f74d7880ae335360cba9ccda1826c8b0a5bb8b7d3fbb648ae73ddd",
+      "python": "${ENV_ROOT}/rtdetr_sota/bin/python",
+      "full": true,
+      "fitted_scalars": 4,
+      "head": {
+        "path": "${SECOND_ROOT}/artifacts/inference/seed0/umr_seed0_pw4_best.pt",
+        "sha256": "380b0b2823f544711dac836d655761f248f8c693684b47a3b6572ecdeaeaf07c"
+      }
+    },
+    "train_deim": {
+      "label": "DEIM",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false
+    },
+    "train_gccs": {
+      "label": "DEIM + GCCS",
+      "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
+      "flavor": "engine",
+      "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
+      "full": false
+    },
+    "dfine": {
+      "label": "D-FINE-M",
+      "source": "${SOTA_ROOT}/03_D_FINE_M/source/D-FINE_official",
+      "flavor": "src",
+      "python": "${ENV_ROOT}/dfine_sota/bin/python",
+      "full": false,
+      "fitted_scalars": 0,
+      "checkpoint": "${SOTA_ROOT}/03_D_FINE_M/runs/seed0/best_stg1.pth",
+      "checkpoint_sha256": "0fdf1023f14a528c6e23fb39896328f17c81b4b271a7609f3e36bb6e0b47ea8f"
+    },
+    "yolov8": {
+      "label": "YOLOv8-L",
+      "source": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv8_L_TRAINED/source/Ultralytics_official",
+      "flavor": "ultralytics",
+      "python": "${ENV_ROOT}/yolo_sota_eval/bin/python",
+      "checkpoint": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv8_L_TRAINED/runs/seed0/weights/best_val_ap.pt",
+      "checkpoint_sha256": "13af8332ca9f103d7708c1feb0d232bc4806c030e35696ee83f41ad3f544c5a0",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "yolov11": {
+      "label": "YOLO11-L",
+      "source": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv11_L_TRAINED/source/Ultralytics_official",
+      "flavor": "ultralytics",
+      "python": "${ENV_ROOT}/yolo_sota_eval/bin/python",
+      "checkpoint": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv11_L_TRAINED/runs/seed0/weights/best_val_ap.pt",
+      "checkpoint_sha256": "e0ad23e2570673d6b86c1721eaf393c76aacaa9c469f3f432f4a718102cf9ee4",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "yolov10": {
+      "label": "YOLOv10-M",
+      "source": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv10_M_TRAINED/source/YOLOv10_official",
+      "flavor": "ultralytics",
+      "python": "${ENV_ROOT}/yolov10_cdw_train/bin/python",
+      "checkpoint": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv10_M_TRAINED/runs/seed0/weights/best_val_ap.pt",
+      "checkpoint_sha256": "2d63cf43956b4ec0b384e876162ba4316eb437aefe66a99beb7f7c270dcb45e4",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "yolov12": {
+      "label": "YOLOv12-M (turbo)",
+      "source": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv12_M_TRAINED/source/YOLOv12_official",
+      "flavor": "ultralytics",
+      "python": "${ENV_ROOT}/yolov12_cdw_train/bin/python",
+      "checkpoint": "${SOTA_ROOT}/01_YOLO_SERIES/YOLOv12_M_TRAINED/runs/seed0/weights/best_val_ap.pt",
+      "checkpoint_sha256": "8eed9021f3c47aa167f413335416c4971e1b473948134933ccd2ef68a5526fd3",
+      "full": false,
+      "fitted_scalars": 0
+    },
+    "yolov9": {
+      "label": "YOLOv9-C",
+      "source": "${SOTA_ROOT}/10_YOLOV9_C/source/YOLOv9_official",
+      "flavor": "yolov9",
+      "python": "${ENV_ROOT}/yolov9_cdw_train/bin/python",
+      "checkpoint": "${SOTA_ROOT}/10_YOLOV9_C/runs/seed0/weights/best_val_ap.pt",
+      "checkpoint_sha256": "d99209323e6012a1c72c51d5717186f3be69d0e55ee61df06af519af41791460",
+      "full": false,
+      "fitted_scalars": 0
+    }
+  },
+  "complexity_models": [
+    "yolov8",
+    "yolov11",
+    "yolov9",
+    "yolov10",
+    "yolov12",
+    "dfine",
+    "deim",
+    "hilor",
+    "r18",
+    "r18_hilor"
+  ],
+  "latency_models": [
+    "deim",
+    "gccs",
+    "hilor"
+  ],
+  "training": {
+    "models": [
+      "train_deim",
+      "train_gccs"
+    ],
+    "epochs": 102,
+    "batch_size": 8,
+    "precision": "FP32",
+    "ema": true,
+    "mean_scope": "all 102 complete train_one_epoch calls; validation and checkpoint writing excluded",
+    "peak_scope": "max allocated CUDA memory over training only; model/criterion/optimizer/EMA included",
+    "initialization": "same official COCO pretrained checkpoint",
+    "tensorboard": "disabled for both; engine diagnostic logging retained",
+    "initialization_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "cdw1630-rtdetr-r18-hilor-optimized-donor-lock-v1",
+  "created_at": "2026-10-07",
+  "server_source": "${RELEASE_ROOT}/main_host/source/OPTIMIZED_REPRO_SOURCE",
+  "server_reference_copy": "${RELEASE_ROOT}/second_host/references/OPTIMIZED_REPRO_SOURCE",
+  "content_aggregate_sha256": "ed59c8c0dc3b42c2564fe385dd6b4d544100e75573b5ed0a0f39ce859b76f7d7",
+  "content_aggregate_method": "SHA-256 of the sorted per-file sha256sum stream, paths relative to tree root",
+  "reference_copy_read_only": true,
+  "ufd_difficulty_cdf": {
+    "relative_path": "artifacts/ufd/difficulty_cdf_train640.json",
+    "sha256": "5ea69d7ed2d93ddcedb1e59070b0be7ef7a4e0060f67768ad96e30afdaa0bd40",
+    "required_keys": [
+      "area_640_sorted",
+      "aspect_difficulty_sorted",
+      "max_ioa_sorted"
+    ],
+    "sample_count": 5581,
+    "source_split": "CDW1630 Train"
+  },
+  "donor_manifest_status": "candidate-not-installed",
+  "donor_report_status": "candidate only",
+  "clean_baseline_tree_sha256": "30a17dc94f0b83aee9e66456f3597b39ad2d9a0d103231d100dbe8bc0f95f6ffc",
+  "optimized_relative_to_clean": [
+    "engine/deim/criterion_lcct.py",
+    "engine/deim/criterion_ufd.py",
+    "engine/deim/postprocessor.py"
+  ],
+  "algorithm_sources": [
+    "engine/deim/criterion_lcct.py",
+    "engine/deim/criterion_ufd.py",
+    "engine/deim/qccr.py",
+    "engine/deim/umr.py",
+    "tools/calibration/common/capture_train_val.py",
+    "tools/calibration/common/freeze_qccr.py",
+    "tools/calibration/common/train_umr_select_val.py"
+  ],
+  "use_policy": "Fixed donor only. Port host-independent semantics and accepted optimizations selectively; do not transplant the DEIM tree or assume CUDA-Graph equivalence on RT-DETR."
+}

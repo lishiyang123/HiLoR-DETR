@@ -1,0 +1,49 @@
+{
+  "checkpoint": {
+    "80_class_heads": 10,
+    "head_examples": {
+      "decoder.dec_score_head.0.bias": [
+        80
+      ],
+      "decoder.dec_score_head.0.weight": [
+        80,
+        256
+      ],
+      "decoder.enc_score_head.bias": [
+        80
+      ],
+      "decoder.enc_score_head.weight": [
+        80,
+        256
+      ]
+    },
+    "keys": 1053
+  },
+  "dataset": {
+    "train": {
+      "annotation": "${RELEASE_ROOT}/main_host/datasets/CDW1630/annotations/instances_train2017.json",
+      "image_dir": "${RELEASE_ROOT}/main_host/datasets/CDW1630/train2017",
+      "images": 1042,
+      "instances": 5336,
+      "sha256": "1820403e0e0e9be427965665adb5cefd853aeb6839e75185c74835ebb7f65218"
+    },
+    "val": {
+      "annotation": "${RELEASE_ROOT}/main_host/datasets/CDW1630/annotations/instances_val2017.json",
+      "image_dir": "${RELEASE_ROOT}/main_host/datasets/CDW1630/val2017",
+      "images": 237,
+      "instances": 958,
+      "sha256": "5a3d511e55c64bebf4652e46d4602037ae11fd7949373d3122568da7ef961c13"
+    }
+  },
+  "environment": {
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "python": "3.11.9",
+    "torch": "2.5.1+cu124",
+    "torchvision": "0.20.1+cu124"
+  },
+  "formal_config_sha256": "98cbfd9ab130a1c5db4b4dd9b583ee9e270e198daeef7754422a792809715014",
+  "schema": "dfine-m-input-bindings-v1",
+  "source_commit": "956d1709314c2c6a4df6f34de232054578a7449f",
+  "weight_sha256": "b44a7586bf490858c7b8bce9e44bd025cb88724df9a07a8deb3ae1c12e608195"
+}

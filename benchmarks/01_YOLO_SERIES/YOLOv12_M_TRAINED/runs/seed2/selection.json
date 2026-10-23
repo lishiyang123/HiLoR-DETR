@@ -1,0 +1,10 @@
+{
+  "model": "yolov12",
+  "seed": 2,
+  "epoch_zero_based": 86,
+  "epoch_one_based": 87,
+  "val_AP": 0.7446,
+  "checkpoint": "weights/best_val_ap.pt",
+  "selection": "maximum Val AP; earliest exact tie",
+  "test_used": false
+}

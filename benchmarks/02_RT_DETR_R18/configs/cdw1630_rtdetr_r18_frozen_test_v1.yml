@@ -1,0 +1,6 @@
+__include__:
+- cdw1630_rtdetr_r18_formal.yml
+val_dataloader:
+  dataset:
+    img_folder: ${RELEASE_ROOT}/main_host/datasets/CDW1630/test2017
+    ann_file: ${RELEASE_ROOT}/main_host/datasets/CDW1630/annotations/instances_test2017.json
