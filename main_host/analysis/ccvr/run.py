@@ -228,7 +228,7 @@ def main():
                   diagnostics='COCO one-to-one matching, all areas; no score threshold or added NMS', runs={})
     for detector, full_name, calibration in (
         ('DEIM', 'DEIM+CCVR', 'main_host/checkpoints/CDW1630/B0/seed0/calibration'),
-        ('GCA', 'HiLoR-DETR', 'main_host/checkpoints/CDW1630/Ours/seed0/calibration'),
+        ('GSA', 'HiLoR-DETR', 'main_host/checkpoints/CDW1630/Ours/seed0/calibration'),
     ):
         before, after = systems[detector], systems[full_name]
         references = [read(root / r['result']) for r in (before, after)]
@@ -248,7 +248,7 @@ def main():
             evaluated = evaluate(shared, annotation, raw_predictions[phase], references[phase]['metrics'], queries[phase])
             stages.append(evaluated)
             class_rows.extend(dict(detector=detector, stage=('before', 'after')[phase], **r) for r in evaluated[2])
-        if detector == 'GCA':
+        if detector == 'GSA':
             mapped_metrics, _, _ = evaluate(shared, annotation, read(root / mapping_run['predictions']),
                                             read(root / mapping_run['result'])['metrics'])
             mapped_source = mapping_run['result']

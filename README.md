@@ -1,9 +1,8 @@
 # HiLoR-DETR reproduction materials
 
 This release provides the implementation, configurations and numerical evidence
-for the CDW1630 and BTC experiments. HiLoR-DETR combines training-time
-GCA with inference-time
-competition-conditioned value reranking (CCVR).
+for the CDW1630 and BTC experiments. HiLoR-DETR combines Geometry-guided Supervision Adjustment (GSA) during training
+with inference-time competition-conditioned value reranking (CCVR).
 
 ## Start here
 
@@ -49,7 +48,7 @@ included. Use a case-sensitive Linux/WSL filesystem when extracting the release.
 Current photographic examples (F1, F2 and F7) use BTC seed 0; see
 `numerical_evidence/README.md` for the exact cases and numerical replay.
 
-The main CDW1630 package contains Native DEIM, Native + CCVR, GCA and complete
+The main CDW1630 package contains Native DEIM, Native + CCVR, GSA and complete
 HiLoR-DETR for seeds 0/1/2. Their twelve formal evaluations and reusable input locations are
 listed in `main_host/manifests/CDW1630_THREE_SEED_RELEASE.json`. See
 `main_host/README.md` for shared predictions and optional raw captures.
@@ -61,8 +60,8 @@ The shared CDW1630/BTC implementation is under
 
 | Stage | Functional file |
 | --- | --- |
-| GCA: auxiliary geometric supervision | `auxiliary_geometry.py` |
-| GCA: classification-role adjustment | `classification_role.py` |
+| GSA: auxiliary geometric supervision | `auxiliary_geometry.py` |
+| GSA: classification-role adjustment | `classification_role.py` |
 | CCVR: competition-conditioned mapping | `competition_mapping.py` |
 | CCVR: candidate-value estimation | `candidate_value.py` |
 
@@ -89,7 +88,7 @@ Versioned downloads: [Releases](https://github.com/lishiyang123/HiLoR-DETR/relea
 Choose the release cited by the manuscript. Use its Git tag, automatic "Source
 code" archive, or attached code archive, together with the matching result and
 asset files listed in that release's `DOWNLOAD_MANIFEST.json`. The source includes
-both dataset-specific Train difficulty CDFs required by the main-host GCA profiles.
+both dataset-specific Train difficulty CDFs required by the main-host GSA profiles.
 Checkpoint inference also requires the selected weights, fitted CCVR assets and
 dataset inputs.
 

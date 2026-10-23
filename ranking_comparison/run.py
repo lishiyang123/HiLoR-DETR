@@ -85,7 +85,7 @@ def save_rows(output, rows):
 
 def saved_metrics(settings, output):
     annotation = ROOT / settings['annotations']['test']
-    jobs = [('Native GCA', ROOT / settings['reference_predictions']['native'])]
+    jobs = [('Native GSA', ROOT / settings['reference_predictions']['native'])]
     jobs += [(name, prediction_file(HERE / 'results' / name, method)) for name, method in METHODS]
     jobs += [('Complete CCVR', ROOT / settings['reference_predictions']['full'])]
     rows = [dict(method=name, **flat_metrics(evaluate_coco_detections(annotation, read(path))))
@@ -145,7 +145,7 @@ def replay(settings, output, state):
     }
     root = output / 'results'
     root.mkdir()
-    rows = [reference_row(settings, 'Native GCA', 'native')]
+    rows = [reference_row(settings, 'Native GSA', 'native')]
     for name, method in METHODS:
         folder = root / name
         command('evaluate_on_test.py', '--capture', capture,

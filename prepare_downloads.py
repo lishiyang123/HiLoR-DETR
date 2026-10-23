@@ -24,7 +24,7 @@ def group_for(relative):
     name = path.name.lower()
     parts = {part.lower() for part in path.parts}
     suffix = path.suffix.lower()
-    # GCA profiles load these fixed Train statistics during initialization,
+    # GSA profiles load these fixed Train statistics during initialization,
     # including checkpoint evaluation. Keep them with runnable source, not results.
     if suffix == '.json' and name.endswith('_difficulty_cdf_train640.json') and 'ufd' in parts:
         return 'code'
@@ -53,7 +53,7 @@ def group_for(relative):
     if suffix in {".csv", ".tsv", ".npz", ".npy", ".log"}:
         return "results"
     if parts.intersection({"results", "outputs", "paper_tables", "training_records",
-                           "predictions", "evaluations", "evaluations_gca",
+                           "predictions", "evaluations", "evaluations_gsa",
                            "evidence", "analysis", "reports", "captures", "artifacts"}):
         if suffix not in {".md", ".txt"}:
             return "results"

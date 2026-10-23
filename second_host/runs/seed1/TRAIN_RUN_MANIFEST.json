@@ -1,6 +1,6 @@
 {
   "seed": 1,
-  "method": "gca",
+  "method": "gsa",
   "val_evaluator": {
     "name": "faster-coco-eval",
     "version": "1.7.2",
@@ -21,6 +21,6 @@
   },
   "bindings": {
     "protocol_lock_sha256": "66629a3115cb6e78e8ce372fd884b1bc06e34bb006b347572d7a249f7267e769",
-    "implementation_lock_sha256": "a9b8438dec892517d9f931335af165c60a8cbfdc260422ca0b9f5d705909413d"
+    "implementation_lock_sha256": "ec2847008d6f6f3921329e4b6bdc963ddab203d59d2d270599f37cb91d26e919"
   }
 }

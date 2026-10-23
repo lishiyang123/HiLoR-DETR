@@ -113,13 +113,13 @@ class ReleaseInputTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             annotation = 'main_host/datasets/CDW1630/annotations/instances_test2017.json'
-            capture = 'ranking_comparison/state/captures/gca_seed0_test_capture.pt'
+            capture = 'ranking_comparison/state/captures/gsa_seed0_test_capture.pt'
             rows = [record(root, annotation, b'{}'), record(root, capture, present=False)]
             inventory(root, rows)
             with patch.multiple(studies, ROOT=root, PRIMARY=root / 'main_host',
                                 NN=root / 'ranking_comparison'):
                 with patch.object(studies, 'sha', side_effect=AssertionError('hashing ran early')):
-                    with self.assertRaisesRegex(RuntimeError, 'gca_seed0_test_capture.pt'):
+                    with self.assertRaisesRegex(RuntimeError, 'gsa_seed0_test_capture.pt'):
                         studies.check_bound_inputs()
 
 

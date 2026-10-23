@@ -3,9 +3,9 @@
 Authoritative results are under `publication/`:
 
 - `COMPLEXITY_TABLE.csv`: ten configurations, deployed Params and detector GFLOPs.
-- `LATENCY_TABLE.csv`: DEIM, DEIM+GCA and complete HiLoR-DETR, measured together
+- `LATENCY_TABLE.csv`: DEIM, DEIM+GSA and complete HiLoR-DETR, measured together
   using balanced alternating passes in one process.
-- `TRAINING_COST_TABLE.csv`: DEIM and DEIM+GCA, two complete 102-epoch runs.
+- `TRAINING_COST_TABLE.csv`: DEIM and DEIM+GSA, two complete 102-epoch runs.
 
 ## Complexity
 
@@ -18,7 +18,7 @@ its selected seed-0 checkpoint and deployment conversion.
 
 RT-DETR-R18 and its complete HiLoR variant use their selected seed-0 checkpoints
 from the second-host package, with strict EMA loading. Detector complexity is
-shared by GCA and full HiLoR; only full HiLoR adds CCVR deployment parameters.
+shared by GSA and full HiLoR; only full HiLoR adds CCVR deployment parameters.
 
 ## Main-host latency
 
@@ -37,7 +37,7 @@ COCO evaluation. Report postprocessing and total latency, not a SOTA-wide FPS cl
 RTX 4090, seed 0, batch 8, FP32, EMA, 102 complete train_one_epoch calls. Timing
 includes loading/H2D/forward/loss/backward/optimizer/EMA/logging and excludes
 validation and checkpoint saving. Peak is training allocated CUDA memory, not
-reserved or inference memory. Full HiLoR reuses GCA detector training; later
+reserved or inference memory. Full HiLoR reuses GSA detector training; later
 CCVR fitting is separate.
 
 ## Commands

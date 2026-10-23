@@ -18,21 +18,21 @@
         "evaluation": "benchmarks/02_RT_DETR_R18/results/test_reeval_v1/seed2"
       }
     },
-    "gca": {
+    "gsa": {
       "0": {
         "checkpoint": "second_host/runs/seed0/best_val.pth",
         "checkpoint_sha256": "312bea63c1f74d7880ae335360cba9ccda1826c8b0a5bb8b7d3fbb648ae73ddd",
-        "evaluation": "second_host/evaluations_gca/seed0"
+        "evaluation": "second_host/evaluations_gsa/seed0"
       },
       "1": {
         "checkpoint": "second_host/runs/seed1/best_val.pth",
         "checkpoint_sha256": "00a9679d527b91763217b3cec1af3b1323b6caea8d44c01c92011626042f0a0b",
-        "evaluation": "second_host/evaluations_gca/seed1"
+        "evaluation": "second_host/evaluations_gsa/seed1"
       },
       "2": {
         "checkpoint": "second_host/runs/seed2/best_val.pth",
         "checkpoint_sha256": "3db2ab05583321b5b1b663372a62fe1f07d74de2f1f4e1a0cbbf103e78fdb7c2",
-        "evaluation": "second_host/evaluations_gca/seed2"
+        "evaluation": "second_host/evaluations_gsa/seed2"
       }
     },
     "full": {

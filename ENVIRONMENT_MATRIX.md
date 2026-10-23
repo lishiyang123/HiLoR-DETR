@@ -20,7 +20,7 @@ that every external model shares one software stack.
 
 | Study | Runtime / evidence |
 |---|---|
-| RT-DETR-R18 adapter | [Installation](second_host/INSTALL.md), `second_host/requirements_runtime.txt`: Torch 2.0.1+cu118; Native/GCA training Val and formal Test entries use faster-coco-eval 1.7.2 |
+| RT-DETR-R18 adapter | [Installation](second_host/INSTALL.md), `second_host/requirements_runtime.txt`: Torch 2.0.1+cu118; Native/GSA training Val and formal Test entries use faster-coco-eval 1.7.2 |
 | Main-host paired latency | deim_cvpr2025 / Torch 2.5.1+cu124, CUDA runtime 12.4; RTX 4090, Xeon Gold 6430, driver 560.35.03; FP32 forward/postprocessing with autocast disabled; [protocol](efficiency/README.md#main-host-latency) and per-measurement environment/GPU snapshots |
 | Main-host complexity and training cost | Separate measurement records under `efficiency/outputs/complexity/` and `efficiency/outputs/training/`; their settings are independent of the paired-latency run |
 | Native/adapted RT complexity | rtdetr_sota; calflops 0.3.2, 640x640; profiler bundled with its metadata |
@@ -28,7 +28,7 @@ that every external model shares one software stack.
 | Offline budget proxy | Python, NumPy, Matplotlib; saved predictions only |
 
 Formal Test entries use faster-coco-eval 1.7.2 under the standard COCO bbox
-definitions. RT Native and GCA use this backend for Val checkpoint selection
+definitions. RT Native and GSA use this backend for Val checkpoint selection
 and Train/Val capture statistics as well. The original model-specific data
 loading and COCO record preparation remain unchanged. Python/Torch environments
 remain host-specific. CPU packaging is not CUDA retesting.

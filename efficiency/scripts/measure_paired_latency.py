@@ -18,7 +18,7 @@ from scoped_common import (
 )
 from measure_scoped import check_output
 
-MODES = ('deim', 'gca', 'hilor')
+MODES = ('deim', 'gsa', 'hilor')
 ORDERS = tuple(itertools.permutations(MODES))
 
 
@@ -34,7 +34,7 @@ def identical_detector_config(native, full):
     def model_part(cfg):
         return {key: value for key, value in cfg.items() if key not in ('PostProcessor', 'output_dir')}
     if model_part(native) != model_part(full):
-        raise RuntimeError('GCA and full HiLoR do not share the same detector configuration')
+        raise RuntimeError('GSA and full HiLoR do not share the same detector configuration')
 
 
 def summarize(samples, repeats):
@@ -47,8 +47,8 @@ def summarize(samples, repeats):
         result[mode] = {key: statistics.mean(row[key] for row in values)
                         for key in ('forward_ms', 'postprocess_ms', 'total_ms', 'synchronized_wall_ms')}
         result[mode].update({'repeat_mean_total_ms': means, 'repeat_latency_cv_percent': cv})
-    a, b = result['gca']['forward_ms'], result['hilor']['forward_ms']
-    diagnostic = {'gca_minus_hilor_forward_ms': a - b,
+    a, b = result['gsa']['forward_ms'], result['hilor']['forward_ms']
+    diagnostic = {'gsa_minus_hilor_forward_ms': a - b,
                   'absolute_relative_forward_gap_percent': 100 * abs(a - b) / ((a + b) / 2),
                   'role': 'measurement diagnostic, not an algorithm speedup or accuracy selection'}
     return result, diagnostic
@@ -103,7 +103,7 @@ def main(args):
     if (args.output / 'PAIRED_LATENCY.json').exists() or any((args.output / m).exists() for m in MODES):
         raise RuntimeError('Existing latency measurements are not overwritten')
     configs, rows, models, posts, weights = {}, {}, {}, {}, {}
-    for name in ('deim', 'gca'):
+    for name in ('deim', 'gsa'):
         cfg, row, bound, config = make_cfg(name, args.asset_root, args.output / 'effective_configs')
         detector, post, weight_source = load_detector(cfg, row)
         detector = detector.deploy().float().eval()
@@ -111,10 +111,10 @@ def main(args):
         models[name], posts[name] = detector.cuda().eval(), post.cuda().eval()
         configs[name], rows[name], weights[name] = config, row, weight_source
     full_cfg, full_row, full_bound, full_config = make_cfg('hilor', args.asset_root, args.output / 'effective_configs')
-    identical_detector_config(json.loads((Path(__file__).resolve().parents[1] / 'configs/templates/gca.json').read_text()),
+    identical_detector_config(json.loads((Path(__file__).resolve().parents[1] / 'configs/templates/gsa.json').read_text()),
                               json.loads((Path(__file__).resolve().parents[1] / 'configs/templates/hilor.json').read_text()))
-    if rows['gca']['checkpoint_sha256'] != full_row['checkpoint_sha256'] or rows['gca']['source'] != full_row['source']:
-        raise RuntimeError('GCA and HiLoR must use the identical checkpoint and source')
+    if rows['gsa']['checkpoint_sha256'] != full_row['checkpoint_sha256'] or rows['gsa']['source'] != full_row['source']:
+        raise RuntimeError('GSA and HiLoR must use the identical checkpoint and source')
     if sha256(full_row['head']['path']) != full_row['head']['sha256']:
         raise RuntimeError('Frozen MLP value-head SHA mismatch')
     post = full_cfg.postprocessor.float().eval().cuda()
@@ -123,9 +123,9 @@ def main(args):
     if (post.umr.topk, post.umr.tau, post.umr.beta) != (300, 0.0, 2.0):
         raise RuntimeError('Frozen UMR tuple differs')
     # One physical detector instance serves both modes. Only postprocessing differs.
-    models['hilor'], posts['hilor'] = models['gca'], post
-    assert models['gca'] is models['hilor']
-    configs['hilor'], rows['hilor'], weights['hilor'] = full_config, full_row, weights['gca']
+    models['hilor'], posts['hilor'] = models['gsa'], post
+    assert models['gsa'] is models['hilor']
+    configs['hilor'], rows['hilor'], weights['hilor'] = full_config, full_row, weights['gsa']
     thread_setup()  # Reassert after detector-source imports, identically for all modes.
     # These are the main-host FP32 evaluation environment's backend settings.
     # cuDNN may use TF32 internally for float32 convolutions; record this explicitly.
@@ -200,7 +200,7 @@ def main(args):
                 'matmul_allow_tf32': False, 'cudnn_allow_tf32': True,
                 'input_shape': [1, 3, 640, 640],
                 'order': 'six balanced permutations across real-image triples',
-                'shared_gca_hilor_detector_instance': True, 'flops_profiling_in_timing_process': False,
+                'shared_gsa_hilor_detector_instance': True, 'flops_profiling_in_timing_process': False,
                 'preloaded_gpu_inputs': True, 'postprocessor_implementation': 'existing optimized source; unchanged',
                 'scope': 'forward + FP32 conversion + complete postprocessing + box scaling; IO/preprocess/H2D/evaluation excluded',
                 'repeat_cv_limit_percent': 5, 'same_detector_relative_forward_gap_review_threshold_percent': 5,

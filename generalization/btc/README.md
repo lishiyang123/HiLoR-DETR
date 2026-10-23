@@ -13,10 +13,10 @@ python -u -B main_host/source/FINAL_CODE/reproduce.py \
   --output /path/to/new/btc_full_seed0_test1 --compare-reference
 ```
 
-Use `btc_deim_seedN_test1`, `btc_gca_seedN_test1` or `btc_full_seedN_test1`;
+Use `btc_deim_seedN_test1`, `btc_gsa_seedN_test1` or `btc_full_seedN_test1`;
 Test2 profiles end in `test2`. N = 0, 1 or 2. Training profiles are
-`btc_deim_train` and `btc_gca_train`; supply `--seed` and a new output directory.
-Full HiLoR uses the GCA-trained detector with separately fitted BTC CCVR assets.
+`btc_deim_train` and `btc_gsa_train`; supply `--seed` and a new output directory.
+Full HiLoR uses the GSA-trained detector with separately fitted BTC CCVR assets.
 The local `scripts/manager.py` and `scripts/run_server.sh` accept the same profile
 arguments. Test sets are evaluation-only. Original run records retain their
 original paths; current profiles resolve assets inside the aggregate release.

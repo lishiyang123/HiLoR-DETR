@@ -14,8 +14,8 @@ os.environ['MKL_NUM_THREADS'] = '1'
 
 METRICS = ('AP', 'AP50', 'AP75', 'APs', 'APm', 'APl', 'AR1', 'AR10',
            'AR100', 'ARs', 'ARm', 'ARl', 'AP80', 'AP85', 'AP90', 'AP95')
-METHODS = ('DEIM', 'GCA', 'HiLoR-DETR')
-SYSTEM_METHODS = ('DEIM', 'DEIM+CCVR', 'GCA', 'HiLoR-DETR')
+METHODS = ('DEIM', 'GSA', 'HiLoR-DETR')
+SYSTEM_METHODS = ('DEIM', 'DEIM+CCVR', 'GSA', 'HiLoR-DETR')
 
 
 def read(path):
@@ -65,13 +65,13 @@ def generate(release, output):
             Ours_mean=statistics.fmean(values['HiLoR-DETR']), Ours_sample_std=statistics.stdev(values['HiLoR-DETR']),
             paired_delta_pp_mean=statistics.fmean(pair), paired_delta_pp_sample_std=statistics.stdev(pair),
             **{f'delta_seed{seed}_pp': pair[seed] for seed in range(3)}))
-        for left, right in (('DEIM', 'GCA'), ('GCA', 'HiLoR-DETR'), ('DEIM', 'HiLoR-DETR')):
+        for left, right in (('DEIM', 'GSA'), ('GSA', 'HiLoR-DETR'), ('DEIM', 'HiLoR-DETR')):
             change = [100*(b-a) for a,b in zip(values[left], values[right])]
             deltas.append(dict(before=left, after=right, metric=metric,
                                mean_pp=statistics.fmean(change), sample_sd_pp=statistics.stdev(change),
                                **{f'seed{seed}_pp': change[seed] for seed in range(3)}))
     paired = [dict(row, method='B0' if row['method']=='DEIM' else 'Ours')
-              for row in rows if row['method'] != 'GCA']
+              for row in rows if row['method'] != 'GSA']
     output.mkdir(parents=True)
     write_csv(output/'CDW_FINAL_THREE_SEED_PER_SEED.csv', paired)
     write_csv(output/'CDW_FINAL_THREE_SEED_MEAN_STD.csv', comparison)
@@ -99,8 +99,8 @@ def generate(release, output):
             values = [r[key] for r in system if r['method'] == method]
             system_summary.append(dict(method=method, metric=key,
                 mean=statistics.fmean(values), sample_sd=statistics.stdev(values)))
-    for left, right in (('DEIM', 'DEIM+CCVR'), ('DEIM', 'GCA'),
-                        ('GCA', 'HiLoR-DETR'), ('DEIM', 'HiLoR-DETR')):
+    for left, right in (('DEIM', 'DEIM+CCVR'), ('DEIM', 'GSA'),
+                        ('GSA', 'HiLoR-DETR'), ('DEIM', 'HiLoR-DETR')):
         for key in METRICS:
             pairs = [100*(next(r[key] for r in system if r['method']==right and r['seed']==seed)
                           -next(r[key] for r in system if r['method']==left and r['seed']==seed))

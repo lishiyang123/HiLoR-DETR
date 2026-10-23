@@ -29,7 +29,7 @@ All comparison entries report seeds 0/1/2. Checkpoints and
 protocols were selected without Test metrics; Test is used only after freezing.
 
 Model-specific results live with their corresponding model inputs. Main-host
-tables are under `../main_host/paper_tables/three_seed/`; RT Native/GCA/full
+tables are under `../main_host/paper_tables/three_seed/`; RT Native/GSA/full
 tables are under `../second_host/paper_tables/`. Directory numbers identify model
 asset groups, not a model ranking.
 
@@ -39,7 +39,7 @@ Model-specific reproduction instructions and environment records live in the cor
 `CONFIGURATION_GUIDE.md` centralizes the recorded budgets, initialization,
 Val-selection rules and executable training/configuration-planning commands.
 
-Native RT-DETR final Test inference uses the release-root RT entry with deterministic GPU execution. Current three-seed statistics are rebuilt from its saved final predictions and evaluation arrays; use the release quick start. RT Native/GCA Val selection and Test both use faster-coco-eval 1.7.2.
+Native RT-DETR final Test inference uses the release-root RT entry with deterministic GPU execution. Current three-seed statistics are rebuilt from its saved final predictions and evaluation arrays; use the release quick start. RT Native/GSA Val selection and Test both use faster-coco-eval 1.7.2.
 
 ## Published trained checkpoints
 

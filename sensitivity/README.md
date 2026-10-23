@@ -1,6 +1,6 @@
 # Value-residual sensitivity
 
-The study varies tau and beta_v on CDW1630 Val with the GCA detector fixed
+The study varies tau and beta_v on CDW1630 Val with the GSA detector fixed
 at seed 0 and delta=0.02. The mapping regularization is fixed at 0.001.
 
 - tau: 0, 0.1, 0.2, 0.3, 0.4.

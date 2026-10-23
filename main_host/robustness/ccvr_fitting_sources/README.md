@@ -40,7 +40,7 @@ python -B main_host/robustness/ccvr_fitting_sources/run.py --stage fit --output 
 
 `tables` aggregates the saved seed results. `metrics` evaluates the twelve saved
 prediction files with faster-coco-eval 1.7.2. Both need code + results only.
-`fit` additionally needs the shared GCA Train/Val captures and the three formal
+`fit` additionally needs the shared GSA Train/Val captures and the three formal
 Train-fitted heads; it does not need detector weights or dataset images.
 All paths are relative to the release in `inputs.json`; no author workspace is required.
 Use `--release /path/to/release` when needed. No command trains a detector or reads Test data.

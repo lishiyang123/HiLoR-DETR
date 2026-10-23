@@ -1,4 +1,4 @@
-"""Compute full-query oracle geometry from saved DEIM and GCA Test boxes."""
+"""Compute full-query oracle geometry from saved DEIM and GSA Test boxes."""
 
 import argparse
 from collections import defaultdict
@@ -15,7 +15,7 @@ import numpy as np
 from geometry import best_iou, cxcywh_to_pixel_xyxy, summarize
 
 SEEDS = (0, 1, 2)
-MODELS = {'DEIM': 'native', 'GCA': 'gca'}
+MODELS = {'DEIM': 'native', 'GSA': 'gsa'}
 METRICS = ('mean_best_iou', 'median_best_iou', 'oracle_coverage_iou_ge_075')
 
 
@@ -119,17 +119,17 @@ def main():
         for index, target in enumerate(targets):
             per_gt.append(dict(seed=seed, image_id=target['image_id'], annotation_id=target['id'],
                                category_id=target['category_id'], DEIM_best_iou=values['DEIM'][index],
-                               GCA_best_iou=values['GCA'][index],
-                               delta=values['GCA'][index]-values['DEIM'][index],
+                               GSA_best_iou=values['GSA'][index],
+                               delta=values['GSA'][index]-values['DEIM'][index],
                                DEIM_argmax_query_0based=argmax['DEIM'][target['id']],
-                               GCA_argmax_query_0based=argmax['GCA'][target['id']]))
+                               GSA_argmax_query_0based=argmax['GSA'][target['id']]))
     summary = []
     for metric in METRICS:
         left = np.asarray([row[metric] for row in per_seed if row['model'] == 'DEIM'])
-        right = np.asarray([row[metric] for row in per_seed if row['model'] == 'GCA'])
+        right = np.asarray([row[metric] for row in per_seed if row['model'] == 'GSA'])
         summary.append(dict(metric=metric, DEIM_mean=float(left.mean()),
-                            DEIM_sample_sd=float(left.std(ddof=1)), GCA_mean=float(right.mean()),
-                            GCA_sample_sd=float(right.std(ddof=1)),
+                            DEIM_sample_sd=float(left.std(ddof=1)), GSA_mean=float(right.mean()),
+                            GSA_sample_sd=float(right.std(ddof=1)),
                             paired_delta_mean=float((right-left).mean()),
                             paired_delta_sample_sd=float((right-left).std(ddof=1))))
     write_csv(args.output/'per_gt.csv', per_gt)

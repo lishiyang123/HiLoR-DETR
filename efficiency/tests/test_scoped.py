@@ -107,12 +107,12 @@ class ScopedTests(unittest.TestCase):
     def test_paired_summary_does_not_force_forward_equal(self):
         samples = [{'mode': m, 'repeat': 1, 'forward_ms': f, 'postprocess_ms': p,
                     'total_ms': f+p, 'synchronized_wall_ms': f+p+1}
-                   for m,f,p in [('deim',10,1),('gca',11,1),('hilor',12,2)]]
+                   for m,f,p in [('deim',10,1),('gsa',11,1),('hilor',12,2)]]
         result, diag = summarize(samples, 1)
-        self.assertEqual(result['gca']['forward_ms'], 11)
+        self.assertEqual(result['gsa']['forward_ms'], 11)
         self.assertEqual(result['hilor']['forward_ms'], 12)
         self.assertEqual(result['hilor']['total_ms'], 14)
-        self.assertEqual(diag['gca_minus_hilor_forward_ms'], -1)
+        self.assertEqual(diag['gsa_minus_hilor_forward_ms'], -1)
 
     def test_multiprocessing_tmp_directory_stays_short(self):
         with patch.dict(os.environ, {'EFFICIENCY_TMP_ROOT': '/root/autodl-tmp/.eff_tmp'}):

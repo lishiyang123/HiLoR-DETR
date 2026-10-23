@@ -14,12 +14,12 @@
   ],
   "latency_models": [
     "DEIM",
-    "DEIM + GCA",
+    "DEIM + GSA",
     "HiLoR-DETR"
   ],
   "training_cost_models": [
     "DEIM",
-    "DEIM + GCA"
+    "DEIM + GSA"
   ],
   "seed": 0,
   "input_shape": [

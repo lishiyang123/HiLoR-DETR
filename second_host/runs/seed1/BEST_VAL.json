@@ -15,7 +15,7 @@
   "config_sha256": "73271a090334b1b7cf9d8644643eabf7a82ab4d784e833e0cec37f30ca8c6fcf",
   "coco_initialization_sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0",
   "protocol_lock_sha256": "66629a3115cb6e78e8ce372fd884b1bc06e34bb006b347572d7a249f7267e769",
-  "implementation_lock_sha256": "a9b8438dec892517d9f931335af165c60a8cbfdc260422ca0b9f5d705909413d",
+  "implementation_lock_sha256": "ec2847008d6f6f3921329e4b6bdc963ddab203d59d2d270599f37cb91d26e919",
   "training_run_manifest": "TRAIN_RUN_MANIFEST.json",
   "val_evaluator": {
     "name": "faster-coco-eval",

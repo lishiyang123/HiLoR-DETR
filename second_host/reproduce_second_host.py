@@ -65,7 +65,7 @@ def plan(seed, mode, new_checkpoint=None, new_binding=None):
         checkpoint = sota / ('runs/seed%d/best_val.pth' % seed)
     else:
         source = HERE / 'source/RT-DETR_HiLoR/rtdetr_pytorch'
-        config = HERE / ('configs/hilor/generated/seed%d/qccr_umr.yml' % seed) if mode == 'full' else HERE / 'configs/hilor/cdw1630_rtdetr_r18_gca.yml'
+        config = HERE / ('configs/hilor/generated/seed%d/qccr_umr.yml' % seed) if mode == 'full' else HERE / 'configs/hilor/cdw1630_rtdetr_r18_gsa.yml'
         checkpoint = HERE / ('runs/seed%d/best_val.pth' % seed)
     if new_checkpoint is not None:
         checkpoint = new_checkpoint.resolve(strict=True)
@@ -103,7 +103,7 @@ def plan(seed, mode, new_checkpoint=None, new_binding=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--seed', type=int, choices=(0, 1, 2), required=True)
-    parser.add_argument('--mode', choices=('native', 'gca', 'full'), required=True)
+    parser.add_argument('--mode', choices=('native', 'gsa', 'full'), required=True)
     parser.add_argument('--preflight-only', action='store_true')
     parser.add_argument('--output', type=Path)
     parser.add_argument('--checkpoint', type=Path, help='New checkpoint; default replays paper weights')

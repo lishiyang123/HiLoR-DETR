@@ -133,7 +133,7 @@ def main():
         "host": "RT-DETR-R18",
         "dataset": "CDW1630",
         "detector_seed": args.detector_seed,
-        "source_method": "RT-DETR-R18+GCA-alpha_u=0",
+        "source_method": "RT-DETR-R18+GSA-alpha_u=0",
         "source_checkpoint": str(checkpoint),
         "source_checkpoint_sha256": args.expected_checkpoint_sha,
         "source_capture_sha256": fits["source_capture_sha256"],

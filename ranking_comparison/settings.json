@@ -13,14 +13,14 @@
   "captures": {
     "train": "sensitivity/tau_beta/inputs/train_capture.pt",
     "val": "sensitivity/tau_beta/inputs/val_capture.pt",
-    "test": "ranking_comparison/state/captures/gca_seed0_test_capture.pt"
+    "test": "ranking_comparison/state/captures/gsa_seed0_test_capture.pt"
   },
   "reference_results": {
     "native": "ranking_comparison/state/captures/RESULT.json",
     "full": "ranking_comparison/results/complete_ccvr/RESULT.json"
   },
   "reference_predictions": {
-    "native": "ranking_comparison/results/native_gca/predictions.json.gz",
+    "native": "ranking_comparison/results/native_gsa/predictions.json.gz",
     "full": "ranking_comparison/results/complete_ccvr/predictions.json.gz"
   },
   "soft_nms": {

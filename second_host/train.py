@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Train RT-DETR Native or GCA with the shared faster-coco-eval Val backend."""
+"""Train RT-DETR Native or GSA with the shared faster-coco-eval Val backend."""
 import argparse
 from pathlib import Path
 import sys
@@ -11,7 +11,7 @@ import reproduce_pipeline
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--method', choices=('native', 'gca'), required=True)
+    parser.add_argument('--method', choices=('native', 'gsa'), required=True)
     parser.add_argument('--seed', type=int, choices=(0, 1, 2), required=True)
     parser.add_argument('--workdir', type=Path, required=True)
     parser.add_argument('--preflight-only', action='store_true')

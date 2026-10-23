@@ -72,17 +72,17 @@ def main():
     output.mkdir(parents=True)
     paired = args.stage in ('latency-smoke', 'latency')
     if paired:
-        selected = ['deim', 'gca', 'hilor']
+        selected = ['deim', 'gsa', 'hilor']
         if args.models:
             raise ValueError('Paired latency requires all three modes; do not select a subset')
     elif args.stage == 'complexity':
         selected = bound['complexity_models']
     elif args.stage in ('check', 'smoke', 'inference'):
-        selected = ['deim', 'gca', 'hilor', 'r18', 'r18_hilor']
+        selected = ['deim', 'gsa', 'hilor', 'r18', 'r18_hilor']
         if args.stage == 'check':
-            selected += ['train_deim', 'train_gca']
+            selected += ['train_deim', 'train_gsa']
     else:
-        selected = ['train_deim', 'train_gca']
+        selected = ['train_deim', 'train_gsa']
     if args.models:
         if not set(args.models).issubset(selected):
             raise ValueError('Requested models are outside this stage')
