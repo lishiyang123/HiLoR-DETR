@@ -25,5 +25,5 @@ _sys.modules[__name__ + '.hilor_qccr'] = _competition_mapping
 from . import candidate_value as _candidate_value
 _sys.modules[__name__ + '.hilor_umr'] = _candidate_value
 
-from .hilor_gccs import *
+from .hilor_gca import *
 from .hilor_postprocessor import *

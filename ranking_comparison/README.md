@@ -1,14 +1,14 @@
 # Candidate-ranking comparison
 
-CDW1630, GCCS detector seed 0, 237 Test images / 1,071 objects. Five external
-methods use the same saved 300-query x 5-class candidate pool. The Native GCCS
+CDW1630, GCA detector seed 0, 237 Test images / 1,071 objects. Five external
+methods use the same saved 300-query x 5-class candidate pool. The Native GCA
 and complete CCVR reference rows are the corresponding main-pipeline outputs,
 not separately fitted controls. All methods preserve box coordinates.
 
 Results: `results/comparison.csv` (full precision) and `results/comparison.json`.
 Per-method predictions are losslessly compressed as JSON.gz. The table reports
 AP, AP50, AP75, AP80, AP85, AP90, AP95 and AR100; AP differences are relative
-to Native GCCS. This is a fixed-detector-seed comparison, not a three-seed table.
+to Native GCA. This is a fixed-detector-seed comparison, not a three-seed table.
 
 ## Settings and fitting
 

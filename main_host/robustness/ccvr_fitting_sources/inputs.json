@@ -60,8 +60,8 @@
       "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866"
     },
     "1": {
-      "train_capture": "main_host/features/gccs/seed1/train_capture.pt",
-      "val_capture": "main_host/features/gccs/seed1/val_capture.pt",
+      "train_capture": "main_host/features/gca/seed1/train_capture.pt",
+      "val_capture": "main_host/features/gca/seed1/val_capture.pt",
       "formal_umr_head": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.pt",
       "formal_umr_metadata": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/umr_mlp_head_seed0_pw4.metadata.json",
       "qccr_artifact": "main_host/checkpoints/CDW1630/Ours/seed1/calibration/qccr_params.json",
@@ -69,8 +69,8 @@
       "checkpoint_sha256": "ffe04839b8e10e52aa92968c73291f03a0c9ff4312c06025a720e96fabca7253"
     },
     "2": {
-      "train_capture": "main_host/features/gccs/seed2/train_capture.pt",
-      "val_capture": "main_host/features/gccs/seed2/val_capture.pt",
+      "train_capture": "main_host/features/gca/seed2/train_capture.pt",
+      "val_capture": "main_host/features/gca/seed2/val_capture.pt",
       "formal_umr_head": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.pt",
       "formal_umr_metadata": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/umr_mlp_head_seed0_pw4.metadata.json",
       "qccr_artifact": "main_host/checkpoints/CDW1630/Ours/seed2/calibration/qccr_params.json",

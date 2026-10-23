@@ -155,7 +155,7 @@ def gpu_training(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', choices=['train_deim', 'train_gccs'], required=True)
+    parser.add_argument('--model', choices=['train_deim', 'train_gca'], required=True)
     parser.add_argument('--task', choices=['cpu-check', 'smoke', 'formal'], required=True)
     parser.add_argument('--asset-root')
     parser.add_argument('--output', type=Path, required=True)

@@ -24,7 +24,7 @@
     },
     "implementation_lock": {
       "path": "provenance/IMPLEMENTATION_LOCK.json",
-      "sha256": "5d4753f82c65a9b2e283d04bc89c26228218d76e18280670f48b938ec8bf6adb"
+      "sha256": "a9b8438dec892517d9f931335af165c60a8cbfdc260422ca0b9f5d705909413d"
     },
     "upstream_lock": {
       "coco_initialization_sha256": "3ba8b5c909c9a1c4f21e96d0a7251ab1a485093955ca327d0061fef8d33c66f0",

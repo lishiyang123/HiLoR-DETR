@@ -109,7 +109,7 @@ def build_fixed_artifact(
         "host": "RT-DETR-R18",
         "dataset": "CDW1630",
         "detector_seed": detector_seed,
-        "source_method": "RT-DETR-R18+GCCS-alpha_u=0",
+        "source_method": "RT-DETR-R18+GCA-alpha_u=0",
         "source_checkpoint": str(checkpoint),
         "source_checkpoint_sha256": checkpoint_sha,
         "source_capture_sha256": source_capture_sha,

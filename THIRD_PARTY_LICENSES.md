@@ -73,8 +73,9 @@ settings are in the experiment manifests/configurations. This notice preserves
 those sources; it does not claim an additional grant from any model owner.
 
 Provider CDW-trained YOLOv8-L / YOLO11-L checkpoints are not release inputs.
-YOLOv8-L and YOLO11-L use bundled official COCO initializers, corresponding
-source and derived three-seed detectors.
+SOTA COCO initializers are linked in `benchmarks/CONFIGURATION_GUIDE.md`,
+not mirrored in the release. Corresponding source and derived
+three-seed trained detectors are included.
 
 Official sources and license texts were checked on 2026-10-15. This inventory
 documents their stated terms; it is not an independent legal authorization.

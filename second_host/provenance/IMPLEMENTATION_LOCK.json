@@ -18,7 +18,7 @@
     "hilor_umr.py": "83c82f1be700d89fb1bc8672fb6d7df4c11a19fd0e45f8e8efd4aa6b6cc46a2f"
   },
   "formal_training_config": {
-    "path": "configs/hilor/cdw1630_rtdetr_r18_gccs.yml",
+    "path": "configs/hilor/cdw1630_rtdetr_r18_gca.yml",
     "sha256": "f69e0b470ef323e33cd53ce6ea490f5e14f2b23a2ad69a8a41d03d690b80a34d"
   },
   "provenance": {
@@ -34,11 +34,11 @@
     "tools/fixed_protocol_common.py": "c4f15878f3b2aa125cf2520270ce4da73363c2743605c9742b0c47926f1e9563",
     "tools/freeze_inference_binding.py": "06dc2f1204e2b1651dbf38b69b51edc3c6f26494ccd75e1a524b543f87c934c6",
     "tools/freeze_inference_binding_fixed.py": "4852f4160f6d01472993deef81fbcca9dc10ff34bd7ba314a498f72413a7aa1f",
-    "tools/freeze_qccr.py": "affb2a57a652645d7b46e9de422e8fe1e3426f82550d90bd0500dc953834d239",
-    "tools/freeze_qccr_fixed.py": "f9059bc871fe4aac1a2c30a4ae346f089f4ad41125c1e3beba797edfbee5b5c6",
-    "tools/render_inference_config.py": "0650e8395e15e2e182930141d37412bdc491c359497b795f20c750bd1ac866e6",
+    "tools/freeze_qccr.py": "86988f7696b5ed323cd3bd6723e7a918f02899f7db1be82e73a26350125495c1",
+    "tools/freeze_qccr_fixed.py": "c2841f38a9341d37018828da0e8c1c82902565a7620928d5df0d22eb3be1d571",
+    "tools/render_inference_config.py": "fb642f76b49f100e69cc95d9a68998cde937e34adb2604cf09c1e10fd8286cf2",
     "tools/train_umr_fixed.py": "e0a7d66750d2173bf3ba1a80eb3a52d6eccf512aac31265170e601748c3fbd80",
     "tools/train_umr_select_val.py": "396f03ec553f37fcfff991c2060afc9a2f0a7ed74d69cdaf67c54170dd811679",
-    "tools/training.py": "e78ad84e28ce14b48a6b85a18cbc411f4b34d42004f9f0400ff54d7dfb312287"
+    "tools/training.py": "e4ef6da86d24470246efa773e635ff6ff480f560a2c0e56f0401ef7dce983d37"
   }
 }

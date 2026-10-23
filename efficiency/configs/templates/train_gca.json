@@ -331,7 +331,7 @@
     "lcct_transition_width": 0.02,
     "lcct_ramp_epochs": 5
   },
-  "output_dir": "${PACKAGE_ROOT}/outputs/train_gccs",
+  "output_dir": "${PACKAGE_ROOT}/outputs/train_gca",
   "seed": 0,
   "device": "cuda:0",
   "tuning": "${PRIMARY_ROOT}/pretrained/deim_hgnetv2_m_coco.pth",

@@ -6,14 +6,14 @@ The code below does not change the published selected weights or results.
 
 | Model | Training evidence | Budget / precision | Initialization and selection |
 |---|---|---|---|
-| YOLOv8-L | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv8_L_TRAINED/` | 102 epochs, batch 8, FP32, 640 input | `source/yolov8l.pt`; maximum Val AP; earliest tie |
-| YOLO11-L | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv11_L_TRAINED/` | 102 epochs, batch 8, FP32, 640 input | `source/yolo11l.pt`; maximum Val AP; earliest tie |
-| YOLOv9-C | `10_YOLOV9_C/manifests/TRAINING_PROTOCOL.json` and per-seed `opt.yaml` | 102 epochs, batch 8, FP32, 640 input | `source/yolov9-c.pt`; maximum Val AP; earliest tie |
-| YOLOv10-M | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv10_M_TRAINED/` | 102 epochs, batch 8, FP32, SGD | `source/yolov10m.pt`; maximum Val AP |
-| YOLOv12-M turbo | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv12_M_TRAINED/` | 102 epochs, batch 8, FP32, SGD | `source/yolov12m.pt`; maximum Val AP |
-| D-FINE-M | `03_D_FINE_M/configs/cdw1630_dfine_m_formal.yml` plus its include closure | 102 epochs, batch 8, FP32, EMA | Official `source/dfine_m_coco.pth`; per-seed `VAL_SELECTION.json` |
-| RT-DETR-R18 | `../second_host/README.md` | 102 epochs, train batch 4, Val/Test batch 8, FP32, EMA | Official COCO initialization; maximum Val AP |
-| DEIM / GCCS / complete HiLoR | `../main_host/source/FINAL_CODE/README.md` and release quick start | Recorded main-host profiles | Complete HiLoR reuses GCCS detector and its own CCVR fits |
+| YOLOv8-L | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv8_L_TRAINED/` | 102 epochs, batch 8, FP32, 640 input | [`source/yolov8l.pt`](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov8l.pt) (download separately); maximum Val AP; earliest tie |
+| YOLO11-L | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv11_L_TRAINED/` | 102 epochs, batch 8, FP32, 640 input | [`source/yolo11l.pt`](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l.pt) (download separately); maximum Val AP; earliest tie |
+| YOLOv9-C | `10_YOLOV9_C/manifests/TRAINING_PROTOCOL.json` and per-seed `opt.yaml` | 102 epochs, batch 8, FP32, 640 input | [`source/yolov9-c.pt`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-c.pt) (download separately); maximum Val AP; earliest tie |
+| YOLOv10-M | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv10_M_TRAINED/` | 102 epochs, batch 8, FP32, SGD | [`source/yolov10m.pt`](https://github.com/THU-MIG/yolov10/releases/download/v1.1/yolov10m.pt) (download separately); maximum Val AP |
+| YOLOv12-M turbo | per-seed `args.yaml` in `01_YOLO_SERIES/YOLOv12_M_TRAINED/` | 102 epochs, batch 8, FP32, SGD | [`source/yolov12m.pt`](https://github.com/sunsmarterjie/yolov12/releases/download/turbo/yolov12m.pt) (download separately); maximum Val AP |
+| D-FINE-M | `03_D_FINE_M/configs/cdw1630_dfine_m_formal.yml` plus its include closure | 102 epochs, batch 8, FP32, EMA | Official [`source/dfine_m_coco.pth`](https://github.com/Peterande/storage/releases/download/dfinev1.0/dfine_m_coco.pth) (download separately); per-seed `VAL_SELECTION.json` |
+| RT-DETR-R18 | `../second_host/README.md` | 102 epochs, train batch 4, Val/Test batch 8, FP32, EMA | [`source/rtdetr_r18vd_dec3_6x_coco_from_paddle.pth`](https://github.com/lyuwenyu/storage/releases/download/v0.1/rtdetr_r18vd_dec3_6x_coco_from_paddle.pth) (download separately); maximum Val AP |
+| DEIM / GCA / complete HiLoR | `../main_host/source/FINAL_CODE/README.md` and release quick start | Recorded main-host profiles | Complete HiLoR reuses GCA detector and its own CCVR fits |
 
 ## Fresh comparison training
 

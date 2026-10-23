@@ -10,7 +10,7 @@ graphics or rendering programs. Current photographic examples use BTC seed 0.
 | F7 ranking / crossing / limitation | `evidence/qualitative_cases/QUALITATIVE_CASE_EVIDENCE.json` | BTC Test1 `474.jpg`, Test2 `35.jpg` and `25.jpg` |
 | Figure case numbers | `evidence/qualitative_cases/CASE_METADATA.csv` | Unrounded score, IoU and global rank for both methods |
 | F6 AP--IoU curves | `evidence/ap_iou_curve/results/curve.csv` | CDW1630 Test, ten thresholds, three-seed method means and paired mean +/- sample SD |
-| Oracle geometry | `evidence/oracle/` | DEIM/GCCS, seeds 0/1/2; all 300 final-layer query boxes, no class/score/Top-K filter |
+| Oracle geometry | `evidence/oracle/` | DEIM/GCA, seeds 0/1/2; all 300 final-layer query boxes, no class/score/Top-K filter |
 | Value-residual sensitivity | `../sensitivity/tau_beta/results/` | CDW1630 Val; 5x5 grid, three value-head fitting seeds |
 
 ## AP-IoU curves (CPU)
@@ -62,7 +62,7 @@ It is not a claim about all pre-Top-K query boxes. DEIM versus complete HiLoR-DE
 examples do not isolate CCVR's causal effect.
 
 F2 shows actual HiLoR detections with score >= 0.90, without GT-based filtering or
-extra NMS. It is a schematic background, not a GCCS training-assignment capture.
+extra NMS. It is a schematic background, not a GCA training-assignment capture.
 Do not attach query IDs, Hungarian/residual assignment IoUs or token labels to it.
 
 ## Offline numerical replay (standard library only; no GPU)

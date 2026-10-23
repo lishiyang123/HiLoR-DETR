@@ -2,7 +2,7 @@
 
 For every CDW1630 Test GT, take the maximum IoU over all 300 final-layer query
 boxes, independently of class or score. No confidence filtering, Top-K, NMS,
-clipping or one-to-one matching is used. DEIM and GCCS use detector seeds 0/1/2;
+clipping or one-to-one matching is used. DEIM and GCA use detector seeds 0/1/2;
 each seed contains the same 237 images and 1,071 GT objects.
 
 From the release root, recompute the results on CPU:
@@ -19,13 +19,13 @@ directory outside the release.
 
 ## Inputs and results
 
-- `results/boxes/{deim,gccs}/seedN.npz`: full FP32 normalized cxcywh query boxes,
+- `results/boxes/{deim,gca}/seedN.npz`: full FP32 normalized cxcywh query boxes,
   image IDs and original sizes in height/width order. Class scores are not used.
 - `results/per_gt.csv`: 3,213 paired GT rows, best IoU and zero-based argmax query
   IDs for both detectors.
 - `results/per_seed.csv`: six model/seed rows, GT counts, mean/median best IoU,
   coverage at IoU >= 0.75 and nonpositive-area prediction counts.
-- `results/summary.csv`: three-seed means, sample SDs and paired GCCS-minus-DEIM
+- `results/summary.csv`: three-seed means, sample SDs and paired GCA-minus-DEIM
   changes for the three metrics.
 
 Within each seed, every GT has equal weight; per-image means are not averaged.
@@ -37,7 +37,7 @@ remain in the pool with IoU zero; nonfinite values stop computation.
 
 To extract compact boxes from trusted full project captures instead, add
 `--captures /path/to/work` (PyTorch required). The work directory contains
-`native_seedN/evaluate_test/` and `gccs_seedN/evaluate_test/`, each with
+`native_seedN/evaluate_test/` and `gca_seedN/evaluate_test/`, each with
 `test_capture.pt` and `RESULT.json`. This mode reads CPU caches, not a detector.
 
 Oracle geometric coverage is not detection recall or a TP count: one query can

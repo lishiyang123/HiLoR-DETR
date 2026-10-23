@@ -4,7 +4,7 @@ from _bootstrap import ROOT  # noqa: F401
 import torch
 from torch import nn
 
-from src.zoo.rtdetr.hilor_gccs import HiLoRSetCriterion
+from src.zoo.rtdetr.hilor_gca import HiLoRSetCriterion
 from src.zoo.rtdetr.rtdetr_criterion import SetCriterion
 
 
@@ -35,7 +35,7 @@ def build_outputs(requires_grad=False):
 TARGETS = [{"labels": torch.tensor([0]), "boxes": torch.tensor([[0.5, 0.5, 0.2, 0.2]])}]
 
 
-class GCCSContractTest(unittest.TestCase):
+class GCAContractTest(unittest.TestCase):
     def make_hilor(self, delta=0.02):
         return HiLoRSetCriterion(
             matcher=FixedMatcher(),

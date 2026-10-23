@@ -54,7 +54,7 @@ def cpu_check(args):
     pp = sum(p.numel() for p in post.parameters() if id(p) not in ids)
     # Check train-only criterion construction without allocating training activations.
     training_constructor = None
-    if args.model in ('deim', 'gccs'):
+    if args.model in ('deim', 'gca'):
         training_constructor = type(cfg.criterion).__name__
     from calflops import calculate_flops  # Import check; no CPU latency is reported.
     report = {'status': 'CPU_PASS_GPU_PENDING', 'model': row['label'],
@@ -180,7 +180,7 @@ def gpu_measure(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', required=True, choices=['deim', 'gccs', 'hilor', 'r18', 'r18_hilor'])
+    parser.add_argument('--model', required=True, choices=['deim', 'gca', 'hilor', 'r18', 'r18_hilor'])
     parser.add_argument('--task', required=True, choices=['cpu-check', 'smoke', 'formal'])
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--asset-root')

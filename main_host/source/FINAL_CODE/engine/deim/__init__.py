@@ -10,7 +10,7 @@ Copyright(c) 2023 lyuwenyu. All Rights Reserved.
 import sys as _sys
 
 # Functional responsibilities within the two method stages:
-# GCCS: auxiliary geometry and classification-role adjustment.
+# GCA: auxiliary geometry and classification-role adjustment.
 # CCVR: competition-conditioned mapping and candidate-value reranking.
 # Retain import aliases for existing callers and serialized class identifiers;
 # these identifiers do not define additional independent method contributions.

@@ -33,13 +33,13 @@
     },
     {
       "seed": 0,
-      "method": "GCCS",
-      "profile": "cdw_gccs_seed0_test",
+      "method": "GCA",
+      "profile": "cdw_gca_seed0_test",
       "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
       "evaluation": "main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
       "result": "main_host/results/CDW1630/Ours/seed0/native_test/RESULT.json",
-      "predictions": "ranking_comparison/results/native_gccs/predictions.json.gz",
-      "test_capture": "main_host/features/gccs/seed0/test_capture.pt"
+      "predictions": "ranking_comparison/results/native_gca/predictions.json.gz",
+      "test_capture": "main_host/features/gca/seed0/test_capture.pt"
     },
     {
       "seed": 0,
@@ -63,13 +63,13 @@
     },
     {
       "seed": 1,
-      "method": "GCCS",
-      "profile": "cdw_gccs_seed1_test",
+      "method": "GCA",
+      "profile": "cdw_gca_seed1_test",
       "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
       "evaluation": "main_host/results/CDW1630/Ours/seed1/native_test/eval.pth",
       "result": "main_host/results/CDW1630/Ours/seed1/native_test/RESULT.json",
       "predictions": "main_host/results/CDW1630/Ours/seed1/native_test/predictions.json.gz",
-      "test_capture": "main_host/features/gccs/seed1/test_capture.pt"
+      "test_capture": "main_host/features/gca/seed1/test_capture.pt"
     },
     {
       "seed": 1,
@@ -93,13 +93,13 @@
     },
     {
       "seed": 2,
-      "method": "GCCS",
-      "profile": "cdw_gccs_seed2_test",
+      "method": "GCA",
+      "profile": "cdw_gca_seed2_test",
       "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
       "evaluation": "main_host/results/CDW1630/Ours/seed2/native_test/eval.pth",
       "result": "main_host/results/CDW1630/Ours/seed2/native_test/RESULT.json",
       "predictions": "main_host/results/CDW1630/Ours/seed2/native_test/predictions.json.gz",
-      "test_capture": "main_host/features/gccs/seed2/test_capture.pt"
+      "test_capture": "main_host/features/gca/seed2/test_capture.pt"
     },
     {
       "seed": 2,
@@ -133,24 +133,24 @@
         "val_evaluation": "main_host/features/deim/seed2/val_eval.pth"
       }
     },
-    "gccs": {
+    "gca": {
       "0": {
         "train": "sensitivity/tau_beta/inputs/train_capture.pt",
-        "train_evaluation": "main_host/features/gccs/seed0/train_eval.pth",
+        "train_evaluation": "main_host/features/gca/seed0/train_eval.pth",
         "val": "sensitivity/tau_beta/inputs/val_capture.pt",
-        "val_evaluation": "main_host/features/gccs/seed0/val_eval.pth"
+        "val_evaluation": "main_host/features/gca/seed0/val_eval.pth"
       },
       "1": {
-        "train": "main_host/features/gccs/seed1/train_capture.pt",
-        "train_evaluation": "main_host/features/gccs/seed1/train_eval.pth",
-        "val": "main_host/features/gccs/seed1/val_capture.pt",
-        "val_evaluation": "main_host/features/gccs/seed1/val_eval.pth"
+        "train": "main_host/features/gca/seed1/train_capture.pt",
+        "train_evaluation": "main_host/features/gca/seed1/train_eval.pth",
+        "val": "main_host/features/gca/seed1/val_capture.pt",
+        "val_evaluation": "main_host/features/gca/seed1/val_eval.pth"
       },
       "2": {
-        "train": "main_host/features/gccs/seed2/train_capture.pt",
-        "train_evaluation": "main_host/features/gccs/seed2/train_eval.pth",
-        "val": "main_host/features/gccs/seed2/val_capture.pt",
-        "val_evaluation": "main_host/features/gccs/seed2/val_eval.pth"
+        "train": "main_host/features/gca/seed2/train_capture.pt",
+        "train_evaluation": "main_host/features/gca/seed2/train_eval.pth",
+        "val": "main_host/features/gca/seed2/val_capture.pt",
+        "val_evaluation": "main_host/features/gca/seed2/val_eval.pth"
       }
     }
   },
@@ -196,13 +196,13 @@
     },
     {
       "seed": 0,
-      "method": "GCCS",
-      "profile": "cdw_gccs_seed0_test",
+      "method": "GCA",
+      "profile": "cdw_gca_seed0_test",
       "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
       "evaluation": "main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
       "result": "main_host/results/CDW1630/Ours/seed0/native_test/RESULT.json",
-      "predictions": "ranking_comparison/results/native_gccs/predictions.json.gz",
-      "test_capture": "main_host/features/gccs/seed0/test_capture.pt"
+      "predictions": "ranking_comparison/results/native_gca/predictions.json.gz",
+      "test_capture": "main_host/features/gca/seed0/test_capture.pt"
     },
     {
       "seed": 0,
@@ -237,13 +237,13 @@
     },
     {
       "seed": 1,
-      "method": "GCCS",
-      "profile": "cdw_gccs_seed1_test",
+      "method": "GCA",
+      "profile": "cdw_gca_seed1_test",
       "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
       "evaluation": "main_host/results/CDW1630/Ours/seed1/native_test/eval.pth",
       "result": "main_host/results/CDW1630/Ours/seed1/native_test/RESULT.json",
       "predictions": "main_host/results/CDW1630/Ours/seed1/native_test/predictions.json.gz",
-      "test_capture": "main_host/features/gccs/seed1/test_capture.pt"
+      "test_capture": "main_host/features/gca/seed1/test_capture.pt"
     },
     {
       "seed": 1,
@@ -278,13 +278,13 @@
     },
     {
       "seed": 2,
-      "method": "GCCS",
-      "profile": "cdw_gccs_seed2_test",
+      "method": "GCA",
+      "profile": "cdw_gca_seed2_test",
       "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
       "evaluation": "main_host/results/CDW1630/Ours/seed2/native_test/eval.pth",
       "result": "main_host/results/CDW1630/Ours/seed2/native_test/RESULT.json",
       "predictions": "main_host/results/CDW1630/Ours/seed2/native_test/predictions.json.gz",
-      "test_capture": "main_host/features/gccs/seed2/test_capture.pt"
+      "test_capture": "main_host/features/gca/seed2/test_capture.pt"
     },
     {
       "seed": 2,
@@ -299,12 +299,12 @@
   ],
   "mapping_stage": {
     "seed": 0,
-    "method": "GCCS+mapping",
+    "method": "GCA+mapping",
     "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
     "evaluation": "main_host/results/CDW1630/Ours/seed0/mapping_test/eval.pth",
     "result": "main_host/results/CDW1630/Ours/seed0/mapping_test/RESULT.json",
     "predictions": "main_host/results/CDW1630/Ours/seed0/mapping_test/predictions.json.gz",
-    "test_capture": "main_host/features/gccs/seed0/test_capture.pt",
+    "test_capture": "main_host/features/gca/seed0/test_capture.pt",
     "fit_binding": "main_host/checkpoints/CDW1630/Ours/seed0/calibration/CALIBRATION_BINDING.json"
   }
 }

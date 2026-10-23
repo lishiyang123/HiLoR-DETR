@@ -1,8 +1,8 @@
 {
   "schema": "hilor-main-host-source-binding-v1",
   "source": "main_host/source/FINAL_CODE",
-  "source_manifest_sha256": "b44496f9eac43a51199c03c302f7c9349932b7a2dae2567d6ae990903f2ad49c",
-  "profiles_sha256": "3685fa5629858ed9afc45630f9f6aa518f45421decb44e9f49f6468104d7c35d",
+  "source_manifest_sha256": "8d74d423aa7e2ce8c1a84306a39efd817eb7cf06bc430fdbccd18d3993a02c1b",
+  "profiles_sha256": "5573930d4d135c8f067b8c773f2614dfe307b38620dd24ca98704af705ce8a76",
   "datasets": [
     "CDW1630",
     "BTC"

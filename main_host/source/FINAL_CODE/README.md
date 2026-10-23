@@ -7,14 +7,14 @@ CCVR coefficients and value heads. RT-DETR is provided separately.
 
 ## Functional organization
 
-The implementation follows two method stages. GCCS provides training-time
+The implementation follows two method stages. GCA provides training-time
 complementary supervision; CCVR performs inference-time candidate reranking.
 The files below separate functional responsibilities within those stages.
 
 | Stage | Functional file under `engine/deim/` | Responsibility |
 | --- | --- | --- |
-| GCCS | `auxiliary_geometry.py` | Difficulty-aware auxiliary geometric supervision |
-| GCCS | `classification_role.py` | Localization-gain-conditioned classification-role adjustment |
+| GCA | `auxiliary_geometry.py` | Difficulty-aware auxiliary geometric supervision |
+| GCA | `classification_role.py` | Localization-gain-conditioned classification-role adjustment |
 | CCVR | `competition_mapping.py` | Competition-conditioned score mapping |
 | CCVR | `candidate_value.py` | Candidate-value estimation, residual score adjustment and remapping |
 
@@ -38,8 +38,8 @@ python -u -B reproduce.py --release-root /path/to/HiLoR-DETR \
   --profile btc_full_seed0_test1 --output /path/to/new_outputs/btc_full_seed0_test1
 ```
 
-Replace `full` with `deim` for the native detector or `gccs` for the detector with
-GCCS and native post-processing. Seeds are 0, 1 and 2. BTC has `test1` and `test2`
+Replace `full` with `deim` for the native detector or `gca` for the detector with
+GCA and native post-processing. Seeds are 0, 1 and 2. BTC has `test1` and `test2`
 profiles. Native+CCVR uses `cdw_deim_ccvr_seedN_test` for seeds 0/1/2 and the
 Native checkpoint's own fitted mapping and value head. See `../../README.md`.
 
@@ -52,13 +52,13 @@ does not change the evaluated model, parameters or output values.
 
 ```bash
 python -u -B reproduce.py --release-root /path/to/HiLoR-DETR \
-  --profile cdw_gccs_train --seed 0 --output /path/to/new_outputs/cdw_gccs_train_seed0
+  --profile cdw_gca_train --seed 0 --output /path/to/new_outputs/cdw_gca_train_seed0
 ```
 
-Use `cdw_deim_train`, `btc_deim_train` or `btc_gccs_train` for the other training
+Use `cdw_deim_train`, `btc_deim_train` or `btc_gca_train` for the other training
 configurations. These profiles use Train for detector optimization and Val for
 checkpoint selection. The common official COCO initialization is retained.
-Full HiLoR uses the GCCS-trained detector and subsequently fitted CCVR, not a
+Full HiLoR uses the GCA-trained detector and subsequently fitted CCVR, not a
 different detector-training configuration. New training runs can vary because
 CUDA training is not guaranteed to be bitwise deterministic.
 

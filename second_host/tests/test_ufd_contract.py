@@ -7,7 +7,7 @@ from _bootstrap import ROOT  # noqa: F401
 import torch
 from torch import nn
 
-from src.zoo.rtdetr.hilor_gccs import HiLoRSetCriterion
+from src.zoo.rtdetr.hilor_gca import HiLoRSetCriterion
 
 
 class EmptyMatcher(nn.Module):

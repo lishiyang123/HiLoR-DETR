@@ -21,6 +21,6 @@
   },
   "bindings": {
     "protocol_lock_sha256": "66629a3115cb6e78e8ce372fd884b1bc06e34bb006b347572d7a249f7267e769",
-    "implementation_lock_sha256": "5d4753f82c65a9b2e283d04bc89c26228218d76e18280670f48b938ec8bf6adb"
+    "implementation_lock_sha256": "a9b8438dec892517d9f931335af165c60a8cbfdc260422ca0b9f5d705909413d"
   }
 }

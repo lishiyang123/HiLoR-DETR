@@ -1,5 +1,0 @@
-{
-  "active_protocol": "CONFIG_LOCK_SEED0_280_70_v2.json",
-  "reason": "official Training is now split 280/70; Test1 and Test2 are sealed tests",
-  "supersedes": "earlier Test1-as-Val draft, if present"
-}

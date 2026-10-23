@@ -56,12 +56,12 @@
       }
     ]
   },
-  "cdw_gccs_seed0_test": {
+  "cdw_gca_seed0_test": {
     "dataset": "cdw",
-    "method": "gccs",
+    "method": "gca",
     "seed": 0,
     "split": "test",
-    "config": "profiles/cdw_gccs_seed0_test.yml",
+    "config": "profiles/cdw_gca_seed0_test.yml",
     "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
     "checkpoint_sha256": "b42a24de328499cbc66336c9f423ab848bc9f85e7d9dd29b193a075399b7a866",
     "reference_eval": "main_host/results/CDW1630/Ours/seed0/native_test/eval.pth",
@@ -89,12 +89,12 @@
       }
     ]
   },
-  "cdw_gccs_seed1_test": {
+  "cdw_gca_seed1_test": {
     "dataset": "cdw",
-    "method": "gccs",
+    "method": "gca",
     "seed": 1,
     "split": "test",
-    "config": "profiles/cdw_gccs_seed1_test.yml",
+    "config": "profiles/cdw_gca_seed1_test.yml",
     "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed1/best_stg1.pth",
     "checkpoint_sha256": "ffe04839b8e10e52aa92968c73291f03a0c9ff4312c06025a720e96fabca7253",
     "reference_eval": "main_host/results/CDW1630/Ours/seed1/native_test/eval.pth",
@@ -122,12 +122,12 @@
       }
     ]
   },
-  "cdw_gccs_seed2_test": {
+  "cdw_gca_seed2_test": {
     "dataset": "cdw",
-    "method": "gccs",
+    "method": "gca",
     "seed": 2,
     "split": "test",
-    "config": "profiles/cdw_gccs_seed2_test.yml",
+    "config": "profiles/cdw_gca_seed2_test.yml",
     "checkpoint": "main_host/checkpoints/CDW1630/Ours/seed2/best_stg2.pth",
     "checkpoint_sha256": "9d2c19878688b53b2f1cacbdc9de5609de1f2aab3d635573fd41f4b13fb5d041",
     "reference_eval": "main_host/results/CDW1630/Ours/seed2/native_test/eval.pth",
@@ -143,11 +143,11 @@
     "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
     "inference_assets": []
   },
-  "cdw_gccs_train": {
+  "cdw_gca_train": {
     "dataset": "cdw",
-    "method": "gccs",
+    "method": "gca",
     "split": "train",
-    "config": "profiles/cdw_gccs_train.yml",
+    "config": "profiles/cdw_gca_train.yml",
     "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
     "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
     "inference_assets": []
@@ -245,12 +245,12 @@
       }
     ]
   },
-  "btc_gccs_seed0_test1": {
+  "btc_gca_seed0_test1": {
     "dataset": "btc",
-    "method": "gccs",
+    "method": "gca",
     "seed": 0,
     "split": "test1",
-    "config": "profiles/btc_gccs_seed0_test1.yml",
+    "config": "profiles/btc_gca_seed0_test1.yml",
     "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
     "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
     "reference_eval": "generalization/btc/results/Ours/seed0/native/test1/eval.pth",
@@ -278,12 +278,12 @@
       }
     ]
   },
-  "btc_gccs_seed0_test2": {
+  "btc_gca_seed0_test2": {
     "dataset": "btc",
-    "method": "gccs",
+    "method": "gca",
     "seed": 0,
     "split": "test2",
-    "config": "profiles/btc_gccs_seed0_test2.yml",
+    "config": "profiles/btc_gca_seed0_test2.yml",
     "checkpoint": "generalization/btc/checkpoints/Ours/seed0/best_stg1.pth",
     "checkpoint_sha256": "09119c44d679a9decb9baa85330e2ed8adced339db2f6b7201fae7a3a2598059",
     "reference_eval": "generalization/btc/results/Ours/seed0/native/test2/eval.pth",
@@ -311,12 +311,12 @@
       }
     ]
   },
-  "btc_gccs_seed1_test1": {
+  "btc_gca_seed1_test1": {
     "dataset": "btc",
-    "method": "gccs",
+    "method": "gca",
     "seed": 1,
     "split": "test1",
-    "config": "profiles/btc_gccs_seed1_test1.yml",
+    "config": "profiles/btc_gca_seed1_test1.yml",
     "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
     "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
     "reference_eval": "generalization/btc/results/Ours/seed1/native/test1/eval.pth",
@@ -344,12 +344,12 @@
       }
     ]
   },
-  "btc_gccs_seed1_test2": {
+  "btc_gca_seed1_test2": {
     "dataset": "btc",
-    "method": "gccs",
+    "method": "gca",
     "seed": 1,
     "split": "test2",
-    "config": "profiles/btc_gccs_seed1_test2.yml",
+    "config": "profiles/btc_gca_seed1_test2.yml",
     "checkpoint": "generalization/btc/checkpoints/Ours/seed1/best_stg1.pth",
     "checkpoint_sha256": "0d7128117244a9fd64c43031a9588914cac07e9582d0649c6ce4f4872dc9599f",
     "reference_eval": "generalization/btc/results/Ours/seed1/native/test2/eval.pth",
@@ -377,12 +377,12 @@
       }
     ]
   },
-  "btc_gccs_seed2_test1": {
+  "btc_gca_seed2_test1": {
     "dataset": "btc",
-    "method": "gccs",
+    "method": "gca",
     "seed": 2,
     "split": "test1",
-    "config": "profiles/btc_gccs_seed2_test1.yml",
+    "config": "profiles/btc_gca_seed2_test1.yml",
     "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
     "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
     "reference_eval": "generalization/btc/results/Ours/seed2/native/test1/eval.pth",
@@ -410,12 +410,12 @@
       }
     ]
   },
-  "btc_gccs_seed2_test2": {
+  "btc_gca_seed2_test2": {
     "dataset": "btc",
-    "method": "gccs",
+    "method": "gca",
     "seed": 2,
     "split": "test2",
-    "config": "profiles/btc_gccs_seed2_test2.yml",
+    "config": "profiles/btc_gca_seed2_test2.yml",
     "checkpoint": "generalization/btc/checkpoints/Ours/seed2/best_stg2.pth",
     "checkpoint_sha256": "d7f8c50a2dc37a935eb18dbfe1ee520cc5732eade3ac3800a60c8518911bf0e0",
     "reference_eval": "generalization/btc/results/Ours/seed2/native/test2/eval.pth",
@@ -431,11 +431,11 @@
     "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
     "inference_assets": []
   },
-  "btc_gccs_train": {
+  "btc_gca_train": {
     "dataset": "btc",
-    "method": "gccs",
+    "method": "gca",
     "split": "train",
-    "config": "profiles/btc_gccs_train.yml",
+    "config": "profiles/btc_gca_train.yml",
     "pretrained": "main_host/pretrained/deim_hgnetv2_m_coco.pth",
     "pretrained_sha256": "2b6cd0582a4aa711f583982057b7fb0f3daebdd98e4dc168824714014c3219bc",
     "inference_assets": []

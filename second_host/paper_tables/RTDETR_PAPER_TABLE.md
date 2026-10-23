@@ -2,7 +2,7 @@
 
 Values are percentages; ± is the sample standard deviation over detector seeds 0/1/2. Deltas are percentage points.
 
-| Metric | Native | +GCCS | Full HiLoR-DETR | GCCS gain | CCVR increment | Full gain |
+| Metric | Native | +GCA | Full HiLoR-DETR | GCA gain | CCVR increment | Full gain |
 |---|---:|---:|---:|---:|---:|---:|
 | AP | 75.508 ± 0.358 | 75.760 ± 0.240 | 76.081 ± 0.228 | +0.252 | +0.321 | +0.573 |
 | AP50 | 97.844 ± 0.083 | 96.764 ± 0.187 | 97.188 ± 0.154 | -1.080 | +0.424 | -0.656 |

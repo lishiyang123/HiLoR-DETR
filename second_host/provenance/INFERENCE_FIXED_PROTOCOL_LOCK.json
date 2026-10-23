@@ -6,7 +6,7 @@
     },
     "implementation_lock": {
       "path": "provenance/IMPLEMENTATION_LOCK.json",
-      "sha256": "5d4753f82c65a9b2e283d04bc89c26228218d76e18280670f48b938ec8bf6adb"
+      "sha256": "a9b8438dec892517d9f931335af165c60a8cbfdc260422ca0b9f5d705909413d"
     }
   },
   "compatibility": {
@@ -28,7 +28,7 @@
   "fixed_protocol_tools": {
     "tools/fixed_protocol_common.py": "c4f15878f3b2aa125cf2520270ce4da73363c2743605c9742b0c47926f1e9563",
     "tools/freeze_inference_binding_fixed.py": "4852f4160f6d01472993deef81fbcca9dc10ff34bd7ba314a498f72413a7aa1f",
-    "tools/freeze_qccr_fixed.py": "f9059bc871fe4aac1a2c30a4ae346f089f4ad41125c1e3beba797edfbee5b5c6",
+    "tools/freeze_qccr_fixed.py": "c2841f38a9341d37018828da0e8c1c82902565a7620928d5df0d22eb3be1d571",
     "tools/train_umr_fixed.py": "e0a7d66750d2173bf3ba1a80eb3a52d6eccf512aac31265170e601748c3fbd80"
   },
   "host": "RT-DETR-R18",

@@ -19,7 +19,7 @@
   },
   "secondary_binding": {
     "path": "${SECOND_ROOT}/artifacts/inference/seed0/qccr_umr_binding.json",
-    "sha256": "b8ca33ed8015576f9ad9b3d86fd5fd28eefa08413a43b43fa1c801cd942eae70"
+    "sha256": "4ef1e725d0e99efcaf06273d8b26edd8a2d49dcbbba353335419d999d674ff0f"
   },
   "models": {
     "deim": {
@@ -32,8 +32,8 @@
       "full": false,
       "fitted_scalars": 0
     },
-    "gccs": {
-      "label": "DEIM + GCCS",
+    "gca": {
+      "label": "DEIM + GCA",
       "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
       "flavor": "engine",
       "checkpoint": "${PRIMARY_ROOT}/checkpoints/CDW1630/Ours/seed0/best_stg1.pth",
@@ -87,8 +87,8 @@
       "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
       "full": false
     },
-    "train_gccs": {
-      "label": "DEIM + GCCS",
+    "train_gca": {
+      "label": "DEIM + GCA",
       "source": "${PRIMARY_ROOT}/source/FINAL_CODE",
       "flavor": "engine",
       "python": "${ENV_ROOT}/deim_cvpr2025/bin/python",
@@ -169,13 +169,13 @@
   ],
   "latency_models": [
     "deim",
-    "gccs",
+    "gca",
     "hilor"
   ],
   "training": {
     "models": [
       "train_deim",
-      "train_gccs"
+      "train_gca"
     ],
     "epochs": 102,
     "batch_size": 8,

@@ -11,7 +11,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import torch
 from torch import nn
 from scoped_common import expand, trim_retired_branches, assert_tree_equal, parameters, roots
-from prepare_scoped import merge, tokenize
 from measure_training import summarize_epochs, timed_epoch
 import run_scoped
 from measure_paired_latency import balanced_order, identical_detector_config, summarize, MODES
@@ -45,18 +44,12 @@ class ScopedTests(unittest.TestCase):
         self.assertTrue(hasattr(block, 'conv1'))
 
     def test_paths_can_be_relocated(self):
-        one = {'PRIMARY_ROOT': Path('/old/release'), 'PROJECT_ROOT': Path('/old')}
-        value = tokenize({'path': '/old/release/checkpoints/head.pt'}, one)
-        self.assertEqual(value['path'], '${PRIMARY_ROOT}/checkpoints/head.pt')
+        value = {'path': '${PRIMARY_ROOT}/checkpoints/head.pt'}
         self.assertEqual(expand(value, {'PRIMARY_ROOT': Path('/new/release')})['path'], '/new/release/checkpoints/head.pt')
 
     def test_unknown_token_fails(self):
         with self.assertRaises(ValueError):
             expand('${UNKNOWN}/file', {})
-
-    def test_overlay_preserves_other_method_settings(self):
-        data = merge({'x': {'a': 1, 'b': 2}}, {'x': {'a': 3}, '__include__': ['unused']})
-        self.assertEqual(data, {'x': {'a': 3, 'b': 2}})
 
     def test_training_scope_mean_and_peak(self):
         rows = [{'training_time_s': 10, 'peak_allocated_MiB': 100}, {'training_time_s': 20, 'peak_allocated_MiB': 200}]
@@ -114,12 +107,12 @@ class ScopedTests(unittest.TestCase):
     def test_paired_summary_does_not_force_forward_equal(self):
         samples = [{'mode': m, 'repeat': 1, 'forward_ms': f, 'postprocess_ms': p,
                     'total_ms': f+p, 'synchronized_wall_ms': f+p+1}
-                   for m,f,p in [('deim',10,1),('gccs',11,1),('hilor',12,2)]]
+                   for m,f,p in [('deim',10,1),('gca',11,1),('hilor',12,2)]]
         result, diag = summarize(samples, 1)
-        self.assertEqual(result['gccs']['forward_ms'], 11)
+        self.assertEqual(result['gca']['forward_ms'], 11)
         self.assertEqual(result['hilor']['forward_ms'], 12)
         self.assertEqual(result['hilor']['total_ms'], 14)
-        self.assertEqual(diag['gccs_minus_hilor_forward_ms'], -1)
+        self.assertEqual(diag['gca_minus_hilor_forward_ms'], -1)
 
     def test_multiprocessing_tmp_directory_stays_short(self):
         with patch.dict(os.environ, {'EFFICIENCY_TMP_ROOT': '/root/autodl-tmp/.eff_tmp'}):

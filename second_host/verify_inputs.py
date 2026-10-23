@@ -28,7 +28,7 @@ def main():
     entry.digest = digest
     index = json.loads((HERE / 'CURRENT_RESULT_MANIFEST.json').read_text())
     count = 0
-    for mode in ('native', 'gccs', 'full'):
+    for mode in ('native', 'gca', 'full'):
         for seed in (0, 1, 2):
             source, checkpoint, config = entry.plan(seed, mode)
             row = index['configurations'][mode][str(seed)]
@@ -46,14 +46,14 @@ def main():
             count += 1
     pipeline = load(RELEASE / 'reproduce_pipeline.py', '_rt_input_pipeline')
     from argparse import Namespace
-    for method in ('native', 'gccs'):
+    for method in ('native', 'gca'):
         _, _, data = pipeline.config_for(Namespace(host='rtdetr', dataset='cdw',
             method=method, seed=0, output=Path('/tmp/unused_rt_input_check')))
         if (data['epoches'] != 102 or data['train_dataloader']['batch_size'] != 4
                 or data['val_dataloader']['batch_size'] != 8
                 or data['use_amp'] is not False or data['use_ema'] is not True):
             raise RuntimeError('Training protocol differs from the published settings')
-    print(f'RT INPUTS: PASS ({count} mode/seed cases; Native/GCCS training settings)')
+    print(f'RT INPUTS: PASS ({count} mode/seed cases; Native/GCA training settings)')
 
 
 if __name__ == '__main__':

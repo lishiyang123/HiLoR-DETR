@@ -68,7 +68,7 @@ def main() -> None:
     if output.exists():
         raise RuntimeError(f"refusing to overwrite inference config: {output}")
 
-    base = root / "configs" / "hilor" / "cdw1630_rtdetr_r18_gccs.yml"
+    base = root / "configs" / "hilor" / "cdw1630_rtdetr_r18_gca.yml"
     include = os.path.relpath(base, output.parent).replace("\\", "/")
     use_umr = args.mode == "qccr-umr"
     binding_relative = binding.relative_to(root).as_posix()

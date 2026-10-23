@@ -52,7 +52,7 @@ class ReleaseWorkflowTests(unittest.TestCase):
 
     def test_main_training_configs(self):
         for dataset in ('cdw', 'btc'):
-            for method in ('native', 'gccs', 'full'):
+            for method in ('native', 'gca', 'full'):
                 args = SimpleNamespace(host='deim', dataset=dataset, method=method, seed=2, output=Path('/tmp/fresh-config-only'))
                 _, _, data = self.pipeline.config_for(args)
                 self.assertFalse(data['use_amp'])
@@ -62,7 +62,7 @@ class ReleaseWorkflowTests(unittest.TestCase):
                 self.assertNotIn('resume', data)
 
     def test_rt_training_config_protocol(self):
-        for method in ('native', 'gccs', 'full'):
+        for method in ('native', 'gca', 'full'):
             args = SimpleNamespace(host='rtdetr', dataset='cdw', method=method, seed=1, output=Path('/tmp/fresh-rt-config-only'))
             source, _, data = self.pipeline.config_for(args)
             self.assertEqual(data['epoches'], 102)
@@ -84,8 +84,8 @@ class ReleaseWorkflowTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             wrapper.plan(0, 'full', weight)
         with self.assertRaises(ValueError):
-            wrapper.plan(0, 'gccs', None, Path('/tmp/unbound.json'))
-        source, actual, data = wrapper.plan(0, 'gccs', weight)
+            wrapper.plan(0, 'gca', None, Path('/tmp/unbound.json'))
+        source, actual, data = wrapper.plan(0, 'gca', weight)
         self.assertEqual(actual, weight.resolve())
         self.assertFalse(data['use_amp'])
 
@@ -110,7 +110,7 @@ class ReleaseWorkflowTests(unittest.TestCase):
             checkpoint.write_bytes(b'new checkpoint')
             arguments = ['--oof-summary', path, '--fits', base / 'fits.json', '--checkpoint', checkpoint,
                          '--expected-checkpoint-sha', self.pipeline.digest(checkpoint), '--dataset-name', 'CDW1630',
-                         '--source-method', 'GCCS', '--output', base / 'artifact.json']
+                         '--source-method', 'GCA', '--output', base / 'artifact.json']
             self.pipeline.call_main(freeze, arguments)
             self.assertEqual(json.loads((base / 'artifact.json').read_text())['selection_decision'], 'FIXED_PROTOCOL_READY')
             result['decision'] = 'OOF_VAL_GO'

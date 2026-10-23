@@ -22,11 +22,11 @@
   },
   "captures": {
     "train": {
-      "path": "../../../../../features/gccs/seed2/train_capture.pt",
+      "path": "../../../../../features/gca/seed2/train_capture.pt",
       "sha256": "dbf367a20262c9eff1c67e62890a2b4cc686e81dd11bf377610db5fdc766874d"
     },
     "val": {
-      "path": "../../../../../features/gccs/seed2/val_capture.pt",
+      "path": "../../../../../features/gca/seed2/val_capture.pt",
       "sha256": "05b9c9fd5a5d90152d2c842a8bc9787256341b1df928210cf2eb7e957b5f0911"
     }
   }

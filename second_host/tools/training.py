@@ -1,6 +1,6 @@
 """RT training loop with Val-only checkpoint selection.
 
-Shared by fresh Native and GCCS runs; optimizer, EMA, scheduler and epoch order
+Shared by fresh Native and GCA runs; optimizer, EMA, scheduler and epoch order
 are the recorded training implementation. Output namespaces are run-specific.
 """
 from __future__ import annotations

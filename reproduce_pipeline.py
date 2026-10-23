@@ -73,7 +73,7 @@ def config_for(args, capture=False):
     if args.host == 'deim':
         module = load_module(MAIN / 'reproduce.py', '_portable_main')
         profiles = json.loads((MAIN / 'PROFILES.json').read_text())
-        method = 'deim' if args.method in ('native', 'native-ccvr') else 'gccs'
+        method = 'deim' if args.method in ('native', 'native-ccvr') else 'gca'
         key = args.dataset + '_' + method + '_train'
         data = module.expand(yaml.safe_load((MAIN / profiles[key]['config']).read_text()), ROOT, MAIN)
         source = MAIN
@@ -87,7 +87,7 @@ def config_for(args, capture=False):
     else:
         wrapper = rt_wrapper()
         native = args.method == 'native'
-        config = RT / ('configs/native_off/cdw1630_rtdetr_r18_native.yml' if native else 'configs/hilor/cdw1630_rtdetr_r18_gccs.yml')
+        config = RT / ('configs/native_off/cdw1630_rtdetr_r18_native.yml' if native else 'configs/hilor/cdw1630_rtdetr_r18_gca.yml')
         data = wrapper.relocate(wrapper.yaml_closure(config))
         source = ROOT / 'benchmarks/02_RT_DETR_R18/source/RT-DETR_official/rtdetr_pytorch' if native and not capture else RT / 'source/RT-DETR_HiLoR/rtdetr_pytorch'
         initialization = ROOT / 'benchmarks/02_RT_DETR_R18/source/rtdetr_r18vd_dec3_6x_coco_from_paddle.pth'
@@ -131,7 +131,7 @@ def install_rt_evaluator(source):
 
 def train(args):
     if args.host == 'deim':
-        method = 'deim' if args.method in ('native', 'native-ccvr') else 'gccs'
+        method = 'deim' if args.method in ('native', 'native-ccvr') else 'gca'
         command(MAIN / 'reproduce.py', '--release-root', ROOT, '--profile', f'{args.dataset}_{method}_train', '--seed', args.seed, '--output', args.output)
         return
     source, initialization, data = config_for(args)
@@ -360,7 +360,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--host', choices=('deim', 'rtdetr'), required=True)
     parser.add_argument('--dataset', choices=('cdw', 'btc'), required=True)
-    parser.add_argument('--method', choices=('native', 'gccs', 'full', 'native-ccvr'), required=True)
+    parser.add_argument('--method', choices=('native', 'gca', 'full', 'native-ccvr'), required=True)
     parser.add_argument('--seed', type=int, choices=(0, 1, 2), required=True)
     parser.add_argument('--stage', choices=('train', 'capture', 'fit', 'evaluate'), required=True)
     parser.add_argument('--workdir', type=Path, required=True)

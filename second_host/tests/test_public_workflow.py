@@ -40,7 +40,7 @@ class PublicWorkflowTest(unittest.TestCase):
                 self.assertEqual(wrapper.relocate('/another/new/output'), '/another/new/output')
                 self.assertEqual(wrapper.relocate('relative/file.json'), 'relative/file.json')
 
-    def test_native_control_uses_native_not_gccs_configuration(self):
+    def test_native_control_uses_native_not_gca_configuration(self):
         args = Namespace(host='deim', dataset='cdw', method='native-ccvr', seed=0,
                          output=Path('/tmp/unused_fresh_control'))
         source, init, config = pipeline.config_for(args, capture=True)

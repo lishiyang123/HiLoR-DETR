@@ -1,5 +1,5 @@
 __include__:
-- ../../cdw1630_rtdetr_r18_gccs.yml
+- ../../cdw1630_rtdetr_r18_gca.yml
 postprocessor: HiLoRRTDETRPostProcessor
 RTDETRTransformer:
   hilor_return_decoder_features: true
@@ -14,6 +14,6 @@ HiLoRRTDETRPostProcessor:
   artifact_manifest:
     path: artifacts/inference/seed2/qccr_umr_binding.json
     path_base: adapter_root
-    sha256: cd56f9a3becbdcca21f51605d5376dcfefe83d37df498577756837e0d4e7e33f
+    sha256: 5129b09f594039b0f6df9f4ae64eb4492dd132713c9bd94e150889cbbcdc86fb
   expected_detector_checkpoint_sha256: 3db2ab05583321b5b1b663372a62fe1f07d74de2f1f4e1a0cbbf103e78fdb7c2
   allow_unbound_artifacts: false

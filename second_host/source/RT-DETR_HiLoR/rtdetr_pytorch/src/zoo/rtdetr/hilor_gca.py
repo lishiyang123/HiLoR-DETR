@@ -1,4 +1,4 @@
-"""RT-DETR-specific host adapter for GCCS classification-role handover.
+"""RT-DETR-specific host adapter for GCA classification-role handover.
 
 The official matcher remains authoritative. A second detached, geometry-only
 Hungarian assignment is computed exclusively on native-unmatched queries and
@@ -24,7 +24,7 @@ __all__ = ["HiLoRSetCriterion"]
 
 @register
 class HiLoRSetCriterion(RTDETRUFD, SetCriterion):
-    """Official RT-DETR criterion plus final-VFL GCCS role correction."""
+    """Official RT-DETR criterion plus final-VFL GCA role correction."""
 
     __share__ = ["num_classes"]
     __inject__ = ["matcher"]
@@ -119,7 +119,7 @@ class HiLoRSetCriterion(RTDETRUFD, SetCriterion):
         if not self.lcct_enabled or not self.training:
             return
         if epoch is None:
-            raise RuntimeError("GCCS requires epoch context during training")
+            raise RuntimeError("GCA requires epoch context during training")
         epoch = int(epoch)
         if epoch < self.lcct_warmup_epoch:
             return
@@ -131,7 +131,7 @@ class HiLoRSetCriterion(RTDETRUFD, SetCriterion):
         pred_boxes = outputs["pred_boxes"]
         batch_size, num_queries, _ = pred_boxes.shape
         if len(targets) != batch_size or len(native_indices) != batch_size:
-            raise RuntimeError("GCCS batch dimensions do not agree")
+            raise RuntimeError("GCA batch dimensions do not agree")
 
         active_gains = []
         effective_count = 0
@@ -147,7 +147,7 @@ class HiLoRSetCriterion(RTDETRUFD, SetCriterion):
                 self._hilor_last_diag["dense_images_skipped"] += 1
                 continue
             if source_native.numel() != num_gt or target_native.numel() != num_gt:
-                raise RuntimeError("GCCS requires one native query per GT")
+                raise RuntimeError("GCA requires one native query per GT")
 
             device = pred_boxes.device
             source_native = source_native.to(device=device, dtype=torch.long)

@@ -339,7 +339,7 @@
     "lcct_transition_width": 0.02,
     "lcct_ramp_epochs": 5
   },
-  "output_dir": "${PACKAGE_ROOT}/outputs/gccs",
+  "output_dir": "${PACKAGE_ROOT}/outputs/gca",
   "seed": 0,
   "device": "cuda:0"
 }
