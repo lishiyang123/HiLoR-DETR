@@ -45,7 +45,7 @@ is not detection recall; definitions and units are in `evidence/oracle/README.md
 `BTC_CASE_PROTOCOL.json` defines selection and matching. These are post-hoc
 illustrative choices from nine inspected BTC test scenes, not exhaustive test-set
 ranking and not model, checkpoint or hyperparameter selection. Native photographs
-are 1920 x 1200; locations and hashes are in `BTC_INPUT_BINDINGS.json`. The BTC
+are 1920 x 1200; input locations are in `BTC_INPUT_BINDINGS.json`. The BTC
 models were trained and CCVR fitted on BTC, not transferred zero-shot from CDW.
 
 Saved cases are fresh CPU FP32, batch-1 qualitative forwards of the released
@@ -89,5 +89,4 @@ python -B numerical_evidence/export_btc_cases.py --release . --output /new/exter
 ```
 
 The BTC case export does not modify model weights, fits or dataset splits.
-`SOURCE_BINDINGS.json` records source provenance; current file identity is checked
-by the package and release manifests. Source images remain in the BTC data group.
+Source images remain in the BTC data group.

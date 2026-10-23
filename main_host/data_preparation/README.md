@@ -101,10 +101,6 @@ input; it never overwrites supplied data. Image copies preserve the original
 bytes. Use the new annotation/image paths as the dataset inputs of your chosen
 training or evaluation configuration; the original published paths are unchanged.
 
-```bash
-python -B -m unittest discover \
-  -s main_host/data_preparation -p 'test_prepare_dataset.py'
-```
 
 VOC identity checks exclude the optional `<path>` element. Distributed VOC files
 store the image filename in that field; labels and bounding boxes are unchanged.

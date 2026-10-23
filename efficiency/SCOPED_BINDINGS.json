@@ -19,7 +19,7 @@
   },
   "secondary_binding": {
     "path": "${SECOND_ROOT}/artifacts/inference/seed0/qccr_umr_binding.json",
-    "sha256": "aaf78f4916d156ba2fbab3d7ab6ac7767341258c4eec034182b2248aa55c7b3b"
+    "sha256": "44ce37ea3ba7d1bb18dcc483f158453ea28325c1a9a8416746f8e1cbe99715cc"
   },
   "models": {
     "deim": {

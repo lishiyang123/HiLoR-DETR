@@ -31,7 +31,7 @@ def write_csv(path, rows):
 
 def generate(release, output):
     main = release/'main_host'
-    spec = importlib.util.spec_from_file_location('_main_exact', main/'tools/verify_eval.py')
+    spec = importlib.util.spec_from_file_location('_main_exact', main/'metrics.py')
     exact = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(exact)
     index = read(main/'manifests/CDW1630_THREE_SEED_RELEASE.json')

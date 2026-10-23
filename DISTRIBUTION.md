@@ -68,8 +68,6 @@ uses these content labels; an asset group may occupy one or several archive part
 | Native RT checkpoint inference | code + weights-rt + CDW dataset inputs |
 | RT GSA checkpoint inference | code + results + weights-rt + CDW dataset inputs |
 | Complete RT checkpoint inference | code + results + weights-rt + CDW dataset inputs |
-| RT `verify_inputs.py` (all seeds/modes) | code + results + weights-rt + weights-rt; checks saved evaluations/configuration/weights, no image archive or GPU |
-| RT CPU suite: `cd second_host` then `python -B -m unittest discover -s tests -p 'test_*.py'` | code + results + the weight part containing `main_host/pretrained/deim_hgnetv2_m_coco.pth`; synthetic test fixtures are created temporarily, no GPU or feature archive |
 | Fresh main-host training, capture, fitting and evaluation | code + results + weights-main (including official initialization) + the selected dataset inputs; stages create new captures and fits outside the release |
 | Fresh RT training, capture, fitting and evaluation | code + results + the separately downloaded official RT COCO initializer + CDW dataset inputs; stages create new captures and fits outside the release |
 | DEIM/GSA/full HiLoR paired FP32 latency | code + results + weights-main + CDW dataset inputs; main-host environment and RTX 4090, all three configurations in one session |

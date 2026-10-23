@@ -86,22 +86,7 @@ The published training profiles set `ufd_lambda_max=0.75` explicitly; the
 criterion's generic constructor default is not the experiment setting. Preserve
 the dataset-specific class count and the explicit profile values when rerunning.
 
-## CPU checks
+## Licenses
 
-From this source directory, run the synthetic method and mapping-input tests:
-
-```bash
-python -B -m unittest discover -s tests -p 'test_method_contracts.py'
-python -B -m unittest discover -s tests -p 'test_profile_mapping.py'
-```
-
-These tests do not train a detector, load released detector weights, access
-dataset images or execute CUDA graphs. They preserve the existing tie rules,
-coordinate conventions and numerical implementation.
-
-## Licenses and source identity
-
-Upstream DEIM/D-FINE/RT-DETR notices and `LICENSE` are retained. The final source
-file list and hashes are in `SOURCE_MANIFEST.json`. Weights, datasets and fitted
-assets remain in their respective reproduction subpackages and are not duplicated
-inside the source directory.
+Upstream DEIM/D-FINE/RT-DETR notices and `LICENSE` are retained. Weights,
+datasets and fitted assets remain in their respective reproduction subpackages.

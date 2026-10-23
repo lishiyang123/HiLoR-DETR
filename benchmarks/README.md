@@ -33,8 +33,7 @@ tables are under `../main_host/paper_tables/three_seed/`; RT Native/GSA/full
 tables are under `../second_host/paper_tables/`. Directory numbers identify model
 asset groups, not a model ranking.
 
-Start with the release-root `README.md`. The full-download `run_verify.sh`
-check is optional; partial downloads need only the inputs for their selected task.
+Start with the release-root `README.md`; download the inputs for the selected task.
 Model-specific reproduction instructions and environment records live in the corresponding model directory.
 `CONFIGURATION_GUIDE.md` centralizes the recorded budgets, initialization,
 Val-selection rules and executable training/configuration-planning commands.

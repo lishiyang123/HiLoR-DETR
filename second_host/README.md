@@ -108,21 +108,6 @@ lambda=0.001, positive weight=4, head seed=0, tau=0, beta=2, Top-K=300. Mapping
 coefficients use Val; value-head fitting and early stopping use 938 and 104
 images within Train. Test never selects these settings. See `docs/` for scopes.
 
-For current input validation and CPU regression tests:
-
-Run these commands from `second_host/`. The complete test suite also reads
-`main_host/pretrained/deim_hgnetv2_m_coco.pth`, supplied by the weight part
-containing that path in the release download inventory, for its cross-host workflow regression. Code and
-results alone are sufficient for saved-prediction replay, not this asset-dependent
-test. `verify_inputs.py` checks selected inputs for all three RT modes and needs
-both RT weight groups and results as listed in the download table; it does not
-load dataset images.
-
-```bash
-python -B verify_inputs.py
-python -B -m unittest discover -s tests -p 'test_*.py'
-```
-
 The public workflow uses `tools/training.py` and `tools/capture.py` for shared
 training and Train/Val capture routines. Outputs always belong to the supplied
 external work directory. Capture/fitting receipts preserve their original input

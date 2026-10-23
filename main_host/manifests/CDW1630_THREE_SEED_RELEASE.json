@@ -167,9 +167,6 @@
     },
     "classwise_metrics": {
       "path": "results/CDW1630/classwise_metrics/classwise_mean_std.csv"
-    },
-    "source_manifest": {
-      "path": "source/FINAL_CODE/SOURCE_MANIFEST.json"
     }
   },
   "system_runs": [

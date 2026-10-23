@@ -17,7 +17,7 @@
   "head_parameters": 14729,
   "num_classes": 5,
   "positive_weight": 4,
-  "qccr_sha256": "d34862ed8765b363bf5f5f5fdcdfbec8a37c73ef8cbafd5f96bd29da816d5dd8",
+  "qccr_sha256": "789a0e2d366ada56b3c59ea7e44b9ea0ba6575d0eff10322a90e54fb9fe9906c",
   "seed": 0,
   "selection_evidence": {
     "policy": "heads fitted on Train; fixed fusion tuple and candidate selected on Val; Test used once after freezing",

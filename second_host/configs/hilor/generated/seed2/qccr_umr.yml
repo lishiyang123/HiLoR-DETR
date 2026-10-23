@@ -14,6 +14,6 @@ HiLoRRTDETRPostProcessor:
   artifact_manifest:
     path: artifacts/inference/seed2/qccr_umr_binding.json
     path_base: adapter_root
-    sha256: 1f4bfe95bc6f0d7390d007e58c77b095915070c10c322443935a9e0e0d202115
+    sha256: 6aeb1cd9daa50c8c2bb30928419f7fc7d204c3559ccd87f085c6035d5be62679
   expected_detector_checkpoint_sha256: 3db2ab05583321b5b1b663372a62fe1f07d74de2f1f4e1a0cbbf103e78fdb7c2
   allow_unbound_artifacts: false

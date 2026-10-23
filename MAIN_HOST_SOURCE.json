@@ -1,7 +1,7 @@
 {
   "schema": "hilor-main-host-source-binding-v1",
   "source": "main_host/source/FINAL_CODE",
-  "source_manifest_sha256": "adf6252031d6b66e46dda5c15fda5cc55ae6feeffaacecc33775ddcad1e4ae3d",
+  "source_manifest_sha256": "a0777f24fbe1835dff71cd12d272369a872e3bc6bd0180b39426791cec043698",
   "profiles_sha256": "832d4b3811466baac948c30e688dc3a50d507273be55eba1a38e04785d554a91",
   "datasets": [
     "CDW1630",

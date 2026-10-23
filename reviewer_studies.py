@@ -12,11 +12,24 @@ import os
 import subprocess
 import sys
 
-from verify_release import require_inputs
 
 ROOT = Path(__file__).resolve().parent
 NN = ROOT / 'ranking_comparison'
 PRIMARY = ROOT / 'main_host'
+
+
+def require_inputs(release, paths):
+    missing = []
+    for value in paths:
+        path = Path(value)
+        if not path.is_absolute():
+            path = release / path
+        relative = path.relative_to(release).as_posix()
+        if not path.is_file():
+            missing.append(relative)
+    if missing:
+        raise RuntimeError('Missing required inputs:\n' + '\n'.join(sorted(set(missing))) +
+                           '\nSee DISTRIBUTION.md for the required downloads.')
 
 
 def sha(path):

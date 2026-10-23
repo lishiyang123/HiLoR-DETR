@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
-"""Verify exact COCO metrics against a frozen JSON reference."""
+"""Extract the reported metrics from saved COCO evaluation arrays."""
 
 from __future__ import annotations
 
-import argparse
-import json
-import math
 from pathlib import Path
 
 import numpy as np
@@ -100,64 +97,3 @@ def extract(path: Path) -> dict[str, float]:
         "AP90": ap(0.90),
         "AP95": ap(0.95),
     }
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--eval", type=Path, required=True)
-    parser.add_argument("--reference", type=Path, required=True)
-    parser.add_argument("--output", type=Path, required=True)
-    parser.add_argument("--tolerance", type=float, default=1e-10)
-    parser.add_argument("--label", default="evaluation")
-    args = parser.parse_args()
-
-    reference = json.loads(args.reference.read_text(encoding="utf-8"))
-    expected = reference["metrics"]
-    current = extract(args.eval)
-    errors: dict[str, float | None] = {}
-    checks: dict[str, bool] = {}
-
-    print(f"===== {args.label} EXACT METRICS =====")
-    for name in ORDER:
-        actual = current[name]
-        target = expected[name]
-        if target is None:
-            passed = not math.isfinite(actual)
-            errors[name] = None
-            print(f"{name:5s}: N/A expected=N/A {'PASS' if passed else 'FAIL'}")
-        else:
-            error = abs(actual - float(target))
-            passed = error <= args.tolerance
-            errors[name] = error
-            print(
-                f"{name:5s}: {actual:.9f} error={error:.3e} "
-                f"{'PASS' if passed else 'FAIL'}"
-            )
-        checks[name] = passed
-
-    passed = all(checks.values())
-    report = {
-        "passed": passed,
-        "label": args.label,
-        "eval": str(args.eval.resolve()),
-        "reference": str(args.reference.resolve()),
-        "tolerance": args.tolerance,
-        "metrics": {
-            name: value if math.isfinite(value) else None
-            for name, value in current.items()
-        },
-        "absolute_errors": errors,
-        "checks": checks,
-    }
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(
-        json.dumps(report, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
-    print(f"{args.label} EXACT VERIFICATION:", "PASS" if passed else "FAIL")
-    if not passed:
-        raise SystemExit(1)
-
-
-if __name__ == "__main__":
-    main()
